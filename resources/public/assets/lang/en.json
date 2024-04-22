@@ -1,0 +1,698 @@
+{
+	"mainPanelOperation": "Operation",
+	"mainPanelSteam": "STEAM",
+	"mainPanelFeedwater": "FEEDWATER",
+	"mainPanelSettings": "Settings",
+	"mainPanelError": "Error",
+
+	"settingsDialogAreaVisualization": "visualization",
+	"settingsDialogAreaSimulation": "simulation",
+	"settingsDialogAreaSpecifcation": "specification",
+
+	"settingsDialogAreaHeadUpDisplay": "head-up-display",
+	"settingsDialogAreaSimStartVals": "simulation start values",
+	"settingsDialogAreaSpecs": "specifications",
+
+	"generalSettings": "General Settings",
+
+	"languageCaps": "LANGUAGE",
+	"langEng": "English",
+	"langGer": "German",
+
+	"intendedUseCaps": "INTENDED USE",
+	"intendedUseMarketing": "demonstration",
+	"intendedUseTraining": "training",
+
+	"operationModeCaps": "OPERATION MODE",
+	"opModeNormal": "normal",
+	"opModeStandby": "standby",
+
+	"steamUnitCaps": "STEAM UNIT",
+	"steamUnitMetricTonsPerHourLong": "t/h (metric)",
+	"steamUnitLongTonsPerHourLong": "T/h (imperial)",
+
+	"feedwaterUnitCaps": "FEEDWATER UNIT",
+	"feedwaterUnitMetricTonsPerHourLong": "t/h (metric)",
+	"feedwaterUnitLongTonsPerHourLong": "T/h (imperial)",
+
+	"steamFeedwaterUnitMetricTonsPerHourShort": "t/h",
+	"steamFeedwaterUnitLongTonsPerHourShort": "T/h",
+
+	"urb55Settings": "URB55 Settings",
+
+	"trendTimeWindowCaps": "TREND TIME WINDOW",
+	"quarterOfAnHour": "15 minutes",
+	"thirdOfAnHour": "20 minutes",
+	"halfOfAnHour": "30 minutes",
+	"threeQuartersOfAnHour": "45 minutes",
+	"oneHour": "1 hour",
+	"oneAndAHalfHours": "1.5 hours",
+
+	"boilerSettings": "Boiler Settings",
+
+	"boilerPressureCaps": "PRESSURE",
+	"workPressureUnitBar": "bar",
+	"workPressureUnitPsi": "psi",
+
+	"boilerTemperatureCaps": "TEMPERATURE",
+	"boilerTemperatureUnitDegCelsius": "°C",
+
+	"boilerLevelCaps": "WATER LEVEL",
+	"boilerLevelUnitPercent": "%",
+
+	"boilerConductivityCaps": "WATER CONDUCTIVITY",
+	"boilerConductivityUnitUsPerCm": "µS/cm",
+	"boilerConductivityUnitPpm": "ppm",
+
+	"boilerInitPressureCaps": "PRESSURE (ABS)",
+	"initPressureMustBeWithinRangeToastMsg": "initial pressure value must be within following range: [",
+
+	"boilerInitWaterLevelCaps": "WATER LEVEL",
+	"initWaterLevelMustBeWithinRangeToastMsg": "initial water level value must be within following range: [",
+
+	"boilerInitWaterConductivityCaps": "WATER CONDUCTIVITY",
+	"initWaterConductivityMustBeWithinRangeToastMsg": "initial water conductivity value must be within following range: [",
+
+	"boilerInitSludgeMassCaps": "SLUDGE MASS",
+	"initSludgeMassMustBeWithinRangeToastMsg": "initial sludge mass value must be within following range: [",
+
+	"boilerTotalVolumeCaps": "TOTAL VOLUME",
+	"boilerTotalVolumeMustBeWithinRangeToastMsg": "boiler total volume must be within following range: [",
+
+	"boilerMaxVisibleSludgeMassCaps": "MAXIMUM VISIBLE SLUDGE MASS",
+	"maxVisibleSludgeMassMustBeWithinRangeToastMsg": "max visible sludge mass value must be within following range: [",
+
+	"burnerSettings": "Burner Settings",
+
+	"burnerInitStateCaps": "STATE",
+	"initStateOn": "On",
+	"initStateOff": "Off",
+
+	"burnerPowerCaps": "POWER",
+	"burnerPowerUnitkW": "kW",
+	"burnerPowerUnitMW": "MW",
+
+	"burnerFuelConsumCaps": "FUEL CONSUMPTION",
+	"burnerFuelConsumUnitNm3PerS": "nm³/s",
+	"burnerFuelConsumUnitHNm3PerM": "hnm³/m",
+	"burnerFuelConsumUnitHNm3PerH": "hnm³/h",
+
+	"burnerSwitchpointOnPresAbsCaps": "SWITCHPOINT ON (PRESSURE ABS)",
+	"burnerSwitchpointOffPresAbsCaps": "SWITCHPOINT OFF (PRESSURE ABS)",
+
+	"switchpointOnOffMustBeWithinRangeToastMsg": "switchpoint-on/off value must be within following range: [",
+	"switchpointOnMustBeSmallerThanOffToastMsg": "switchpoint-on value must be smaller than switchpoint-off value",
+	"cappedToastMsg": "one or more values were below allowed range and were capped to the minimum range-value",
+
+	"burnerMaxPowerCaps": "MAXIMUM POWER",
+	"maxPowerMustBeWithinRangeToastMsg": "maximum power value must be within following range: [",
+
+	"burnerFuelConsumCoefCaps": "FUEL CONSUMPTION COEFFICIENT",
+	"burnerFuelConsumCoefUnitNm3PerKwTimesS": "nm³/kW*s",
+	"burnerFuelConsumCoefUnitNm3PerKwTimesH": "nm³/kW*h",
+	"fuelConsumCoefMustBeWithinRangeToastMsg": "fuel consumption coefficient value must be within following range: [",
+
+	"burnerHeatTransferCoefCaps": "HEAT TRANSFER COEFFICIENT",
+	"burnerHeatTransferCoefUnitKjPerKwTimesS": "kJ/kW*s",
+	"heatTransferCoefMustBeWithinRangeToastMsg": "heat transfer coefficient value must be within following range: [",
+
+	"burnerStateUnitCaps": "BURNER STATE",
+	"burnerStateUnitOn": "on",
+	"burnerStateUnitOff": "off",
+
+	"feedwaterValveElectricSettings": "Feedwater-Valve Settings",
+	"feedwaterValveElectroPneumaticSettings": "Feedwater-Valve Settings",
+
+	"feedwaterTemperatureCaps": "FEEDWATER TEMPERATURE",
+	"feedwaterTemperatureMustBeWithinRangeToastMsg": "feedwater temperature value must be within following range: [",
+
+	"feedwaterConductivityCaps": "FEEDWATER CONDUCTIVITY",
+	"feedwaterConductivityMustBeWithinRangeToastMsg": "feedwater conductivity value must be within following range: [",
+
+	"feedwaterSludgeRatioCaps": "FEEDWATER SLUDGE RATIO",
+	"feedwaterSludgeRatioMustBeWithinRangeToastMsg": "feedwater sludge ratio value must be within following range: [",
+
+	"feedwaterPumpFreqCtrlSettings": "Feedwater-Pump Settings",
+	"feedwaterPumpTwoFreqCtrlSettings": "Feedwater-Pump-2 Settings",
+
+	"feedwaterPumpRotSpeedUnitCaps": "ROTATIONAL SPEED",
+	"feedwaterPumpRotSpeedUnitRpm": "rpm",
+
+	"feedwaterPumpPerformanceUnitCaps": "PERFORMANCE",
+	"feedwaterPumpPerformanceUnitPercent": "%",
+	"initPumpPerformanceMustBeWithinRangeToastMsg": "initial pump performance value must be within following range: [",
+
+	"feedwaterPumpMaxRotSpeedCaps": "MAXIMUM ROTATIONAL SPEED",
+	"maxRotSpeedMustBeWithinRangeToastMsg": "maximum rotational speed must be within following range: [",
+
+	"feedwaterPumpOnOffCtrlSettings": "Feedwater-Pump Settings (on/off)",
+
+	"feedwaterPumpStateUnitCaps": "PUMP STATE",
+	"feedwaterPumpStateUnitOn": "on",
+	"feedwaterPumpStateUnitOff": "off",
+
+	"apply": "Apply",
+	"cancel": "Cancel",
+	"trigger": "Trigger",
+
+	"controlModeCaps": "CONTROL MODE",
+	"controlModeAuto": "Auto",
+	"controlModeManual": "Manual",
+	"Ext. Ctrl": "Ext. Ctrl",
+
+	"valveStateUnitCaps": "VALVE STATE",
+	"valveStateUnitOpenClose": "open/close",
+	"valveStateUnitPercent": "%",
+
+	"pumpStateOnOffUnitCaps": "PUMP STATE",
+	"pumpStatePerformanceUnitCaps": "PUMP PERFORMANCE",
+	"pumpStateUnitOnOff": "on/off",
+	"pumpStateUnitPercent": "%",
+
+	"burnerStateUnitOnOff": "on/off",
+
+	"valvePositionUnitCaps": "VALVE POSITION",
+	"valvePositionUnitPercent": "%",
+
+	"valveStateCaps": "VALVE STATE",
+	"valveStateOpen": "open",
+	"valveStateClose": "close",
+
+	"valveTravelTimeUnitSec": "s",
+
+	"feedbackPotentiometerConnectionStateConnected": "connected",
+	"feedbackPotentiometerConnectionStateUnconnected": "unconnected",
+	"feedbackPotentiometerRawValueUnitUnitless": "1",
+
+	"flowrateUnitCaps": "FLOWRATE",
+	"flowrateUnitKgPerH": "kg/h",
+	"flowrateUnitTPerH": "t/h",
+	"flowrateUnitTimpPerH": "T/h",
+	"flowrateUnitKgPerS": "kg/s",
+
+	"cellConstant": "CELL CONSTANT",
+	"factor": "factor",
+	"maxCellConstant": "maximum cell constant value must be within following range: [",
+	"temperatureCoefficient": "TEMPERATURE COEFFICIENT",
+	"percentPerDegCelsius": "%/°C",
+	"maxTemperatureCoefficient": "maximum temperature coefficient value must be within following range: [",
+	"resistanceThermometer": "RESISTANCE THERMOMETER",
+	"connected": "connected",
+	"unconnected": "unconnected",
+
+	"remainingRuntimeCaps": "REMAINING RUNTIME",
+	"remainingRuntimeUnitHMS": "HH:MM:SS",
+	"remainingRuntimeCountdownUnitS": "s",
+	"remainingRuntimeCountdownUnitM": "m",
+	"maxRuntimeCountdown": "countdown start value must be within following range: [",
+
+	"countdownStartValueMustBeWithinRangeToastMsg": "countdown start value must be within following range: [",
+
+	"maxFlowrateCaps": "MAXIMUM FLOWRATE",
+
+	"maxFlowrateMustBeWithinRangeToastMsg": "maximum flowrate value must be within following range: [",
+
+	"valveTravelTimeCaps": "VALVE TRAVEL TIME",
+
+	"valveTravelTimeMustBeWithinRangeToastMsg": "valve travel time value must be within following range: [",
+
+	"feedbackPotentiometerConnectionStateCaps": "FEEDBACK POTENTIOMETER",
+
+	"rawValueClosedCaps": "POTENTIOMETER RAW VALUE CLOSED",
+
+	"rawValueClosedMustBeWithinRangeToastMsg": "raw value (closed) must be within following range: [",
+
+	"rawValueOpenCaps": "POTENTIOMETER RAW VALUE OPEN",
+
+	"rawValueOpenMustBeWithinRangeToastMsg": "raw value (open) must be within following range: [",
+
+	"waterLevelUnitPercent": "%",
+
+	"waterTemperatureUnitDegCelsius": "°C",
+
+	"waterConductivityUnitUsPerCm": "µS/cm",
+	"waterConductivityUnitPpm": "ppm",
+
+	"waterSludgeRatioUnitRatio": "ratio",
+
+	"sludgeMassUnitKg": "kg",
+
+	"volumeUnitMCubic": "m³",
+
+	"initValvePosMustBeWithinRangeToastMsg": "initial valve position must be within following range: [",
+
+	"bottomBlowdownValveSettings": "Bottom Blowdown Valve Settings",
+	"toolbarDesignatorSteamBoiler": "Steam Boiler",
+	"toolbarDesignatorBurner": "Burner",
+	"toolbarDesignatorBottomBlowdownValve": "Bottom Blowdown Valve",
+	"toolbarDesignatorContinuousBlowdownValve": "Continuous Blowdown Valve",
+	"toolbarDesignatorFeedwaterValve": "Feedwater Valve",
+	"toolbarDesignatorFeedwaterPump": "Feedwater Pump",
+
+	"toolbarDesignatorMajorTemperatureSensor": "Temperature Sensor",
+	"toolbarDesignatorMajorConductivityElectrode": "Conductivity Electrode",
+	"toolbarDesignatorMajorConductivityTransmitter": "Conductivity Transmitter",
+	"toolbarDesignatorMajorLowLevelElectrode": "Low Water Level Electrode",
+	"toolbarDesignatorMajorHighLevelElectrode": "High Water Level Electrode",
+	"toolbarDesignatorMajorLevelElectrodeTransmitter": "Level Electrode/Transmitter",
+	"toolbarDesignatorMajorLevelElectrode": "Level Electrode",
+	"toolbarDesignatorMajorLevelTransmitter": "Level Transmitter",
+
+	"toolbarDesignatorMajorVisualDisplayAndOperatingUnit": "Visual Display and Operating Unit",
+	"toolbarDesignatorMajorLowLevelSwitch": "Low Water Level Switch",
+	"toolbarDesignatorMajorHighLevelSwitch": "High Water Level Switch",
+	"toolbarDesignatorMajorTemperatureSwitch": "Temperature Switch",
+	"toolbarDesignatorMajorLevelController": "Level Controller",
+	"toolbarDesignatorMajorConductivityController": "Conductivity Controller",
+	"toolbarDesignatorMajorBlowdownTimer": "Blowdown Timer",
+
+	"limiterTitle": "Limiter",
+	"limiterDesc": "The URS 60/URS 61 safety control unit cyclically evaluates data telegrams from up to four safety sensors of types NRG 1..., NRG 2…, LRG 1… and TRV 5. The data are transferred via ISO 11898 CAN bus using the CANopen protocol, and saved. The safety functions are monitored by cyclical self-tests. The two integrated relays are switched off in the event of alarms or errors. Function tests and failure diagnosis can be performed using the control unit or an operating terminal.\nThe data telegrams contain the following information:\n■ Sensor alarms if the limits are exceeded\n■ Fault indications on the occurrence of faults in electronic or mechanical parts\n■ Excessive temperature in the sensor terminal boxes\nBehaviour in the event of alarms\nWhen level, temperature or conductivity alarms occur, both output contacts open after a power-off delayand this interrupts the safety circuit (fail-safe position). The safety control unit does not lock independently; this function must be implemented in the downstream circuit. The URS 60 or URS 61 can only activateone safety circuit (heater or pump) at any one time.\nThe safety circuit is interrupted without a delay if the following fault indications occur:\n■ Fault in sensors (negative self-test, excessively high temperature in terminal box)\n■ Fault in control unit (negative self-test)\n■ Communication failure\n Behaviour in the event of fault indications\nCyclical self-tests monitor the safety functions of the equipment in the safety control unit and sensors.\nFault indications are updated with each self-test. If there are no faults, the message is automaticallydeleted and the output contacts close once more. Alarms and fault indications are displayed by LEDs or anoperating unit.\nIn addition, you can choose to have alarms displayed on an external signalling device via the signallingoutputs, either with or without a delay. Faults are always indicated without a delay, however.",
+
+	"NRG_16_60_Desc": "When the water drops below the minimum level, the level electrode is no longer immersed, and the URS 60 / URS 61 safety control unit triggers an alarm. This “Low Water (LW)” switchpoint is determined by the length of the electrode extension. The level electrode monitors itself using the principle of conductive measurement. This means that a leaking or contaminated electrode insulator and/or a fault in the electrical connection also trigger an alarm. The level electrode is installed inside pressurised steam systems, tanks or feed lines in pressurised hot-water plants. A protective tube provided on site keeps it functioning reliably (see page 31 “Installation examples”). An NRG 1x-60 level electrode can be installed in a protective tube or level pot together with an NRG 1x-61 level electrode or continuous GESTRA NRG 26-60 level electrode. If a level electrode is installed in a lockable level pot outside the boiler, the connecting pipes must be flushed regularly. An SRL 6-60 monitoring unit is additionally required to monitor the flushing times and flushing process. If the steam pipe is ≥ 40 mm and the water pipe is ≥ 100mm, installation is regarded as internal. In this case, upstream monitoring of flushing processes is not required. In total, two NRG 1x-60 level electrodes can be operated in conjunction with a URS 60 / URS 61 safety control unit as a water level limiter system. An automatic self-test cyclically monitors the safety and function of the level electrode and measured value recorder. The data are transferred to the URS 60 / URS 61 safety control unit in the form of a Black Channel data telegram using the CANopen protocol via a CAN bus to ISO 11898, and saved there.\nThese data telegrams contain the following information:\n■ Alarm indications from the level electrode if water drops below the minimum level\n■ Fault indications in the event of faults in electronic or mechanical parts\n■ Excessive temperature in the level electrode terminal box",
+
+	"TRV_Desc": "The TRV 5-60 temperature transmitter has a dedicated TRG 5-6x temperature sensor, the readings of which are recorded and monitored redundantly. The actual temperature is displayed on the temperature transmitter itself, as are any system malfunctions that occur.\nSetting the limit value\nThe temperature in the transmitter terminal box is continually monitored by a temperature sensor on the PCB. An automatic self-test cyclically monitors the safety and function of the temperature sensor and the measured value acquisition. The data are transferred to the URS 6x safety control unit as a data telegram via the CANopen protocol using a CAN bus to ISO 11898.\nThese data telegrams contain the following information:\n■ Actual temperature\n■ Sensor alarm if the set “AL.Hi” limit is exceeded\n■ Malfunction indications in the event of faults in the electronic unit\n■ Excessive temperature in the transmitter terminal box",
+
+	"NRG_16_61_Desc": "If the water rises above the maximum level, the level electrode is immersed and the URS 60 / URS 61 safety control unit triggers an alarm. This “High Water (HW)” switchpoint is determined by the length of the electrode extension. The level electrode monitors itself using the principle of conductive measurement. This means that a fault in the electrical connection or electronic measuring equipment also triggers an alarm. The level electrode is installed inside pressurised steam systems, tanks or feed lines in pressurised hot-water plants. An NRG 1x-61 level electrode can be installed in a protective tube or level pot together with an NRG 1x-60 level electrode or continuous GESTRA NRG 26-60 level electrode. If a level electrode is installed in a lockable level pot outside the boiler, the connecting pipes must be flushed regularly. An SRL 6-60 monitoring unit is additionally required to monitor the flushing times and flushing process. If the steam pipe is ≥ 40 mm and the water pipe is ≥ 100 mm, installation is regarded as internal. In this case, upstream monitoring of flushing processes is not required. An automatic self-test cyclically monitors the safety and function of the level electrode and measured value recorder. The data are transferred to the URS 60 / URS 61 safety control unit in the form of a Black Channel data telegram using the CANopen protocol via a CAN bus to ISO 11898, and saved there.\nThese data telegrams contain the following information:\n■ Alarm signals from the level electrode if water rises above the maximum level\n■ Fault indications in the event of faults in electronic or mechanical parts\n■ Excessive temperature in the level electrode terminal box",
+
+	"LRG_16_6X_Title": "Conductivity Electrode",
+	"LRG_16_6X_Desc": "LRG 1x-6x conductivity electrodes are used in combination with the URS 60/URS 61 safety control unit as a conductivity limiter and in combination with an LRR 1-60 control unit as a continuous blowdown regulator in steam boiler systems and hot-water plants.",
+
+	"NRG_26_20_Title": "Level Electrode",
+	"NRG_26_20_Desc": "The NRG 26-60 level electrode can be used together with an NRR 2-60/NRR 2-61 level controller to continuously measure the water level in steam boiler and hot water installations or in condensate and feedwater tanks. In combination with the NRR 2-60/NRR 2-61 level controller, the electrode can be used as a level control system with MIN/MAX alarm, for example.",
+
+	"NRGT_26_2_Title": "Level Transmitter",
+	"NRGT_26_2_Desc": "NRGT 26-2 level transmitters can be used to continually measure the water level in pressurised steam and hot-water plants, or in condensate and feedwater tanks. The calibrated measuring range from 0 % to 100 % constitutes the linear profile of the 4-20 mA current output. The transmitter’s secure 4-20 mA actual value output (SIL 2) can be used with a suitable level controller, as a water level controller with MIN/MAX alarm, for example.",
+
+	"LRR_Title": "Conductivity Controller",
+	"LRR_Desc": "The conductivity controller can be used in conjunction with LRG 16-60, LRG 16-61 and LRG 17- 60 conductivity electrodes as a conductivity controller in pressurised steam and hot-water plants and in condensate and feedwater tanks. The conductivity controller indicates when MAX or MIN conductivity has been reached, opens or closes a continuous blowdown valve and can actuate an intermittent blowdown valve.",
+
+	"NRR_Title": "Level Controller",
+	"NRR_Desc": "The level controller can be used in conjunction with NRG 26-60 and NRG 26-61 level electrodes as a water level controller and limit switch in steam and water boilers and in condensate and feedwater tanks.",
+
+	"URB_60_Title": "Visual Display and Operating Unit",
+	"URB_60_Desc": "The URB 60 visual display and operating unit can be used in conjunction with various GESTRA CAN bus units from the SPECTORconnect series. The URB 60 is designed for installation in a control cabinet door or switch panel. It may only be used when correctly installed.",
+	"URB_60_Settings": "URB 60 Settings",
+
+	"infoTitleSteamBoiler": "Steam Boiler",
+	"infoDescriptionSteamBoiler": "The steam boiler is a heat exchange system where water is heated to its’ boiling point via combustion of flue gases.\n\nThe combusted flue gases are blown through a number of tubes submerged in water. On its' path through the tubes heat is transferred to the water. The heat energy supplied to the water evaporates water into steam, that is then taken into piping to be used in specific heating applications.",
+
+	"infoTitleBurner": "Burner",
+	"infoDescriptionBurner": "The burner is a device where fuel and air are mixed in the correct proportion, blown into a combustion chamber and combusted forming a flame. The main function of the burner is to keep the pressure inside the boiler within a certain desired range.",
+
+	"infoTitleBottomBlowdownValve": "Bottom Blowdown Valve",
+	"infoDescriptionBottomBlowdownValve": "The bottom blowdown valve is an actuator that blows down sludge accumulated on the bottom of the boiler.",
+
+	"infoTitleContinuousBlowdownValve": "Continuous Blowdown Valve",
+	"infoDescriptionContinuousBlowdownValve": "The continuous blowdown valve is an actuator that blows water out of the boiler to decrease the salt content / conductivity of the boiler water.",
+
+	"infoTitleFeedwaterValve": "Feedwater Valve",
+	"infoDescriptionFeedwaterValve": "The feedwater valve is an actuator that feeds water into the boiler to keep the water level at the desired value.",
+
+	"infoTitleFeedwaterPump": "Feedwater Pump",
+	"infoDescriptionFeedwaterPump": "The feedwater pump is an actuator that pumps water into the boiler to keep the water level at the desired value.",
+
+	"infoTitleTemperatureSensor": "Temperature Sensor",
+	"infoDescriptionTemperatureSensor": "The temperature sensor is used to measure the temperature in the boiler. It's ohmic resistance changes as a function of temperature. A voltage, produced by the change of resistance under application of a constant current, is measured and forwarded to the temperature switch. The input signal is converted by the switch to a temperature value in °C.",
+
+	"infoTitleConductivityElectrode": "Conductivity Electrode",
+	"infoDescriptionConductivityElectrode": "The conductivity electrode is used to measure the water conductivity in the boiler. It generates a conductivity-dependent current which is forwarded to the conductivity controller. The input signal is converted by the controller (depending on its calibration) to a conductivity value in µS/cm or ppm.",
+
+	"infoTitleConductivityTransmitter": "Conductivity Transmitter",
+	"infoDescriptionConductivityTransmitter": "The conductivity transmitter is used to measure the water conductivity in the boiler. It generates a conductivity-dependent and measuring range scaled 4-20 mA current which is forwarded to the conductivity controller. The input signal is converted by the controller to a conductivity value in µS/cm or ppm.",
+
+	"infoTitleLowLevelElectrode": "Low Water Level Electrode",
+	"infoDescriptionLowLevelElectrode": "The low water level electrode is used to detect when the water level in the boiler falls below a desired switchpoint. The switchpoint is determined by the length of the probe rod. When the probe is exposed, a signal is forwarded to the low water level switch that triggers an alarm and switches off the burner.",
+
+	"infoTitleHighLevelElectrode": "High Water Level Electrode",
+	"infoDescriptionHighLevelElectrode": "The high water level electrode is used to detect when the water level in the boiler rises above a desired switchpoint. The switchpoint is determined by the length of the probe rod. When the probe enters the liquid, a signal is forwarded to the high water level switch that triggers an alarm and switches off the feedwater supply.",
+
+	"infoTitleLevelElectrodeTransmitter": "Level Electrode/Transmitter",
+	"infoDescriptionLevelElectrodeTransmitter": "The level electrode/transmitter is used to measure the water level in the boiler. It generates a level-dependent current which is forwarded to the level controller. The input signal is converted by the controller to a percentage of the boiler measuring range (0% - 100%).",
+
+	"infoTitleLevelElectrode": "Level Electrode",
+	"infoDescriptionLevelElectrode": "The level electrode is used to measure the water level in the boiler. It generates a level-dependent current which is forwarded to the level controller. The input signal is converted by the controller (depending on its calibration) to a percentage of the boiler measuring range (0% - 100%).",
+
+	"infoTitleLevelTransmitter": "Level Transmitter",
+	"infoDescriptionLevelTransmitter": "The level transmitter is used to measure the water level in the boiler. It generates a level-dependent and and measuring range scaled 4-20 mA current which is forwarded to the level controller. The input signal is recognised by the controller as a percentage of the boiler measuring range (0% - 100%).",
+
+	"infoTitleVisualDisplayAndOperatingUnitURB55": "Visual Display and Operating Unit",
+	"infoDescriptionVisualDisplayAndOperatingUnitURB55": "The operating and display unit is the device which allows the user to interact with the system. It can be used to setup and monitor numerous system parameters and manually control actuators if necessary.",
+
+	"infoTitleLowLevelSwitch": "Low Water Level Switch",
+	"infoDescriptionLowLevelSwitch": "The low water level switch is used in conjunction with one or two low water level probes to limit the water level in the boiler. When the water level falls below the switchpoint determined by the length of the probe rod, the low water level probes are exposed. An alarm is triggered and the burner is switched off.",
+
+	"infoTitleHighLevelSwitch": "High Water Level Limiter",
+	"infoDescriptionHighLevelSwitch": "The high water level switch is used in conjunction with a high water level probe to limit the water level in the boiler. When the water level rises above the switchpoint determined by the length of the probe rod, the high water level probe enters the liquid. An alarm is triggered and the feedwater supply is switched off.",
+
+	"infoTitleTemperatureSwitch": "Temperature Switch",
+	"infoDescriptionTemperatureSwitch": "The temperature switch is used in conjunction with a temperature sensor to monitor or limit the temperature in the boiler. When the temperature falls below or rises above the admissible value, the temperature switch triggers an alarm or switches off the heating.",
+
+	"infoTitleLevelController": "Level Controller",
+	"infoDescriptionLevelController": "The level controller is used in conjunction with a level transmitter and a feedwater actuator to control the water level in the boiler. It processes the level-dependent signal from the level transmitter and controls the feedwater actuator so that the water level is permanently kept close to a desired setpoint.",
+
+	"infoTitleUniversalConvector": "Universal Converter",
+	"infoDescUniversalConvector": "The universal converter converts the analogue 4-20 mA signals from a connected level electrode into CAN bus telegrams. The data are transferred to an ISO 11898 CAN bus via the CANopen protocol. Function tests and failure diagnosis are performed using the URB 60 visual display and operating unit.",
+
+	"infoTitleConductivityController": "Conductivity Controller",
+	"infoDescriptionConductivityController": "The conductivity controller is used in conjunction with a conductivity probe, a blowdown valve and an optional bottom blowdown valve to control the water quality in the boiler. It processes the water-conductivity-dependent signal from the conductivity probe and controls the blowdown valve so that the water conductivity is permanently kept close to a desired setpoint.\nOptionally an integrated bottom blowdown timer function can be used to open the optional bottom blowdown valve in desired intervals for a short period of time and blowdown sludge that accumulates on the bottom of the boiler over time.",
+
+	"infoTitleBlowdownTimer": "Blowdown Timer",
+	"infoDescriptionBlowdownTimer": "The blowdown timer is used to open the bottom blowdown valve in desired intervals for a short period of time and blowdown sludge that accumulates on the bottom of the boiler over time.",
+
+	"toastLowWaterLevelProbe1Activated": "level electrode 1 activated",
+	"toastLowWaterLevelProbe1Deactivated": "level electrode 1 deactivated",
+	"toastLowWaterLevelProbe2Activated": "level electrode 2 activated",
+	"toastLowWaterLevelProbe2Deactivated": "level electrode 2 deactivated",
+
+	"URS_ToastSensor1Activated": "Sensor 1 activated",
+	"URS_ToastSensor1Deactivated": "Sensor 1 deactivated",
+	"URS_ToastSensor2Activated": "Sensor 2 activated",
+	"URS_ToastSensor2Deactivated": "Sensor 2 deactivated",
+	"URS_ToastSensor3Activated": "Sensor 3 activated",
+	"URS_ToastSensor3Deactivated": "Sensor 3 deactivated",
+	"URS_ToastSensor4Activated": "Sensor 4 activated",
+	"URS_ToastSensor4Deactivated": "Sensor 4 deactivated",
+
+	"toastControllerGroupID1": "Controller group 1",
+	"toastControllerGroupID2": "Controller group 2",
+	"toastControllerGroupID3": "Controller group 3",
+	"toastControllerGroupID4": "Controller group 4",
+	"toastBaudRate50": "Baud rate 50 kBit/s",
+	"toastBaudRate250": "Baud rate 250 kBit/s",
+
+	"toastSignalDelayOffBaudRate50": "Signal Delay Off, Baud rate 50 kBit/s",
+	"toastSignalDelayOnBaudRate50": "Signal Delay On, Baud rate 50 kBit/s",
+	"toastSignalDelayOffBaudRate250": "Signal Delay Off, Baud rate 250 kBit/s",
+	"toastSignalDelayOnBaudRate250": "Signal Delay On, Baud rate 250 kBit/s",
+
+	"toastSafetyTemperatureMonitorMode": "safety temperature monitor mode activated",
+	"toastSafetyTemperatureLimiterMode": "safety temperature limiter mode activated",
+
+	"toastOutputSetForMaxAlarm": "output contact set for MAX alarm",
+	"toastOutputSetForMinAlarm": "output contact set for MIN alarm",
+
+	"toastFillControlActivated": "fill control activated",
+	"toastDischargeControlActivated": "discharge control activated",
+	"toastInputForConnectingLevelElectrode": "input for connecting level electrode",
+	"toastInputForConnectingLevelTransmitter": "input for connecting level transmitter",
+
+	"toastMinRelayOutputAsMinAlarm": "output contact set for MIN alarm",
+	"toastMinRelayOutputForActuatingIntermittentBlowdownValve": "output contact set for actuating intermittent blowdown valve",
+	"toastNodeID72": "node-id = 72",
+	"toastNodeID69": "node-id = 69",
+	"toastOut2AsActualValueOutputX": "actual value output (X) activated",
+	"toastOut2AsManipulatedVariableOutputYw": "manipulated variable output (Yw) activated",
+	"toastElectricalConductivityMeasuredInMicroSiemensPerCm": "electrical conductivity measured in µS/cm",
+	"toastElectricalConductivityMeasuredInPartsPerMillion": "electrical conductivity measured in ppm",
+
+	"toastBurnerFunctionActivated": "burner function activated",
+	"toastStandbyFunctionActivated": "standby function activated",
+
+	"btnCaptionApply": "Apply",
+	"btnCaptionCancel": "Cancel",
+	"btnCaptionTrigger": "Trigger",
+	"btnCaptionOk": "OK",
+	"selectModalNone": "None",
+	"lowLevelSwitchSelectionModal_Title": "Select: Low Water Level Switch",
+	"lowLevelSwitchSelectionModal_None": "None",
+	"lowLevelSwitchSelectionModal_NRS1_50_1E": "NRS 1-50 1E",
+	"lowLevelSwitchSelectionModal_NRS1_50_2E": "NRS 1-50 2E",
+
+	"lowLevelElectrodeSelectionModal_Title": "Select: Low Water Level Electrode",
+	"lowLevelElectrodeSelectionModal_None": "None",
+	"lowLevelElectrodeSelectionModal_NRG16_50": "NRG 16-50",
+
+	"highLevelSwitchSelectionModal_Title": "Select: High Water Level Switch",
+	"highLevelSwitchSelectionModal_None": "None",
+	"highLevelSwitchSelectionModal_NRS1_51": "NRS 1-51",
+
+	"highLevelElectrodeSelectionModal_Title": "Select: High Water Level Electrode",
+	"highLevelElectrodeSelectionModal_None": "None",
+	"highLevelElectrodeSelectionModal_NRG16_51": "NRG 16-51",
+
+	"temperatureSwitchSelectionModal_Title": "Select: Temperature Switch",
+	"temperatureSwitchSelectionModal_None": "None",
+	"temperatureSwitchSelectionModal_TRS5_50": "TRS 5-50",
+	"temperatureSwitchSelectionModal_TRS5_52": "TRS 5-52",
+
+	"temperatureSensorSelectionModal_Title": "Select: Temperature Sensor",
+	"temperatureSensorSelectionModal_None": "None",
+	"temperatureSensorSelectionModal_TRG5_63": "TRG 5-63",
+
+	"levelControllerSelectionModal_Title": "Select: Level Controller",
+	"universalConverterSelectionModal_Title": "Select: Universal Converter",
+	"None": "None",
+	"NRR 2-50": "NRR 2-50",
+	"NRR 2-51": "NRR 2-51",
+	"NRR 2-52": "NRR 2-52",
+	"NRR 2-52 3K": "NRR 2-52 3C",
+	"NRR 2-53": "NRR 2-53",
+	"NRR 2-53 3K": "NRR 2-53 3C",
+
+	"levelElectrodeTransmitterSelectionModal_Title": "Select: Level Electrode/Transmitter",
+	"levelElectrodeTransmitterSelectionModal_None": "None",
+	"levelElectrodeTransmitterSelectionModal_NRG26_21": "NRG 26-21",
+	"levelElectrodeTransmitterSelectionModal_NRG21_11": "NRG 21-11",
+	"levelElectrodeTransmitterSelectionModal_NRG21_51": "NRG 21-51",
+	"levelElectrodeTransmitterSelectionModal_NRGT26_2": "NRGT 26-2",
+
+	"conductivityControllerSelectionModal_Title": "Select: Conductivity Controller",
+	"conductivityControllerSelectionModal_None": "None",
+	"conductivityControllerSelectionModal_LRR1_50_PRS_50": "LRR 1-50 + PRS 50",
+	"conductivityControllerSelectionModal_LRR1_51_PRS_50": "LRR 1-51 + PRS 50",
+	"conductivityControllerSelectionModal_LRR1_52": "LRR 1-52",
+	"conductivityControllerSelectionModal_LRR1_53": "LRR 1-53",
+	"conductivityControllerSelectionModal_LRR1_60": "LRR 1-60",
+
+	"conductivityElectrodeSelectionModal_Title": "Select: Conductivity Electrode",
+	"conductivityElectrodeSelectionModal_None": "None",
+	"conductivityElectrodeSelectionModal_LRG16_4": "LRG 16-4",
+	"conductivityElectrodeSelectionModal_LRG16_9": "LRG 16-9",
+	"conductivityElectrodeSelectionModal_LRG16_60": "LRG 16-60",
+	"conductivityElectrodeSelectionModal_LRG16_61": "LRG 16-61",
+
+	"conductivityTransmitterSelectionModal_Title": "Select: Conductivity Transmitter",
+	"conductivityTransmitterSelectionModal_None": "None",
+	"conductivityTransmitterSelectionModal_LRGT16_3": "LRGT 16-3",
+	"conductivityTransmitterSelectionModal_LRGT16_4": "LRGT 16-4",
+	"conductivityTransmitterSelectionModal_LRG16_60": "LRG 16-60",
+	"conductivityTransmitterSelectionModal_LRG16_61": "LRG 16-61",
+
+	"systemLimitsExceededTitle": "Exceedence of System Limits",
+	"systemLimitsExceededWaterLevelTooLow": "Simulation has been stopped due to exceedance of system limits.\nWater level dropped below 0%.\n\nPlease restart simulation if desired.",
+	"systemLimitsExceededWaterLevelTooHigh": "Simulation has been stopped due to exceedance of system limits.\nWater level rose above 99%.\n\nPlease restart simulation if desired.",
+	"systemLimitsExceededPressureTooLow": "Simulation has been stopped due to exceedance of system limits.\nPressure dropped below valid operating range.\n\nPlease restart simulation if desired.",
+	"systemLimitsExceededPressureTooHigh": "Simulation has been stopped due to exceedance of system limits.\nPressure rose above valid operating range.\n\nPlease restart simulation if desired.",
+
+	"trs_SelectErrorTriggerTitle": "Select: Temperature Switcher Error",
+	"none": "None",
+	"trs5_50_E.01": "E.01: Temperature sensor defective, reading too low",
+	"trs5_50_E.02": "E.02: Temperature sensor defective, reading too high",
+	"trs5_52_E.005": "E.005: Temperature sensor defective, reading too low",
+	"trs5_52_E.006": "E.006: Temperature sensor defective, reading too high",
+
+	"nrr_SelectErrorTriggerTitle": "Select: Level Controller Error",
+	"nrr_A.003": "A.003: External alarm input triggered (Controller software version 311178.13 or later)",
+	"nrr_E.005_Tr": "E.005: Level transmitter defective, measuring current < 4 mA",
+	"nrr_E.006_Tr": "E.006: Level transmitter defective, measuring current > 20 mA",
+	"nrr_E.005_El": "E.005: Level electrode defective, measuring voltage < 0.5 VDC",
+	"nrr_E.006_El": "E.006: Level electrode defective, measuring voltage > 7 VDC",
+	"nrr_E.015": "E.015: Steam flowrate measuring current < 4 mA",
+	"nrr_E.016": "E.016: Steam flowrate measuring current > 20 mA",
+	"nrr_E.017": "E.017: Feedwater flowrate measuring current < 4 mA",
+	"nrr_E.018": "E.018: Feedwater flowrate measuring current > 20 mA",
+
+	"prs_SelectErrorTriggerTitle": "Select: Blowdown Timer Error",
+	"prs_A.003": "A.003: Limit switch monitoring failed",
+
+	"lrr_SelectErrorTriggerTitle": "Select: Conductivity Controller Error",
+	"lrr_E.001": "E.001: Below temperature sensor measuring range",
+	"lrr_E.002": "E.002: Above temperature sensor measuring range",
+	"lrr_E.005_Tr": "E.005: Conductivity transmitter defective, measuring current < 4 mA",
+	"lrr_E.006_Tr": "E.006: Conductivity transmitter defective, measuring current > 20 mA",
+	"lrr_E.005_El": "E.005: Conductivity electrode defective, measuring voltage < 0.5 VDC",
+	"lrr_E.006_El": "E.006: Conductivity electrode defective, measuring voltage > 7 VDC",
+
+	"errorElectricalConnection": "Malfunction in the electrical connection",
+	"errorLevelProbe": "Malfunction in the level probe",
+	"nrs1_51_SelectErrorTriggerTitle": "Select: High Level Switcher Error",
+	"nrg_16_60_SelectErrorTriggerTitle": "Select: Low Level Electrode Error",
+	"nrg_16_61_SelectErrorTriggerTitle": "Select: High Level Electrode Error",
+	"mainPanelReset": "Reset",
+
+	"addSettingsTitle": "Add Settings",
+	"settingsSnapshotName": "Settings Name",
+	"selectSettingsTitle": "Select Settings",
+
+	"confirmDialogTitle": "Confirmation Dialog",
+
+	"compatibilityLevelControllerAndLevelProbeNotification": "You should change the level controller's switch settings",
+	"compatibilityLevelControllerAndLevelProbeModalTitle": "Module Compatibility Error",
+
+	"URS_NO_CONNECTED_TITLE": "URS_60_NO_CONNECTED_TITLE",
+	"URS_NO_CONNECTED_DESC": "URS_60_NO_CONNECTED_DESC",
+
+	"expiryControlInfoNotification": "The switch settings of the level controller (process control) do not make sense in this simulation constellation.",
+	"expiryControlInfoModalTitle": "Note on the simulation constellation",
+
+	"introModalTitle": "Important Information",
+	"introModalText": "Attention! The Spector Simulator is a training tool to illustrate the functions of the unit. The boiler is not a physical representation of a real boiler. Settings must always be adapted to the real system. Never copy directly from the training tool!",
+	"introModalCheckboxText": "Do not show this message again.",
+
+	"Come": "Come",
+	"Gone": "Gone",
+	"Description": "Description",
+	"Group": "Group",
+	"Limiter": "Limiter",
+	"Channel": "Channel",
+	"Conductivity": "Conductivity",
+	"Level": "Level",
+	"Alarm limit exceeded": "Alarm limit exceeded",
+	"No communication": "No communication",
+	"Device-specific error codes": "Device-specific error codes",
+	"Warnings": "Warnings",
+	"Temperature": "Temperature",
+	"Alarm": "Alarm",
+	"Setpoint": "Setpoint",
+	"Standby": "Standby",
+	"Blowdown": "Blowdown",
+	"Hand": "Hand",
+	"Raw data": "Raw data",
+	"Operating pos.": "Operating pos.",
+	"24h- purging": "24h- purging",
+	"On": "On",
+	"Off": "Off",
+	"Purging interval": "Purging interval",
+	"Purging time": "Purging time",
+	"Blowdown interval": "Blowdown interval",
+	"Blowdown time": "Blowdown time",
+	"Blowdown pulses": "Blowdown pulses",
+	"Pulse interval": "Pulse interval",
+	"Blowdown active": "Blowdown active",
+	"Fct. MIN rel.": "Fct. MIN rel.",
+	"Value": "Value",
+	"Corr. factor": "Corr. factor",
+	"Tempcoeff.": "Tempcoeff.",
+	"Attenuation": "Attenuation",
+	"Range": "Range",
+	"Neutral Band": "Neutral band",
+	"Valve travel time": "Valve travel time",
+	"Ref. meas. value": "Ref. meas. value",
+	"Raw Operating pos.": "Operating pos.",
+	"Position": "Position",
+	"CANBus quality": "CanBus quality",
+	"Limit": "Limit",
+	"Test limiter 1 chanel": "Test limiter 1 chanel",
+	"Test limiter 2 chanel": "Test limiter 2 chanel",
+	"Controller": "Controller",
+	"Electrode": "Electrode",
+	"Rel. delay t.": "Rel. delay t.",
+	"Parameter": "Parameter",
+	"Relais delay t.": "Relais delay t.",
+	"Switch-on delay": "Switch-on delay",
+	"Switch-off delay": "Switch-off delay",
+	"Control direc.": "Control direc.",
+	"Fill": "Fill",
+	"Discharge": "Discharge",
+	"Cal.": "Cal.",
+	"Feedwater flowr.": "Feedwater flowr.",
+	"Steam flowrate": "Steam flowrate",
+	"Eval. Factor": "Eval. Factor",
+	"Function": "Function",
+	"Valve": "Valve",
+	"Pumps": "Pumps",
+	"Pump": "Pump",
+	"Switch-off threshold": "Switch-off threshold",
+	"Switch-on threshold": "Switch-on threshold",
+	"Forced switchover": "Forced switchover",
+	"Man. operating mod": "Man. operating mod",
+	"Switch on pump": "Switch on pump",
+	"Switch off pump": "Switch off pump",
+	"Call. point": "Call. point",
+	"Old": "Old",
+	"New": "New",
+	"Type": "Type",
+	"Operating Time": "Operating Time",
+	"Def. op. Time": "Def. op. Time",
+	"Delete operating time?": "Delete operating time?",
+	"Tamb": "Tamb",
+	"Warng. Tamb": "Warng. Tamb",
+	"Delete switching cycles?": "Delete switching cycles?",
+	"Alarm Counter": "Alarm Counter",
+	"Error Counter": "Error Counter",
+	"Version": "Version",
+	"Read device list again": "Read device list again",
+	"Time": "Time",
+	"Date": "Date",
+	"Daylight saving time": "Daylight saving time",
+	"DST starts": "DST starts",
+	"DST ends": "DST ends",
+	"Month": "Month",
+	"Week": "Week",
+	"Weekday": "Weekday",
+	"Hour[s] forward": "Hour[s] forward",
+	"Hour[s] back": "Hour[s] back",
+	"Target": "Target",
+	"Subnetmask": "Subnetmask",
+	"Gateway": "Gateway",
+	"Modbus TCP": "Modbus TCP",
+	"Port": "Port",
+	"Datapoint list": "Datapoint list",
+	"Device list": "Device list",
+	"Read in again": "Read in again",
+	"Baud rate": "Baud rate",
+	"Alarm list": "Alarm list",
+	"Automatic": "Automatic",
+	"Manual": "Manual",
+	"Starts. temp. 100%": "Starts. temp. 100%",
+	"Display": "Display",
+	"Calibrate": "Calibrate",
+	"Switch baud rate": "Switch baud rate",
+	"Startup": "Startup",
+	"Datalogs / Alarm": "Datalogs / Alarm",
+	"Predictive": "Predictive",
+	"maintenance": "maintenance",
+	"Error memory": "Error memory",
+	"Info": "Info",
+	"Save": "Save",
+	"Reading": "Reading",
+	"Firmware V1.25": "Firmware V1.25",
+	"Update": "Update",
+	"Run": "Run",
+	"PLC Reset": "PLC Reset",
+	"PLC Start": "PLC Start",
+	"Startup info": "Startup info",
+	"Login info": "Login info",
+	"Connect USB device": "Connect USB device",
+	"Start read out": "Start read out",
+	"Stop read out": "Stop read out",
+	"Read all": "Read all",
+	"Example": "Example",
+	"Input": "Input",
+	"Comparative data": "Comparative data",
+	"Min alarm": "Min alarm",
+	"January": "January",
+	"February": "February",
+	"March": "March",
+	"April": "April",
+	"May": "May",
+	"June": "June",
+	"July": "July",
+	"August": "August",
+	"September": "September",
+	"October": "October",
+	"November": "November",
+	"December": "December",
+	"Monday": "Monday",
+	"Tuesday": "Tuesday",
+	"Wednesday": "Wednesday",
+	"Thursday": "Thursday",
+	"Friday": "Friday",
+	"Saturday": "Saturday",
+	"Sunday": "Sunday",
+	"First": "First",
+	"Second": "Second",
+	"Third": "Third",
+	"Last": "Last"
+}

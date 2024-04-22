@@ -1,0 +1,700 @@
+{
+	"mainPanelOperation": "Betriebsart",
+	"mainPanelSteam": "DAMPF",
+	"mainPanelFeedwater": "SPEISEWASSER",
+	"mainPanelSettings": "Einstellungen",
+	"mainPanelError": "Fehler",
+
+	"settingsDialogAreaVisualization": "Visualisierung",
+	"settingsDialogAreaSimulation": "Simulation",
+	"settingsDialogAreaSpecifcation": "Spezifikation",
+
+	"settingsDialogAreaHeadUpDisplay": "Head-up-Display",
+	"settingsDialogAreaSimStartVals": "Simulationsstartwerte",
+	"settingsDialogAreaSpecs": "Spezifikationen",
+
+	"generalSettings": "Allgemeine Einstellungen",
+
+	"languageCaps": "SPRACHE",
+	"langEng": "English",
+	"langGer": "German",
+
+	"intendedUseCaps": "VERWENDUNGSZWECK",
+	"intendedUseMarketing": "Demonstration",
+	"intendedUseTraining": "Training",
+
+	"operationModeCaps": "BETRIEBSART",
+	"opModeNormal": "Normal",
+	"opModeStandby": "Standby",
+
+	"steamUnitCaps": "EINHEIT DAMPF",
+	"steamUnitMetricTonsPerHourLong": "t/h (metrisch)",
+	"steamUnitLongTonsPerHourLong": "T/h (imperial)",
+
+	"feedwaterUnitCaps": "EINHEIT SPEISEWASSER",
+	"feedwaterUnitMetricTonsPerHourLong": "t/h (metrisch)",
+	"feedwaterUnitLongTonsPerHourLong": "T/h (imperial)",
+
+	"steamFeedwaterUnitMetricTonsPerHourShort": "t/h",
+	"steamFeedwaterUnitLongTonsPerHourShort": "T/h",
+
+	"urb55Settings": "URB55 Einstellungen",
+
+	"trendTimeWindowCaps": "TREND-ZEITFENSTER",
+	"quarterOfAnHour": "15 Minuten",
+	"thirdOfAnHour": "20 Minuten",
+	"halfOfAnHour": "30 Minuten",
+	"threeQuartersOfAnHour": "45 Minuten",
+	"oneHour": "1 Stunde",
+	"oneAndAHalfHours": "1,5 Stunden",
+
+	"boilerSettings": "Kessel Einstellungen",
+
+	"boilerPressureCaps": "DRUCK",
+	"workPressureUnitBar": "bar",
+	"workPressureUnitPsi": "psi",
+
+	"boilerTemperatureCaps": "TEMPERATUR",
+	"boilerTemperatureUnitDegCelsius": "°C",
+
+	"boilerLevelCaps": "WASSERNIVEAU",
+	"boilerLevelUnitPercent": "%",
+
+	"boilerConductivityCaps": "WASSERLEITFÄHIGKEIT",
+	"boilerConductivityUnitUsPerCm": "µS/cm",
+	"boilerConductivityUnitPpm": "ppm",
+
+	"boilerInitPressureCaps": "DRUCK (ABS)",
+	"initPressureMustBeWithinRangeToastMsg": "Startdruck muss im folgenden Bereich liegen: [",
+
+	"boilerInitWaterLevelCaps": "WASSERNIVEAU",
+	"initWaterLevelMustBeWithinRangeToastMsg": "Startwasserniveau muss im folgenden Bereich liegen: [",
+
+	"boilerInitWaterConductivityCaps": "WASSERLEITFÄHIGKEIT",
+	"initWaterConductivityMustBeWithinRangeToastMsg": "Startwasserleitfähigkeit muss im folgenden Bereich liegen: [",
+
+	"boilerInitSludgeMassCaps": "SCHLAMMMASSE",
+	"initSludgeMassMustBeWithinRangeToastMsg": "Startschlammmasse muss im folgenden Bereich liegen: [",
+
+	"boilerTotalVolumeCaps": "GESAMTVOLUMEN",
+	"boilerTotalVolumeMustBeWithinRangeToastMsg": "Kesselgesamtvolumen muss im folgenden Bereich liegen: [",
+
+	"boilerMaxVisibleSludgeMassCaps": "MAXIMAL SICHTBARE SCHLAMMMASSE",
+	"maxVisibleSludgeMassMustBeWithinRangeToastMsg": "Max. sichtbare Schlammmasse muss im folgenden Bereich liegen: [",
+
+	"burnerSettings": "Brenner Einstellungen",
+
+	"burnerInitStateCaps": "ZUSTAND",
+	"initStateOn": "An",
+	"initStateOff": "Aus",
+
+	"burnerPowerCaps": "LEISTUNG",
+	"burnerPowerUnitkW": "kW",
+	"burnerPowerUnitMW": "MW",
+
+	"burnerFuelConsumCaps": "KRAFTSTOFFVERBRAUCH",
+	"burnerFuelConsumUnitNm3PerS": "nm³/s",
+	"burnerFuelConsumUnitHNm3PerM": "hnm³/m",
+	"burnerFuelConsumUnitHNm3PerH": "hnm³/h",
+
+	"burnerSwitchpointOnPresAbsCaps": "AN SCHALTPUNKT (DRUCK ABS)",
+	"burnerSwitchpointOffPresAbsCaps": "AUS SCHALTPUNKT (DRUCK ABS)",
+
+	"switchpointOnOffMustBeWithinRangeToastMsg": "An/Aus-Schaltpunktwert muss im folgenden Bereich liegen: [",
+	"switchpointOnMustBeSmallerThanOffToastMsg": "An-Schaltpunktwert muss kleiner sein als Aus-Schaltpunktwert",
+	"cappedToastMsg": "min. ein Wert lag unterhalb seines Bereichs und wurde auf das Bereichs-Minimum gesetzt",
+
+	"burnerMaxPowerCaps": "MAXIMAL LEISTUNG",
+	"maxPowerMustBeWithinRangeToastMsg": "Maximal Leistung muss im folgenden Bereich liegen: [",
+
+	"burnerFuelConsumCoefCaps": "KRAFTSTOFFVERBRAUCHSKOEFFIZIENT",
+	"burnerFuelConsumCoefUnitNm3PerKwTimesS": "nm³/kW*s",
+	"burnerFuelConsumCoefUnitNm3PerKwTimesH": "nm³/kW*h",
+	"fuelConsumCoefMustBeWithinRangeToastMsg": "Kraftstoffverbrauchskoeffizient muss im folgenden Bereich liegen: [",
+
+	"burnerHeatTransferCoefCaps": "WÄRMEÜBERTRAGUNGSKOEFFIZIENT",
+	"burnerHeatTransferCoefUnitKjPerKwTimesS": "kJ/kW*s",
+	"heatTransferCoefMustBeWithinRangeToastMsg": "Wärmeübertragungskoeffizient muss im folgenden Bereich liegen: [",
+
+	"burnerStateUnitCaps": "ZUSTAND",
+	"burnerStateUnitOn": "An",
+	"burnerStateUnitOff": "Aus",
+
+	"feedwaterValveElectricSettings": "Speisewasserventil Einstellungen",
+	"feedwaterValveElectroPneumaticSettings": "Speisewasserventil Einstellungen",
+
+	"feedwaterTemperatureCaps": "SPEISEWASSERTEMPERATUR",
+	"feedwaterTemperatureMustBeWithinRangeToastMsg": "Speisewassertemperatur muss im folgenden Bereich liegen: [",
+
+	"feedwaterConductivityCaps": "SPEISEWASSERLEITFÄHIGKEIT",
+	"feedwaterConductivityMustBeWithinRangeToastMsg": "Speisewasserleitfähigkeit muss im folgenden Bereich liegen: [",
+
+	"feedwaterSludgeRatioCaps": "SPEISEWASSERSCHLAMMANTEIL",
+	"feedwaterSludgeRatioMustBeWithinRangeToastMsg": "Speisewasserschlammanteil muss im folgenden Bereich liegen: [",
+
+	"feedwaterPumpFreqCtrlSettings": "Speisewasserpumpe Einstellungen",
+	"feedwaterPumpTwoFreqCtrlSettings": "Speisewasserpumpe-2 Einstellungen",
+
+	"feedwaterPumpRotSpeedUnitCaps": "DREHZAHL",
+	"feedwaterPumpRotSpeedUnitRpm": "U/min",
+
+	"feedwaterPumpPerformanceUnitCaps": "LEISTUNG",
+	"feedwaterPumpPerformanceUnitPercent": "%",
+	"initPumpPerformanceMustBeWithinRangeToastMsg": "Startpumpenleistung muss im folgenden Bereich liegen: [",
+
+	"feedwaterPumpMaxRotSpeedCaps": "MAXIMALDREHZAHL",
+	"maxRotSpeedMustBeWithinRangeToastMsg": "Maximaldrehzahl muss im folgenden Bereich liegen: [",
+
+	"feedwaterPumpOnOffCtrlSettings": "Speisewasserpumpe Einst. (An/Aus)",
+
+	"feedwaterPumpStateUnitCaps": "ZUSTAND",
+	"feedwaterPumpStateUnitOn": "An",
+	"feedwaterPumpStateUnitOff": "Aus",
+
+	"apply": "Übernehmen",
+	"cancel": "Abbrechen",
+	"trigger": "Triggern",
+
+	"controlModeCaps": "REGELMODUS",
+	"controlModeAuto": "Auto",
+	"controlModeManual": "Manuell",
+	"Ext. Ctrl": "Extern",
+
+	"valveStateUnitCaps": "VENTILSTAND",
+	"valveStateUnitOpenClose": "Auf/Zu",
+	"valveStateUnitPercent": "%",
+
+	"pumpStateOnOffUnitCaps": "ZUSTAND",
+	"pumpStatePerformanceUnitCaps": "LEISTUNG",
+	"pumpStateUnitOnOff": "An/Aus",
+	"pumpStateUnitPercent": "%",
+
+	"burnerStateUnitOnOff": "An/Aus",
+
+	"valvePositionUnitCaps": "VENTILPOSITION",
+	"valvePositionUnitPercent": "%",
+
+	"valveTravelTimeUnitSec": "s",
+
+	"feedbackPotentiometerConnectionStateConnected": "angeschlossen",
+	"feedbackPotentiometerConnectionStateUnconnected": "nicht angeschlossen",
+	"feedbackPotentiometerRawValueUnitUnitless": "1",
+
+	"valveStateCaps": "VENTILSTAND",
+	"valveStateOpen": "Auf",
+	"valveStateClose": "Zu",
+
+	"flowrateUnitCaps": "DURCHFLUSSMENGE",
+	"flowrateUnitKgPerH": "kg/h",
+	"flowrateUnitTPerH": "t/h",
+	"flowrateUnitTimpPerH": "T/h",
+	"flowrateUnitKgPerS": "kg/s",
+
+	"cellConstant": "ZELLKONSTANTE",
+	"factor": "Factor",
+	"maxCellConstant": "Maximale zellkonsntante muss im folgenden Bereich liegen: [",
+	"temperatureCoefficient": "TEMPERATURKOEFIZIENT",
+	"percentPerDegCelsius": "%/°C",
+	"maxTemperatureCoefficient": "Maximale temperaturkoefizient muss im folgenden Bereich liegen: [",
+	"resistanceThermometer": "WIDERSTANDSTHERMOMETER",
+	"connected": "angeschlossen",
+	"unconnected": "nicht angeschlossen",
+
+	"remainingRuntimeCaps": "RESTLAUFZEIT",
+	"remainingRuntimeUnitHMS": "HH:MM:SS",
+	"remainingRuntimeCountdownUnitS": "s",
+	"remainingRuntimeCountdownUnitM": "m",
+	"maxRuntimeCountdown": "Countdown Startwert muss im folgenden Bereich liegen: [",
+
+	"countdownStartValueMustBeWithinRangeToastMsg": "Countdown Startwert muss im folgenden Bereich liegen: [",
+
+	"maxFlowrateCaps": "MAXIMALE DURCHFLUSSMENGE",
+
+	"maxFlowrateMustBeWithinRangeToastMsg": "Maximale Durchflussmenge muss im folgenden Bereich liegen: [",
+
+	"valveTravelTimeCaps": "VENTILLAUFZEIT",
+
+	"valveTravelTimeMustBeWithinRangeToastMsg": "Ventillaufzeit muss im folgenden Bereich liegen: [",
+
+	"feedbackPotentiometerConnectionStateCaps": "RÜCKFÜHRPOTENTIOMETER",
+
+	"rawValueClosedCaps": "POTENTIOMETERROHWERT ZU",
+
+	"rawValueClosedMustBeWithinRangeToastMsg": "Rohwert (zu) muss im folgenden Bereich liegen: [",
+
+	"rawValueOpenCaps": "POTENTIOMETERROHWERT AUF",
+
+	"rawValueOpenMustBeWithinRangeToastMsg": "Rohwert (auf) muss im folgenden Bereich liegen: [",
+
+	"waterLevelUnitPercent": "%",
+
+	"waterTemperatureUnitDegCelsius": "°C",
+
+	"waterConductivityUnitUsPerCm": "µS/cm",
+	"waterConductivityUnitPpm": "ppm",
+
+	"waterSludgeRatioUnitRatio": "Anteil",
+
+	"sludgeMassUnitKg": "kg",
+
+	"volumeUnitMCubic": "m³",
+
+	"initValvePosMustBeWithinRangeToastMsg": "Ventilpositionstartwert muss im folgenden Bereich liegen: [",
+
+	"bottomBlowdownValveSettings": "Abschlammventil Einstellungen",
+	"toolbarDesignatorSteamBoiler": "Dampfkessel",
+	"toolbarDesignatorBurner": "Brenner",
+	"toolbarDesignatorBottomBlowdownValve": "Abschlammventil",
+	"toolbarDesignatorContinuousBlowdownValve": "Absalzventil",
+	"toolbarDesignatorFeedwaterValve": "Speisewasserventil",
+	"toolbarDesignatorFeedwaterPump": "Speisewasserpumpe",
+
+	"toolbarDesignatorMajorTemperatureSensor": "Temperaturfühler",
+	"toolbarDesignatorMajorConductivityElectrode": "Leitfähigkeitselektrode",
+	"toolbarDesignatorMajorConductivityTransmitter": "Leitfähigkeitstransmitter",
+	"toolbarDesignatorMajorLowLevelElectrode": "Niedrigwasserelektrode",
+	"toolbarDesignatorMajorHighLevelElectrode": "Hochwasserelektrode",
+	"toolbarDesignatorMajorLevelElectrodeTransmitter": "Niveau- Elektrode/Transmitter",
+	"toolbarDesignatorMajorLevelElectrode": "Niveauelektrode",
+	"toolbarDesignatorMajorLevelTransmitter": "Niveautransmitter",
+
+	"toolbarDesignatorMajorVisualDisplayAndOperatingUnit": "Bedien- und Visualisierungsgerät",
+	"toolbarDesignatorMajorLowLevelSwitch": "Niedrigwasserschalter",
+	"toolbarDesignatorMajorHighLevelSwitch": "Hochwasserschalter",
+	"toolbarDesignatorMajorTemperatureSwitch": "Temperaturschalter",
+	"toolbarDesignatorMajorLevelController": "Niveauregler",
+	"toolbarDesignatorMajorConductivityController": "Leitfähigkeitsregler",
+	"toolbarDesignatorMajorBlowdownTimer": "Abschlamm-Timer",
+
+	"URS_ToastSensor1Activated": "Sensor 1 aktiviert",
+	"URS_ToastSensor1Deactivated": "Sensor 1 ausgeschaltet",
+	"URS_ToastSensor2Activated": "Sensor 2 aktiviert",
+	"URS_ToastSensor2Deactivated": "Sensor 2 ausgeschaltet",
+	"URS_ToastSensor3Activated": "Sensor 3 aktiviert",
+	"URS_ToastSensor3Deactivated": "Sensor 3 ausgeschaltet",
+	"URS_ToastSensor4Activated": "Sensor 4 aktiviert",
+	"URS_ToastSensor4Deactivated": "Sensor 4 ausgeschaltet",
+
+	"toastControllerGroupID1": "Reglergruppe 1",
+	"toastControllerGroupID2": "Reglergruppe 2",
+	"toastControllerGroupID3": "Reglergruppe 3",
+	"toastControllerGroupID4": "Reglergruppe 4",
+	"toastBaudRate50": "Baudrate 50 kBit/s",
+	"toastBaudRate250": "Baudrate 250 kBit/s",
+
+	"toastSignalDelayOffBaudRate50": "Signalverzögerung Aus, Baud rate 50 kBit/s",
+	"toastSignalDelayOnBaudRate50": "Signalverzögerung Ein, Baud rate 50 kBit/s",
+	"toastSignalDelayOffBaudRate250": "Signalverzögerung Aus, Baud rate 250 kBit/s",
+	"toastSignalDelayOnBaudRate250": "Signalverzögerung Ein, Baud rate 250 kBit/s",
+
+	"limiterTitle": "Begrenzer",
+	"limiterDesc": "Das Sicherheits-Steuergerät URS 60, URS 61 wertet zyklisch die Datentelegramme von bis zu 4 Sicherheitssensoren NRG 1..., NRG 2…, LRG 1…, TRV 5 aus. Die Daten werden im CANopen Protokoll auf Basis eines CAN-Bus nach ISO 11898 übertragen und gespeichert. Zyklische Selbsttests überwachen die Sicherheitsfunktionen. Bei Alarmen oder Fehlern werden die eingebauten beiden Relais abgeschaltet. Funktionsprüfung und Fehlerdiagnose können am Steuergerät oder wahlweise am Bediengerät durchgeführt werden. \nFolgende Informationen sind in den Datentelegrammen enthalten:\n■ Alarmmeldungen der Sensoren bei überschreiten der Grenzwerte\n■ Störungsmeldungen bei Fehlern in der Elektronik oder Mechanik\n■ Übertemperatur in den Sensor-Anschlussgehäusen\nVerhalten bei Alarmmeldungen\nBei den Alarmmeldungen Niveau, Temperatur und Leitfähigkeit werden nach Ablauf der Abschaltverzögerung beide Ausgangskontakte geöffnet und der Sicherheitsstromkreis unterbrochen (Sicherheitsstellung). Das Sicherheits-Steuergerät verriegelt dabei nicht selbsttätig, diese Funktion muss in der nachfolgenden Schaltung realisiert werden. Es kann vom URS 60 oder URS 61 jeweils nur ein Sicherheitsstromkreis (Beheizung oder Pumpe) angesteuert werden.\nUnverzögert wird der Sicherheitsstromkreis unterbrochen bei folgenden Fehlermeldungen:\n■ Fehler in den Sensoren (Selbsttest negativ, Temperatur im Anschlussgehäuse zu hoch)\n■ Fehler im Steuergerät (Selbsttest negativ)\n■ Kommunikationsfehler\nVerhalten bei Fehlermeldungen\nDurch die zyklischen Selbsttests werden im Sicherheits-Steuergerät und in den Sensoren die Sicherheitsfunktionen der Geräte überprüft. Fehlermeldungen werden bei jedem Selbsttest aktualisiert. Bei Fehlerfreiheit erfolgt die automatische Löschung der Meldung und die Ausgangskontakte werden wieder geschlossen. Alarm- und Fehlermeldungen werden durch LED`s oder eine Bedieneinheit angezeigt. Zusätzlich können über die Signalisierungsausgänge die Alarme über eine externe Meldeeinrichtung wahlweise verzögert oder unverzögert ausgegeben werden. Fehler werden hingegen immer unverzögert signalisiert.",
+
+	"NRG_16_60_Desc": "Bei Unterschreiten des niedrigsten Wasserstandes taucht die Niveauelektrode aus und im SicherheitsSteuergerät URS 60, URS 61 wird Alarm ausgelöst. Dieser Schaltpunkt „Niedrigwasser unterschritten (NW)“ wird durch die Länge der Elektrodenverlängerung bestimmt. Die Niveauelektrode arbeitet nach dem konduktiven Messprinzip und überwacht sich selbst. D. h., ein undichter oder verschmutzter Elektrodenisolator und/oder ein Fehler im elektrischen Anschluss lösen ebenfalls Alarm aus. Die Niveauelektrode wird innenliegend in Dampfkesseln, Behältern oder Vorlaufleitungen von Heißwasseranlagen eingebaut. Ein anlagenseitiges Schutzrohr (siehe Seite 31 „Einbaubeispiele“) stellt dabei die Funktion sicher. Eine Niveauelektrode NRG 1x-60 kann mit einer Niveauelektrode NRG 1x-61 oder mit einer kontinuierlichen GESTRA-Niveauelektrode NRG 26-60 in ein gemeinsames Schutzrohr bzw. Messgefäß eingebaut werden. Bei Einbau einer Niveauelektrode in ein absperrbares Messgefäß außerhalb des Kessels müssen die Verbindungsleitungen regelmäßig gespült werden. Eine zusätzlich erforderliche Überwachungslogik SRL 6-60 überwacht die Spülzeiten und den Spülablauf. Bei Verbindungsleitungen Dampf ≥ 40 mm und Wasser ≥ 100mm gilt der Einbau als innenliegend. In diesem Fall kann auf vorstehende Überwachung der Spülvorgange verzichtet werden. Insgesamt können zwei NRG 1x-60 Niveauelektroden im Verbund mit einem Sicherheits-Steuergerät URS 60, URS 61 als Wasserstandbegrenzer-System betrieben werden. Ein automatischer Selbsttest überprüft zyklisch die Sicherheit und die Funktion der Niveauelektrode und der Messwerterfassung. Die Daten werden als Black-Channel-Datentelegramm im CANopen-Protokoll auf Basis eines CAN-Bus nach ISO 11898 zum Sicherheits-Steuergerät URS 60, URS 61 übertragen und gespeichert.\nFolgende Informationen werden als Datentelegramme übertragen:\n■ Alarmmeldungen der Niveauelektrode bei Unterschreiten des niedrigsten Wasserstands\n■ Störungsmeldungen bei Fehlern in der Elektronik oder Mechanik\n■ Übertemperatur im Anschlussgehäuse der Niveauelektrode",
+
+	"TRV_Desc": "Dem Temperaturtransmitter TRV 5-60 ist ein Temperaturfühler TRG 5-6x zugeordnet, dessen Messwert redundant erfasst und überwacht wird. Der Temperatur-Istwert wird direkt am Temperaturtransmitter angezeigt, ebenso auftretende Systemstörungen.\nGrenzwerteinstellung\nDie Temperatur im Transmittergehäuse wird durch einen Temperatursensor auf dem Elektronikeinsatz ständig überwacht. Ein automatischer Selbsttest überprüft zyklisch die Sicherheit und die Funktion des Temperaturfühlers und der Messwerterfassung. Die Daten werden als Datentelegramm im CANopen Protokoll auf Basis eines CAN-Bus nach ISO 11898 zum Sicherheits-Steuergerät URS 6x übertragen.\nFolgende Informationen werden als Datentelegramme übertragen:\n■ Temperatur-Istwert\n■ Alarmmeldung des Sensors bei überschreiten des eingestellten Grenzwerts „AL.Hi“\n■ Störungsmeldungen bei Fehlern in der Elektronik\n■ Übertemperatur im Transmittergehäuse",
+
+	"NRG_16_61_Desc": "Bei Überschreiten des höchsten Wasserstandes taucht die Niveauelektrode ein und im SicherheitsSteuergerät URS 60, URS 61 wird Alarm ausgelöst. Dieser Schaltpunkt „höchster Wasserstand überschritten (HW)“ wird durch die Länge der Elektrodenverlängerung bestimmt. Die Niveauelektrode arbeitet nach dem konduktiven Messprinzip und überwacht sich selbst. D. h., ein Fehler im elektrischen Anschluss oder in der Messelektronik lösen ebenfalls Alarm aus. Die Niveauelektrode wird innenliegend in Dampfkesseln, Behältern oder Vorlaufleitungen von Heißwasseranlagen eingebaut. Eine Niveauelektrode NRG 1x-61 kann mit einer Niveauelektrode NRG 1x-60 oder mir einer kontinuierlichen GESTRA-Niveauelektrode NRG 26-60 in ein gemeinsames Schutzrohr bzw. Messgefäß eingebaut werden. Bei Einbau einer Niveauelektrode in ein absperrbares Messgefäß außerhalb des Kessels müssen die Verbindungsleitungen regelmäßig gespült werden. Eine zusätzlich erforderliche Überwachungslogik SRL 6-60 überwacht die Spülzeiten und den Spülablauf. Bei Verbindungsleitungen Dampf ≥ 40 mm und Wasser ≥ 100 mm gilt der Einbau als innenliegend. In diesem Fall kann auf vorstehende Überwachung der Spülvorgange verzichtet werden. Ein automatischer Selbsttest überprüft zyklisch die Sicherheit und die Funktion der Niveauelektrode und der Messwerterfassung. Die Daten werden als Black-Channel-Datentelegramm im CANopen-Protokoll auf Basis eines CAN-Bus nach ISO 11898 zum Sicherheits-Steuergerät URS 60, URS 61 übertragen und gespeichert.\nFolgende Informationen werden als Datentelegramme übertragen:\n■ Alarmmeldungen der Niveauelektrode bei Überschreiten des höchsten Wasserstands\n■ Störungsmeldungen bei Fehlern in der Elektronik oder Mechanik\n■ Übertemperatur im Anschlussgehäuse der Niveauelektrode",
+
+	"LRG_16_6X_Title": "Leitfähigkeitselektrode",
+	"LRG_16_6X_Desc": "Die Leitfähigkeitselektroden LRG 1x-6x werden in Verbindung mit dem Sicherheits-Steuergerät URS 60, URS 61 als Leitfähigkeitsbegrenzer und in Verbindung mit einem Steuergerät LRR 1-60 als Absalzregler in Dampfkessel- und Heißwasseranlagen eingesetzt.",
+
+	"NRG_26_20_Title": "Niveauelektrode",
+	"NRG_26_20_Desc": "Die Niveauelektrode NRG 26-60 kann in Verbindung mit einem Niveauregler NRR 2-60 / NRR 2-61 zum kontinuierlichen Messen des Wasserstandes in Dampfkessel- und Heißwasseranlagen oder in Kondensatund Speisewasserbehältern verwendet werden. In Verbindung mit dem Niveauregler NRR 2-60 / NRR 2-61 wird die Elektrode z.B. als Wasserstandregler mit MIN-/MAX-Alarm eingesetzt.",
+
+	"NRGT_26_2_Title": "Niveautransmitter",
+	"NRGT_26_2_Desc": "Die Niveautransmitter NRGT 26-2 können zum kontinuierlichen Messen des Wasserstandes in Dampfkessel- und Heißwasseranlagen oder in Kondensat- und Speisewasserbehältern verwendet werden. Sie bilden den zwischen den Kalibrierpunkten 0 % sowie 100 % liegenden Messbereich auf einem 4-20 mA Stromausgang linear ab. Der sichere 4-20 mA Istwertausgang (SIL 2) des Transmitters kann mit einem entsprechenden Niveauregler, z.B. als Wasserstandregler mit MIN/ MAX-Alarm eingesetzt werden.",
+
+	"LRR_Title": "Leitfähigkeitsregler",
+	"LRR_Desc": "Der Leitfähigkeitsregler kann in Verbindung mit den Leitfähigkeitselektroden LRG 16-60, LRG 16-61 sowie LRG 17-60 als Leitfähigkeitsregler in Dampfkessel- und Heißwasseranlagen sowie in Kondensat- und Speisewasserbehältern eingesetzt werden. Der Leitfähigkeitsregler signalisiert das Erreichen einer MAX- oder MIN-Leitfähigkeit, öffnet oder schließt ein Absalzventil und kann ein Abschlammventil ansteuern.",
+
+	"NRR_Title": "Niveauregler",
+	"NRR_Desc": "Der Niveauregler kann in Verbindung mit den Niveauelektroden NRG 26-60, NRG 26-61 als Wasserstandregler und Grenzwertschalter in Dampfkessel- und Heißwasseranlagen sowie in Kondensatund Speisewasserbehältern eingesetzt werden.",
+
+	"URB_60_Title": "Bedien- und Visualisierungsgerät",
+	"URB_60_Desc": "Das Bedien- und Visualisierungsgerät URB 60 kann in Verbindung mit verschiedenen GESTRA CAN-Bus Geräten der Serie SPECTORconnect eingesetzt werden. Das URB 60 ist für den Einbau in eine Schaltschranktür oder in eine Schalttafel vorgesehen. Es darf nur im eingebauten Zustand betrieben werden.",
+	"URB_60_Settings": "URB 60 Einstellungen",
+
+	"infoTitleSteamBoiler": "Dampfkessel",
+	"infoDescriptionSteamBoiler": "Der Dampfkessel ist ein Wärmetauscher der Wasser durch Verbrennung eines Rauchgases auf dessen Siedepunkt erhitzt.\n\nDas verbrannte Rauchgas wird durch Rohrleitungen geblasen, welche in Wasser eingetaucht sind. Auf dem Weg durch die Rohrleitungen wird Wärme an das Wasser übertragen. Die dem Wasser zugeführte Wärmeenergie verdampft das Wasser zu Dampf, welcher dann einem Rohrleitungssystem zugeführt wird, um es für bestimmte Heizungsanwendungen zu nutzen.",
+
+	"infoTitleBurner": "Brenner",
+	"infoDescriptionBurner": "Der Brenner ist ein Gerät das Brennstoff und Luft im richtigen Verhältnis mischt und in die Brennkammer bläst wo es in Form einer Flamme verbrennt. Die Hauptaufgabe des Brenners ist es, den Druck innerhalb des Kessels in dem gewünschten Bereich zu halten.",
+
+	"infoTitleBottomBlowdownValve": "Abschlammventil",
+	"infoDescriptionBottomBlowdownValve": "Das Abschlammventil ist ein Aktuator durch den der am Kesselboden akkumulierte Schlamm heraus gespült wird.",
+
+	"infoTitleContinuousBlowdownValve": "Absalzventil",
+	"infoDescriptionContinuousBlowdownValve": "Das Absalzventil ist ein Aktuator durch den Wasser aus dem Kessel heraus gespült wird um den Salzgehalt des Kesselwassers zu senken.",
+
+	"infoTitleFeedwaterValve": "Speisewasserventil",
+	"infoDescriptionFeedwaterValve": "Das Speisewasserventil ist ein Aktuator durch den Wasser in den Kessel eingespeist wird, um den Wasserstand auf dem gewünschten Niveau zu halten.",
+
+	"infoTitleFeedwaterPump": "Speisewasserpumpe",
+	"infoDescriptionFeedwaterPump": "Die Speisewasserpumpe ist ein Aktuator der Wasser in den Kessel pumpt um den Wasserstand auf dem gewünschten Niveau zu halten.",
+
+	"infoTitleTemperatureSensor": "Temperaturfühler",
+	"infoDescriptionTemperatureSensor": "Der Temperaturfühler wird eingesetzt um die Temperatur im Kessel zu messen. Sein ohmscher Widerstand ändert sich abhängig von der Temperatur. Eine Spannung, erzeugt durch die Widerstandsänderung bei Versorgung mit einem konstanten Strom, wird gemessen und an den Temperaturschalter weitergeleitet. Das Eingangssignal wird vom Schalter in einen Temperaturwert in °C umgewandelt.",
+
+	"infoTitleConductivityElectrode": "Leitfähigkeitselektrode",
+	"infoDescriptionConductivityElectrode": "Die Leitfähigkeitselektrode wird eingesetzt um die Wasserleitfähigkeit im Kessel zu messen. Sie erzeugt einen von der Wasserleitfähigkeit abhängigen Strom, der an den Leitfähigkeitsregler weitergeleitet wird. Das Eingangssignal wird vom Regler (abhängig von seiner Kalibrierung) in einen Leitfähigkeitswert in µS/cm oder ppm umgewandelt.",
+
+	"infoTitleConductivityTransmitter": "Leitfähigkeitstransmitter",
+	"infoDescriptionConductivityTransmitter": "Der Leitfähigkeitstransmitter wird eingesetzt um die Wasserleitfähigkeit im Kessel zu messen. Er erzeugt einen von der Wasserleitfähigkeit abhängigen und auf den Messbereich skalierten 4-20 mA Strom, der an den Leitfähigkeitsregler weitergeleitet wird. Das Eingangssignal wird vom Regler in einen Leitfähigkeitswert in µS/cm oder ppm umgewandelt.",
+
+	"infoTitleLowLevelElectrode": "Niedrigwasserelektrode",
+	"infoDescriptionLowLevelElectrode": "Die Niedrigwasserelektrode wird eingesetzt um ein Abfallen des Wasserstandes im Kessel unterhalb eines gewünschten Schaltwerts zu erfassen. Der Sollwert wird anhand der Stablänge der Sonde bestimmt. Verliert die Sonde den Kontakt mit Wasser, wird ein Signal an den Niedrigwasserschalter weitergeleitet, der einen Alarm auslöst und den Brenner ausschaltet.",
+
+	"infoTitleHighLevelElectrode": "Hochwasserelektrode",
+	"infoDescriptionHighLevelElectrode": "Die Hochwasserelektrode wird eingesetzt um ein Übersteigen des Wasserstandes im Kessel oberhalb eines gewünschten Schaltwerts zu erfassen. Der Sollwert wird anhand der Stablänge der Sonde bestimmt. Kommt die Sonde in Kontakt mit Wasser, wird ein Signal an den Hochwasserschalter weitergeleitet der einen Alarm auslöst und die Frischwasserzufuhr blockiert.",
+
+	"infoTitleLevelElectrodeTransmitter": "Niveau- Elektrode/Transmitter",
+	"infoDescriptionLevelElectrodeTransmitter": "Die Niveauelektrode oder der Niveautransmitter wird eingesetzt um den Wasserstand im Kessel zu messen. Sie/er erzeugt einen vom Niveau abhängigen Strom, der an den Niveauregler weitergeleitet wird. Das Eingangssignal wird vom Regler in einen Prozentsatz des Kessel-Messbereichs umgewandelt (0% - 100%).",
+
+	"infoTitleLevelElectrode": "Niveauelektrode",
+	"infoDescriptionLevelElectrode": "Die Niveauelektrode wird eingesetzt um den Wasserstand im Kessel zu messen. Sie erzeugt einen vom Niveau abhängigen Strom, der an den Niveauregler weitergeleitet wird. Das Eingangssignal wird vom Regler (abhängig von seiner Kalibrierung) in einen Prozentsatz des Kessel-Messbereichs umgewandelt (0% - 100%).",
+
+	"infoTitleLevelTransmitter": "Niveautransmitter",
+	"infoDescriptionLevelTransmitter": "Der Niveautransmitter wird eingesetzt um den Wasserstand im Kessel zu messen. Sie erzeugt einen vom Niveau abhängigen und auf den Messbereich skalierten 4-20 mA Strom, der an den Niveauregler weitergeleitet wird. Das Eingangssignal wird vom Regler als Prozentsatz des Kessel-Messbereichs interpretiert (0% - 100%).",
+
+	"infoTitleVisualDisplayAndOperatingUnitURB55": "Bedien- und Anzeigeeinheit",
+	"infoDescriptionVisualDisplayAndOperatingUnitURB55": "Die Bedien- und Anzeigeeinheit ist das Gerät das dem Benutzer eine Interaktion mit dem System ermöglicht. Es wird dazu eingesetzt, zahlreiche Systemparameter einzustellen, zu überwachen und die Aktuatoren bei Bedarf manuell zu steuern.",
+
+	"infoTitleLowLevelSwitch": "Niedrigwasserschalter",
+	"infoDescriptionLowLevelSwitch": "Der Nierdigwasserschalter wird in Verbund mit einer oder zwei Niedrigwassersonden betrieben um den Wasserstand im Kessel zu begrenzen. Fällt der Wasserstand unterhalb eines Schaltpunktes, bestimmt durch die Stablänge der Sonde, verliert die Niedrigwassersonden den Kontakt mit Wasser. Ein Alarm löst aus, der Brenner wird ausgeschaltet.",
+
+	"infoTitleHighLevelSwitch": "Hochwasserschalter",
+	"infoDescriptionHighLevelSwitch": "Der Hochwasserschalter wird in Verbund mit einer Hochwassersonden betrieben um den Wasserstand im Kessel zu begrenzen. Steigt der Wasserstand oberhalb eines Schaltpunktes, bestimmt durch die Stablänge der Sonde, kommt die Hochwassersonden in Kontakt mit Wasser. Ein Alarm löst aus, die Frischwasserzufuhr wird blockiert.",
+
+	"infoTitleTemperatureSwitch": "Temperaturschalter",
+	"infoDescriptionTemperatureSwitch": "Der Temperaturschalter wird in Verbund mit einem Temperaturfühler betrieben um die Temperatur im Kessel zu überwachen oder zu begrenzen. Sinkt die Temperatur unterhalb oder steigt oberhalb eines zulässigen Wertes, löst der Temperaturschalter einen Alarm aus oder schaltet die Beheizung ab.",
+
+	"infoTitleLevelController": "Niveauregler",
+	"infoDescriptionLevelController": "Der Niveauregler wird in Verbund mit einer Niveausonde und einem Speisewasseraktuator betrieben um den Wasserstand im Kessel zu regeln. Er verarbeitet ein vom Niveau abhängiges Signal der Niveausonde und regelt den Speisewasseraktuator so, dass das Wasserniveau stets nahe einem gewünschten Sollwert bleibt.",
+
+	"infoTitleConductivityController": "Leitfähigkeitsregler",
+	"infoDescriptionConductivityController": "Der Leitfähigkeitsregler wird in Verbund mit einer Leitfähigkeitssonde, einem Absalzventil und einem optionalen Abschlammventil betrieben um die Wasserqualität im Kessel zu regeln. Er verarbeitet ein von der Wasserleitfähigkeit abhängiges Signal der Leitfähigkeitssonde und regelt das Absalzventil so, dass die Wasserleitfähigkeit stets nahe einem gewünschten Sollwert bleibt.\nOptional kann eine integrierte Zeitschaltfunktion verwendet werden um das optionale Abschlammventil in gewünschten Intervallen kurzzeitig zu öffnen und den Schlamm, welcher sich am Kesselboden über die Zeit akkumuliert, hinaus zu befördern.",
+
+	"infoTitleBlowdownTimer": "Abschlamm-Timer",
+	"infoDescriptionBlowdownTimer": "Der Abschlamm-Timer wird eingesetzt um ein Abschlammventil in gewünschten Intervallen kurzzeitig zu öffnen und den Schlamm, welcher sich am Kesselboden über die Zeit akkumuliert, hinaus zu befördern.",
+
+	"infoTitleUniversalConvector": "Universalwandler",
+	"infoDescUniversalConvector": "Der Universalwandler wandelt die analogen 4-20 mA Signale einer angeschlossenen Niveauelektrode in CAN-Bus-Telegramme um. Die Daten werden im CANopen Protokoll auf Basis eines CAN-Bus nach ISO 11898 übertragen. Funktionsprüfung und Fehlerdiagnose können am Bedien- und Visualisierungsgerät URB 60 durchgeführt werden.",
+
+	"toastLowWaterLevelProbe1Activated": "Niveauelektrode 1 aktiv",
+	"toastLowWaterLevelProbe1Deactivated": "Niveauelektrode 1 passiv",
+	"toastLowWaterLevelProbe2Activated": "Niveauelektrode 2 aktiv",
+	"toastLowWaterLevelProbe2Deactivated": "Niveauelektrode 2 passiv",
+
+	"toastSafetyTemperatureMonitorMode": "Sicherheitstemperaturwächtermodus aktiv",
+	"toastSafetyTemperatureLimiterMode": "Sicherheitstemperaturbegrenzermodus aktiv",
+
+	"toastOutputSetForMaxAlarm": "Ausgangskontakt für MAX-Alarm geschaltet",
+	"toastOutputSetForMinAlarm": "Ausgangskontakt für MIN-Alarm geschaltet",
+
+	"toastFillControlActivated": "Zulaufregelung aktiv",
+	"toastDischargeControlActivated": "Ablaufregelung aktiv",
+	"toastInputForConnectingLevelElectrode": "Eingang für Anschluss einer Niveauelektrode",
+	"toastInputForConnectingLevelTransmitter": "Eingang für Anschluss eines Niveautransmitters",
+
+	"toastMinRelayOutputAsMinAlarm": "Ausgangskontakt für MIN-Alarm geschaltet",
+	"toastMinRelayOutputForActuatingIntermittentBlowdownValve": "Ausgangskontakt zur Ansteuerung eines Abschlammventils geschaltet",
+	"toastNodeID72": "Node-ID = 72",
+	"toastNodeID69": "Node-ID = 69",
+	"toastOut2AsActualValueOutputX": "Istwertausgang (X) aktiv",
+	"toastOut2AsManipulatedVariableOutputYw": "Stellwertausgang (Yw) aktiv",
+	"toastElectricalConductivityMeasuredInMicroSiemensPerCm": "Elektrische Leitfähigkeit gemessen in µS/cm",
+	"toastElectricalConductivityMeasuredInPartsPerMillion": "Elektrische Leitfähigkeit gemessen in ppm",
+
+	"toastBurnerFunctionActivated": "Brenner-Funktion aktiv",
+	"toastStandbyFunctionActivated": "Standby-Funktion aktiv",
+
+	"btnCaptionApply": "Übernehmen",
+	"btnCaptionCancel": "Abbrechen",
+	"btnCaptionTrigger": "Triggern",
+	"btnCaptionOk": "OK",
+	"selectModalNone": "Keins",
+
+	"lowLevelSwitchSelectionModal_Title": "Auswahl: Niedrigwasserschalter",
+	"lowLevelSwitchSelectionModal_None": "Keins",
+	"lowLevelSwitchSelectionModal_NRS1_50_1E": "NRS 1-50 1E",
+	"lowLevelSwitchSelectionModal_NRS1_50_2E": "NRS 1-50 2E",
+
+	"lowLevelElectrodeSelectionModal_Title": "Auswahl: Niedrigwasserelektrode",
+	"lowLevelElectrodeSelectionModal_None": "Keins",
+	"lowLevelElectrodeSelectionModal_NRG16_50": "NRG 16-50",
+
+	"highLevelSwitchSelectionModal_Title": "Auswahl: Hochwasserschalter",
+	"highLevelSwitchSelectionModal_None": "Keins",
+	"highLevelSwitchSelectionModal_NRS1_51": "NRS 1-51",
+
+	"highLevelElectrodeSelectionModal_Title": "Auswahl: Hochwasserelektrode",
+	"highLevelElectrodeSelectionModal_None": "Keins",
+	"highLevelElectrodeSelectionModal_NRG16_51": "NRG 16-51",
+
+	"temperatureSwitchSelectionModal_Title": "Auswahl: Temperaturschalter",
+	"temperatureSwitchSelectionModal_None": "Keins",
+	"temperatureSwitchSelectionModal_TRS5_50": "TRS 5-50",
+	"temperatureSwitchSelectionModal_TRS5_52": "TRS 5-52",
+
+	"temperatureSensorSelectionModal_Title": "Auswahl: Temperaturfühler",
+	"temperatureSensorSelectionModal_None": "Keins",
+	"temperatureSensorSelectionModal_TRG5_63": "TRG 5-63",
+
+	"levelControllerSelectionModal_Title": "Auswahl: Niveauregler",
+
+	"universalConverterSelectionModal_Title": "Auswahl: Universalwandler",
+	"None": "Keins",
+	"NRR 2-50": "NRR 2-50",
+	"NRR 2-51": "NRR 2-51",
+	"NRR 2-52": "NRR 2-52",
+	"NRR 2-52 3K": "NRR 2-52 3K",
+	"NRR 2-53": "NRR 2-53",
+	"NRR 2-53 3K": "NRR 2-53 3K",
+
+	"levelElectrodeTransmitterSelectionModal_Title": "Auswahl: Niveau- Elektrode/Transmitter",
+	"levelElectrodeTransmitterSelectionModal_None": "Keins",
+	"levelElectrodeTransmitterSelectionModal_NRG26_21": "NRG 26-21",
+	"levelElectrodeTransmitterSelectionModal_NRG21_11": "NRG 21-11",
+	"levelElectrodeTransmitterSelectionModal_NRG21_51": "NRG 21-51",
+	"levelElectrodeTransmitterSelectionModal_NRGT26_2": "NRGT 26-2",
+
+	"conductivityControllerSelectionModal_Title": "Auswahl: Leitfähigkeitsregler",
+	"conductivityControllerSelectionModal_None": "Keins",
+	"conductivityControllerSelectionModal_LRR1_50_PRS_50": "LRR 1-50 + PRS 50",
+	"conductivityControllerSelectionModal_LRR1_51_PRS_50": "LRR 1-51 + PRS 50",
+	"conductivityControllerSelectionModal_LRR1_52": "LRR 1-52",
+	"conductivityControllerSelectionModal_LRR1_53": "LRR 1-53",
+	"conductivityControllerSelectionModal_LRR1_60": "LRR 1-60",
+
+	"conductivityElectrodeSelectionModal_Title": "Auswahl: Leitfähigkeitselektrode",
+	"conductivityElectrodeSelectionModal_None": "Keins",
+	"conductivityElectrodeSelectionModal_LRG16_4": "LRG 16-4",
+	"conductivityElectrodeSelectionModal_LRG16_9": "LRG 16-9",
+	"conductivityElectrodeSelectionModal_LRG16_60": "LRG 16-60",
+	"conductivityElectrodeSelectionModal_LRG16_61": "LRG 16-61",
+
+	"conductivityTransmitterSelectionModal_Title": "Auswahl: Leitfähigkeitstransmitter",
+	"conductivityTransmitterSelectionModal_None": "Keins",
+	"conductivityTransmitterSelectionModal_LRGT16_3": "LRGT 16-3",
+	"conductivityTransmitterSelectionModal_LRGT16_4": "LRGT 16-4",
+	"conductivityTransmitterSelectionModal_LRG16_60": "LRG 16-60",
+	"conductivityTransmitterSelectionModal_LRG16_61": "LRG 16-61",
+
+	"systemLimitsExceededTitle": "Überschreitung von Systemgrenzen",
+	"systemLimitsExceededWaterLevelTooLow": "Simulation wurde aufgrund der Überschreitung von Systemgrenzen gestoppt.\nWasserniveau fiel unterhalb von 0%.\n\nBitte starten Sie die Simulation wenn erwünscht erneut.",
+	"systemLimitsExceededWaterLevelTooHigh": "Simulation wurde aufgrund der Überschreitung von Systemgrenzen gestoppt.\nWasserniveau stieg oberhalb von 99%.\n\nBitte starten Sie die Simulation wenn erwünscht erneut.",
+	"systemLimitsExceededPressureTooLow": "Simulation wurde aufgrund der Überschreitung von Systemgrenzen gestoppt.\nDruck fiel unterhalb des gültigen Arbeitsbereichs.\n\nBitte starten Sie die Simulation wenn erwünscht erneut.",
+	"systemLimitsExceededPressureTooHigh": "Simulation wurde aufgrund der Überschreitung von Systemgrenzen gestoppt.\nDruck stieg oberhalb des gültigen Arbeitsbereichs.\n\nBitte starten Sie die Simulation wenn erwünscht erneut.",
+
+	"trs_SelectErrorTriggerTitle": "Auswählen: Temperaturumschalter Fehler",
+	"none": "Kein",
+	"trs5_50_E.01": "E.01: Temperatursensor defekt, Messwert zu niedrig",
+	"trs5_50_E.02": "E.02: Temperatursensor defekt, Messwert zu hoch",
+	"trs5_52_E.005": "E.005: Temperatursensor defekt, Messwert zu niedrig",
+	"trs5_52_E.006": "E.006: Temperatursensor defekt, Messwert zu hoch",
+
+	"nrr_SelectErrorTriggerTitle": "Auswählen: Niveauregler Fehler",
+	"nrr_A.003": "A.003: Externer Alarmeingang angesprochen (ab Reglersoftware 311178.13)",
+	"nrr_E.005_Tr": "E.005: Niveautransmitter defekt, Messstrom < 4mA",
+	"nrr_E.006_Tr": "E.006: Niveautransmitter defekt, Messstrom > 20mA",
+	"nrr_E.005_El": "E.005: Messelektrode defekt, Messspannung < 0.5V DC",
+	"nrr_E.006_El": "E.006: Messelektrode defekt, Messspannung > 7V DC",
+	"nrr_E.015": "E.015: Messstrom für den Dampfdurchsatz < 4 mA",
+	"nrr_E.016": "E.016: Messstrom für den Dampfdurchsatz > 20 mA",
+	"nrr_E.017": "E.017: Speisewasserdurchfluss Messstrom < 4 mA",
+	"nrr_E.018": "E.018: Speisewasserdurchfluss Messstrom > 20 mA",
+
+	"prs_SelectErrorTriggerTitle": "Auswählen: Absalzzeitfehler",
+	"prs_A.003": "A.003: Endschalterüberwachung ausgefallen",
+
+	"lrr_SelectErrorTriggerTitle": "Auswählen: Leitfähigkeitsregler Fehler",
+	"lrr_E.001": "E.001: Unterhalb des Messbereichs des Temperatursensors",
+	"lrr_E.002": "E.002: Messbereich des Temperatursensors oben",
+	"lrr_E.005_Tr": "E.005: Leitfähigkeitstransmitter defekt, Messstrom < 4mA",
+	"lrr_E.006_Tr": "E.006: Leitfähigkeitstransmitter defekt, Messstrom > 20mA",
+	"lrr_E.005_El": "E.005: Leitfähigkeitselektrode defekt, Messspannung < 0.5V DC",
+	"lrr_E.006_El": "E.006: Leitfähigkeitselektrode defekt, Messspannung > 7V DC",
+
+	"errorElectricalConnection": "Fehlfunktion in elektrischer Verbindung",
+	"errorLevelProbe": "Fehlfunktion in Niveausonde",
+	"nrs1_51_SelectErrorTriggerTitle": "Auswählen: Hochpegelschalter Fehler",
+	"mainPanelReset": "Zurücksetzen",
+	"nrg_16_60_SelectErrorTriggerTitle": "Auswählen: Niedriges Niveau Elektrodenfehler",
+	"nrg_16_61_SelectErrorTriggerTitle": "Auswählen: Hochpegel-Elektrodenfehler",
+
+	"addSettingsTitle": "Einstellungen hinzufügen",
+	"settingsSnapshotName": "Einstellungen Name",
+	"selectSettingsTitle": "Einstellungen wählen",
+
+	"confirmDialogTitle": "Bestätigungsdialog",
+
+	"compatibilityLevelControllerAndLevelProbeNotification": "Sie sollten die Schaltereinstellungen des Niveaureglers ändern",
+	"compatibilityLevelControllerAndLevelProbeModalTitle": "Fehler bei der Modulkompatibilität",
+
+	"URS_NO_CONNECTED_TITLE": "URS_60_NO_CONNECTED_TITLE",
+	"URS_NO_CONNECTED_DESC": "URS_60_NO_CONNECTED_DESC",
+
+	"expiryControlInfoNotification": "Die Schaltereinstellungen des Niveaureglers (Ablaufregelung) in dieser Simulationskonstellation nicht sinnvoll.",
+	"expiryControlInfoModalTitle": "Hinweis zur Simulationskonstellation",
+
+	"introModalTitle": "Wichtige Informationen",
+	"introModalText": "Achtung! Der Spector Simulator ist ein Trainingstool zur Veranschaulichung der Gerätefunktionen. Der Boiler ist keine pysikalische Abbildung eines realen Boilers. Einstellungen müssen immer ans reale System angepasst werden. Niemals aus dem Trainingstool direkt übernehmen!",
+	"introModalCheckboxText": "Diese Meldung nicht mehr anzeigen.",
+
+	"Come": "Kommen",
+	"Gone": "Vorbei",
+	"Description": "Beschreibung",
+	"Group": "Gruppe",
+	"Limiter": "Begrenzer",
+	"Channel": "Kanal",
+	"Conductivity": "Leitfähigkeit",
+	"Level": "Niveau",
+	"Alarm limit exceeded": "Alarmgrenzwert überschritten",
+	"No communication": "Keine Kommunikation",
+	"Device-specific error codes": "Gerätespezifische Fehlercodes",
+	"Warnings": "Warnungen",
+	"Temperature": "Temperatur",
+	"Alarm": "Alarm",
+	"Setpoint": "Sollwert",
+	"Standby": "Bereitschaft",
+	"Blowdown": "Abschlammen",
+	"Hand": "Hand",
+	"Raw data": "Rohdaten",
+	"Operating pos.": "Betriebspos.",
+	"24h- purging": "24h-Spülen",
+	"On": "Ein",
+	"Off": "Aus",
+	"Purging interval": "Spülintervall",
+	"Purging time": "Spüldauer",
+	"Blowdown interval": "Abschlammintervall",
+	"Blowdown time": "Abschlammdauer",
+	"Blowdown pulses": "Abschlammimpulse",
+	"Pulse interval": "Impulsintervall",
+	"Blowdown active": "Absaugung aktiv",
+	"Fct. MIN rel.": "Fkt. MIN Rel.",
+	"Value": "Messwert",
+	"Corr. factor": "Korrekturfaktor",
+	"Tempcoeff.": "Temperaturkoeff.",
+	"Attenuation": "Dämpfung",
+	"Range": "Bereich",
+	"Neutral Band": "Neutrale Zone",
+	"Valve travel time": "Ventillaufzeit",
+	"Ref. meas. value": "Ref. Messwert",
+	"Raw Operating pos.": "Operating pos.",
+	"Position": "Position",
+	"CANBus quality": "CanBus-Qualität",
+	"Limit": "Grenze",
+	"Test limiter 1 chanel": "Test Begrenzer 1 Kanal",
+	"Test limiter 2 chanel": "Test Begrenzer 2 Kanal",
+	"Controller": "Regler",
+	"Electrode": "Elektrode",
+	"Rel. delay t.": "Rel. Verzögsz.",
+	"Parameter": "Parameter",
+	"Relais delay t.": "Relaisverzögerung z.",
+	"Switch-on delay": "Einschaltverzug",
+	"Switch-off delay": "Abschaltverzöger.",
+	"Control direc.": "Regelsinn",
+	"Fill": "Zulauf",
+	"Discharge": "Ablauf",
+	"Cal.": "Kal.",
+	"Feedwater flowr.": "Speisewasserfluss.",
+	"Steam flowrate": "Dampfdurchsatz",
+	"Eval. Factor": "Eval. Faktor",
+	"Function": "Funktion",
+	"Valve": "Ventil",
+	"Pumps": "Pumpen",
+	"Pump": "Pumpe",
+	"Switch-off threshold": "Ausschaltschwelle",
+	"Switch-on threshold": "Einschaltschwelle",
+	"Forced switchover": "Zwangsumschaltung",
+	"Man. operating mod": "Man. Betriebsart",
+	"Switch on pump": "Pumpe einschalten",
+	"Switch off pump": "Pumpe ausschalten",
+	"Call. point": "Kalibrierungspunkt",
+	"Old": "Alt",
+	"New": "Neu",
+	"Type": "Typ",
+	"Operating Time": "Betriebszeit",
+	"Def. op. Time": "Def. op. Zeit",
+	"Delete operating time?": "Betriebszeit löschen?",
+	"Tamb": "Tamb",
+	"Warng. Tamb": "Warng. Tamb",
+	"Delete switching cycles?": "Schaltspiele löschen?",
+	"Alarm Counter": "Alarmzähler",
+	"Error Counter": "Fehlerzähler",
+	"Version": "Version",
+	"Read device list again": "Geräteliste erneut lesen",
+	"Time": "Zeit",
+	"Date": "Datum",
+	"Daylight saving time": "Sommerzeit",
+	"DST starts": "Sommerzeit beginnt",
+	"DST ends": "Sommerzeit endet",
+	"Month": "Monat",
+	"Week": "Woche",
+	"Weekday": "Wochentag",
+	"Hour[s] forward": "Stunde[n] vorwärts",
+	"Hour[s] back": "Stunde[n] zurück",
+	"Target": "Ziel",
+	"Subnetmask": "Subnetzmaske",
+	"Gateway": "Gateway",
+	"Modbus TCP": "Modbus TCP",
+	"Port": "Port",
+	"Datapoint list": "Datenpunktliste",
+	"Device list": "Geräteliste",
+	"Read in again": "Neu einlesen",
+	"Baud rate": "Baudrate",
+	"Alarm list": "Alarmliste",
+	"Automatic": "Automatisch",
+	"Manual": "Manuell",
+	"Starts. temp. 100%": "Starts. Temp. 100%",
+	"Display": "Display",
+	"Calibrate": "Kalibrieren",
+	"Switch baud rate": "Baudrate wechseln",
+	"Startup": "Inbetriebnahme",
+	"Datalogs / Alarm": "Datenprotokolle / Alarm",
+	"Predictive": "Prädiktiv",
+	"maintenance": "Wartung",
+	"Error memory": "Fehlerspeicher",
+	"Info": "Info",
+	"Save": "Speichern",
+	"Reading": "Lesen",
+	"Firmware V1.25": "Firmware V1.25",
+	"Update": "Aktualisieren",
+	"Run": "Ausführen",
+	"PLC Reset": "PLC Reset",
+	"PLC Start": "PLC Start",
+	"Startup info": "Anlaufinfo",
+	"Login info": "Anmelde-Infos",
+	"Connect USB device": "USB-Gerät anschließen",
+	"Start read out": "Auslesen starten",
+	"Stop read out": "Auslesen stoppen",
+	"Read all": "Alles lesen",
+	"Example": "Beispiel",
+	"Input": "Eingabe",
+	"Comparative data": "Vergleichsdaten",
+	"Min alarm": "Min-Alarm",
+	"January": "Januar",
+	"February": "Februar",
+	"March": "März",
+	"April": "April",
+	"May": "Mai",
+	"June": "Juni",
+	"July": "Juli",
+	"August": "August",
+	"September": "September",
+	"October": "Oktober",
+	"November": "November",
+	"December": "Dezember",
+	"Monday": "Montag",
+	"Tuesday": "Dienstag",
+	"Wednesday": "Mittwoch",
+	"Thursday": "Donnerstag",
+	"Friday": "Freitag",
+	"Saturday": "Samstag",
+	"Sunday": "Sonntag",
+	"First": "Erste",
+	"Second": "Zweiter",
+	"Third": "Dritte",
+	"Last": "Letzte"
+}
