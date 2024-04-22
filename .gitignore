@@ -1,0 +1,12 @@
+.idea/
+.clj-kondo/
+.cpcache/
+.portal/
+.shadow-cljs/
+node_modules/
+target/
+
+.nrepl-port
+
+*.dylib
+*.log
