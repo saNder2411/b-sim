@@ -9,6 +9,108 @@
     <script src="assets/js/main.js" defer></script>
 </head>
 <body>
+<svg class="svg-defs">
+    <defs>
+        <filter id="filterCtrlBtnTestWhiteGlow">
+            <feColorMatrix
+                    type="matrix"
+                    values="1 1 1 1   1
+                1 1 1 1   1
+                1 1 1 1   1
+                0 0 0 0.7 0"
+            />
+            <feGaussianBlur stdDeviation="1.0" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <!-- a transparent glow that takes on the colour of the object it's applied to -->
+        <filter id="filterCtrlLedSelfGlow">
+            <feGaussianBlur stdDeviation="0.6" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <!-- G R A D I E N T S -->
+
+        <!-- a linear gradient for head-up-display panel -->
+        <linearGradient id="idGradientHUD" x1="67.054" x2="67.054" y1="135.93" y2=".375" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#192330" offset="0"/>
+            <stop stop-color="#111720" offset=".536"/>
+            <stop stop-color="#0d1017" offset="1"/>
+        </linearGradient>
+
+        <linearGradient
+                id="linGradHotspotSmall-1"
+                x1="47.204"
+                x2="47.204"
+                y1="62.997"
+                y2="31.031"
+                gradientUnits="userSpaceOnUse"
+        >
+            <stop stop-color="#566575" offset="0"/>
+            <stop stop-color="#536271" offset=".017"/>
+            <stop stop-color="#3a4451" offset=".196"/>
+            <stop stop-color="#262d37" offset=".381"/>
+            <stop stop-color="#181d25" offset=".572"/>
+            <stop stop-color="#10131b" offset=".773"/>
+            <stop stop-color="#0d1017" offset="1"/>
+        </linearGradient>
+
+        <linearGradient
+                id="linGradHotspotSmallLight-1"
+                x1="47.335"
+                x2="47.335"
+                y1="63.623"
+                y2="31.657"
+                gradientUnits="userSpaceOnUse"
+        >
+            <stop stop-color="#eee" offset="0"/>
+            <stop stop-color="#d9d9d9" offset=".066"/>
+            <stop stop-color="#b1b1b1" offset=".207"/>
+            <stop stop-color="#919190" offset=".353"/>
+            <stop stop-color="#777776" offset=".502"/>
+            <stop stop-color="#656564" offset=".656"/>
+            <stop stop-color="#5a5a5a" offset=".817"/>
+            <stop stop-color="#575756" offset="1"/>
+        </linearGradient>
+
+        <linearGradient
+                id="linGradToolbarToggleSwitchDown"
+                x1="793.08"
+                x2="793.08"
+                y1="-10479"
+                y2="-10466"
+                gradientTransform="matrix(1 0 0 -1 0 -10398)"
+                gradientUnits="userSpaceOnUse"
+        >
+            <stop stop-color="#b2b2b2" offset="0"/>
+            <stop stop-color="#0d1017" offset="1"/>
+        </linearGradient>
+
+        <linearGradient
+                id="linGradToolbarToggleSwitchUp"
+                x1="-6339.5"
+                x2="-6339.5"
+                y1="2956.5"
+                y2="2969.6"
+                gradientTransform="matrix(-1 0 0 1 -5504.5 -2896.3)"
+                gradientUnits="userSpaceOnUse"
+        >
+            <stop stop-color="#b2b2b2" offset="0"/>
+            <stop stop-color="#aeaeae" offset=".154"/>
+            <stop stop-color="#a0a1a1" offset=".323"/>
+            <stop stop-color="#8b8b8c" offset=".499"/>
+            <stop stop-color="#6c6d6f" offset=".679"/>
+            <stop stop-color="#45474a" offset=".861"/>
+            <stop stop-color="#222429" offset="1"/>
+        </linearGradient>
+    </defs>
+</svg>
 <div id="app"></div>
 </body>
 </html>

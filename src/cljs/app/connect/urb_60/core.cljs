@@ -1,0 +1,15 @@
+(ns app.connect.urb-60.core
+  (:require [helix.core :refer [defnc <> $]]
+            [helix.dom :as d]
+            [refx.alpha :refer [use-sub]]
+            [app.connect.urb-60.front-panel :refer [front-panel]]
+            [app.connect.urb-60.main-menu :refer [main-menu]]))
+
+(defnc urb-60 []
+  (let [screen-w (use-sub [:screen-w])]
+    (<>
+      ($ front-panel)
+      (d/div {:class "urb-60-display-wrapper" :style {:height (* 0.15384 screen-w)}}
+             ($ main-menu)))))
+
+

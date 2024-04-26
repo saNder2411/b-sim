@@ -1,0 +1,88 @@
+goog.provide('app.db.events');
+app.db.events.update_screen_BANG_ = (function app$db$events$update_screen_BANG_(width,height,p__46624){
+var map__46625 = p__46624;
+var map__46625__$1 = cljs.core.__destructure_map(map__46625);
+var screen__$1 = map__46625__$1;
+var ratio = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__46625__$1,new cljs.core.Keyword(null,"ratio","ratio",-926560044));
+if(((width / height) <= ratio)){
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(screen__$1,new cljs.core.Keyword(null,"w","w",354169001),width,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"h","h",1109658740),(width / ratio),new cljs.core.Keyword(null,"scale-f","scale-f",-1563945029),(width / (1920))], 0));
+} else {
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(screen__$1,new cljs.core.Keyword(null,"w","w",354169001),(height * ratio),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"h","h",1109658740),height,new cljs.core.Keyword(null,"scale-f","scale-f",-1563945029),((height * ratio) / (1920))], 0));
+}
+});
+refx.alpha.reg_event_fx.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"initialize-db","initialize-db",230998432),(function (_,p__46634){
+var vec__46635 = p__46634;
+var ___$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46635,(0),null);
+var width = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46635,(1),null);
+var height = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46635,(2),null);
+return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"db","db",993250759),cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(app.db.db.default_db,new cljs.core.Keyword(null,"screen","screen",1990059748),app.db.events.update_screen_BANG_(width,height,new cljs.core.Keyword(null,"screen","screen",1990059748).cljs$core$IFn$_invoke$arity$1(app.db.db.default_db)))], null);
+}));
+refx.alpha.reg_event_db.cljs$core$IFn$_invoke$arity$3(new cljs.core.Keyword(null,"window-resize","window-resize",-2050654634),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [refx.interceptors.path.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"screen","screen",1990059748)], 0))], null),(function (screen,p__46638){
+var vec__46639 = p__46638;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46639,(0),null);
+var width = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46639,(1),null);
+var height = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46639,(2),null);
+return app.db.events.update_screen_BANG_(width,height,screen);
+}));
+refx.alpha.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"change-kit","change-kit",2000961860),(function (db,p__46642){
+var vec__46643 = p__46642;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46643,(0),null);
+var new_kit = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46643,(1),null);
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.Keyword(null,"kit","kit",-1785767367),new_kit);
+}));
+refx.alpha.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"change-lang","change-lang",1412456545),(function (db,p__46647){
+var vec__46648 = p__46647;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46648,(0),null);
+var new_lang = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46648,(1),null);
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.Keyword(null,"lang","lang",-1819677104),new_lang);
+}));
+refx.alpha.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"change-operation-mode","change-operation-mode",-1786361955),(function (db,p__46651){
+var vec__46652 = p__46651;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46652,(0),null);
+var new_value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46652,(1),null);
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.Keyword(null,"operation-mode","operation-mode",1063668791),new_value);
+}));
+refx.alpha.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"set-show-ctrl-panel","set-show-ctrl-panel",-1988924617),(function (db,p__46656){
+var vec__46660 = p__46656;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46660,(0),null);
+var new_value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46660,(1),null);
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.Keyword(null,"show-ctrl-panel","show-ctrl-panel",-1185529327),new_value);
+}));
+refx.alpha.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"set-show-general-settings","set-show-general-settings",-877753355),(function (db,p__46669){
+var vec__46674 = p__46669;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46674,(0),null);
+var new_value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46674,(1),null);
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.Keyword(null,"show-general-settings","show-general-settings",559201945),new_value);
+}));
+refx.alpha.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"set-highlight-hotspots","set-highlight-hotspots",1813720726),(function (db,p__46685){
+var vec__46686 = p__46685;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46686,(0),null);
+var new_value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46686,(1),null);
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.Keyword(null,"highlight-hotspots","highlight-hotspots",1123635494),new_value);
+}));
+refx.alpha.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"open-general-settings","open-general-settings",1221789747),(function (db,p__46697){
+var vec__46702 = p__46697;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46702,(0),null);
+var ___$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46702,(1),null);
+console.log("open gen settings",db);
+
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(db,new cljs.core.Keyword(null,"show-general-settings","show-general-settings",559201945),true,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"highlight-hotspots","highlight-hotspots",1123635494),false], 0));
+}));
+refx.alpha.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"reset-sim","reset-sim",-296908753),(function (db,p__46713){
+var vec__46716 = p__46713;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46716,(0),null);
+var ___$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46716,(1),null);
+console.log("reset sim - stop sim and prevent to default all sim modules",db);
+
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.Keyword(null,"sim","sim",-1444922721),"stopped");
+}));
+refx.alpha.reg_event_db.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"change-sim","change-sim",-1708135592),(function (db,p__46725){
+var vec__46728 = p__46725;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46728,(0),null);
+var new_value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46728,(1),null);
+console.log("change sim",new_value);
+
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(db,new cljs.core.Keyword(null,"sim","sim",-1444922721),new_value);
+}));
+
+//# sourceMappingURL=app.db.events.js.map
