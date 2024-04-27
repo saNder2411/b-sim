@@ -56,3 +56,7 @@
               (fn [db [_ new-value]]
                 (js/console.log "change sim" new-value)
                 (assoc db :sim new-value)))
+
+(reg-event-db :change-current-hotspot
+              (fn [db [_ new-value]]
+                (assoc db :current-hotspot new-value)))

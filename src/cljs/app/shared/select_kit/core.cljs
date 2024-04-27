@@ -1,8 +1,8 @@
-(ns app.shared.select-kit-menu
+(ns app.shared.select-kit.core
   (:require [helix.core :refer [defnc $]]
             [helix.dom :as d]
             [refx.alpha :refer [use-sub dispatch]]
-            [app.shared.select-kit-btn :refer [select-kit-btn]]))
+            [app.shared.select-kit.btn :refer [select-kit-btn]]))
 
 (defnc select-kit-menu []
   (let [kit (use-sub [:kit])

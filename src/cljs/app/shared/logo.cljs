@@ -1,5 +1,5 @@
 (ns app.shared.logo
-  (:require [helix.core :refer [defnc <>]]
+  (:require [helix.core :refer [defnc]]
             [helix.dom :as d]))
 
 (defnc logo [{:keys [style fill opacity]}]

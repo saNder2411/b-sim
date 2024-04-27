@@ -13,6 +13,6 @@
            (d/rect {:style {:fill "url(#linGrad_Sidebar)" :opacity 0.5} :x "565.075" :width "128.028" :height "1080"})
            (d/rect {:style {:fill "#061838" :opacity 0.6} :x "565.075" :width "4.933" :height "1080"})
            (d/rect {:style {:fill "#ffffff"} :width "561.009" :height "1079.992"})
-           (d/rect {:style {:fill "#b1b7bf"} :x "561.009" :width "3" :height "1080"}))
+           (d/rect {:style {:fill "#b1b7bf"} :x "561.009" :width "3.989" :height "1080"}))
     ($ logo {:style {:width "6.5%" :left "2%" :top "0.88%"} :fill "#0d55a3" :opacity 1})
     ($ logo {:style {:width "25%" :left "2%" :top "30%"} :fill "#0d55a3" :opacity 0.1})))

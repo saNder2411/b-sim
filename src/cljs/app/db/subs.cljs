@@ -49,3 +49,7 @@
 (reg-sub :highlight-hotspots
          (fn [db _]
            (:highlight-hotspots db)))
+
+(reg-sub :current-hotspot
+         (fn [db _]
+           (:current-hotspot db)))

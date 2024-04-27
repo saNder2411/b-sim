@@ -1,5 +1,5 @@
 (ns app.shared.control-panel.lang-flag
-  (:require [helix.core :refer [defnc $ <>]]
+  (:require [helix.core :refer [defnc <>]]
             [helix.dom :as d]
             [refx.alpha :refer [use-sub dispatch]]))
 

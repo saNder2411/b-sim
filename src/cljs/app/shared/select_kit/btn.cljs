@@ -1,5 +1,5 @@
-(ns app.shared.select-kit-btn
-  (:require [helix.core :refer [defnc $]]
+(ns app.shared.select-kit.btn
+  (:require [helix.core :refer [defnc]]
             [helix.dom :as d]))
 
 (defnc select-kit-btn [{:keys [x y label sub-label active disable on-click]}]

@@ -936,4 +936,9 @@ text.urb-time {
     stroke-miterlimit: 10;
 }
 
+.stroke-miterlimit {
+    fill:              none;
+    stroke-miterlimit: 10;
+}
+
 

@@ -6,8 +6,9 @@
             [app.shared.sidebar :refer [sidebar]]
             [app.shared.user-menu :refer [user-menu]]
             [app.connect.core :refer [connect-kit]]
-            [app.shared.select-kit-menu :refer [select-kit-menu]]
-            [app.shared.control-panel.core :refer [control-panel]]))
+            [app.shared.select-kit.core :refer [select-kit-menu]]
+            [app.shared.control-panel.core :refer [control-panel]]
+            [app.shared.boiler.core :refer [boiler]]))
 
 (defn window-resizing-handler [w]
   (dispatch [:window-resize (.-innerWidth (.-target w)) (.-innerHeight (.-target w))]))
@@ -27,6 +28,7 @@
            (d/p {:class "version-tag"}
                 (d/span {:style {:font-size (str (* 14 scale-f) "px")}} "Version: 1.0"))
 
+           ($ boiler)
            ($ sidebar)
            ($ user-menu)
            ($ select-kit-menu)

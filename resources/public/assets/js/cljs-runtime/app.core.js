@@ -6,9 +6,9 @@ if((typeof app !== 'undefined') && (typeof app.core !== 'undefined') && (typeof 
 app.core.root = module$node_modules$react_dom$client.createRoot(goog.dom.getElement("app"));
 }
 app.core.render = (function app$core$render(){
-return app.core.root.render((function (){var G__45417 = app.app.app;
-var G__45418 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__45417,G__45418) : helix.core.jsx.call(null,G__45417,G__45418));
+return app.core.root.render((function (){var G__66361 = app.app.app;
+var G__66362 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__66361,G__66362) : helix.core.jsx.call(null,G__66361,G__66362));
 })());
 });
 app.core.clear_cache_and_render_BANG_ = (function app$core$clear_cache_and_render_BANG_(){
@@ -16,9 +16,9 @@ refx.alpha.clear_subscription_cache_BANG_();
 
 return app.core.render();
 });
-app.core.root.render((function (){var G__45419 = app.app.app;
-var G__45420 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__45419,G__45420) : helix.core.jsx.call(null,G__45419,G__45420));
+app.core.root.render((function (){var G__66370 = app.app.app;
+var G__66371 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__66370,G__66371) : helix.core.jsx.call(null,G__66370,G__66371));
 })());
 app.core.init = (function app$core$init(){
 return app.core.render();

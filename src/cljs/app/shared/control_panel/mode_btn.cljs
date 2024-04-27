@@ -1,5 +1,5 @@
 (ns app.shared.control-panel.mode-btn
-  (:require [helix.core :refer [defnc $]]
+  (:require [helix.core :refer [defnc]]
             [helix.dom :as d]))
 
 (defnc mode-btn [{:keys [x label active on-click]}]
