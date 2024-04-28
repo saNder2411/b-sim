@@ -14,23 +14,23 @@
 
            (d/mask {:id "btn-pnl-mask-0" :x 45 :y 76.311 :width 80 :height 66 :maskUnits "userSpaceOnUse"}
                    (d/g {:class "btn-pnl-clr-filter"}
-                        ($ "image" {:width 80 :height 66 :transform "translate(45 76.311)" :xlinkHref "assets/img/ctrl-pnl-btn-0-mask..png"})))
+                        ($ "image" {:width 80 :height 66 :transform "translate(45 76.311)" :href "assets/img/ctrl-pnl-btn-0-mask..png"})))
 
            (d/mask {:id "btn-pnl-mask-1" :x 141 :y 76.311 :width 106 :height 113 :maskUnits "userSpaceOnUse"}
                    (d/g {:class "btn-pnl-clr-filter"}
-                        ($ "image" {:width 106 :height 113 :transform "translate(141 76.311)" :xlinkHref "assets/img/ctrl-pnl-btn-1-mask.png"})))
+                        ($ "image" {:width 106 :height 113 :transform "translate(141 76.311)" :href "assets/img/ctrl-pnl-btn-1-mask.png"})))
 
            (d/mask {:id "btn-pnl-mask-2" :x 264 :y 76.311 :width 106 :height 113 :maskUnits "userSpaceOnUse"}
                    (d/g {:class "btn-pnl-clr-filter"}
-                        ($ "image" {:width 106 :height 113 :transform "translate(264 76.311)" :xlinkHref "assets/img/ctrl-pnl-btn-1-mask.png"})))
+                        ($ "image" {:width 106 :height 113 :transform "translate(264 76.311)" :href "assets/img/ctrl-pnl-btn-1-mask.png"})))
 
            (d/mask {:id "btn-pnl-mask-3" :x 415 :y 76.311 :width 106 :height 113 :maskUnits "userSpaceOnUse"}
                    (d/g {:class "btn-pnl-clr-filter"}
-                        ($ "image" {:width 106 :height 113 :transform "translate(415 76.311)" :xlinkHref "assets/img/ctrl-pnl-btn-1-mask.png"}))))
+                        ($ "image" {:width 106 :height 113 :transform "translate(415 76.311)" :href "assets/img/ctrl-pnl-btn-1-mask.png"}))))
 
          (d/rect {:y 78 :width 561.009 :height 160 :fill "#dee3ed"})
 
-         ($ "image" {:width 573 :height 234 :xlinkHref "assets/img/ctrl-pnl-mask.png"})
+         ($ "image" {:width 573 :height 234 :href "assets/img/ctrl-pnl-mask.png"})
 
          ($ show-hidde-btn)
 

@@ -33,7 +33,7 @@
     (d/linearGradient {:id "boiler-steam-pipe" :x1 "315.86" :x2 "509.35" :y1 "530.26" :y2 "530.26" :gradientTransform "matrix(1,0,0,-1,0,831.89)" :gradientUnits "userSpaceOnUse"}
                       (d/stop {:stop-color "#dc9f59" :offset "0"})
                       (d/stop {:stop-color "#cc5943" :offset ".715"}))
-    (d/linearGradient {:id "boiler-flue-gas-pipe-top" :x1 "897.09" :x2 "897.09" :y1 "8333.5" :y2 "8131.9" :xlinkHref "#boiler-link"})
-    (d/linearGradient {:id "boiler-flue-gas-pipe-bottom" :x1 "897.95" :x2 "897.95" :y1 "8333.5" :y2 "8131.9" :xlinkHref "#boiler-link"})
-    (d/linearGradient {:id "boiler-turn-box-flue-gas-pipes" :x1 "899.7" :x2 "899.7" :y1 "8333.5" :y2 "8131.9" :xlinkHref "#boiler-link"})
-    (d/linearGradient {:id "boiler-super-heater-incl-left-piping" :x1 "445.84" :x2 "445.84" :y1 "8333.5" :y2 "8131.9" :gradientTransform "translate(0 -7759.7)" :gradientUnits "userSpaceOnUse" :xlinkHref "#boiler-link"})))
+    (d/linearGradient {:id "boiler-flue-gas-pipe-top" :x1 "897.09" :x2 "897.09" :y1 "8333.5" :y2 "8131.9" :href "#boiler-link"})
+    (d/linearGradient {:id "boiler-flue-gas-pipe-bottom" :x1 "897.95" :x2 "897.95" :y1 "8333.5" :y2 "8131.9" :href "#boiler-link"})
+    (d/linearGradient {:id "boiler-turn-box-flue-gas-pipes" :x1 "899.7" :x2 "899.7" :y1 "8333.5" :y2 "8131.9" :href "#boiler-link"})
+    (d/linearGradient {:id "boiler-super-heater-incl-left-piping" :x1 "445.84" :x2 "445.84" :y1 "8333.5" :y2 "8131.9" :gradientTransform "translate(0 -7759.7)" :gradientUnits "userSpaceOnUse" :href "#boiler-link"})))

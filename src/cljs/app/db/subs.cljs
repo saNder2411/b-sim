@@ -31,25 +31,40 @@
            (:sim db)))
 
 (reg-sub :lang
-         (fn [db _]
-           (:lang db)))
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :lang])))
 
 (reg-sub :operation-mode
-         (fn [db _]
-           (:operation-mode db)))
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :operation-mode])))
 
-(reg-sub :show-ctrl-panel
-         (fn [db _]
-           (:show-ctrl-panel db)))
+(reg-sub :ctrl-panel-view
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :ctrl-panel-view])))
 
-(reg-sub :show-general-settings
-         (fn [db _]
-           (:show-general-settings db)))
+(reg-sub :settings-modal-view
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :settings-modal-view])))
 
 (reg-sub :highlight-hotspots
-         (fn [db _]
-           (:highlight-hotspots db)))
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :highlight-hotspots])))
 
 (reg-sub :current-hotspot
-         (fn [db _]
-           (:current-hotspot db)))
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :current-hotspot])))
+
+(reg-sub :steam
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :steam])))
+
+(reg-sub :steam-max
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :steam-max])))
+
+(reg-sub :steam-%
+         :<- [:steam]
+         :<- [:steam-max]
+         (fn [[steam steam-max] _]
+           (let [value (* 100 (/ steam steam-max))]
+             (if (< value 0) 0 value))))

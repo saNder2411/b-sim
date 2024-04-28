@@ -23,33 +23,35 @@
                 (assoc db :kit new-kit)))
 
 (reg-event-db :change-lang
-              (fn [db [_ new-lang]]
-                (assoc db :lang new-lang)))
+              (fn [{:keys [kit] :as db} [_ new-lang]]
+                (assoc-in db [(keyword kit) :lang] new-lang)))
 
 (reg-event-db :change-operation-mode
-              (fn [db [_ new-value]]
-                (assoc db :operation-mode new-value)))
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :operation-mode] new-value)))
 
-(reg-event-db :set-show-ctrl-panel
-              (fn [db [_ new-value]]
-                (assoc db :show-ctrl-panel new-value)))
+(reg-event-db :set-ctrl-panel-view
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :ctrl-panel-view] new-value)))
 
-(reg-event-db :set-show-general-settings
-              (fn [db [_ new-value]]
-                (assoc db :show-general-settings new-value)))
+(reg-event-db :set-settings-modal-view
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :settings-modal-view] new-value)))
 
 (reg-event-db :set-highlight-hotspots
-              (fn [db [_ new-value]]
-                (assoc db :highlight-hotspots new-value)))
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :highlight-hotspots] new-value)))
 
 (reg-event-db :open-general-settings
-              (fn [db [_ _]]
-                (js/console.log "open gen settings" db)
-                (assoc db :show-general-settings true :highlight-hotspots false)))
+              (fn [{:keys [kit] :as db} [_ _]]
+                (js/console.log "open gen settings" kit)
+                (-> db
+                    (assoc-in [(keyword kit) :show-general-settings] true)
+                    (assoc-in [(keyword kit) :highlight-hotspots] false))))
 
 (reg-event-db :reset-sim
               (fn [db [_ _]]
-                (js/console.log "reset sim - stop sim and prevent to default all sim modules" db)
+                (js/console.log "reset sim - stop sim and prevent to default all sim modules" "stopped")
                 (assoc db :sim "stopped")))
 
 (reg-event-db :change-sim
@@ -58,5 +60,6 @@
                 (assoc db :sim new-value)))
 
 (reg-event-db :change-current-hotspot
-              (fn [db [_ new-value]]
-                (assoc db :current-hotspot new-value)))
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :current-hotspot] new-value)))
+

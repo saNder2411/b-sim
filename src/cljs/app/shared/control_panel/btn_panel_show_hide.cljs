@@ -5,7 +5,7 @@
             [app.shared.control-panel.btn-panel-button-layer :refer [button-layer]]))
 
 (defnc show-hidde-btn []
-  (let [show (use-sub [:show-ctrl-panel])]
+  (let [show (use-sub [:ctrl-panel-view])]
     (d/g
       ($ button-layer {:dl       "M85.317,140.582H84.4A37.494,37.494,0,0,1,46.9,103.089V78.773H122.81V103.09A37.494,37.494,0,0,1,85.317,140.582Z"
                        :dm       "M84.4,139.579a37.164,37.164,0,0,1-37.122-37.121V78.515h75.165v23.943a37.164,37.164,0,0,1-37.122,37.121Z"
@@ -16,4 +16,4 @@
         (d/path {:fill "#eee" :d "M66.825,114.361a1.571,1.571,0,0,1-1.111-2.681L83.745,93.649a1.57,1.57,0,0,1,2.221,0L104,111.68a1.57,1.57,0,1,1-2.22,2.221L84.855,96.98,67.935,113.9A1.565,1.565,0,0,1,66.825,114.361Z"}))
 
       (d/circle {:class    "touch-area" :cx 85 :cy 109 :r 30
-                 :on-click #(dispatch [:set-show-ctrl-panel (not show)])}))))
+                 :on-click #(dispatch [:set-ctrl-panel-view (not show)])}))))

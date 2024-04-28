@@ -26,9 +26,9 @@
            (:sludge-mass-max boiler-init-settings)))
 
 (reg-sub :sludge-mass-%
-         :<- [:sludge-mass-max]
          :<- [:sludge-mass]
-         (fn [[sludge-mass-max sludge-mass] _]
+         :<- [:sludge-mass-max]
+         (fn [[sludge-mass sludge-mass-max] _]
            (let [value (* 100 (/ sludge-mass sludge-mass-max))]
              (if (< value 0) 0 value))))
 

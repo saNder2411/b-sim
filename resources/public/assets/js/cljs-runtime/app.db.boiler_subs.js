@@ -14,10 +14,10 @@ return new cljs.core.Keyword(null,"sludge-mass","sludge-mass",-1293837775).cljs$
 refx.alpha.reg_sub(new cljs.core.Keyword(null,"sludge-mass-max","sludge-mass-max",-2114675205),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-init-settings","boiler-init-settings",411676225)], null),(function (boiler_init_settings,_){
 return new cljs.core.Keyword(null,"sludge-mass-max","sludge-mass-max",-2114675205).cljs$core$IFn$_invoke$arity$1(boiler_init_settings);
 }));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"sludge-mass-%","sludge-mass-%",1882296776),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sludge-mass-max","sludge-mass-max",-2114675205)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sludge-mass","sludge-mass",-1293837775)], null),(function (p__65702,_){
-var vec__65703 = p__65702;
-var sludge_mass_max = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__65703,(0),null);
-var sludge_mass = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__65703,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"sludge-mass-%","sludge-mass-%",1882296776),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sludge-mass","sludge-mass",-1293837775)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sludge-mass-max","sludge-mass-max",-2114675205)], null),(function (p__93581,_){
+var vec__93583 = p__93581;
+var sludge_mass = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__93583,(0),null);
+var sludge_mass_max = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__93583,(1),null);
 var value = ((100) * (sludge_mass / sludge_mass_max));
 if((value < (0))){
 return (0);

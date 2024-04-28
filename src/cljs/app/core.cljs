@@ -7,6 +7,7 @@
             [app.db.subs]
             [app.db.boiler-events]
             [app.db.boiler-subs]
+            [app.db.burner-subs]
             [app.db.NRR-2-60-subs]
             [app.app :refer [app]]))
 

@@ -175,13 +175,9 @@ body {
 
 body {
     color: #333;
-    margin: 0;
-    padding: 0px;
     box-sizing: border-box;
     overflow: hidden;
-
-    background-size: 100vw;
-    background-image: url("../img/boiler_bg_body_light.jpg");
+    background-image: url("../img/app-bg-light.jpg");
     background-size: cover;
 }
 
@@ -686,7 +682,7 @@ div.kit-wrapper {
     position: relative;
     left: 0;
     top: 0;
-    background-image: url("../img/boiler_bground_light.jpg");
+    background-image: url("../img/boiler-bg-light.jpg");
     background-size: cover;
 }
 
@@ -939,6 +935,85 @@ text.urb-time {
 .stroke-miterlimit {
     fill:              none;
     stroke-miterlimit: 10;
+}
+
+.burner-flame {
+    width: 600px;
+    height: 93px;
+    background:  url("../img/flame-sprite.png") no-repeat 0 0%;
+    animation: vertical-sprite 3s steps(23) 6s infinite;
+    transition: all 2s;
+}
+
+.water-bubbles {
+    width: 112px;
+    height: 165px;
+    background:  url("../img/water-bubbles-sprite.png") no-repeat 0 0%;
+    animation: horizontal-sprite 3s steps(31) 6s infinite;
+    transition: all 4s;
+}
+
+.steam-jet {
+    width: 87px;
+    height: 192px;
+    background:  url("../img/steam-jet-sprite.png") no-repeat 0 0%;
+    animation: horizontal-sprite 2s steps(17) 8s infinite;
+    transition: all 3s;
+}
+
+.steam-water-drops {
+    width: 69px;
+    height: 61px;
+    background:  url("../img/water-drops-sprite.png") no-repeat 0 0%;
+    animation: vertical-sprite 3s steps(30) 8s infinite;
+    transition: all 3s;
+}
+
+.heat-stream-btm {
+    width: 610px;
+    height: 19px;
+    background:  url("../img/heat-arrows-btm-sprite.png") no-repeat 0 0%;
+    animation: vertical-sprite 1600ms steps(23) 8s infinite;
+    transition: all 2s;
+}
+
+.heat-stream-top {
+    width: 670px;
+    height: 19px;
+    background:  url("../img/heat-arrows-top-sprite.png") no-repeat 0 0%;
+    animation: vertical-sprite 1600ms steps(23) 8s infinite;
+    transition: all 2s;
+}
+
+.heat-stream-turn-box-btm {
+    width: 67px;
+    height: 130px;
+    background:  url("../img/heat-arrow-turn-box-btm-sprite.png") no-repeat 0 0%;
+    animation: horizontal-sprite 1600ms steps(24) 8s infinite;
+    transition: all 2s;
+}
+
+.heat-stream-turn-box-top {
+    width: 65px;
+    height: 65px;
+    background:  url("../img/heat-arrow-turn-box-top-sprite.png") no-repeat 0 0%;
+    animation: horizontal-sprite 1600ms steps(23) 8s infinite;
+    transition: all 2s;
+}
+
+div.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+@keyframes vertical-sprite {
+    from { background-position: 0 0%; }
+    to { background-position: 0 100%; }
+}
+
+@keyframes horizontal-sprite {
+    from { background-position: 0% 0; }
+    to { background-position: 100% 0; }
 }
 
 
