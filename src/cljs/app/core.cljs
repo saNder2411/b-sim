@@ -22,8 +22,6 @@
   (refx/clear-subscription-cache!)
   (render))
 
-;; start your app with your favorite React renderer
-
 (.render root ($ app))
 
 (defn ^:export init []

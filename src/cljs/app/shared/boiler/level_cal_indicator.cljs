@@ -5,6 +5,7 @@
 
 (defnc level-cal-indicator [{:keys [point-by-boiler-level w-level digit-level point-pos opacity fill]}]
   (let [y (+ -58 (* 324 (- 1 (/ point-by-boiler-level 100.0))))]
+
     (d/g {:transform (str "translate(0, " y ")") :opacity opacity}
          (d/polygon {:fill fill :points "885.2 382.19 892.5 379.8 892.5 384.3"})
          (d/polygon {:fill "none" :stroke fill :points "890,382.2 909,382.2"})

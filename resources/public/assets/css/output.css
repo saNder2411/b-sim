@@ -997,7 +997,7 @@ text.urb-time {
     width: 65px;
     height: 65px;
     background:  url("../img/heat-arrow-turn-box-top-sprite.png") no-repeat 0 0%;
-    animation: horizontal-sprite 1600ms steps(23) 8s infinite;
+    animation: horizontal-sprite 2000ms steps(23) 8s infinite;
     transition: all 2s;
 }
 
