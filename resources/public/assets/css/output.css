@@ -1001,6 +1001,32 @@ text.urb-time {
     transition: all 2s;
 }
 
+.water-surface {
+    width: 675px;
+    height: 15px;
+    background:  url("../img/water-surface-sprite.png") no-repeat 0 0%;
+    animation: vertical-sprite 6000ms steps(47) 8s infinite;
+    transition: all 2s;
+}
+
+.water-foam {
+    width: 675px;
+    height: 15px;
+    transform: scale(1, 1.5);
+    background:  url("../img/foam-sprite.png") no-repeat 0 0%;
+    animation: vertical-sprite 6000ms steps(47) 8s infinite;
+    transition: all 2s;
+}
+
+.steam-pops {
+    width: 20px;
+    height: 15px;
+    background:  url("../img/steam-pops-sprite.png") no-repeat 0 0%;
+    animation: vertical-sprite 1125ms steps(9) 8s infinite;
+    transition: all 4s;
+    margin: 0px 8.7px;
+}
+
 div.hide {
     visibility: hidden;
     opacity: 0;

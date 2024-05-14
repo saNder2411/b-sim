@@ -26,6 +26,7 @@
                             :current-hotspot     "none"}
                  :boiler   {:water-level   84
                             :pressure      11
+                            :prev-pressure 11
                             :conductivity  3000
                             :temperature   100.5
                             :sludge-mass   39.2

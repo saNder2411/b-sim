@@ -37,3 +37,25 @@
          (fn [sludge-mass-% _]
            (let [max-svg-height 20.587]
              (* (/ max-svg-height 100) sludge-mass-%))))
+
+(reg-sub :pressure
+         :<- [:boiler]
+         (fn [boiler _]
+           (:pressure boiler)))
+
+(reg-sub :prev-pressure
+         :<- [:boiler]
+         (fn [boiler _]
+           (:prev-pressure boiler)))
+
+(reg-sub :conductivity
+         :<- [:boiler]
+         (fn [boiler _]
+           (:conductivity boiler)))
+
+(reg-sub :show-water-foam
+         :<- [:pressure]
+         :<- [:prev-pressure]
+         :<- [:conductivity]
+         (fn [[pressure prev-pressure conductivity] _]
+           (and (< (- pressure prev-pressure) -0.027) (> conductivity 2500))))

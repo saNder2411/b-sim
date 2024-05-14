@@ -10,9 +10,10 @@
                      0)
         bottom-height (if (< water-level 6.8)
                         (- 22 (/ (* 22 (- 6.8 84)) 6.8))
-                        22)]
+                        22)
+        bottom-rect-h (if (< (- 22 bottom-height) 0) 0 (- 22 bottom-height))]
     (<>
       (d/rect {:fill "url(#boiler-vacuum-top)"
                :x    413.71 :y 323.11 :width 668.49 :height (- 185.86 top-height)})
       (d/rect {:fill "url(#boiler-vacuum-bottom)" :transform "scale(-1)"
-               :x    -1081.9 :y (+ -646.37 bottom-height) :width 667.17 :height (- 22 bottom-height)}))))
+               :x    -1081.9 :y (+ -646.37 bottom-height) :width 667.17 :height bottom-rect-h}))))

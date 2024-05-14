@@ -22,7 +22,5 @@
   (refx/clear-subscription-cache!)
   (render))
 
-(.render root ($ app))
-
 (defn ^:export init []
   (render))
