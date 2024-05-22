@@ -1,7 +1,7 @@
-(ns app.shared.sidebar
+(ns app.shared.sidebar.core
   (:require [helix.core :refer [defnc $ <>]]
             [helix.dom :as d]
-            [app.shared.logo :refer [logo]]))
+            [app.shared.sidebar.logo :refer [logo]]))
 
 (defnc sidebar []
   (<>

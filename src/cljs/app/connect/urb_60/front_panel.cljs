@@ -1,7 +1,7 @@
 (ns app.connect.urb-60.front-panel
   (:require [helix.core :refer [defnc $ <>]]
             [helix.dom :as d]
-            [app.shared.logo :refer [logo]]))
+            [app.shared.sidebar.logo :refer [logo]]))
 
 (defnc front-panel []
   (<>

@@ -20,7 +20,7 @@
                               :opacity               1
                               :fill                  "#c83b44"})
       ($ level-cal-indicator {:point-by-boiler-level low-point-by-boiler
-                              :w-level               100
+                              :w-level               0
                               :digit-level           low-point
                               :point-pos             "cal.l"
                               :opacity               1

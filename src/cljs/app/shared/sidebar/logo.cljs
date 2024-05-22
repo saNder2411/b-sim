@@ -1,4 +1,4 @@
-(ns app.shared.logo
+(ns app.shared.sidebar.logo
   (:require [helix.core :refer [defnc]]
             [helix.dom :as d]))
 

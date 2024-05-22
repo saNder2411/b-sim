@@ -13,7 +13,7 @@
                             :ctrl-panel-view     true
                             :settings-modal-view false
                             :highlight-hotspots  true
-                            :current-hotspot     "none"}    ;; "boiler" "burner" "sludge-valve" "continuous-valve" "feed-w-valve" "feed-w-pump" "temperature-sensor" "urb" "level-controller" "level-probe" "conductivity-controller" "conductivity-probe" "high-level-probe" "burner-limiter" "pump-limiter" "low-level-probe-1" "low-level-probe-2" "converter"
+                            :current-hotspot     "none"}    ;; "boiler" "burner" "valve-sludge" "valve-continuous" "valve-feedwater" "pump-feedwater" "sensor-temperature" "urb" "controller-level" "probe-level" "controller-conductivity" "probe-conductivity" "probe-high-level" "limiter-burner" "limiter-pump" "probe-low-level-1" "probe-low-level-2" "converter"
                  :module   {:lang                "en"       ;; "en" "de"
                             :intended-use        "training" ;; "training" | "demonstration"
                             :operation-mode      "normal"   ;; "normal" "standby"

@@ -2,7 +2,7 @@
   (:require [helix.core :refer [defnc $ <>]]
             [helix.dom :as d]
             [app.shared.boiler.linear-gradients :refer [linear-gradients]]
-            [app.shared.boiler.highlighting :refer [highlighting-bg]]
+            [app.shared.boiler.boiler-highlighting :refer [highlighting-bg]]
             [app.shared.boiler.inner-vacuum :refer [inner-vacuum]]
             [app.shared.boiler.sludge :refer [sludge]]
             [app.shared.boiler.level-cal :refer [level-calibration]]
@@ -13,7 +13,16 @@
             [app.shared.boiler.animation-heat-stream :refer [heat-stream]]
             [app.shared.boiler.animation-water-surface :refer [water-surface]]
             [app.shared.boiler.animation-water-foam :refer [water-foam]]
-            [app.shared.boiler.animation-steam-pops :refer [steam-pops]]))
+            [app.shared.boiler.animation-steam-pops :refer [steam-pops]]
+            [app.shared.boiler.burner :refer [burner]]
+            [app.shared.boiler.valve-sludge :refer [valve-sludge]]
+            [app.shared.boiler.valve-continuous :refer [valve-continuous]]
+            [app.shared.boiler.valve-feedwater :refer [valve-feedwater]]
+            [app.shared.boiler.pump-feedwater :refer [pump-feedwater]]
+            [app.shared.boiler.sensor-temperature :refer [sensor-temperature]]
+            [app.shared.boiler.TRV-5-6X :refer [TRV-5-6X]]
+            [app.shared.boiler.probe-conductivity :refer [probe-conductivity]]
+            [app.shared.boiler.probe-level :refer [probe-level]]))
 
 
 (defnc boiler []
@@ -65,7 +74,16 @@
            (d/path {:fill "#cccccd" :d "m1081.6 549c-20.047 17.209-40.256 29.606-63.481 41.187a199.72 199.72 0 0 1-26.566 10.847c-78.639 25.772-160.86-0.571-183.03-16.556-39.2-28.138-68.045-65.817-83.854-110.51-1.059-3.1-2.119-6.2-3.1-9.379-0.651-2.121-1.3-4.323-1.874-6.525-0.815-3.1-1.63-6.2-2.363-9.379-0.815-3.67-1.63-7.34-2.282-11.092-0.57-3.017-1.059-6.035-1.467-9.134-0.326-2.039-0.57-4-0.815-6.035-0.326-3.018-0.651-6.035-0.977-9.135q-0.978-11.255-0.978-22.754a244.52 244.52 0 0 1 14.016-81.72h-164a277.4 277.4 0 0 1 22.084 104.56c0 1.631 0.082 3.262 0.082 4.812v4.317c0 0.816-0.082 1.713-0.082 2.529 0 0.978-0.081 1.957-0.081 2.936v0.571c-0.082 3.017-0.245 6.116-0.489 9.134-0.244 3.752-0.57 7.422-0.978 11.092-0.326 3.18-0.733 6.28-1.141 9.379-0.326 2.2-0.652 4.322-0.978 6.524-0.489 3.181-1.059 6.28-1.711 9.379a280.68 280.68 0 0 1-133.48 186.36h652.54l0.162-125.11c-5.133 4.814-10.104 9.462-15.157 13.708z"})
            (d/line {:stroke "#d03880" :stroke-width 4 :x1 650 :y1 185 :x2 650 :y2 398})
            (d/line {:stroke "#d03880" :stroke-width 4 :x1 658 :y1 185 :x2 657 :y2 398})
-
-
-
-           ($ level-calibration)) ))
+           ($ level-calibration)
+           ($ burner)
+           ($ valve-sludge)
+           ($ valve-continuous)
+           ($ valve-feedwater)
+           ($ pump-feedwater)
+           ($ sensor-temperature)
+           ($ TRV-5-6X)
+           ($ probe-conductivity)
+           ($ probe-level {:x 724 :hotspot-id "probe-low-level-1"})
+           ($ probe-level {:x 767 :hotspot-id "probe-high-level"})
+           ($ probe-level {:x 816 :hotspot-id "probe-low-level-2"})
+           ($ probe-level {:x 859 :hotspot-id "probe-level"}))))

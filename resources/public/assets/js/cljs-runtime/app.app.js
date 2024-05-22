@@ -3,59 +3,59 @@ app.app.window_resizing_handler = (function app$app$window_resizing_handler(w){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"window-resize","window-resize",-2050654634),w.target.innerWidth,w.target.innerHeight], null));
 });
 
-app.app.app = (function (){var G__85312 = (function app$app$app_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__85313 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.app.app = (function (){var G__47535 = (function app$app$app_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__47536 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
-var G__85316_85348 = helix.hooks.wrap_fx((function (){
+var G__47539_47571 = helix.hooks.wrap_fx((function (){
 window.addEventListener("resize",app.app.window_resizing_handler);
 
 return (function (){
 return window.removeEventListener("resize",app.app.window_resizing_handler);
 });
 }));
-var G__85317_85349 = [];
-(helix.hooks.raw_use_effect.cljs$core$IFn$_invoke$arity$2 ? helix.hooks.raw_use_effect.cljs$core$IFn$_invoke$arity$2(G__85316_85348,G__85317_85349) : helix.hooks.raw_use_effect.call(null,G__85316_85348,G__85317_85349));
+var G__47540_47572 = [];
+(helix.hooks.raw_use_effect.cljs$core$IFn$_invoke$arity$2 ? helix.hooks.raw_use_effect.cljs$core$IFn$_invoke$arity$2(G__47539_47571,G__47540_47572) : helix.hooks.raw_use_effect.call(null,G__47539_47571,G__47540_47572));
 
 var kit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit","kit",-1785767367)], null));
 var w = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"screen-w","screen-w",462794367)], null));
 var h = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"screen-h","screen-h",624845276)], null));
 var scale_f = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"screen-scale-f","screen-scale-f",-1876855878)], null));
-var G__85318 = "div";
-var G__85319 = (function (){var obj85321 = ({"className":"kit-wrapper","style":(function (){var obj85323 = ({"width":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(w),"px"].join('')),"height":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(h),"px"].join(''))});
-return obj85323;
-})(),"children":[(function (){var G__85324 = "p";
-var G__85325 = (function (){var obj85327 = ({"className":"version-tag","children":(function (){var G__85328 = "span";
-var G__85329 = (function (){var obj85331 = ({"style":(function (){var obj85333 = ({"fontSize":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(((14) * scale_f)),"px"].join(''))});
-return obj85333;
+var G__47541 = "div";
+var G__47542 = (function (){var obj47544 = ({"className":"kit-wrapper","style":(function (){var obj47546 = ({"width":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(w),"px"].join('')),"height":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(h),"px"].join(''))});
+return obj47546;
+})(),"children":[(function (){var G__47547 = "p";
+var G__47548 = (function (){var obj47550 = ({"className":"version-tag","children":(function (){var G__47551 = "span";
+var G__47552 = (function (){var obj47554 = ({"style":(function (){var obj47556 = ({"fontSize":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(((14) * scale_f)),"px"].join(''))});
+return obj47556;
 })(),"children":"Version: 1.0"});
-return obj85331;
+return obj47554;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85328,G__85329) : helix.core.jsx.call(null,G__85328,G__85329));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__47551,G__47552) : helix.core.jsx.call(null,G__47551,G__47552));
 })()});
-return obj85327;
+return obj47550;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85324,G__85325) : helix.core.jsx.call(null,G__85324,G__85325));
-})(),(function (){var G__85334 = app.shared.boiler.core.boiler;
-var G__85335 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85334,G__85335) : helix.core.jsx.call(null,G__85334,G__85335));
-})(),(function (){var G__85336 = app.shared.sidebar.sidebar;
-var G__85337 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85336,G__85337) : helix.core.jsx.call(null,G__85336,G__85337));
-})(),(function (){var G__85338 = app.shared.user_menu.user_menu;
-var G__85339 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85338,G__85339) : helix.core.jsx.call(null,G__85338,G__85339));
-})(),(function (){var G__85340 = app.shared.select_kit.core.select_kit_menu;
-var G__85341 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85340,G__85341) : helix.core.jsx.call(null,G__85340,G__85341));
-})(),(function (){var G__85342 = app.shared.control_panel.core.control_panel;
-var G__85343 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85342,G__85343) : helix.core.jsx.call(null,G__85342,G__85343));
-})(),(function (){var G__85344 = kit;
-switch (G__85344) {
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__47547,G__47548) : helix.core.jsx.call(null,G__47547,G__47548));
+})(),(function (){var G__47557 = app.shared.boiler.core.boiler;
+var G__47558 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__47557,G__47558) : helix.core.jsx.call(null,G__47557,G__47558));
+})(),(function (){var G__47559 = app.shared.sidebar.core.sidebar;
+var G__47560 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__47559,G__47560) : helix.core.jsx.call(null,G__47559,G__47560));
+})(),(function (){var G__47561 = app.shared.user_menu.core.user_menu;
+var G__47562 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__47561,G__47562) : helix.core.jsx.call(null,G__47561,G__47562));
+})(),(function (){var G__47563 = app.shared.select_kit.core.select_kit_menu;
+var G__47564 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__47563,G__47564) : helix.core.jsx.call(null,G__47563,G__47564));
+})(),(function (){var G__47565 = app.shared.control_panel.core.control_panel;
+var G__47566 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__47565,G__47566) : helix.core.jsx.call(null,G__47565,G__47566));
+})(),(function (){var G__47567 = kit;
+switch (G__47567) {
 case "connect":
-var G__85345 = app.connect.core.connect_kit;
-var G__85346 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85345,G__85346) : helix.core.jsx.call(null,G__85345,G__85346));
+var G__47568 = app.connect.core.connect_kit;
+var G__47569 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__47568,G__47569) : helix.core.jsx.call(null,G__47568,G__47569));
 
 break;
 default:
@@ -63,17 +63,17 @@ return null;
 
 }
 })()]});
-return obj85321;
+return obj47544;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__85318,G__85319) : helix.core.jsxs.call(null,G__85318,G__85319));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__47541,G__47542) : helix.core.jsxs.call(null,G__47541,G__47542));
 });
 if(goog.DEBUG === true){
-var G__85347 = G__85312;
-(G__85347.displayName = "app.app/app");
+var G__47570 = G__47535;
+(G__47570.displayName = "app.app/app");
 
-return G__85347;
+return G__47570;
 } else {
-return G__85312;
+return G__47535;
 }
 })();
 

@@ -31,12 +31,10 @@
 (reg-sub :NRR-2-60-calibration-level-cal-view
          :<- [:NRR-2-60-calibration]
          (fn [cal _]
-           (dissoc cal
-                   :high-point-by-cal-p
-                   :cal-p
-                   :opt-cal-p-from-modal
-                   :low-point->probe-value
-                   :high-point-by-cal-p->probe-value
-                   :cal-p->probe-value
-                   :next-cal-p)))
+           (select-keys cal [:high-point-by-boiler
+                             :low-point
+                             :low-point-by-boiler
+                             :next-high-point-by-boiler
+                             :next-real-high-point
+                             :real-high-point])))
 

@@ -1,4 +1,4 @@
-(ns app.shared.touch-area
+(ns app.shared.components.touch-area
   (:require [helix.core :refer [defnc]]
             [helix.dom :as d]))
 

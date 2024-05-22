@@ -1,8 +1,8 @@
-(ns app.shared.user-menu
+(ns app.shared.user-menu.core
   (:require [helix.core :refer [defnc $]]
             [helix.dom :as d]
             [refx.alpha :refer [use-sub]]
-            [app.shared.touch-area :refer [touch-area]]))
+            [app.shared.components.touch-area :refer [touch-area]]))
 
 (defnc user-menu []
   (let [user-name (use-sub [:user-full-name])]

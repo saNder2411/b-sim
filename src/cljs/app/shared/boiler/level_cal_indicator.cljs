@@ -13,4 +13,4 @@
                  w-level
                  (d/tspan {:font-size "10px"} "% ")
                  (cl-format nil "~d" digit-level)
-                 (d/tspan {:font-size "10px"} (str "d " point-pos))))))
+                 (d/tspan {:font-size "10px"} (str "d (" point-pos ")"))))))
