@@ -1,7 +1,9 @@
 (ns app.connect.core
   (:require [helix.core :refer [defnc <> $]]
-            [app.connect.urb-60.core :refer [urb-60]]))
+            [app.connect.URB-60.core :refer [URB-60]]
+            [app.connect.burner-limiter :refer [burner-limiter]]))
 
 (defnc connect-kit []
   (<>
-    ($ urb-60)))
+    ($ URB-60)
+    ($ burner-limiter)))

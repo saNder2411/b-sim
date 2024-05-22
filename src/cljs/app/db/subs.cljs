@@ -68,3 +68,19 @@
          (fn [[steam steam-max] _]
            (let [value (* 100 (/ steam steam-max))]
              (if (< value 0) 0 value))))
+
+(reg-sub :burner-limiter-id
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :burner-limiter-id])))
+
+(reg-sub :burner-limiter-full-screen
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :burner-limiter-full-screen])))
+
+(reg-sub :pump-limiter-id
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :pump-limiter-id])))
+
+(reg-sub :pump-limiter-full-screen
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :pump-limiter-full-screen])))
