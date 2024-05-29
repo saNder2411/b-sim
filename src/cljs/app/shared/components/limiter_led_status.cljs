@@ -7,5 +7,4 @@
                       green (str " led-green")
                       green-pulse (str " led-green-pulse")
                       green-fast-pulse (str " led-green-fast-pulse"))]
-
     (d/path {:class class :d led-path})))

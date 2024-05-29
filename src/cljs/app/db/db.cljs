@@ -4,20 +4,24 @@
                  :kit      "connect"                        ;; "connect"  "module"
                  :user     {:firstname "User" :lastname "Admin"}
                  :sim      "stopped"                        ;; "stopped" "starting" "run" "pause" "stopping"
-                 :connect  {:lang                       "en" ;; "en" "de"
-                            :intended-use               "training" ;; "training" | "demonstration"
-                            :operation-mode             "normal" ;; "normal" "standby"
-                            :steam-unit                 "t/h" ;; "t/h" | "T/h"
-                            :steam                      35
-                            :steam-max                  35
-                            :ctrl-panel-view            true
-                            :settings-modal-view        false
-                            :highlight-hotspots         true
-                            :current-hotspot            "none" ;; "boiler" "burner" "valve-sludge" "valve-continuous" "valve-feedwater" "pump-feedwater" "sensor-temperature" "urb" "controller-level" "probe-level" "controller-conductivity" "probe-conductivity" "probe-high-level" "limiter-burner" "limiter-pump" "probe-low-level-1" "probe-low-level-2" "converter"
-                            :burner-limiter-id          "URS 60" ;; "none" | "URS 60"
-                            :burner-limiter-full-screen false
-                            :pump-limiter-id            "URS 61" ;; "none" | "URS 61"
-                            :pump-limiter-full-screen   false}
+                 :connect  {:lang                        "en" ;; "en" "de"
+                            :intended-use                "training" ;; "training" | "demonstration"
+                            :operation-mode              "normal" ;; "normal" "standby"
+                            :steam-unit                  "t/h" ;; "t/h" | "T/h"
+                            :steam                       35
+                            :steam-max                   35
+                            :ctrl-panel-view             true
+                            :settings-modal-view         false
+                            :highlight-hotspots          true
+                            :current-hotspot             "none" ;; "boiler" "burner" "valve-sludge" "valve-continuous" "valve-feedwater" "pump-feedwater" "sensor-temperature" "urb" "controller-level" "probe-level" "controller-conductivity" "probe-conductivity" "probe-high-level" "limiter-burner" "limiter-pump" "probe-low-level-1" "probe-low-level-2" "converter"
+                            :burner-limiter-id           "URS 60" ;; "none" | "URS 60"
+                            :burner-limiter-full-screen  false
+                            :pump-limiter-id             "URS 61" ;; "none" | "URS 61"
+                            :pump-limiter-full-screen    false
+                            :cond-controller-id          "LRR 1-60" ;; "none" | "LRR 1-60"
+                            :cond-controller-full-screen false
+                            :level-controller-id          "NRR 2-60" ;; "none" | "NRR 2-60" | "NRR 2-60 3C" | "NRR 2-61" |"NRR 2-61 3C"
+                            :level-controller-full-screen false}
 
                  :module   {:lang                "en"       ;; "en" "de"
                             :intended-use        "training" ;; "training" | "demonstration"

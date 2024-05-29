@@ -777,6 +777,10 @@ svg {
     }
 }
 
+.led-amber {
+    fill: #ffbf00;
+    filter: url(#filterCtrlLedSelfGlow);
+}
 
 .slider-title {
     fill: #565b64;

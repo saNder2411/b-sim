@@ -84,3 +84,19 @@
 (reg-sub :pump-limiter-full-screen
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :pump-limiter-full-screen])))
+
+(reg-sub :cond-controller-id
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :cond-controller-id])))
+
+(reg-sub :cond-controller-full-screen
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :cond-controller-full-screen])))
+
+(reg-sub :level-controller-id
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :level-controller-id])))
+
+(reg-sub :level-controller-full-screen
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :level-controller-full-screen])))

@@ -67,3 +67,15 @@
               (fn [{:keys [kit] :as db} [_ new-value]]
                 (assoc-in db [(keyword kit) :burner-limiter-full-screen] new-value)))
 
+(reg-event-db :change-pump-limiter-full-screen
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :pump-limiter-full-screen] new-value)))
+
+(reg-event-db :change-cond-controller-full-screen
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :cond-controller-full-screen] new-value)))
+
+(reg-event-db :change-level-controller-full-screen
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :level-controller-full-screen] new-value)))
+
