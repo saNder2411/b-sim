@@ -5,6 +5,7 @@
             [refx.alpha :refer [use-sub dispatch]]
             [app.shared.sidebar.core :refer [sidebar]]
             [app.shared.user-menu.core :refer [user-menu]]
+            [app.connect.cables :refer [cables]]
             [app.connect.core :refer [connect-kit]]
             [app.shared.select-kit.core :refer [select-kit-menu]]
             [app.shared.control-panel.core :refer [control-panel]]
@@ -28,12 +29,14 @@
            (d/p {:class "version-tag"}
                 (d/span {:style {:font-size (str (* 14 scale-f) "px")}} "Version: 1.0"))
 
+
+           (when (= kit "connect")
+             ($ cables))
            ($ boiler)
            ($ sidebar)
            ($ user-menu)
            ($ select-kit-menu)
            ($ control-panel)
-
            (case kit
              "connect" ($ connect-kit)
              nil))))

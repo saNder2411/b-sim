@@ -4,7 +4,8 @@
             [app.connect.burner-limiter :refer [burner-limiter]]
             [app.connect.pump-limiter :refer [pump-limiter]]
             [app.connect.cond-controller :refer [cond-controller]]
-            [app.connect.level-controller :refer [level-controller]]))
+            [app.connect.level-controller :refer [level-controller]]
+            [app.connect.converter :refer [converter]]))
 
 (defnc connect-kit []
   (<>
@@ -12,4 +13,5 @@
     ($ burner-limiter)
     ($ pump-limiter)
     ($ cond-controller)
-    ($ level-controller)))
+    ($ level-controller)
+    ($ converter)))

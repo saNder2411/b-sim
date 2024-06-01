@@ -21,7 +21,11 @@
                             :cond-controller-id          "LRR 1-60" ;; "none" | "LRR 1-60"
                             :cond-controller-full-screen false
                             :level-controller-id          "NRR 2-60" ;; "none" | "NRR 2-60" | "NRR 2-60 3C" | "NRR 2-61" |"NRR 2-61 3C"
-                            :level-controller-full-screen false}
+                            :level-controller-full-screen false
+                            :level-probe-id          "NRGT 26-2" ;; "NRG 26-60" | "NRGT 26-2"
+                            :level-probe-full-screen false
+                            :converter-id "URW 60"
+                            :converter-full-screen false}
 
                  :module   {:lang                "en"       ;; "en" "de"
                             :intended-use        "training" ;; "training" | "demonstration"

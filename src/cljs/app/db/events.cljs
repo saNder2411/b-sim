@@ -79,3 +79,11 @@
               (fn [{:keys [kit] :as db} [_ new-value]]
                 (assoc-in db [(keyword kit) :level-controller-full-screen] new-value)))
 
+(reg-event-db :change-level-probe-full-screen
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :level-probe-full-screen] new-value)))
+
+(reg-event-db :change-converter-full-screen
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :converter-full-screen] new-value)))
+

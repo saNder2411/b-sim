@@ -100,3 +100,19 @@
 (reg-sub :level-controller-full-screen
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :level-controller-full-screen])))
+
+(reg-sub :level-probe-id
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :level-probe-id])))
+
+(reg-sub :level-probe-full-screen
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :level-probe-full-screen])))
+
+(reg-sub :converter-id
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :converter-id])))
+
+(reg-sub :converter-full-screen
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :converter-full-screen])))
