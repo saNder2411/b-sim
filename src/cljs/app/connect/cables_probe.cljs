@@ -3,10 +3,10 @@
             [helix.dom :as d]
             [refx.alpha :refer [use-sub dispatch]]))
 
-(defnc probe-cables []
+(defnc cables-probe []
   (let [level-probe-id (use-sub [:level-probe-id])
         level-controller-id (use-sub [:level-controller-id])
-        has-URW-60 (= level-probe-id "NRGT 26-2")]
+        has-URW-60 (= level-probe-id "NRGT-26-2")]
     (d/g {:data-desc "CablesProbe"}
          (d/line {:stroke "#d03880" :stroke-width 4 :x1 408 :y1 185 :x2 408 :y2 204})
          (d/line {:stroke "#d03880" :stroke-width 4 :x1 406 :y1 185 :x2 652 :y2 185})

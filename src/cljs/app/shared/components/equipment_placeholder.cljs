@@ -5,7 +5,7 @@
 
 (defnc equipment-placeholder [{:keys [x y w title]}]
   (let [sim (use-sub [:sim])]
-    (when (not (= sim "run"))
+    (when (not= sim "run")
       (d/svg {:style   {:width w :left x :top y}
               :viewBox "0 0 246.73 77.616"}
              (d/path {:fill      "#0a1f4b"

@@ -3,13 +3,13 @@
             [helix.dom :as d]
             [refx.alpha :refer [use-sub dispatch]]))
 
-(defnc controller-cables []
+(defnc cables-controller []
   (let [level-probe-id (use-sub [:level-probe-id])
         level-controller-id (use-sub [:level-controller-id])
         cond-controller-id (use-sub [:cond-controller-id])
         pump-limiter-id (use-sub [:pump-limiter-id])
         burner-limiter-id (use-sub [:burner-limiter-id])
-        has-URW-60 (= level-probe-id "NRGT 26-2")]
+        has-URW-60 (= level-probe-id "NRGT-26-2")]
     (d/g {:data-desc "CablesController"}
          (d/g {:data-desc "URW-60"}
               (when has-URW-60

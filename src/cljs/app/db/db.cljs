@@ -4,28 +4,28 @@
                  :kit      "connect"                        ;; "connect"  "module"
                  :user     {:firstname "User" :lastname "Admin"}
                  :sim      "stopped"                        ;; "stopped" "starting" "run" "pause" "stopping"
-                 :connect  {:lang                        "en" ;; "en" "de"
-                            :intended-use                "training" ;; "training" | "demonstration"
-                            :operation-mode              "normal" ;; "normal" "standby"
-                            :steam-unit                  "t/h" ;; "t/h" | "T/h"
-                            :steam                       35
-                            :steam-max                   35
-                            :ctrl-panel-view             true
-                            :settings-modal-view         false
-                            :highlight-hotspots          true
-                            :current-hotspot             "none" ;; "boiler" "burner" "valve-sludge" "valve-continuous" "valve-feedwater" "pump-feedwater" "sensor-temperature" "urb" "controller-level" "probe-level" "controller-conductivity" "probe-conductivity" "probe-high-level" "limiter-burner" "limiter-pump" "probe-low-level-1" "probe-low-level-2" "converter"
-                            :burner-limiter-id           "URS 60" ;; "none" | "URS 60"
-                            :burner-limiter-full-screen  false
-                            :pump-limiter-id             "URS 61" ;; "none" | "URS 61"
-                            :pump-limiter-full-screen    false
-                            :cond-controller-id          "LRR 1-60" ;; "none" | "LRR 1-60"
-                            :cond-controller-full-screen false
-                            :level-controller-id          "NRR 2-60" ;; "none" | "NRR 2-60" | "NRR 2-60 3C" | "NRR 2-61" |"NRR 2-61 3C"
+                 :connect  {:lang                         "en" ;; "en" "de"
+                            :intended-use                 "training" ;; "training" | "demonstration"
+                            :operation-mode               "normal" ;; "normal" "standby"
+                            :steam-unit                   "t/h" ;; "t/h" | "T/h"
+                            :steam                        35
+                            :steam-max                    35
+                            :ctrl-panel-view              true
+                            :settings-modal-view          false
+                            :highlight-hotspots           true
+                            :current-hotspot              "none" ;; "boiler" "burner" "sludge-valve" "continuous-valve" "feedwater-valve" "feedwater-pump" "temperature-sensor" "urb" "level-controller" "level-probe" "cond-controller" "cond-probe" "level-high-probe" "burner-limiter" "pump-limiter" "level-low-probe-1" "level-low-probe-2" "converter"
+                            :burner-limiter-id            "URS-60" ;; "none" | "URS-60"
+                            :burner-limiter-full-screen   false
+                            :pump-limiter-id              "URS-61" ;; "none" | "URS-61"
+                            :pump-limiter-full-screen     false
+                            :cond-controller-id           "LRR-1-60" ;; "none" | "LRR-1-60"
+                            :cond-controller-full-screen  false
+                            :level-controller-id          "NRR-2-60" ;; "none" | "NRR-2-60" | "NRR-2-60-3C" | "NRR-2-61" |"NRR-2-61-3C"
                             :level-controller-full-screen false
-                            :level-probe-id          "NRGT 26-2" ;; "NRG 26-60" | "NRGT 26-2"
-                            :level-probe-full-screen false
-                            :converter-id "URW 60"
-                            :converter-full-screen false}
+                            :level-probe-id               "NRGT-26-2" ;; "NRG-26-60" | "NRGT-26-2"
+                            :level-probe-full-screen      false
+                            :converter-id                 "URW-60"
+                            :converter-full-screen        false}
 
                  :module   {:lang                "en"       ;; "en" "de"
                             :intended-use        "training" ;; "training" | "demonstration"
@@ -99,6 +99,39 @@
                             :high-level-on-delay-w  0
                             :low-level-off-delay-w  3
                             :low-level-on-delay-w   0
+                            :actuator-type          "ELECTRIC_VALVE"
+                            :errors-extra-trigger   []
+                            :pi-controller          {}
+                            :calibration            {:low-point                        25
+                                                     :high-point-by-cal-p              32767
+                                                     :cal-p                            100
+                                                     :opt-cal-p-from-modal             25
+                                                     :low-point-by-boiler              78.23376208
+                                                     :high-point-by-boiler             97.86859
+                                                     :real-high-point                  32767
+                                                     :low-point->probe-value           25
+                                                     :high-point-by-cal-p->probe-value 32767
+                                                     :cal-p->probe-value               100
+                                                     :next-cal-p                       100}}
+
+                 :NRR-2-61 {:switch-1               false
+                            :switch-2               false
+                            :switch-3               false
+                            :switch-4               false
+                            :fill-or-dis            "fill"
+                            :high-level             80
+                            :low-level              20
+                            :high-level-w           60
+                            :low-level-w            40
+                            :high-level-off-delay   3
+                            :high-level-on-delay    0
+                            :low-level-off-delay    3
+                            :low-level-on-delay     0
+                            :high-level-off-delay-w 3
+                            :high-level-on-delay-w  0
+                            :low-level-off-delay-w  3
+                            :low-level-on-delay-w   0
+                            :actuator-type          "FREQUENCY_CONTROLLED_PUMPS" ; "FREQUENCY_CONTROLLED_PUMPS" | "ELECTRO_PNEUMATIC_VALVE"
                             :errors-extra-trigger   []
                             :pi-controller          {}
                             :calibration            {:low-point                        25

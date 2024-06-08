@@ -101,6 +101,11 @@
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :level-controller-full-screen])))
 
+(reg-sub :level-controller-actuator-type
+         (fn [{:keys [kit] :as db} _]
+           (let [level-controller-id (get-in db [(keyword kit) :level-controller-id])]
+             (get-in db [(keyword level-controller-id) :actuator-type]))))
+
 (reg-sub :level-probe-id
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :level-probe-id])))
@@ -116,3 +121,44 @@
 (reg-sub :converter-full-screen
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :converter-full-screen])))
+
+(reg-sub :show-burner-limiter-hot-spot
+         :<- [:burner-limiter-id]
+         :<- [:sim]
+         (fn [[burner-limiter-id sim] _]
+           (or (not= burner-limiter-id "none") (not= sim "run"))))
+
+(reg-sub :show-pump-limiter-hot-spot
+         :<- [:pump-limiter-id]
+         :<- [:sim]
+         (fn [[pump-limiter-id sim] _]
+           (or (not= pump-limiter-id "none") (not= sim "run"))))
+
+(reg-sub :show-cond-controller-hot-spot
+         :<- [:cond-controller-id]
+         :<- [:sim]
+         (fn [[cond-controller-id sim] _]
+           (or (not= cond-controller-id "none") (not= sim "run"))))
+
+(reg-sub :show-level-controller-hot-spot
+         :<- [:level-controller-id]
+         :<- [:sim]
+         (fn [[level-controller-id sim] _]
+           (or (not= level-controller-id "none") (not= sim "run"))))
+
+(reg-sub :show-converter-hot-spot
+         :<- [:level-probe-id]
+         (fn [level-probe-id _]
+           (= level-probe-id "NRGT-26-2")))
+
+(reg-sub :show-feedwater-valve-hot-spot
+         :<- [:level-controller-actuator-type]
+         (fn [level-controller-actuator-type _]
+           (not= level-controller-actuator-type "FREQUENCY_CONTROLLED_PUMPS")))
+
+(reg-sub :show-feedwater-pump-hot-spot
+         :<- [:level-controller-actuator-type]
+         (fn [level-controller-actuator-type _]
+           (= level-controller-actuator-type "FREQUENCY_CONTROLLED_PUMPS")))
+
+
