@@ -5,7 +5,7 @@
 
 (defnc valve-continuous-highlighting-bg []
   (let [current-hotspot (use-sub [:current-hotspot])]
-    (when (= current-hotspot "valve-continuous")
+    (when (= current-hotspot "continuous-valve")
       (<>
         ($ "image" {:style  {:isolation "isolate" :opacity 0.8}
                     :href   "assets/img/valve-continuous-highlighting-bg.png"

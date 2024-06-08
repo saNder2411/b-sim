@@ -4,7 +4,7 @@
             [app.shared.boiler.probe-level-highlighting :refer [probe-level-highlighting]]))
 
 (defnc probe-level [{:keys [x hotspot-id]}]
-  (let [left-orientation (or (= hotspot-id "probe-low-level-1") (= hotspot-id "probe-low-level-2"))]
+  (let [left-orientation (or (= hotspot-id "level-low-probe-1") (= hotspot-id "level-low-probe-2"))]
     (d/g {:transform (str "translate(" x ", 186)")}
          ($ probe-level-highlighting {:hotspot-id hotspot-id})
          (if left-orientation

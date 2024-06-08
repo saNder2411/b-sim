@@ -22,7 +22,7 @@
             [app.shared.boiler.pump-feedwater :refer [pump-feedwater]]
             [app.shared.boiler.sensor-temperature :refer [sensor-temperature]]
             [app.shared.boiler.TRV-5-6X :refer [TRV-5-6X]]
-            [app.shared.boiler.probe-conductivity :refer [probe-conductivity]]
+            [app.shared.boiler.probe-conductivity :refer [probe-cond]]
             [app.shared.boiler.probe-level :refer [probe-level]]))
 
 
@@ -86,8 +86,8 @@
            ($ pump-feedwater)
            ($ sensor-temperature)
            ($ TRV-5-6X)
-           ($ probe-conductivity)
-           ($ probe-level {:x 724 :hotspot-id "probe-low-level-1"})
-           ($ probe-level {:x 767 :hotspot-id "probe-high-level"})
-           ($ probe-level {:x 816 :hotspot-id "probe-low-level-2"})
-           ($ probe-level {:x 859 :hotspot-id "probe-level"}))))
+           ($ probe-cond)
+           ($ probe-level {:x 724 :hotspot-id "level-low-probe-1"})
+           ($ probe-level {:x 767 :hotspot-id "level-high-probe"})
+           ($ probe-level {:x 816 :hotspot-id "level-low-probe-2"})
+           ($ probe-level {:x 859 :hotspot-id "level-probe"}))))

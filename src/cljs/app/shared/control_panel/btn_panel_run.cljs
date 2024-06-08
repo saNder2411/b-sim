@@ -10,6 +10,7 @@
         disable (or (= sim "starting") (= sim "stopping"))
         start #(go
                  (dispatch [:change-sim "starting"])
+                 (dispatch [:change-current-hotspot "none"])
                  (<! (timeout 6000))
                  (dispatch [:change-sim "run"]))
         play #(dispatch [:change-sim "run"])

@@ -5,7 +5,7 @@
 
 (defnc probe-level-highlighting [{:keys [hotspot-id]}]
   (let [current-hotspot (use-sub [:current-hotspot])
-        left-orientation (or (= hotspot-id "probe-low-level-1") (= hotspot-id "probe-low-level-2"))]
+        left-orientation (or (= hotspot-id "level-low-probe-1") (= hotspot-id "level-low-probe-2"))]
     (when (= current-hotspot hotspot-id)
       (if left-orientation
         (<>

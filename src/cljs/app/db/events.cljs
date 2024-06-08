@@ -61,7 +61,10 @@
 
 (reg-event-db :change-current-hotspot
               (fn [{:keys [kit] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :current-hotspot] new-value)))
+                (let [kit-kw (keyword kit)]
+                  (-> db
+                      (assoc-in [kit-kw :highlight-hotspots] false)
+                      (assoc-in [kit-kw :current-hotspot] new-value)))))
 
 (reg-event-db :change-burner-limiter-full-screen
               (fn [{:keys [kit] :as db} [_ new-value]]

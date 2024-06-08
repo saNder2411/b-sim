@@ -5,7 +5,7 @@
 
 (defnc sensor-temperature-highlighting-bg []
   (let [current-hotspot (use-sub [:current-hotspot])]
-    (when (= current-hotspot "sensor-temperature")
+    (when (= current-hotspot "temperature-sensor")
       (<>
         ($ "image" {:style  {:isolation "isolate" :opacity 0.8}
                     :href   "assets/img/sensor-temperature-highlighting-bg.png"

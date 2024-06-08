@@ -5,7 +5,7 @@
 
 (defnc probe-conductivity-highlighting []
   (let [current-hotspot (use-sub [:current-hotspot])]
-    (when (= current-hotspot "probe-conductivity")
+    (when (= current-hotspot "cond-probe")
       (<>
         ($ "image" {:style  {:isolation "isolate" :opacity 0.8}
                     :href   "assets/img/probe-conductivity-highlighting-bg.png"
