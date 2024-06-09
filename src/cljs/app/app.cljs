@@ -9,7 +9,7 @@
             [app.connect.core :refer [connect-kit]]
             [app.shared.select-kit.core :refer [select-kit-menu]]
             [app.shared.control-panel.core :refer [control-panel]]
-            [app.shared.boiler.core :refer [boiler]]))
+            [app.shared.boiler-plant.core :refer [boiler-plant]]))
 
 (defn window-resizing-handler [w]
   (dispatch [:window-resize (.-innerWidth (.-target w)) (.-innerHeight (.-target w))]))
@@ -32,7 +32,7 @@
 
            (when (= kit "connect")
              ($ cables))
-           ($ boiler)
+           ($ boiler-plant)
            ($ sidebar)
            ($ user-menu)
            ($ select-kit-menu)

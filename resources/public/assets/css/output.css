@@ -1039,11 +1039,13 @@ svg {
 .hot-spot-shadow {
     isolation: isolate;
     animation: hot-spot-shadow-animation 700ms ease 0s alternate infinite none running;
+    transition: all 2s ease-out;
 }
 
 .hide {
     visibility: hidden;
     opacity: 0;
+    transition: all 2s ease-out;
 }
 
 @keyframes vertical-sprite {
