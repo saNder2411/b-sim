@@ -1,4 +1,4 @@
-(ns app.connect.urb-60.main-menu
+(ns app.connect.URB-60.main-menu
   (:require [helix.core :refer [defnc]]
             [helix.dom :as d]))
 

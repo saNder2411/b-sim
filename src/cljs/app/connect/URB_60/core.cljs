@@ -2,8 +2,8 @@
   (:require [helix.core :refer [defnc <> $]]
             [helix.dom :as d]
             [refx.alpha :refer [use-sub]]
-            [app.connect.urb-60.front-panel :refer [front-panel]]
-            [app.connect.urb-60.main-menu :refer [main-menu]]))
+            [app.connect.URB-60.front-panel :refer [front-panel]]
+            [app.connect.URB-60.main-menu :refer [main-menu]]))
 
 (defnc URB-60 []
   (let [screen-w (use-sub [:screen-w])]

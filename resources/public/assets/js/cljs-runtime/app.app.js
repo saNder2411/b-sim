@@ -3,62 +3,53 @@ app.app.window_resizing_handler = (function app$app$window_resizing_handler(w){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"window-resize","window-resize",-2050654634),w.target.innerWidth,w.target.innerHeight], null));
 });
 
-app.app.app = (function (){var G__29876 = (function app$app$app_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__29877 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.app.app = (function (){var G__28510 = (function app$app$app_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__28511 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
-var G__29880_29914 = helix.hooks.wrap_fx((function (){
+var G__28514_28542 = helix.hooks.wrap_fx((function (){
 window.addEventListener("resize",app.app.window_resizing_handler);
 
 return (function (){
 return window.removeEventListener("resize",app.app.window_resizing_handler);
 });
 }));
-var G__29881_29915 = [];
-(helix.hooks.raw_use_effect.cljs$core$IFn$_invoke$arity$2 ? helix.hooks.raw_use_effect.cljs$core$IFn$_invoke$arity$2(G__29880_29914,G__29881_29915) : helix.hooks.raw_use_effect.call(null,G__29880_29914,G__29881_29915));
+var G__28515_28543 = [];
+(helix.hooks.raw_use_effect.cljs$core$IFn$_invoke$arity$2 ? helix.hooks.raw_use_effect.cljs$core$IFn$_invoke$arity$2(G__28514_28542,G__28515_28543) : helix.hooks.raw_use_effect.call(null,G__28514_28542,G__28515_28543));
 
 var kit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit","kit",-1785767367)], null));
 var w = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"screen-w","screen-w",462794367)], null));
 var h = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"screen-h","screen-h",624845276)], null));
 var scale_f = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"screen-scale-f","screen-scale-f",-1876855878)], null));
-var G__29882 = "div";
-var G__29883 = (function (){var obj29885 = ({"className":"kit-wrapper","style":(function (){var obj29887 = ({"width":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(w),"px"].join('')),"height":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(h),"px"].join(''))});
-return obj29887;
-})(),"children":[(function (){var G__29888 = "p";
-var G__29889 = (function (){var obj29891 = ({"className":"version-tag","children":(function (){var G__29892 = "span";
-var G__29893 = (function (){var obj29895 = ({"style":(function (){var obj29897 = ({"fontSize":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(((14) * scale_f)),"px"].join(''))});
-return obj29897;
+var G__28516 = "div";
+var G__28517 = (function (){var obj28519 = ({"className":"kit-wrapper","style":(function (){var obj28521 = ({"width":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(w),"px"].join('')),"height":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(h),"px"].join(''))});
+return obj28521;
+})(),"children":[(function (){var G__28522 = "p";
+var G__28523 = (function (){var obj28525 = ({"className":"version-tag","children":(function (){var G__28526 = "span";
+var G__28527 = (function (){var obj28529 = ({"style":(function (){var obj28531 = ({"fontSize":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(((14) * scale_f)),"px"].join(''))});
+return obj28531;
 })(),"children":"Version: 1.0"});
-return obj29895;
+return obj28529;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29892,G__29893) : helix.core.jsx.call(null,G__29892,G__29893));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__28526,G__28527) : helix.core.jsx.call(null,G__28526,G__28527));
 })()});
-return obj29891;
+return obj28525;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29888,G__29889) : helix.core.jsx.call(null,G__29888,G__29889));
-})(),((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(kit,"connect"))?(function (){var G__29898 = app.connect.cables.cables;
-var G__29899 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29898,G__29899) : helix.core.jsx.call(null,G__29898,G__29899));
-})():null),(function (){var G__29900 = app.shared.boiler_plant.core.boiler_plant;
-var G__29901 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29900,G__29901) : helix.core.jsx.call(null,G__29900,G__29901));
-})(),(function (){var G__29902 = app.shared.sidebar.core.sidebar;
-var G__29903 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29902,G__29903) : helix.core.jsx.call(null,G__29902,G__29903));
-})(),(function (){var G__29904 = app.shared.user_menu.core.user_menu;
-var G__29905 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29904,G__29905) : helix.core.jsx.call(null,G__29904,G__29905));
-})(),(function (){var G__29906 = app.shared.select_kit.core.select_kit_menu;
-var G__29907 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29906,G__29907) : helix.core.jsx.call(null,G__29906,G__29907));
-})(),(function (){var G__29908 = app.shared.control_panel.core.control_panel;
-var G__29909 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29908,G__29909) : helix.core.jsx.call(null,G__29908,G__29909));
-})(),(function (){var G__29910 = kit;
-switch (G__29910) {
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__28522,G__28523) : helix.core.jsx.call(null,G__28522,G__28523));
+})(),((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(kit,"connect"))?(function (){var G__28532 = app.connect.cables.cables;
+var G__28533 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__28532,G__28533) : helix.core.jsx.call(null,G__28532,G__28533));
+})():null),(function (){var G__28534 = app.shared.boiler_plant.core.boiler_plant;
+var G__28535 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__28534,G__28535) : helix.core.jsx.call(null,G__28534,G__28535));
+})(),(function (){var G__28536 = app.shared.sidebar.core.sidebar;
+var G__28537 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__28536,G__28537) : helix.core.jsx.call(null,G__28536,G__28537));
+})(),(function (){var G__28538 = kit;
+switch (G__28538) {
 case "connect":
-var G__29911 = app.connect.core.connect_kit;
-var G__29912 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29911,G__29912) : helix.core.jsx.call(null,G__29911,G__29912));
+var G__28539 = app.connect.core.connect_kit;
+var G__28540 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__28539,G__28540) : helix.core.jsx.call(null,G__28539,G__28540));
 
 break;
 default:
@@ -66,17 +57,17 @@ return null;
 
 }
 })()]});
-return obj29885;
+return obj28519;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__29882,G__29883) : helix.core.jsxs.call(null,G__29882,G__29883));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__28516,G__28517) : helix.core.jsxs.call(null,G__28516,G__28517));
 });
 if(goog.DEBUG === true){
-var G__29913 = G__29876;
-(G__29913.displayName = "app.app/app");
+var G__28541 = G__28510;
+(G__28541.displayName = "app.app/app");
 
-return G__29913;
+return G__28541;
 } else {
-return G__29876;
+return G__28510;
 }
 })();
 

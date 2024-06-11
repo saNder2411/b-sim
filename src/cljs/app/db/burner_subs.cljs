@@ -2,8 +2,8 @@
   (:require [refx.alpha :refer [reg-sub]]))
 
 (reg-sub :burner
-         (fn [db _]
-           (:burner db)))
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :burner])))
 
 (reg-sub :burner-status
          :<- [:burner]
@@ -14,5 +14,10 @@
          :<- [:burner]
          (fn [boiler _]
            (:init-settings boiler)))
+
+(reg-sub :show-burner-toolbar-panel
+         :<- [:current-hotspot]
+         (fn [current-hotspot _]
+           (= current-hotspot "burner")))
 
 

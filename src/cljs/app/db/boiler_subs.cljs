@@ -2,8 +2,8 @@
   (:require [refx.alpha :refer [reg-sub]]))
 
 (reg-sub :boiler
-         (fn [db _]
-           (:boiler db)))
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :boiler])))
 
 (reg-sub :boiler-init-settings
          :<- [:boiler]
@@ -59,3 +59,8 @@
          :<- [:conductivity]
          (fn [[pressure prev-pressure conductivity] _]
            (and (< (- pressure prev-pressure) -0.027) (> conductivity 2500))))
+
+(reg-sub :show-boiler-toolbar-panel
+         :<- [:current-hotspot]
+         (fn [current-hotspot _]
+           (= current-hotspot "boiler")))

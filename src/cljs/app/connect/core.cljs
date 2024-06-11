@@ -6,7 +6,8 @@
             [app.connect.controller-cond :refer [controller-cond]]
             [app.connect.controller-level :refer [controller-level]]
             [app.connect.converter :refer [converter]]
-            [app.connect.hot-spots :refer [hot-spots]]))
+            [app.connect.hot-spots :refer [hot-spots]]
+            [app.connect.toolbars :refer [toolbars]]))
 
 (defnc connect-kit []
   (<>
@@ -16,4 +17,5 @@
     ($ controller-cond)
     ($ controller-level)
     ($ converter)
-    ($ hot-spots)))
+    ($ hot-spots)
+    ($ toolbars)))

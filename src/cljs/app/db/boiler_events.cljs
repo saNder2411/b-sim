@@ -1,8 +1,6 @@
 (ns app.db.boiler-events
-  (:require [refx.alpha :refer [reg-event-fx reg-event-db]]
-            [refx.interceptors :refer [path]]))
+  (:require [refx.alpha :refer [reg-event-fx reg-event-db]]))
 
 (reg-event-db :change-water-level
-              [(path :boiler)]
-              (fn [boiler [_ value]]
-                (assoc boiler :water-level value)))
+              (fn [{:keys [kit] :as db} [_ value]]
+                (assoc-in db [(keyword kit) :boiler :water-level] value)))

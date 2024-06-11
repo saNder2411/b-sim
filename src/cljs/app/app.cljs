@@ -4,11 +4,8 @@
             [helix.dom :as d]
             [refx.alpha :refer [use-sub dispatch]]
             [app.shared.sidebar.core :refer [sidebar]]
-            [app.shared.user-menu.core :refer [user-menu]]
             [app.connect.cables :refer [cables]]
             [app.connect.core :refer [connect-kit]]
-            [app.shared.select-kit.core :refer [select-kit-menu]]
-            [app.shared.control-panel.core :refer [control-panel]]
             [app.shared.boiler-plant.core :refer [boiler-plant]]))
 
 (defn window-resizing-handler [w]
@@ -34,9 +31,6 @@
              ($ cables))
            ($ boiler-plant)
            ($ sidebar)
-           ($ user-menu)
-           ($ select-kit-menu)
-           ($ control-panel)
            (case kit
              "connect" ($ connect-kit)
              nil))))

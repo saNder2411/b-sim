@@ -161,4 +161,9 @@
          (fn [level-controller-actuator-type _]
            (= level-controller-actuator-type "FREQUENCY_CONTROLLED_PUMPS")))
 
+(reg-sub :show-toolbar
+         :<- [:current-hotspot]
+         (fn [current-hotspot _]
+           (not= current-hotspot "none")))
+
 
