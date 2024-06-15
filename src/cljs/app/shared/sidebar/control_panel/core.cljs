@@ -25,6 +25,7 @@
 
            ($ slider {:x         66
                       :y         216
+                      :z 1
                       :title     "STEAM"
                       :max-val   35
                       :v-%       50
@@ -34,6 +35,7 @@
 
            ($ slider {:x         66
                       :y         300
+                      :z 1
                       :title     "FEEDWATER"
                       :max-val   70
                       :v-%       0
