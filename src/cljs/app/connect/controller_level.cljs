@@ -14,17 +14,17 @@
     (<>
       (case level-controller-id
         "none" ($ equipment-placeholder {:x "72%" :y "1.6%" :w "13.5%" :title "Level"})
-        "NRR-2-60" ($ NRR-2-60 {:x "72%" :y "1.6%" :w "13.5%"})
-        "NRR-2-60-3C" ($ NRR-2-60-3C {:x "72%" :y "1.6%" :w "13.5%"})
-        "NRR-2-61" ($ NRR-2-61 {:x "72%" :y "1.6%" :w "13.5%"})
-        "NRR-2-61-3C" ($ NRR-2-61-3C {:x "72%" :y "1.6%" :w "13.5%"})
+        "NRR 2-60" ($ NRR-2-60 {:x "72%" :y "1.6%" :w "13.5%"})
+        "NRR 2-60 3C" ($ NRR-2-60-3C {:x "72%" :y "1.6%" :w "13.5%"})
+        "NRR 2-61" ($ NRR-2-61 {:x "72%" :y "1.6%" :w "13.5%"})
+        "NRR 2-61 3C" ($ NRR-2-61-3C {:x "72%" :y "1.6%" :w "13.5%"})
         nil)
       ($ equipment-full-screen
          {:show     level-controller-full-screen
           :on-close #(dispatch [:change-level-controller-full-screen false])}
          (case level-controller-id
-           "NRR-2-60" ($ NRR-2-60 {:x "30%" :y "38.85%" :w "40%"})
-           "NRR-2-60-3C" ($ NRR-2-60-3C {:x "30%" :y "38.85%" :w "40%"})
-           "NRR-2-61" ($ NRR-2-61 {:x "30%" :y "38.85%" :w "40%"})
-           "NRR-2-61-3C" ($ NRR-2-61-3C {:x "30%" :y "38.85%" :w "40%"})
+           "NRR 2-60" ($ NRR-2-60 {:x "30%" :y "38.85%" :w "40%"})
+           "NRR 2-60 3C" ($ NRR-2-60-3C {:x "30%" :y "38.85%" :w "40%"})
+           "NRR 2-61" ($ NRR-2-61 {:x "30%" :y "38.85%" :w "40%"})
+           "NRR 2-61 3C" ($ NRR-2-61-3C {:x "30%" :y "38.85%" :w "40%"})
            nil)))))

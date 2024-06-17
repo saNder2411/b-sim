@@ -66,27 +66,29 @@
                       (assoc-in [kit-kw :highlight-hotspots] false)
                       (assoc-in [kit-kw :current-hotspot] new-value)))))
 
-(reg-event-db :change-burner-limiter-full-screen
-              (fn [{:keys [kit] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :burner-limiter-full-screen] new-value)))
+(reg-event-db :change-limiter-low-level-full-screen
+              (fn [{:keys [kit limiter-low-level-id] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :limiter-low-level :controllers limiter-low-level-id :full-screen] new-value)))
 
-(reg-event-db :change-pump-limiter-full-screen
-              (fn [{:keys [kit] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :pump-limiter-full-screen] new-value)))
+(reg-event-db :change-limiter-high-level-full-screen
+              (fn [{:keys [kit limiter-high-level-id] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :limiter-high-level :controllers limiter-high-level-id :full-screen] new-value)))
+
+
 
 (reg-event-db :change-cond-controller-full-screen
-              (fn [{:keys [kit] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :cond-controller-full-screen] new-value)))
+              (fn [{:keys [kit cond-controller-id] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :cond :controllers cond-controller-id :full-screen] new-value)))
 
 (reg-event-db :change-level-controller-full-screen
-              (fn [{:keys [kit] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :level-controller-full-screen] new-value)))
+              (fn [{:keys [kit level-controller-id] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :level :controllers level-controller-id :full-screen] new-value)))
 
 (reg-event-db :change-level-probe-full-screen
-              (fn [{:keys [kit] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :level-probe-full-screen] new-value)))
+              (fn [{:keys [kit level-probe-id] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :level :probes 0 level-probe-id :full-screen] new-value)))
 
 (reg-event-db :change-converter-full-screen
-              (fn [{:keys [kit] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :converter-full-screen] new-value)))
+              (fn [{:keys [kit converter-id] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :converter converter-id :full-screen] new-value)))
 

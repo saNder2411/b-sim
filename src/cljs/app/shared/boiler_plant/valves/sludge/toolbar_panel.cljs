@@ -16,19 +16,19 @@
       (<>
          ($ toolbar-title {:x 85 :y 95 :fill "#efefef" :title "Bottom Blowdown Valve"})
 
-         ($ toolbar-btn-wrapper {:x 920 :y 54 :inactive true :on-click (fn [])}
+         ($ toolbar-btn-wrapper {:x 946 :y 54 :inactive true :on-click (fn [])}
             ($ toolbar-btn-valve-close))
 
-         ($ toolbar-btn-wrapper {:x 999 :y 54 :inactive true :on-click (fn [])}
+         ($ toolbar-btn-wrapper {:x 1024 :y 54 :inactive true :on-click (fn [])}
             ($ toolbar-btn-valve-open))
 
-         ($ toolbar-btn-wrapper {:x 1059 :y 54}
+         ($ toolbar-btn-wrapper {:x 1079 :y 54}
             ($ toolbar-btn-divider))
 
-         ($ toolbar-btn-wrapper {:x 1110 :y 54 :on-click (fn [])}
+         ($ toolbar-btn-wrapper {:x 1124 :y 54 :on-click (fn [])}
             ($ toolbar-btn-settings))
 
-         ($ toolbar-btn-wrapper {:x 1172 :y 54}
+         ($ toolbar-btn-wrapper {:x 1179 :y 54}
             ($ toolbar-btn-divider))
 
          ($ toolbar-btn-wrapper {:x 1224 :y 54}

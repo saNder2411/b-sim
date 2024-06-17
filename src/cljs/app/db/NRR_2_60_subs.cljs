@@ -3,7 +3,7 @@
 
 (reg-sub :NRR-2-60
          (fn [db _]
-           (:NRR-2-60 db)))
+           (get-in db [:connect :level :controllers "NRR 2-60"])))
 
 (def max-high-point-by-cal-p 32767)
 (def min-high-point-by-cal-p 8191.75)

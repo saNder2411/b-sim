@@ -1,8 +1,8 @@
 (ns app.connect.core
   (:require [helix.core :refer [defnc <> $]]
             [app.connect.URB-60.core :refer [URB-60]]
-            [app.connect.limiter-burner :refer [burner-limiter]]
-            [app.connect.limiter-pump :refer [pump-limiter]]
+            [app.connect.limiter-low-level :refer [limiter-low-level]]
+            [app.connect.limiter-high-level :refer [limiter-high-level]]
             [app.connect.controller-cond :refer [controller-cond]]
             [app.connect.controller-level :refer [controller-level]]
             [app.connect.converter :refer [converter]]
@@ -12,8 +12,8 @@
 (defnc connect-kit []
   (<>
     ($ URB-60)
-    ($ burner-limiter)
-    ($ pump-limiter)
+    ($ limiter-low-level)
+    ($ limiter-high-level)
     ($ controller-cond)
     ($ controller-level)
     ($ converter)

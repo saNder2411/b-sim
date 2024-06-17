@@ -1102,7 +1102,12 @@ svg {
     fill: #20a4dc;
 }
 
-.inactive {
+.toolbar-btn-active {
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.toolbar-btn-inactive {
     opacity: 0.25;
 }
 

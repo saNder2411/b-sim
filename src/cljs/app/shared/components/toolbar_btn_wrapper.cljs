@@ -3,7 +3,7 @@
             [helix.dom :as d]))
 
 (defnc toolbar-btn-wrapper [{:keys [x y inactive on-click children]}]
-  (d/g {:style {:transform (str "translate(" x "px, " y "px)")}
-        :class     (if inactive "inactive" "")
+  (d/g {:transform (str "translate(" x ", " y ")")
+        :class     (str "toolbar-btn-" (if inactive "inactive" "active"))
         :on-click  (if inactive nil on-click)}
        children))

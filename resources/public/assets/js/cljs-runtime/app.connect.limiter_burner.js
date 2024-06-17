@@ -1,44 +1,44 @@
 goog.provide('app.connect.limiter_burner');
 
-app.connect.limiter_burner.burner_limiter = (function (){var G__28806 = (function app$connect$limiter_burner$burner_limiter_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__28811 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.connect.limiter_burner.burner_limiter = (function (){var G__41804 = (function app$connect$limiter_burner$burner_limiter_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__41805 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
-var burner_limiter_id = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"burner-limiter-id","burner-limiter-id",-1127840956)], null));
-var burner_limiter_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"burner-limiter-full-screen","burner-limiter-full-screen",-868941454)], null));
-var G__28842 = helix.core.Fragment;
-var G__28843 = ({"children": [(function (){var G__28844 = burner_limiter_id;
-switch (G__28844) {
+var limiter_low_level_id = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"limiter-low-level-id","limiter-low-level-id",-1897584090)], null));
+var limiter_low_level_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"limiter-low-level-full-screen","limiter-low-level-full-screen",-1274562341)], null));
+var G__41808 = helix.core.Fragment;
+var G__41809 = ({"children": [(function (){var G__41810 = limiter_low_level_id;
+switch (G__41810) {
 case "none":
-var G__28852 = app.shared.components.equipment_placeholder.equipment_placeholder;
-var G__28853 = (function (){var obj28859 = ({"w":"13.5%","x":"30%","y":"1.6%","title":"Limiter"});
-return obj28859;
+var G__41811 = app.shared.components.equipment_placeholder.equipment_placeholder;
+var G__41812 = (function (){var obj41814 = ({"w":"13.5%","x":"30%","y":"1.6%","title":"Limiter"});
+return obj41814;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__28852,G__28853) : helix.core.jsx.call(null,G__28852,G__28853));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41811,G__41812) : helix.core.jsx.call(null,G__41811,G__41812));
 
 break;
-case "URS-60":
-var G__28870 = app.connect.URS_60.URS_60.URS_60;
-var G__28871 = (function (){var obj28877 = ({"w":"13.5%","x":"30%","y":"1.6%"});
-return obj28877;
+case "URS 60":
+var G__41815 = app.connect.URS_60.URS_60.URS_60;
+var G__41816 = (function (){var obj41818 = ({"w":"13.5%","x":"30%","y":"1.6%"});
+return obj41818;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__28870,G__28871) : helix.core.jsx.call(null,G__28870,G__28871));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41815,G__41816) : helix.core.jsx.call(null,G__41815,G__41816));
 
 break;
 default:
 return null;
 
 }
-})(),(function (){var G__28888 = app.shared.components.equipment_full_screen.equipment_full_screen;
-var G__28889 = (function (){var obj28894 = ({"show":burner_limiter_full_screen,"on-close":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-burner-limiter-full-screen","change-burner-limiter-full-screen",2051559587),false], null));
-}),"children":(function (){var G__28903 = burner_limiter_id;
-switch (G__28903) {
-case "URS-60":
-var G__28905 = app.connect.URS_60.URS_60.URS_60;
-var G__28906 = (function (){var obj28910 = ({"w":"40%","x":"30%","y":"38.85%"});
-return obj28910;
+})(),(function (){var G__41819 = app.shared.components.equipment_full_screen.equipment_full_screen;
+var G__41820 = (function (){var obj41822 = ({"show":limiter_low_level_full_screen,"on-close":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-limiter-low-level-full-screen","change-limiter-low-level-full-screen",-806067137),false], null));
+}),"children":(function (){var G__41823 = limiter_low_level_id;
+switch (G__41823) {
+case "URS 60":
+var G__41824 = app.connect.URS_60.URS_60.URS_60;
+var G__41825 = (function (){var obj41827 = ({"w":"40%","x":"30%","y":"38.85%"});
+return obj41827;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__28905,G__28906) : helix.core.jsx.call(null,G__28905,G__28906));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41824,G__41825) : helix.core.jsx.call(null,G__41824,G__41825));
 
 break;
 default:
@@ -46,19 +46,19 @@ return null;
 
 }
 })()});
-return obj28894;
+return obj41822;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__28888,G__28889) : helix.core.jsx.call(null,G__28888,G__28889));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41819,G__41820) : helix.core.jsx.call(null,G__41819,G__41820));
 })()]});
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__28842,G__28843) : helix.core.jsxs.call(null,G__28842,G__28843));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__41808,G__41809) : helix.core.jsxs.call(null,G__41808,G__41809));
 });
 if(goog.DEBUG === true){
-var G__28926 = G__28806;
-(G__28926.displayName = "app.connect.limiter-burner/burner-limiter");
+var G__41828 = G__41804;
+(G__41828.displayName = "app.connect.limiter-burner/burner-limiter");
 
-return G__28926;
+return G__41828;
 } else {
-return G__28806;
+return G__41804;
 }
 })();
 

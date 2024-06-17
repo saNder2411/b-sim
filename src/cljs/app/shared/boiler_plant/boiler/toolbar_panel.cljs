@@ -14,10 +14,10 @@
       (<>
          ($ toolbar-title {:x 85 :y 95 :fill "#efefef" :title "Steam Boiler"})
 
-         ($ toolbar-btn-wrapper {:x 1110 :y 54 :on-click (fn [])}
+         ($ toolbar-btn-wrapper {:x 1124 :y 54 :on-click (fn [])}
             ($ toolbar-btn-settings))
 
-         ($ toolbar-btn-wrapper {:x 1172 :y 54}
+         ($ toolbar-btn-wrapper {:x 1179 :y 54}
             ($ toolbar-btn-divider))
 
          ($ toolbar-btn-wrapper {:x 1224 :y 54}

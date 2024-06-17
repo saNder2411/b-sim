@@ -69,70 +69,79 @@
            (let [value (* 100 (/ steam steam-max))]
              (if (< value 0) 0 value))))
 
-(reg-sub :burner-limiter-id
-         (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :burner-limiter-id])))
 
-(reg-sub :burner-limiter-full-screen
-         (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :burner-limiter-full-screen])))
 
-(reg-sub :pump-limiter-id
+(reg-sub :limiter-low-level-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :pump-limiter-id])))
+           (get-in db [(keyword kit) :limiter-low-level-id])))
 
-(reg-sub :pump-limiter-full-screen
+(reg-sub :limiter-low-level-full-screen
+         (fn [{:keys [kit limiter-low-level-id] :as db} _]
+           (get-in db [(keyword kit) :limiter-low-level :controllers limiter-low-level-id :full-screen])))
+
+(reg-sub :limiter-high-level-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :pump-limiter-full-screen])))
+           (get-in db [(keyword kit) :limiter-high-level-id])))
+
+(reg-sub :limiter-high-level-full-screen
+         (fn [{:keys [kit limiter-high-level-id] :as db} _]
+           (get-in db [(keyword kit) :limiter-high-level :controllers limiter-high-level-id :full-screen])))
 
 (reg-sub :cond-controller-id
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :cond-controller-id])))
 
 (reg-sub :cond-controller-full-screen
+         (fn [{:keys [kit cond-controller-id] :as db} _]
+           (get-in db [(keyword kit) :cond :controllers cond-controller-id :full-screen])))
+
+(reg-sub :cond-probe-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :cond-controller-full-screen])))
+           (get-in db [(keyword kit) :cond-probe-id])))
+
+(reg-sub :cond-probe-full-screen
+         (fn [{:keys [kit cond-probe-id] :as db} _]
+           (get-in db [(keyword kit) :cond :probes 0 cond-probe-id :full-screen])))
 
 (reg-sub :level-controller-id
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :level-controller-id])))
 
 (reg-sub :level-controller-full-screen
-         (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :level-controller-full-screen])))
+         (fn [{:keys [kit level-controller-id] :as db} _]
+           (get-in db [(keyword kit) :level :controllers level-controller-id :full-screen])))
 
 (reg-sub :level-controller-actuator-type
-         (fn [{:keys [kit] :as db} _]
-           (let [level-controller-id (get-in db [(keyword kit) :level-controller-id])]
-             (get-in db [(keyword level-controller-id) :actuator-type]))))
+         (fn [{:keys [kit level-controller-id] :as db} _]
+           (get-in db [(keyword kit) :level :controllers level-controller-id :actuator-type])))
 
 (reg-sub :level-probe-id
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :level-probe-id])))
 
 (reg-sub :level-probe-full-screen
-         (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :level-probe-full-screen])))
+         (fn [{:keys [kit level-probe-id] :as db} _]
+           (get-in db [(keyword kit) :level :probes 0 level-probe-id :full-screen])))
 
 (reg-sub :converter-id
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :converter-id])))
 
 (reg-sub :converter-full-screen
-         (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :converter-full-screen])))
+         (fn [{:keys [kit converter-id] :as db} _]
+           (get-in db [(keyword kit) :converter converter-id :full-screen])))
 
-(reg-sub :show-burner-limiter-hot-spot
-         :<- [:burner-limiter-id]
+(reg-sub :show-limiter-low-level-hot-spot
+         :<- [:limiter-low-level-id]
          :<- [:sim]
-         (fn [[burner-limiter-id sim] _]
-           (or (not= burner-limiter-id "none") (not= sim "run"))))
+         (fn [[limiter-low-level-id sim] _]
+           (or (not= limiter-low-level-id "none") (not= sim "run"))))
 
-(reg-sub :show-pump-limiter-hot-spot
-         :<- [:pump-limiter-id]
+(reg-sub :show-limiter-high-level-hot-spot
+         :<- [:limiter-high-level-id]
          :<- [:sim]
-         (fn [[pump-limiter-id sim] _]
-           (or (not= pump-limiter-id "none") (not= sim "run"))))
+         (fn [[limiter-high-level-id sim] _]
+           (or (not= limiter-high-level-id "none") (not= sim "run"))))
 
 (reg-sub :show-cond-controller-hot-spot
          :<- [:cond-controller-id]
@@ -149,7 +158,7 @@
 (reg-sub :show-converter-hot-spot
          :<- [:level-probe-id]
          (fn [level-probe-id _]
-           (= level-probe-id "NRGT-26-2")))
+           (= level-probe-id "NRGT 26-2")))
 
 (reg-sub :show-feedwater-valve-hot-spot
          :<- [:level-controller-actuator-type]

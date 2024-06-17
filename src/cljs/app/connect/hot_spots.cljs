@@ -5,19 +5,19 @@
             [app.shared.components.hot-spot-big :refer [hot-spot-big]]))
 
 (defnc hot-spots []
-  (let [show-burner-limiter-hot-spot (use-sub [:show-burner-limiter-hot-spot])
-        show-pump-limiter-hot-spot (use-sub [:show-pump-limiter-hot-spot])
+  (let [show-limiter-low-level-hot-spot (use-sub [:show-limiter-low-level-hot-spot])
+        show-limiter-high-level-hot-spot (use-sub [:show-limiter-high-level-hot-spot])
         show-cond-controller-hot-spot (use-sub [:show-cond-controller-hot-spot])
         show-level-controller-hot-spot (use-sub [:show-level-controller-hot-spot])
         show-converter-hot-spot (use-sub [:show-converter-hot-spot])
         show-feedwater-valve-hot-spot (use-sub [:show-feedwater-valve-hot-spot])
         show-feedwater-pump-hot-spot (use-sub [:show-feedwater-pump-hot-spot])]
     (<>
-      (when show-burner-limiter-hot-spot
-        ($ hot-spot {:x 35.6 :y 9.44 :id "burner-limiter"}))
+      (when show-limiter-low-level-hot-spot
+        ($ hot-spot {:x 35.6 :y 9.44 :id "limiter-low-level"}))
 
-      (when show-pump-limiter-hot-spot
-        ($ hot-spot {:x 49.6 :y 9.44 :id "pump-limiter"}))
+      (when show-limiter-high-level-hot-spot
+        ($ hot-spot {:x 49.6 :y 9.44 :id "limiter-high-level"}))
 
       (when show-cond-controller-hot-spot
         ($ hot-spot {:x 63.6 :y 9.44 :id "cond-controller"}))

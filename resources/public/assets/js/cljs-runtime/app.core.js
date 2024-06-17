@@ -6,9 +6,9 @@ if((typeof app !== 'undefined') && (typeof app.core !== 'undefined') && (typeof 
 app.core.root = module$node_modules$react_dom$client.createRoot(goog.dom.getElement("app"));
 }
 app.core.render = (function app$core$render(){
-return app.core.root.render((function (){var G__35403 = app.app.app;
-var G__35404 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35403,G__35404) : helix.core.jsx.call(null,G__35403,G__35404));
+return app.core.root.render((function (){var G__44710 = app.app.app;
+var G__44711 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__44710,G__44711) : helix.core.jsx.call(null,G__44710,G__44711));
 })());
 });
 app.core.clear_cache_and_render_BANG_ = (function app$core$clear_cache_and_render_BANG_(){

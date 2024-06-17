@@ -16,7 +16,7 @@
         ($ toolbar-title {:x 85 :y 95 :fill "#efefef" :title "Feedwater Valve"})
 
 
-        ($ slider {:x         710
+        ($ slider {:x         739
                    :y         74
                    :z         0.9
                    :max-val   100
@@ -25,13 +25,13 @@
                    :active    false
                    :value-box {:x 70 :y 0 :width 24 :fraction 0 :unit "%" :fill "transparent"}})
 
-        ($ toolbar-btn-wrapper {:x 1058 :y 54}
+        ($ toolbar-btn-wrapper {:x 1079 :y 54}
            ($ toolbar-btn-divider))
 
-        ($ toolbar-btn-wrapper {:x 1110 :y 54 :on-click (fn [])}
+        ($ toolbar-btn-wrapper {:x 1124 :y 54 :on-click (fn [])}
            ($ toolbar-btn-settings))
 
-        ($ toolbar-btn-wrapper {:x 1172 :y 54}
+        ($ toolbar-btn-wrapper {:x 1179 :y 54}
            ($ toolbar-btn-divider))
 
         ($ toolbar-btn-wrapper {:x 1224 :y 54}
