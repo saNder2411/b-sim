@@ -12,7 +12,23 @@
             [app.db.sludge-valve-subs]
             [app.db.feedwater-valve-subs]
             [app.db.feedwater-pump-subs]
+            [app.db.TRV-5-60-subs]
+            [app.db.LRG-16-60-subs]
+            [app.db.LRG-16-61-subs]
+            [app.db.NRG-16-60-I-subs]
+            [app.db.NRG-16-60-II-subs]
+            [app.db.NRG-16-61-subs]
+            [app.db.NRG-26-60-subs]
+            [app.db.NRGT-26-2-subs]
+            [app.db.URW-60-subs]
             [app.db.NRR-2-60-subs]
+            [app.db.NRR-2-60-3C-subs]
+            [app.db.NRR-2-61-subs]
+            [app.db.NRR-2-61-3C-subs]
+            [app.db.LRR-1-60-subs]
+            [app.db.URS-60-subs]
+            [app.db.URS-61-subs]
+            [app.db.URB-60-subs]
             [app.app :refer [app]]))
 
 (refx/dispatch-sync [:initialize-db (.-innerWidth js/window) (.-innerHeight js/window)])

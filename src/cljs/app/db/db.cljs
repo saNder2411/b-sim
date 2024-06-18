@@ -3,8 +3,8 @@
 (def default-db {:screen  {:w 1920 :h 1080 :scale-f 1 :ratio (/ 16 9)}
                  :kit     "connect"                         ;; "connect"  "module"
                  :user    {:firstname "User" :lastname "Admin"}
-                 :sim     "stopped"                         ;; "stopped" "starting" "run" "pause" "stopping"
-                 :connect {:lang                  "en"      ;; "en" "de"
+                 :connect {:sim                   "stopped" ;; "stopped" "starting" "run" "pause" "stopping"
+                           :lang                  "en"      ;; "en" "de"
                            :intended-use          "training" ;; "training" | "demonstration"
                            :operation-mode        "normal"  ;; "normal" "standby"
                            :steam-unit            "t/h"     ;; "t/h" | "T/h"
@@ -13,14 +13,20 @@
                            :ctrl-panel-view       true
                            :settings-modal-view   false
                            :highlight-hotspots    true
-                           :current-hotspot       "none"    ;; "boiler" "burner" "sludge-valve" "continuous-valve" "feedwater-valve" "feedwater-pump" "temperature-sensor" "urb" "level-controller" "level-probe" "cond-controller" "cond-probe" "level-high-probe" "limiter-low-level" "limiter-high-level" "level-low-probe-1" "level-low-probe-2" "converter"
+                           :current-hotspot       "none"    ;; "boiler" "burner" "sludge-valve" "continuous-valve" "feedwater-valve" "feedwater-pump" "temperature-probe" "urb" "level-controller" "level-probe" "cond-controller" "cond-probe" "level-high-probe" "limiter-low-level" "limiter-high-level" "level-low-probe-I" "level-low-probe-II" "converter"
                            :limiter-low-level-id  "URS 60"  ;; "none" | "URS 60"
                            :limiter-high-level-id "URS 61"  ;; "none" | "URS 61"
                            :cond-controller-id    "LRR 1-60" ;; "none" | "LRR 1-60"
-                           :cond-probe-id         "LRG 16-60" ;; "LRG 16-60" | "LRG 16-61"
+                           :cond-probe-id         "LRG 16-61" ;; "LRG 16-60" | "LRG 16-61"
                            :level-controller-id   "NRR 2-60" ;; "none" | "NRR 2-60" | "NRR 2-60 3C" | "NRR 2-61" |"NRR 2-61 3C"
                            :level-probe-id        "NRGT 26-2" ;; "NRG 26-60" | "NRGT 26-2"
+                           :low-level-prop-I-id   "NRG 16-60"
+                           :low-level-prop-II-id  "NRG 16-60"
+                           :high-level-probe-id   "NRG 16-61"
+                           :temperature-probe-id  "TRV 5-60"
                            :converter-id          "URW 60"
+
+                           :modal-info            {:title "" :text ""}
 
                            :boiler                {:water-level   84
                                                    :pressure      11
@@ -216,9 +222,11 @@
                                                    :probes      [{"NRG 26-60" {:full-screen false}
                                                                   "NRGT 26-2" {:full-screen false}}]}
 
-                           :converter             {"URW 60" {:full-screen false}}}
+                           :temperature           {:probes [{}]}
+                           :converter             {:controllers {"URW 60" {:full-screen false}}}}
 
-                 :module  {:lang                "en"        ;; "en" "de"
+                 :module  {:sim                 "stopped"   ;; "stopped" "starting" "run" "pause" "stopping"
+                           :lang                "en"        ;; "en" "de"
                            :intended-use        "training"  ;; "training" | "demonstration"
                            :operation-mode      "normal"    ;; "normal" "standby"
                            :steam-unit          "t/h"       ;; "t/h" | "T/h"

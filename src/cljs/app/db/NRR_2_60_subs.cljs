@@ -38,3 +38,9 @@
                              :next-real-high-point
                              :real-high-point])))
 
+(reg-sub :NRR-2-60-show-toolbar
+         :<- [:current-hotspot]
+         :<- [:level-controller-id]
+         (fn [[current-hotspot level-controller-id] _]
+           (and (= current-hotspot "level-controller") (= level-controller-id "NRR 2-60"))))
+

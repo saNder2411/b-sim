@@ -60,7 +60,7 @@
          (fn [[pressure prev-pressure conductivity] _]
            (and (< (- pressure prev-pressure) -0.027) (> conductivity 2500))))
 
-(reg-sub :show-boiler-toolbar-panel
+(reg-sub :boiler-show-toolbar-panel
          :<- [:current-hotspot]
          (fn [current-hotspot _]
            (= current-hotspot "boiler")))

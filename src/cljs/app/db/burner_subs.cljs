@@ -15,7 +15,7 @@
          (fn [boiler _]
            (:init-settings boiler)))
 
-(reg-sub :show-burner-toolbar-panel
+(reg-sub :burner-show-toolbar-panel
          :<- [:current-hotspot]
          (fn [current-hotspot _]
            (= current-hotspot "burner")))

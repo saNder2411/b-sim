@@ -22,6 +22,16 @@
               (fn [db [_ new-kit]]
                 (assoc db :kit new-kit)))
 
+(reg-event-db :change-sim
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (js/console.log "change sim" new-value)
+                (assoc-in db [(keyword kit) :sim] new-value)))
+
+(reg-event-db :reset-sim
+              (fn [{:keys [kit] :as db} [_ _]]
+                (js/console.log "reset sim - stop sim and prevent to default all sim modules" "stopped")
+                (assoc-in db [(keyword kit) :sim] "stopped")))
+
 (reg-event-db :change-lang
               (fn [{:keys [kit] :as db} [_ new-lang]]
                 (assoc-in db [(keyword kit) :lang] new-lang)))
@@ -30,17 +40,14 @@
               (fn [{:keys [kit] :as db} [_ new-value]]
                 (assoc-in db [(keyword kit) :operation-mode] new-value)))
 
-(reg-event-db :set-ctrl-panel-view
+(reg-event-db :change-ctrl-panel-view
               (fn [{:keys [kit] :as db} [_ new-value]]
                 (assoc-in db [(keyword kit) :ctrl-panel-view] new-value)))
 
-(reg-event-db :set-settings-modal-view
+(reg-event-db :change-settings-modal-view
               (fn [{:keys [kit] :as db} [_ new-value]]
                 (assoc-in db [(keyword kit) :settings-modal-view] new-value)))
 
-(reg-event-db :set-highlight-hotspots
-              (fn [{:keys [kit] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :highlight-hotspots] new-value)))
 
 (reg-event-db :open-general-settings
               (fn [{:keys [kit] :as db} [_ _]]
@@ -48,16 +55,6 @@
                 (-> db
                     (assoc-in [(keyword kit) :show-general-settings] true)
                     (assoc-in [(keyword kit) :highlight-hotspots] false))))
-
-(reg-event-db :reset-sim
-              (fn [db [_ _]]
-                (js/console.log "reset sim - stop sim and prevent to default all sim modules" "stopped")
-                (assoc db :sim "stopped")))
-
-(reg-event-db :change-sim
-              (fn [db [_ new-value]]
-                (js/console.log "change sim" new-value)
-                (assoc db :sim new-value)))
 
 (reg-event-db :change-current-hotspot
               (fn [{:keys [kit] :as db} [_ new-value]]
@@ -67,28 +64,42 @@
                       (assoc-in [kit-kw :current-hotspot] new-value)))))
 
 (reg-event-db :change-limiter-low-level-full-screen
-              (fn [{:keys [kit limiter-low-level-id] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :limiter-low-level :controllers limiter-low-level-id :full-screen] new-value)))
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (let [kit-kw (keyword kit)
+                      limiter-low-level-id (get-in db [kit-kw :limiter-low-level-id])]
+                  (assoc-in db [kit-kw :limiter-low-level :controllers limiter-low-level-id :full-screen] new-value))))
 
 (reg-event-db :change-limiter-high-level-full-screen
-              (fn [{:keys [kit limiter-high-level-id] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :limiter-high-level :controllers limiter-high-level-id :full-screen] new-value)))
-
-
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (let [kit-kw (keyword kit)
+                      limiter-high-level-id (get-in db [kit-kw :limiter-high-level-id])]
+                  (assoc-in db [kit-kw :limiter-high-level :controllers limiter-high-level-id :full-screen] new-value))))
 
 (reg-event-db :change-cond-controller-full-screen
-              (fn [{:keys [kit cond-controller-id] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :cond :controllers cond-controller-id :full-screen] new-value)))
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (let [kit-kw (keyword kit)
+                      cond-controller-id (get-in db [kit-kw :cond-controller-id])]
+                  (assoc-in db [kit-kw :cond :controllers cond-controller-id :full-screen] new-value))))
 
 (reg-event-db :change-level-controller-full-screen
-              (fn [{:keys [kit level-controller-id] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :level :controllers level-controller-id :full-screen] new-value)))
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (let [kit-kw (keyword kit)
+                      level-controller-id (get-in db [kit-kw :level-controller-id])]
+                  (assoc-in db [kit-kw :level :controllers level-controller-id :full-screen] new-value))))
 
 (reg-event-db :change-level-probe-full-screen
-              (fn [{:keys [kit level-probe-id] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :level :probes 0 level-probe-id :full-screen] new-value)))
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (let [kit-kw (keyword kit)
+                      level-probe-id (get-in db [kit-kw :level-probe-id])]
+                  (assoc-in db [kit-kw :level :controllers level-probe-id :full-screen] new-value))))
 
 (reg-event-db :change-converter-full-screen
-              (fn [{:keys [kit converter-id] :as db} [_ new-value]]
-                (assoc-in db [(keyword kit) :converter converter-id :full-screen] new-value)))
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (let [kit-kw (keyword kit)
+                      converter-id (get-in db [kit-kw :converter-id])]
+                  (assoc-in db [kit-kw :converter :controllers converter-id :full-screen] new-value))))
+
+(reg-event-db :change-modal-info
+              (fn [{:keys [kit] :as db} [_ new-value]]
+                (assoc-in db [(keyword kit) :modal-info] new-value)))
 

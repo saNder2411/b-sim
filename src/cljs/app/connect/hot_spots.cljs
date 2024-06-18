@@ -46,11 +46,11 @@
 
       ($ hot-spot {:x 2.2 :y 49 :id "urb"})
 
-      ($ hot-spot {:x 65.65 :y 29.6 :id "level-low-probe-1"})
+      ($ hot-spot {:x 65.65 :y 29.6 :id "level-low-probe-I"})
 
-      ($ hot-spot {:x 72.1 :y 19.4 :id "level-low-probe-2"})
+      ($ hot-spot {:x 72.1 :y 19.4 :id "level-low-probe-II"})
 
-      ($ hot-spot {:x 48.8 :y 19.4 :id "temperature-sensor"})
+      ($ hot-spot {:x 48.8 :y 19.4 :id "temperature-probe"})
 
       ($ hot-spot {:x 69.55 :y 19.4 :id "level-high-probe"})
 

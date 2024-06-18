@@ -1,6 +1,6 @@
 (ns app.shared.boiler-plant.valves.continuous.toolbar-panel
   (:require [helix.core :refer [defnc $ <>]]
-            [refx.alpha :refer [use-sub]]
+            [refx.alpha :refer [use-sub dispatch]]
             [app.shared.components.toolbar-title :refer [toolbar-title]]
             [app.shared.components.toolbar-btn-wrapper :refer [toolbar-btn-wrapper]]
             [app.shared.components.toolbar-btn-settings :refer [toolbar-btn-settings]]
@@ -10,13 +10,13 @@
 
 
 (defnc valve-continuous-toolbar-panel []
-  (let [show-continuous-valve-toolbar-panel (use-sub [:show-continuous-valve-toolbar-panel])]
-    (when show-continuous-valve-toolbar-panel
+  (let [show-toolbar-panel (use-sub [:continuous-valve-show-toolbar-panel])]
+    (when show-toolbar-panel
       (<>
         ($ toolbar-title {:x 85 :y 95 :fill "#efefef" :title "Continuous Blowdown Valve"})
 
 
-        ($ slider {:x         739
+        ($ slider {:x         719
                    :y         74
                    :z         0.9
                    :max-val   100
@@ -25,14 +25,14 @@
                    :active    false
                    :value-box {:x 70 :y 0 :width 24 :fraction 0 :unit "%" :fill "transparent"}})
 
-        ($ toolbar-btn-wrapper {:x 1079 :y 54}
+        ($ toolbar-btn-wrapper {:x 1064 :y 54}
            ($ toolbar-btn-divider))
 
-        ($ toolbar-btn-wrapper {:x 1124 :y 54 :on-click (fn [])}
+        ($ toolbar-btn-wrapper {:x 1114 :y 54 :on-click (fn [])}
            ($ toolbar-btn-settings))
 
-        ($ toolbar-btn-wrapper {:x 1179 :y 54}
+        ($ toolbar-btn-wrapper {:x 1174 :y 54}
            ($ toolbar-btn-divider))
 
-        ($ toolbar-btn-wrapper {:x 1224 :y 54}
+        ($ toolbar-btn-wrapper {:x 1224 :y 54 :on-click #(dispatch [:change-modal-info {:title "Continuous Blowdown Valve" :text "The continuous blowdown valve is an actuator that blows water out of the boiler to decrease the salt content / conductivity of the boiler water."}])}
            ($ toolbar-btn-info))))))
