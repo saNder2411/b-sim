@@ -1,8 +1,7 @@
 (ns app.connect.hot-spots
   (:require [helix.core :refer [defnc $ <>]]
             [refx.alpha :refer [use-sub]]
-            [app.shared.components.hot-spot :refer [hot-spot]]
-            [app.shared.components.hot-spot-big :refer [hot-spot-big]]))
+            [app.shared.components.hot-spot :refer [hot-spot hot-spot-big]]))
 
 (defnc hot-spots []
   (let [show-limiter-low-level-hot-spot (use-sub [:show-limiter-low-level-hot-spot])

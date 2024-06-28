@@ -1,14 +1,41 @@
 (ns app.db.boiler-subs
-  (:require [refx.alpha :refer [reg-sub]]))
+  (:require [refx.alpha :refer [reg-sub]]
+            [cljs.pprint :refer [cl-format]]))
 
 (reg-sub :boiler
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :boiler])))
 
-(reg-sub :boiler-init-settings
+(reg-sub :boiler-settings
          :<- [:boiler]
          (fn [boiler _]
-           (:init-settings boiler)))
+           (:settings boiler)))
+
+(reg-sub :boiler-settings-form
+         :<- [:boiler]
+         (fn [boiler _]
+           (:settings-form boiler)))
+
+(reg-sub :boiler-settings-form-view
+         :<- [:boiler-settings-form]
+         (fn [settings-form _]
+           (:view settings-form)))
+
+(reg-sub :boiler-settings-form-pressure-converted-value
+         :<- [:boiler-settings-form]
+         (fn [settings-form _]
+           (let [{:keys [unit value]} (:pressure settings-form)]
+             (cond-> value
+                     (= unit "psi") (-> (* 14.5037738) Math/round)
+                     :default (->> (cl-format nil "~,1f") js/parseFloat)))))
+
+(reg-sub :boiler-settings-form-conductivity-converted-value
+         :<- [:boiler-settings-form]
+         (fn [settings-form _]
+           (let [{:keys [unit value]} (:conductivity settings-form)]
+             (cond-> value
+                     (= unit "ppm") (-> (* 0.5) Math/round)
+                     :default Math/round))))
 
 (reg-sub :water-level
          :<- [:boiler]
@@ -21,9 +48,9 @@
            (:sludge-mass boiler)))
 
 (reg-sub :sludge-mass-max
-         :<- [:boiler-init-settings]
-         (fn [boiler-init-settings _]
-           (:sludge-mass-max boiler-init-settings)))
+         :<- [:boiler-settings]
+         (fn [boiler-settings _]
+           (get-in boiler-settings [:sludge-mass :max])))
 
 (reg-sub :sludge-mass-%
          :<- [:sludge-mass]

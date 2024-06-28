@@ -103,3 +103,11 @@
               (fn [{:keys [kit] :as db} [_ new-value]]
                 (assoc-in db [(keyword kit) :modal-info] new-value)))
 
+(reg-event-db :push-notification
+              (fn [{:keys [kit] :as db} [_ {:keys [id] :as notification}]]
+                (assoc-in db [(keyword kit) :notifications id] notification)))
+
+(reg-event-db :delete-notification
+              (fn [{:keys [kit] :as db} [_ id]]
+                (update-in db [(keyword kit) :notifications] dissoc id)))
+

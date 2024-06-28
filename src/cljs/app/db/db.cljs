@@ -1,4 +1,5 @@
-(ns app.db.db)
+(ns app.db.db
+  (:require [app.db.defaults :as defaults]))
 
 (def default-db {:screen  {:w 1920 :h 1080 :scale-f 1 :ratio (/ 16 9)}
                  :kit     "connect"                         ;; "connect"  "module"
@@ -27,36 +28,17 @@
                            :converter-id          "URW 60"
 
                            :modal-info            {:title "" :text ""}
+                           :notifications         {}
 
-                           :boiler                {:water-level   84
-                                                   :pressure      11
-                                                   :prev-pressure 11
-                                                   :conductivity  3000
-                                                   :temperature   100.5
-                                                   :sludge-mass   39.2
-                                                   :init-settings {:water-level       84
-                                                                   :water-level-unit  "%"
-                                                                   :water-level-view  true
-                                                                   :pressure          11
-                                                                   :pressure-unit     "bar"
-                                                                   :pressure-view     true
-                                                                   :conductivity      3000
-                                                                   :conductivity-unit "µS/cm"
-                                                                   :conductivity-view true
-                                                                   :temperature-unit  "°C"
-                                                                   :temperature-view  true
-                                                                   :sludge-mass       39.2
-                                                                   :sludge-mass-unit  "kg"
-                                                                   :sludge-mass-max   80
-                                                                   :volume            55
-                                                                   :volume-unit       "m³"
-                                                                   :settings-view     false}}
+                           :boiler                (merge defaults/BOILER
+                                                         {:settings-form (merge (:settings defaults/BOILER)
+                                                                                {:view false})})
 
                            :burner                {:mode             "auto"
                                                    :status           "on"
                                                    :power            0
                                                    :fuel-consumption 0
-                                                   :init-settings    {:mode                         "auto"
+                                                   :settings         {:mode                         "auto"
                                                                       :mode-view                    true
                                                                       :status                       "on"
                                                                       :status-view                  true
@@ -73,7 +55,7 @@
                                                                       :pressure-unit                "bar"
                                                                       :heat-transfer                0.9
                                                                       :heat-transfer-unit           "kJ/kW*s"
-                                                                      :settings-view                false}}
+                                                                      :view                         false}}
                            :continuous-valve      {}
 
                            :limiter-low-level     {:controllers {"URS 60" {:full-screen false}}
@@ -244,7 +226,7 @@
                                                  :conductivity  3000
                                                  :temperature   100.5
                                                  :sludge-mass   39.2
-                                                 :init-settings {:water-level       84
+                                                 :settings      {:water-level       84
                                                                  :water-level-unit  "%"
                                                                  :water-level-view  true
                                                                  :pressure          11
@@ -260,13 +242,13 @@
                                                                  :sludge-mass-max   80
                                                                  :volume            55
                                                                  :volume-unit       "m³"
-                                                                 :settings-view     false}}
+                                                                 :view              false}}
 
                            :burner              {:mode             "auto"
                                                  :status           "on"
                                                  :power            0
                                                  :fuel-consumption 0
-                                                 :init-settings    {:mode                         "auto"
+                                                 :settings         {:mode                         "auto"
                                                                     :mode-view                    true
                                                                     :status                       "on"
                                                                     :status-view                  true
@@ -283,4 +265,4 @@
                                                                     :pressure-unit                "bar"
                                                                     :heat-transfer                0.9
                                                                     :heat-transfer-unit           "kJ/kW*s"
-                                                                    :settings-view                false}}}})
+                                                                    :view                         false}}}})

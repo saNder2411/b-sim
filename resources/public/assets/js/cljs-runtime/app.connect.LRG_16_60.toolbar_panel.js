@@ -1,98 +1,98 @@
 goog.provide('app.connect.LRG_16_60.toolbar_panel');
 
-app.connect.LRG_16_60.toolbar_panel.LRG_16_60_toolbar_panel = (function (){var G__61419 = (function app$connect$LRG_16_60$toolbar_panel$LRG_16_60_toolbar_panel_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__61423 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.connect.LRG_16_60.toolbar_panel.LRG_16_60_toolbar_panel = (function (){var G__65730 = (function app$connect$LRG_16_60$toolbar_panel$LRG_16_60_toolbar_panel_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__65731 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var show_toolbar = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"LRG-16-60-show-toolbar","LRG-16-60-show-toolbar",385215925)], null));
 if(cljs.core.truth_(show_toolbar)){
-var G__61428 = helix.core.Fragment;
-var G__61429 = ({"children": [(function (){var G__61432 = app.shared.components.toolbar_title.toolbar_title;
-var G__61433 = (function (){var obj61437 = ({"x":(85),"y":(80),"fill":"#efefef","title":"Conductivity Electrode"});
-return obj61437;
+var G__65739 = helix.core.Fragment;
+var G__65740 = ({"children": [(function (){var G__65748 = app.shared.components.toolbar.title;
+var G__65749 = (function (){var obj65755 = ({"x":(85),"y":(80),"fill":"#efefef","title":"Conductivity Electrode"});
+return obj65755;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61432,G__61433) : helix.core.jsx.call(null,G__61432,G__61433));
-})(),(function (){var G__61440 = app.shared.components.toolbar_title.toolbar_title;
-var G__61441 = (function (){var obj61445 = ({"x":(85),"y":(110),"fill":"#bcbcbc","title":"LRG 16-60"});
-return obj61445;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65748,G__65749) : helix.core.jsx.call(null,G__65748,G__65749));
+})(),(function (){var G__65765 = app.shared.components.toolbar.title;
+var G__65766 = (function (){var obj65770 = ({"x":(85),"y":(110),"fill":"#bcbcbc","title":"LRG 16-60"});
+return obj65770;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61440,G__61441) : helix.core.jsx.call(null,G__61440,G__61441));
-})(),(function (){var G__61448 = app.shared.components.toolbar_btn_wrapper.toolbar_btn_wrapper;
-var G__61449 = (function (){var obj61453 = ({"x":(894),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65765,G__65766) : helix.core.jsx.call(null,G__65765,G__65766));
+})(),(function (){var G__65781 = app.shared.components.toolbar.btn_wrapper;
+var G__65782 = (function (){var obj65788 = ({"x":(894),"y":(54),"on-click":(function (){
 return null;
-}),"children":(function (){var G__61456 = app.shared.components.toolbar_btn_replace.toolbar_btn_replace;
-var G__61457 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61456,G__61457) : helix.core.jsx.call(null,G__61456,G__61457));
+}),"children":(function (){var G__65793 = app.shared.components.toolbar.btn_replace;
+var G__65794 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65793,G__65794) : helix.core.jsx.call(null,G__65793,G__65794));
 })()});
-return obj61453;
+return obj65788;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61448,G__61449) : helix.core.jsx.call(null,G__61448,G__61449));
-})(),(function (){var G__61460 = app.shared.components.toolbar_btn_wrapper.toolbar_btn_wrapper;
-var G__61461 = (function (){var obj61465 = ({"x":(954),"y":(54),"children":(function (){var G__61468 = app.shared.components.toolbar_btn_divider.toolbar_btn_divider;
-var G__61469 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61468,G__61469) : helix.core.jsx.call(null,G__61468,G__61469));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65781,G__65782) : helix.core.jsx.call(null,G__65781,G__65782));
+})(),(function (){var G__65803 = app.shared.components.toolbar.btn_wrapper;
+var G__65804 = (function (){var obj65812 = ({"x":(954),"y":(54),"children":(function (){var G__65817 = app.shared.components.toolbar.btn_divider;
+var G__65818 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65817,G__65818) : helix.core.jsx.call(null,G__65817,G__65818));
 })()});
-return obj61465;
+return obj65812;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61460,G__61461) : helix.core.jsx.call(null,G__61460,G__61461));
-})(),(function (){var G__61472 = app.shared.components.toolbar_btn_wrapper.toolbar_btn_wrapper;
-var G__61473 = (function (){var obj61477 = ({"x":(1004),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65803,G__65804) : helix.core.jsx.call(null,G__65803,G__65804));
+})(),(function (){var G__65825 = app.shared.components.toolbar.btn_wrapper;
+var G__65826 = (function (){var obj65834 = ({"x":(1004),"y":(54),"on-click":(function (){
 return null;
-}),"children":(function (){var G__61480 = app.shared.components.toolbar_btn_full_screen.toolbar_btn_full_screen;
-var G__61481 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61480,G__61481) : helix.core.jsx.call(null,G__61480,G__61481));
+}),"children":(function (){var G__65843 = app.shared.components.toolbar.btn_full_screen;
+var G__65844 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65843,G__65844) : helix.core.jsx.call(null,G__65843,G__65844));
 })()});
-return obj61477;
+return obj65834;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61472,G__61473) : helix.core.jsx.call(null,G__61472,G__61473));
-})(),(function (){var G__61484 = app.shared.components.toolbar_btn_wrapper.toolbar_btn_wrapper;
-var G__61485 = (function (){var obj61489 = ({"x":(1064),"y":(54),"children":(function (){var G__61492 = app.shared.components.toolbar_btn_divider.toolbar_btn_divider;
-var G__61493 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61492,G__61493) : helix.core.jsx.call(null,G__61492,G__61493));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65825,G__65826) : helix.core.jsx.call(null,G__65825,G__65826));
+})(),(function (){var G__65851 = app.shared.components.toolbar.btn_wrapper;
+var G__65852 = (function (){var obj65858 = ({"x":(1064),"y":(54),"children":(function (){var G__65862 = app.shared.components.toolbar.btn_divider;
+var G__65863 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65862,G__65863) : helix.core.jsx.call(null,G__65862,G__65863));
 })()});
-return obj61489;
+return obj65858;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61484,G__61485) : helix.core.jsx.call(null,G__61484,G__61485));
-})(),(function (){var G__61496 = app.shared.components.toolbar_btn_wrapper.toolbar_btn_wrapper;
-var G__61497 = (function (){var obj61501 = ({"x":(1114),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65851,G__65852) : helix.core.jsx.call(null,G__65851,G__65852));
+})(),(function (){var G__65868 = app.shared.components.toolbar.btn_wrapper;
+var G__65869 = (function (){var obj65875 = ({"x":(1114),"y":(54),"on-click":(function (){
 return null;
-}),"children":(function (){var G__61504 = app.shared.components.toolbar_btn_settings.toolbar_btn_settings;
-var G__61505 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61504,G__61505) : helix.core.jsx.call(null,G__61504,G__61505));
+}),"children":(function (){var G__65882 = app.shared.components.toolbar.btn_settings;
+var G__65883 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65882,G__65883) : helix.core.jsx.call(null,G__65882,G__65883));
 })()});
-return obj61501;
+return obj65875;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61496,G__61497) : helix.core.jsx.call(null,G__61496,G__61497));
-})(),(function (){var G__61508 = app.shared.components.toolbar_btn_wrapper.toolbar_btn_wrapper;
-var G__61509 = (function (){var obj61513 = ({"x":(1174),"y":(54),"children":(function (){var G__61516 = app.shared.components.toolbar_btn_divider.toolbar_btn_divider;
-var G__61517 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61516,G__61517) : helix.core.jsx.call(null,G__61516,G__61517));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65868,G__65869) : helix.core.jsx.call(null,G__65868,G__65869));
+})(),(function (){var G__65888 = app.shared.components.toolbar.btn_wrapper;
+var G__65889 = (function (){var obj65895 = ({"x":(1174),"y":(54),"children":(function (){var G__65898 = app.shared.components.toolbar.btn_divider;
+var G__65899 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65898,G__65899) : helix.core.jsx.call(null,G__65898,G__65899));
 })()});
-return obj61513;
+return obj65895;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61508,G__61509) : helix.core.jsx.call(null,G__61508,G__61509));
-})(),(function (){var G__61521 = app.shared.components.toolbar_btn_wrapper.toolbar_btn_wrapper;
-var G__61523 = (function (){var obj61525 = ({"x":(1224),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65888,G__65889) : helix.core.jsx.call(null,G__65888,G__65889));
+})(),(function (){var G__65904 = app.shared.components.toolbar.btn_wrapper;
+var G__65905 = (function (){var obj65909 = ({"x":(1224),"y":(54),"on-click":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-modal-info","change-modal-info",-2050631306),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"title","title",636505583),"Conductivity Electrode",new cljs.core.Keyword(null,"text","text",-1790561697),"LRG 1x-6x conductivity electrodes are used in combination with the URS 60/URS 61 safety control unit as a conductivity limiter and in combination with an LRR 1-60 control unit as a continuous blowdown regulator in steam boiler systems and hot-water plants."], null)], null));
-}),"children":(function (){var G__61528 = app.shared.components.toolbar_btn_info.toolbar_btn_info;
-var G__61529 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61528,G__61529) : helix.core.jsx.call(null,G__61528,G__61529));
+}),"children":(function (){var G__65913 = app.shared.components.toolbar.btn_info;
+var G__65914 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65913,G__65914) : helix.core.jsx.call(null,G__65913,G__65914));
 })()});
-return obj61525;
+return obj65909;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__61521,G__61523) : helix.core.jsx.call(null,G__61521,G__61523));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65904,G__65905) : helix.core.jsx.call(null,G__65904,G__65905));
 })()]});
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__61428,G__61429) : helix.core.jsxs.call(null,G__61428,G__61429));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__65739,G__65740) : helix.core.jsxs.call(null,G__65739,G__65740));
 } else {
 return null;
 }
 });
 if(goog.DEBUG === true){
-var G__61531 = G__61419;
-(G__61531.displayName = "app.connect.LRG-16-60.toolbar-panel/LRG-16-60-toolbar-panel");
+var G__65916 = G__65730;
+(G__65916.displayName = "app.connect.LRG-16-60.toolbar-panel/LRG-16-60-toolbar-panel");
 
-return G__61531;
+return G__65916;
 } else {
-return G__61419;
+return G__65730;
 }
 })();
 

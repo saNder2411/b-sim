@@ -1,7 +1,7 @@
 (ns app.connect.converter
   (:require [helix.core :refer [defnc $ <>]]
             [refx.alpha :refer [use-sub dispatch]]
-            [app.shared.components.equipment-full-screen :refer [equipment-full-screen]]
+            [app.shared.components.controller :as controller]
             [app.connect.URW-60.URW-60 :refer [URW-60]]))
 
 (defnc converter []
@@ -13,7 +13,7 @@
         (case converter-id
           "URW 60" ($ URW-60 {:x "86%" :y "1.6%" :w "5.77%"})
           nil)
-        ($ equipment-full-screen
+        ($ controller/full-screen
            {:show     converter-full-screen
             :on-close #(dispatch [:change-converter-full-screen false])}
            (case converter-id

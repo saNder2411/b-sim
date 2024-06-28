@@ -10,10 +10,15 @@
          (fn [burner _]
            (:status burner)))
 
-(reg-sub :burner-init-settings
+(reg-sub :burner-settings
          :<- [:burner]
-         (fn [boiler _]
-           (:init-settings boiler)))
+         (fn [burner _]
+           (:settings burner)))
+
+(reg-sub :burner-settings-view
+         :<- [:burner-settings]
+         (fn [settings _]
+           (:view settings)))
 
 (reg-sub :burner-show-toolbar-panel
          :<- [:current-hotspot]

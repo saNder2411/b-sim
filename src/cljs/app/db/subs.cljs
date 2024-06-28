@@ -30,6 +30,16 @@
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :sim])))
 
+(reg-sub :kit-data-by-keywords
+         (fn [{:keys [kit] :as db} [_ path]]
+           (get-in db (into [(keyword kit)] path))))
+
+(reg-sub :show-settings-form-sim-start-values
+         (fn [{:keys [kit] :as db} _]
+           (let [sim (get-in db [(keyword kit) :sim])
+                 intended-use (get-in db [(keyword kit) :intended-use])]
+             (and (= sim "stopped") (not= intended-use "demonstration")))))
+
 (reg-sub :lang
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :lang])))
@@ -77,6 +87,10 @@
          :<- [:modal-info]
          (fn [{:keys [title text]} _]
            (or (not (empty? title)) (not (empty? text)))))
+
+(reg-sub :notifications
+         (fn [{:keys [kit] :as db} _]
+           (get-in db [(keyword kit) :notifications])))
 
 (reg-sub :limiter-low-level-id
          (fn [{:keys [kit] :as db} _]

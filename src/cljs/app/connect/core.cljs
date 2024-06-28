@@ -7,7 +7,8 @@
             [app.connect.controller-level :refer [controller-level]]
             [app.connect.converter :refer [converter]]
             [app.connect.hot-spots :refer [hot-spots]]
-            [app.connect.toolbars :refer [toolbars]]))
+            [app.connect.toolbars :refer [toolbars]]
+            [app.shared.boiler-plant.boiler.settings :refer [boiler-settings]]))
 
 (defnc connect-kit []
   (<>
@@ -18,4 +19,5 @@
     ($ controller-level)
     ($ converter)
     ($ hot-spots)
-    ($ toolbars)))
+    ($ toolbars)
+    ($ boiler-settings)))

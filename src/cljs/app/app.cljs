@@ -3,7 +3,8 @@
             [helix.hooks :refer [use-effect]]
             [helix.dom :as d]
             [refx.alpha :refer [use-sub dispatch]]
-            [app.shared.components.modal-info :refer [modal-info]]
+            [app.shared.components.modal :as modal]
+            [app.shared.components.notifications :refer [notifications]]
             [app.shared.sidebar.core :refer [sidebar]]
             [app.connect.cables :refer [cables]]
             [app.connect.core :refer [connect-kit]]
@@ -27,7 +28,8 @@
            (d/p {:class "version-tag"}
                 (d/span {:style {:font-size (str (* 14 scale-f) "px")}} "Version: 1.0"))
 
-           ($ modal-info)
+           ($ notifications)
+           ($ modal/info)
 
            (when (= kit "connect")
              ($ cables))
