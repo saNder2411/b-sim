@@ -30,9 +30,8 @@
                            :modal-info            {:title "" :text ""}
                            :notifications         {}
 
-                           :boiler                (merge defaults/BOILER
-                                                         {:settings-form (merge (:settings defaults/BOILER)
-                                                                                {:view false})})
+                           :boiler                defaults/BOILER
+
 
                            :burner                {:mode             "auto"
                                                    :status           "on"

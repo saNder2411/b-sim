@@ -10,7 +10,7 @@
       (<>
          ($ toolbar/title {:x 85 :y 95 :fill "#efefef" :title "Steam Boiler"})
 
-         ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click #(dispatch [:change-boiler-settings-form [[:view] true]])}
+         ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click #(dispatch [:change-boiler-settings [[:view] true]])}
             ($ toolbar/btn-settings))
 
          ($ toolbar/btn-wrapper {:x 1174 :y 54}

@@ -6,7 +6,9 @@
              :conductivity  3000
              :temperature   100.5
              :sludge-mass   39.2
-             :settings      {:water-level  {:value 84
+             :settings      {:view         false
+                             
+                             :water-level  {:value 84
                                             :unit  "%"
                                             :view  true}
 

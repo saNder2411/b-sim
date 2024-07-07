@@ -237,27 +237,19 @@ label {
 }
 
 input,
-button,
 select,
 textarea {
     font-family: inherit;
     font-size: inherit;
     -webkit-padding: 0.4em 0;
-    padding: 0.4em;
     margin: 0 0 0.5em 0;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 input:disabled {
     color: #ccc;
-}
-
-button {
-    color: #333;
-    background-color: #f4f4f4;
-    outline: none;
 }
 
 button:disabled {
@@ -284,11 +276,10 @@ button:focus {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    color: #7a7a7a;
+    color: #515151;
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.5px;
-    /*    margin: 25px 0;*/
     margin: 15px 0;
 }
 
@@ -318,11 +309,10 @@ button:focus {
 }
 
 .select.is-small {
-    border-radius: 2px;
+    border-radius: 4px;
     font-size: 0.75rem;
 }
 
-button,
 input,
 select,
 textarea {
@@ -339,16 +329,9 @@ textarea {
     'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
-.pagination-previous,
-.pagination-next,
-.pagination-link,
-.pagination-ellipsis,
-.file-cta,
-.file-name,
 .select select,
 .textarea,
-.input,
-.button {
+.input {
     appearance: none;
     align-items: center;
     border: 1px solid transparent;
@@ -356,15 +339,13 @@ textarea {
     box-shadow: none;
     display: inline-flex;
     font-size: 1rem;
-    height: 2.5em;
+    height: 26px;
     justify-content: flex-start;
-    line-height: 1.5;
-    padding-bottom: calc(0.5em - 1px);
-    padding-left: calc(0.75em - 1px);
-    padding-right: calc(0.75em - 1px);
-    padding-top: calc(0.5em - 1px);
+    align-items: center;
+    line-height: 1.2;
     position: relative;
-    vertical-align: top;
+    padding-left: 8px;
+    font-family: 'OpenSans';
 }
 
 .select select,
@@ -373,7 +354,7 @@ textarea {
     background-color: hsl(0deg, 0%, 100%);
     border-color: hsl(0deg, 0%, 86%);
     border-radius: 4px;
-    color: hsl(0deg, 0%, 21%);
+    color: #000;
 }
 
 .textarea,
@@ -385,7 +366,7 @@ textarea {
 
 .is-small.textarea,
 .is-small.input {
-    border-radius: 2px;
+    border-radius: 4px;
     font-size: 0.75rem;
 }
 
@@ -417,14 +398,14 @@ textarea {
     border-top: 0;
     content: ' ';
     display: block;
-    height: 0.625em;
-    margin-top: -0.4375em;
+    width: 8px;
+    height: 8px;
     pointer-events: none;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 8px);
     transform: rotate(-45deg);
     transform-origin: center;
-    width: 0.625em;
+
 }
 
 .select:not(.is-multiple):not(.is-loading)::after {
@@ -443,7 +424,7 @@ textarea {
     z-index: 10;
     width: 100vw;
     height: 100vh;
-    background: rgba(10, 10, 10, 0.46);
+    background: rgba(10, 10, 10, 0.76);
 }
 
 .modal {
@@ -461,7 +442,7 @@ textarea {
 .modal-background {
     height: 100vh;
     width: 100vw;
-    background-color: rgba(10, 10, 10, 0.86);
+    background-color: rgba(10, 10, 10, 0.76);
     position: absolute;
 }
 
@@ -485,7 +466,7 @@ textarea {
 .modal-card-head,
 .modal-card-foot {
     align-items: center;
-    background-color: #212737;
+    background-color: #fff;
     display: flex;
     flex-shrink: 0;
     justify-content: flex-start;
@@ -494,7 +475,7 @@ textarea {
 }
 
 .modal-card-body {
-    background-color: #273043;
+    background-color: #f7f6f4;
     flex-grow: 1;
     flex-shrink: 1;
     overflow: auto;
@@ -502,7 +483,7 @@ textarea {
 }
 
 .modal-card-body .text {
-    color: #fff;
+    color: #2f2f2f;
 }
 
 .modal-card-foot {
@@ -512,7 +493,7 @@ textarea {
 }
 
 .modal-card-title {
-    color: #fff;
+    color: #000;
     flex-grow: 1;
     flex-shrink: 0;
     font-size: 1.5rem;
@@ -525,7 +506,7 @@ textarea {
     user-select: none;
     background-color: transparent;
     border: none;
-    border-radius: 9999px;
+    border-radius: 50%;
     cursor: pointer;
     pointer-events: auto;
     display: inline-block;
@@ -556,7 +537,7 @@ textarea {
 
 .delete::before,
 .delete::after {
-    background-color: hsl(0deg, 0%, 100%);
+    background-color: #9a9a9a;
     content: '';
     display: block;
     left: 50%;
@@ -571,43 +552,53 @@ textarea {
     width: 2px;
 }
 
-.modal-card-foot .button:not(:last-child) {
-    margin-right: 0.5em;
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 68px;
+    padding: 2px 8px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'OpenSans';
+    color: #000;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 1.2;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 2px 0px;
+    cursor: pointer;
 }
 
-.button.is-info {
-    background-color: #1aafe7;
-    border-color: transparent;
+button:focus {
+    border-color: #d3d3d3;
+}
+button:not(:disabled):active {
+    background-color: #F0F0F0FF;
+}
+
+.button.primary {
+    background-image: linear-gradient(to bottom, rgb(77, 145, 247) 0%,  rgb(57, 123, 246)  100%);
     color: #fff;
 }
 
-.button {
-    background-color: hsl(0deg, 0%, 100%);
-    border-color: hsl(0deg, 0%, 86%);
-    border-width: 1px;
-    color: hsl(0deg, 0%, 21%);
-    cursor: pointer;
-    justify-content: center;
-    padding-bottom: calc(0.5em - 1px);
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: calc(0.5em - 1px);
-    text-align: center;
-    white-space: nowrap;
+.button.primary:not(:disabled):active {
+    background-image: linear-gradient(to bottom, rgb(38, 119, 246) 0%,  rgb(44, 110, 227)  100%);
 }
 
-.modal-card-foot .button:not(:last-child) {
-    margin-right: 0.5em;
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }
 
-.button.is-info.is-outlined {
-    background-color: transparent;
-    border-color: #1aafe7;
-    color: #1aafe7;
-}
+
+
 
 .title {
-    color: #92929c;
+    color: #7e7e7e;
     font-size: 2rem;
     font-weight: normal;
     line-height: 1.125;

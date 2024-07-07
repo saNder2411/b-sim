@@ -16,31 +16,28 @@
                     (d/section {:class "modal-card-body"}
                                (d/div {:class "media"}
                                       (d/div {:class "media-content"}
-                                             (d/p {:style {:color "#fff"}}
-                                                  text))))
+                                             (d/p text))))
 
                     (d/footer {:class "modal-card-foot"}
                               (d/button {:class "button is-info" :on-click on-close}
                                         "OK")))))))
 
-(defnc settings [{:keys [title on-close on-cancel on-default on-apply children]}]
+(defnc settings [{:keys [title on-close on-default on-done children]}]
   (d/div {:class "modal"}
          (d/div {:class "modal-background"})
          (d/div {:class "modal-card" :style {:width 480}}
                 (d/header {:class "modal-card-head"}
                           (d/p {:class "modal-card-title"}
                                title)
-                          (d/button {:class "delete is-medium" :on-click on-close}))
+                          (when on-close
+                            (d/button {:class "delete is-medium" :on-click on-close})))
 
                 (d/section {:class "modal-card-body"}
                            children)
 
-                (d/footer {:class "modal-card-foot"}
-                          (d/button {:class "button is-info" :on-click on-apply}
-                                    "Apply")
+                (d/footer {:class "modal-card-foot" :style {:display "flex" :justify-content "space-between" :align-items "center"}}
+                          (d/button {:class "button" :on-click on-default}
+                                    "Restore Defaults")
 
-                          (d/button {:class "button is-info is-outlined" :on-click on-cancel}
-                                    "Cancel")
-
-                          (d/button {:class "button is-info is-outlined" :on-click on-default}
-                                    "Default")))))
+                          (d/button {:class "button primary" :on-click on-done}
+                                    "Done")))))

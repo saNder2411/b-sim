@@ -11,28 +11,23 @@
          (fn [boiler _]
            (:settings boiler)))
 
-(reg-sub :boiler-settings-form
-         :<- [:boiler]
-         (fn [boiler _]
-           (:settings-form boiler)))
+(reg-sub :boiler-settings-view
+         :<- [:boiler-settings]
+         (fn [settings _]
+           (:view settings)))
 
-(reg-sub :boiler-settings-form-view
-         :<- [:boiler-settings-form]
-         (fn [settings-form _]
-           (:view settings-form)))
-
-(reg-sub :boiler-settings-form-pressure-converted-value
-         :<- [:boiler-settings-form]
-         (fn [settings-form _]
-           (let [{:keys [unit value]} (:pressure settings-form)]
+(reg-sub :boiler-settings-pressure-converted-value
+         :<- [:boiler-settings]
+         (fn [settings _]
+           (let [{:keys [unit value]} (:pressure settings)]
              (cond-> value
                      (= unit "psi") (-> (* 14.5037738) Math/round)
                      :default (->> (cl-format nil "~,1f") js/parseFloat)))))
 
-(reg-sub :boiler-settings-form-conductivity-converted-value
-         :<- [:boiler-settings-form]
-         (fn [settings-form _]
-           (let [{:keys [unit value]} (:conductivity settings-form)]
+(reg-sub :boiler-settings-conductivity-converted-value
+         :<- [:boiler-settings]
+         (fn [settings _]
+           (let [{:keys [unit value]} (:conductivity settings)]
              (cond-> value
                      (= unit "ppm") (-> (* 0.5) Math/round)
                      :default Math/round))))
