@@ -167,7 +167,7 @@
 (defnc settings-form []
   (let [show-settings-form-sim-start-values (use-sub [:show-settings-form-sim-start-values])]
     (<>
-      (d/div {:class "divider"} "head-up-display")
+      (d/div {:class "divider" :style {:margin-top 0}} "head-up-display")
 
       ($ pressure-hud-settings)
 

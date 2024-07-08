@@ -8,7 +8,8 @@
             [app.connect.converter :refer [converter]]
             [app.connect.hot-spots :refer [hot-spots]]
             [app.connect.toolbars :refer [toolbars]]
-            [app.shared.boiler-plant.boiler.settings :refer [boiler-settings]]))
+            [app.shared.boiler-plant.boiler.settings :refer [boiler-settings]]
+            [app.shared.boiler-plant.burner.settings :refer [burner-settings]]))
 
 (defnc connect-kit []
   (<>
@@ -20,4 +21,5 @@
     ($ converter)
     ($ hot-spots)
     ($ toolbars)
-    ($ boiler-settings)))
+    ($ boiler-settings)
+    ($ burner-settings)))

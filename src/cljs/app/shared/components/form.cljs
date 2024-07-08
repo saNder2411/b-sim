@@ -52,24 +52,6 @@
                    :on-blur on-blur})))
 
 
-(def debounce-atom (atom nil))
-
-
-(defn validate-input-number__ [v min max message]
-  (reset! debounce-atom v)
-
-  (go
-    (<! (timeout 2000))
-    (cond
-      (or (not (number? v)) (< v 0)) min
-      (< v min) (do
-                  (dispatch [:push-notification {:id (str (random-uuid)) :message message :duration 5000}])
-                  min)
-      (> v max) (do
-                  (dispatch [:push-notification {:id (str (random-uuid)) :message message :duration 5000}])
-                  max)
-      :default v)))
-
 (defn validate-input-number [v min max message dispatch-action]
   (cond
     (or (not (number? v)) (< v 0)) (dispatch-action min)

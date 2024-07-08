@@ -33,28 +33,7 @@
                            :boiler                defaults/BOILER
 
 
-                           :burner                {:mode             "auto"
-                                                   :status           "on"
-                                                   :power            0
-                                                   :fuel-consumption 0
-                                                   :settings         {:mode                         "auto"
-                                                                      :mode-view                    true
-                                                                      :status                       "on"
-                                                                      :status-view                  true
-                                                                      :power-unit                   "kW"
-                                                                      :power-view                   true
-                                                                      :power-max                    25000
-                                                                      :power-max-unit               "kW"
-                                                                      :fuel-consumption-unit        "nm³/s"
-                                                                      :fuel-consumption-view        true
-                                                                      :fuel-consumption-factor      0.083
-                                                                      :fuel-consumption-factor-unit "nm³/kW*h"
-                                                                      :pressure-on                  11.5
-                                                                      :pressure-off                 12.5
-                                                                      :pressure-unit                "bar"
-                                                                      :heat-transfer                0.9
-                                                                      :heat-transfer-unit           "kJ/kW*s"
-                                                                      :view                         false}}
+                           :burner                defaults/BURNER
                            :continuous-valve      {}
 
                            :limiter-low-level     {:controllers {"URS 60" {:full-screen false}}
