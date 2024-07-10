@@ -13,7 +13,7 @@
                 (let [kit-kw (keyword kit)
                       unit (get-in db [kit-kw :continuous-valve :flow-rate :unit])
                       converted-value (cond-> value
-                                              (= unit "T/h") (-> (* 1.016260162601626)))]
+                                              (= unit "T/h") (* 1.016260162601626))]
                   (assoc-in db [kit-kw :continuous-valve :flow-rate :max-value] converted-value))))
 
 

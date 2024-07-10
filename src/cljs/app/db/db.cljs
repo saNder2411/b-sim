@@ -33,6 +33,7 @@
                            :boiler                defaults/BOILER
                            :burner                defaults/BURNER
                            :continuous-valve      defaults/CONTINUOUS-VALVE
+                           :sludge-valve          defaults/SLUDGE-VALVE
 
                            :limiter-low-level     {:controllers {"URS 60" {:full-screen false}}
 
@@ -195,7 +196,7 @@
                            :highlight-hotspots  true
                            :current-hotspot     "none"
 
-                           :boiler                defaults/BOILER
-                           :burner                defaults/BURNER
-                           :continuous-valve      defaults/CONTINUOUS-VALVE
+                           :boiler              defaults/BOILER
+                           :burner              defaults/BURNER
+                           :continuous-valve    defaults/CONTINUOUS-VALVE
                            }})

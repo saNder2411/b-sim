@@ -202,5 +202,4 @@
                          :on-default #(dispatch [:restore-defaults-burner-settings])
                          :on-done    #(dispatch [:apply-burner-settings])}
 
-         ($ settings-form)
-         ))))
+         ($ settings-form)))))

@@ -300,7 +300,7 @@
 
                   :conductivity-probe-temperature-coeff        {"%/°C" {:min 0 :max 3 :step 0.1}}
 
-                  :standby-interval-countdown-pre-settings     {"s" {:min 60 :max 86400 :step 1}
+                  :blowdown-countdown-init-value               {"s" {:min 60 :max 86400 :step 1}
                                                                 "m" {:min 1 :max 1440 :step 1}}
 
                   :flow-rate-kg-s                              {"kg/s" {:min 4 :max 12 :step 1}}

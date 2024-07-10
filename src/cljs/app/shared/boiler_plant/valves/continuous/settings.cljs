@@ -134,5 +134,4 @@
                          :on-default #(dispatch [:restore-defaults-continuous-valve-settings])
                          :on-done    #(dispatch [:apply-continuous-valve-settings])}
 
-         ($ settings-form)
-         ))))
+         ($ settings-form)))))

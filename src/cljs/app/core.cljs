@@ -12,6 +12,7 @@
             [app.db.continuous-valve.subs]
             [app.db.continuous-valve.events]
             [app.db.sludge-valve.subs]
+            [app.db.sludge-valve.events]
             [app.db.feedwater-valve.subs]
             [app.db.feedwater-pump.subs]
             [app.db.TRV-5-60.subs]

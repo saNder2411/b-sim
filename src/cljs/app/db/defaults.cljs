@@ -64,16 +64,15 @@
 (def CONTINUOUS-VALVE {:mode            {:view  true
                                          :value "auto"}
 
-                       :op-position     5                   ;; %
-
-                       :damper          {:view     true
-                                         :unit     "%"
-                                         :value    5
-                                         :amperage 4}
+                       :damper          {:view        true
+                                         :unit        "%"
+                                         :value       5
+                                         :amperage    4
+                                         :op-position 5}
 
                        :flow-rate       {:view      true
                                          :unit      "t/h"
-                                         :value     3.5
+                                         :value     0
                                          :max-value 35}
 
                        :transition      {:status      "fixed"
@@ -96,3 +95,35 @@
                                          :transition {:travel-time {:value 40}}}
 
                        :settings-view   false})
+
+(def SLUDGE-VALVE {:mode            {:view  true
+                                     :value "auto"}
+
+                   :damper          {:view  true
+                                     :unit  "open/close"
+                                     :value 0}
+
+                   :flow-rate       {:view      true
+                                     :unit      "kg/s"
+                                     :value     0
+                                     :max-value 8}
+
+                   :status          "standby"               ;; "pulse" | "pause" | "standby"
+
+                   :interval        {:unit  "h"
+                                     :value 24}
+
+                   :countdown       {:view  true
+                                     :unit  "s"
+                                     :value 10}
+
+                   :pulse           {:unit     "s"
+                                     :duration 5
+                                     :count    3
+                                     :interval 3}
+
+
+                   :init-sim-output {:countdown {:unit  "s"
+                                                 :value 10}}
+
+                   :settings-view   false})
