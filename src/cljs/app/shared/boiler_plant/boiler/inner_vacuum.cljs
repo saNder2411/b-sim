@@ -4,7 +4,7 @@
             [refx.alpha :refer [use-sub]]))
 
 (defnc boiler-inner-vacuum []
-  (let [water-level (use-sub [:water-level])
+  (let [water-level (use-sub [:kit-data-by-keywords [:boiler :water-level :value]])
         top-height (if (> water-level 42.9)
                      (/ (* 185.86 (- water-level 42.9)) 57.1)
                      0)

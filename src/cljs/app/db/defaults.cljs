@@ -1,62 +1,98 @@
 (ns app.db.defaults)
 
-(def BOILER {:water-level   84
-             :pressure      11
-             :prev-pressure 11
-             :conductivity  3000
-             :temperature   100.5
-             :sludge-mass   39.2
-             :settings      {:view         false
+(def BOILER {:water-level     {:view  true
+                               :unit  "%"
+                               :value 84}
 
-                             :water-level  {:value 84
-                                            :unit  "%"
-                                            :view  true}
+             :pressure        {:view       true
+                               :unit       "bar"
+                               :value      11
+                               :prev-value 11}
 
-                             :pressure     {:value 11
-                                            :unit  "bar"
-                                            :view  true}
+             :conductivity    {:view  true
+                               :unit  "µS/cm"
+                               :value 3000}
 
-                             :conductivity {:value 3000
-                                            :unit  "µS/cm"
-                                            :view  true}
+             :temperature     {:view  true
+                               :unit  "°C"
+                               :value 100.5}
 
-                             :temperature  {:value 100.5
-                                            :unit  "°C"
-                                            :view  true}
+             :sludge-mass     {:unit      "kg"
+                               :value     39.2
+                               :max-value 80}
 
-                             :sludge-mass  {:value 39.2
-                                            :unit  "kg"
-                                            :max   80}
+             :volume          {:value 55
+                               :unit  "m³"}
 
-                             :volume       {:value 55
-                                            :unit  "m³"}}})
+             :init-sim-output {:water-level  {:value 84}
 
-(def BURNER {:mode             "auto"
-             :status           "on"
-             :power            0
-             :fuel-consumption 0
-             :settings         {:view             false
+                               :pressure     {:value 11}
 
-                                :mode             {:value "auto"
-                                                   :view  true}
+                               :conductivity {:value 3000}
 
-                                :status           {:value "on"
-                                                   :unit  "on/off"
-                                                   :view  true}
+                               :sludge-mass  {:value 39.2}}
+             :settings-view   false})
 
-                                :power            {:unit "kW"
-                                                   :view true
-                                                   :max  {:value 25000
-                                                          :unit  "kW"}}
+(def BURNER {:mode             {:view  true
+                                :value "auto"}
 
+             :status           {:view  true
+                                :unit  "on/off"
+                                :value "on"}
 
-                                :fuel-consumption {:unit  "nm³/s"
-                                                   :view  true
-                                                   :coeff {:value 0.083
-                                                           :unit  "nm³/kW*h"}}
+             :power            {:view      true
+                                :unit      "kW"
+                                :value     0
+                                :max-value 25000}
 
-                                :pressure         {:unit  "bar"
-                                                   :value {:on 11.5 :off 12.5}}
+             :fuel-consumption {:view  true
+                                :unit  "nm³/s"
+                                :value 0
+                                :coeff {:value 0.083
+                                        :unit  "nm³/kW*h"}}
 
-                                :heat-transfer    {:value 0.9
-                                                   :unit  "kJ/kW*s"}}})
+             :pressure         {:unit  "bar"
+                                :value {:on 11.5 :off 12.5}}
+
+             :heat-transfer    {:value 0.9
+                                :unit  "kJ/kW*s"}
+
+             :init-sim-output  {:status {:value "on"}}
+
+             :settings-view    false})
+
+(def CONTINUOUS-VALVE {:mode            {:view  true
+                                         :value "auto"}
+
+                       :op-position     5                   ;; %
+
+                       :damper          {:view     true
+                                         :unit     "%"
+                                         :value    5
+                                         :amperage 4}
+
+                       :flow-rate       {:view      true
+                                         :unit      "t/h"
+                                         :value     3.5
+                                         :max-value 35}
+
+                       :transition      {:status      "fixed"
+                                         :travel-time {:value 40
+                                                       :unit  "s"}}
+
+                       :potentiometer   {:connection  "connected"
+                                         :damper      {:closed 16
+                                                       :open   32752}
+
+                                         :calibration {:0   16
+                                                       :100 32752}}
+
+                       :flushing        {:on       true
+                                         :interval 1        ;;hours
+                                         :duration 3}       ;; minutes
+
+                       :init-sim-output {:damper     {:value 5}
+
+                                         :transition {:travel-time {:value 40}}}
+
+                       :settings-view   false})

@@ -9,7 +9,8 @@
             [app.connect.hot-spots :refer [hot-spots]]
             [app.connect.toolbars :refer [toolbars]]
             [app.shared.boiler-plant.boiler.settings :refer [boiler-settings]]
-            [app.shared.boiler-plant.burner.settings :refer [burner-settings]]))
+            [app.shared.boiler-plant.burner.settings :refer [burner-settings]]
+            [app.shared.boiler-plant.valves.continuous.settings :refer [continuous-valve-settings]]))
 
 (defnc connect-kit []
   (<>
@@ -22,4 +23,5 @@
     ($ hot-spots)
     ($ toolbars)
     ($ boiler-settings)
-    ($ burner-settings)))
+    ($ burner-settings)
+    ($ continuous-valve-settings)))

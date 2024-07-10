@@ -31,10 +31,8 @@
                            :notifications         {}
 
                            :boiler                defaults/BOILER
-
-
                            :burner                defaults/BURNER
-                           :continuous-valve      {}
+                           :continuous-valve      defaults/CONTINUOUS-VALVE
 
                            :limiter-low-level     {:controllers {"URS 60" {:full-screen false}}
 
@@ -197,50 +195,7 @@
                            :highlight-hotspots  true
                            :current-hotspot     "none"
 
-
-                           :boiler              {:water-level   84
-                                                 :pressure      11
-                                                 :prev-pressure 11
-                                                 :conductivity  3000
-                                                 :temperature   100.5
-                                                 :sludge-mass   39.2
-                                                 :settings      {:water-level       84
-                                                                 :water-level-unit  "%"
-                                                                 :water-level-view  true
-                                                                 :pressure          11
-                                                                 :pressure-unit     "bar"
-                                                                 :pressure-view     true
-                                                                 :conductivity      3000
-                                                                 :conductivity-unit "µS/cm"
-                                                                 :conductivity-view true
-                                                                 :temperature-unit  "°C"
-                                                                 :temperature-view  true
-                                                                 :sludge-mass       39.2
-                                                                 :sludge-mass-unit  "kg"
-                                                                 :sludge-mass-max   80
-                                                                 :volume            55
-                                                                 :volume-unit       "m³"
-                                                                 :view              false}}
-
-                           :burner              {:mode             "auto"
-                                                 :status           "on"
-                                                 :power            0
-                                                 :fuel-consumption 0
-                                                 :settings         {:mode                         "auto"
-                                                                    :mode-view                    true
-                                                                    :status                       "on"
-                                                                    :status-view                  true
-                                                                    :power-unit                   "kW"
-                                                                    :power-view                   true
-                                                                    :power-max                    25000
-                                                                    :power-max-unit               "kW"
-                                                                    :fuel-consumption-unit        "nm³/s"
-                                                                    :fuel-consumption-view        true
-                                                                    :fuel-consumption-factor      0.083
-                                                                    :fuel-consumption-factor-unit "nm³/kW*h"
-                                                                    :pressure-on                  11.5
-                                                                    :pressure-off                 12.5
-                                                                    :pressure-unit                "bar"
-                                                                    :heat-transfer                0.9
-                                                                    :heat-transfer-unit           "kJ/kW*s"
-                                                                    :view                         false}}}})
+                           :boiler                defaults/BOILER
+                           :burner                defaults/BURNER
+                           :continuous-valve      defaults/CONTINUOUS-VALVE
+                           }})

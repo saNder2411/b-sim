@@ -286,7 +286,7 @@
 
                   :feed-water-elect-valve-position             {"%" {:min 0 :max 100 :step 1}}
 
-                  :feed-water-elect-valve-travel-time          {"sec" {:min 1 :max 600 :step 1}}
+                  :feed-water-elect-valve-travel-time          {"s" {:min 1 :max 600 :step 1}}
 
                   :feed-water-elect-valve-potentiometer-closed {"--" {:min 16 :max 32752 :step 1}}
 

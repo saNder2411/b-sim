@@ -6,53 +6,47 @@
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :boiler])))
 
-(reg-sub :boiler-settings
+(reg-sub :boiler-init-sim-output-pressure-converted-value
          :<- [:boiler]
          (fn [boiler _]
-           (:settings boiler)))
-
-(reg-sub :boiler-settings-view
-         :<- [:boiler-settings]
-         (fn [settings _]
-           (:view settings)))
-
-(reg-sub :boiler-settings-pressure-converted-value
-         :<- [:boiler-settings]
-         (fn [settings _]
-           (let [{:keys [unit value]} (:pressure settings)]
+           (let [unit (-> boiler :pressure :unit)
+                 value (-> boiler :init-sim-output :pressure :value)]
              (cond-> value
                      (= unit "psi") (-> (* 14.5037738) Math/round)
                      :default (->> (cl-format nil "~,1f") js/parseFloat)))))
 
-(reg-sub :boiler-settings-conductivity-converted-value
-         :<- [:boiler-settings]
-         (fn [settings _]
-           (let [{:keys [unit value]} (:conductivity settings)]
+(reg-sub :boiler-pressure-converted-value
+         :<- [:boiler]
+         (fn [boiler _]
+           (let [{:keys [unit value]} (:pressure boiler)]
+             (cond-> value
+                     (= unit "psi") (-> (* 14.5037738) Math/round)
+                     :default (->> (cl-format nil "~,1f") js/parseFloat)))))
+
+
+(reg-sub :boiler-conductivity-converted-value
+         :<- [:boiler]
+         (fn [boiler _]
+           (let [{:keys [unit value]} (:conductivity boiler)]
              (cond-> value
                      (= unit "ppm") (-> (* 0.5) Math/round)
                      :default Math/round))))
 
-(reg-sub :water-level
+(reg-sub :boiler-init-sim-output-conductivity-converted-value
          :<- [:boiler]
          (fn [boiler _]
-           (:water-level boiler)))
-
-(reg-sub :sludge-mass
-         :<- [:boiler]
-         (fn [boiler _]
-           (:sludge-mass boiler)))
-
-(reg-sub :sludge-mass-max
-         :<- [:boiler-settings]
-         (fn [boiler-settings _]
-           (get-in boiler-settings [:sludge-mass :max])))
+           (let [unit (-> boiler :conductivity :unit)
+                 value (-> boiler :init-sim-output :conductivity :value)]
+             (cond-> value
+                     (= unit "ppm") (-> (* 0.5) Math/round)
+                     :default Math/round))))
 
 (reg-sub :sludge-mass-%
-         :<- [:sludge-mass]
-         :<- [:sludge-mass-max]
-         (fn [[sludge-mass sludge-mass-max] _]
-           (let [value (* 100 (/ sludge-mass sludge-mass-max))]
-             (if (< value 0) 0 value))))
+         :<- [:boiler]
+         (fn [{:keys [sludge-mass]} _]
+           (let [{:keys [value max-value]} sludge-mass
+                 value-% (* 100 (/ value max-value))]
+             (if (< value-% 0) 0 value-%))))
 
 (reg-sub :sludge-svg-height
          :<- [:sludge-mass-%]
@@ -60,27 +54,10 @@
            (let [max-svg-height 20.587]
              (* (/ max-svg-height 100) sludge-mass-%))))
 
-(reg-sub :pressure
-         :<- [:boiler]
-         (fn [boiler _]
-           (:pressure boiler)))
-
-(reg-sub :prev-pressure
-         :<- [:boiler]
-         (fn [boiler _]
-           (:prev-pressure boiler)))
-
-(reg-sub :conductivity
-         :<- [:boiler]
-         (fn [boiler _]
-           (:conductivity boiler)))
-
 (reg-sub :show-water-foam
-         :<- [:pressure]
-         :<- [:prev-pressure]
-         :<- [:conductivity]
-         (fn [[pressure prev-pressure conductivity] _]
-           (and (< (- pressure prev-pressure) -0.027) (> conductivity 2500))))
+         :<- [:boiler]
+         (fn [{:keys [pressure conductivity]} _]
+           (and (< (- (:value pressure) (:prev-value pressure)) -0.027) (> (:value conductivity) 2500))))
 
 (reg-sub :boiler-show-toolbar-panel
          :<- [:current-hotspot]

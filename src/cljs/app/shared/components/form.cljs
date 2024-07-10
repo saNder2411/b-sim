@@ -1,8 +1,7 @@
 (ns app.shared.components.form
   (:require [helix.core :refer [defnc <>]]
             [helix.dom :as d]
-            [refx.alpha :refer [dispatch]]
-            [cljs.core.async :refer [go <! timeout]]))
+            [refx.alpha :refer [dispatch]]))
 
 (defnc field-row [{:keys [label children]}]
   (<>

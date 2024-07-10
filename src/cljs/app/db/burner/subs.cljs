@@ -6,49 +6,40 @@
          (fn [{:keys [kit] :as db} _]
            (get-in db [(keyword kit) :burner])))
 
-(reg-sub :burner-status
+(reg-sub :burner-pressure-converted-value-on
          :<- [:burner]
          (fn [burner _]
-           (:status burner)))
-
-(reg-sub :burner-settings
-         :<- [:burner]
-         (fn [burner _]
-           (:settings burner)))
-
-(reg-sub :burner-settings-view
-         :<- [:burner-settings]
-         (fn [settings _]
-           (:view settings)))
-
-
-(reg-sub :burner-settings-pressure-converted-value-on
-         :<- [:burner-settings]
-         (fn [settings _]
-           (let [{:keys [unit value]} (:pressure settings)]
+           (let [{:keys [unit value]} (:pressure burner)]
              (cond-> (:on value)
                      (= unit "psi") (-> (* 14.5037738) Math/round)
                      :default (->> (cl-format nil "~,1f") js/parseFloat)))))
 
-(reg-sub :burner-settings-pressure-converted-value-off
-         :<- [:burner-settings]
-         (fn [settings _]
-           (let [{:keys [unit value]} (:pressure settings)]
+(reg-sub :burner-pressure-converted-value-off
+         :<- [:burner]
+         (fn [burner _]
+           (let [{:keys [unit value]} (:pressure burner)]
              (cond-> (:off value)
                      (= unit "psi") (-> (* 14.5037738) Math/round)
                      :default (->> (cl-format nil "~,1f") js/parseFloat)))))
 
-(reg-sub :burner-settings-power-max-converted-value
-         :<- [:burner-settings]
-         (fn [settings _]
-           (let [{:keys [unit value]} (-> settings :power :max)]
+(reg-sub :burner-power-max-converted-value
+         :<- [:burner]
+         (fn [burner _]
+           (let [{:keys [unit max-value]} (:power burner)]
+             (cond-> max-value
+                     (= unit "MW") (* 0.001)))))
+
+(reg-sub :burner-power-converted-value
+         :<- [:burner]
+         (fn [burner _]
+           (let [{:keys [unit value]} (:power burner)]
              (cond-> value
                      (= unit "MW") (* 0.001)))))
 
-(reg-sub :burner-settings-fuel-consumption-coeff-converted-value
-         :<- [:burner-settings]
-         (fn [settings _]
-           (let [{:keys [unit value]} (-> settings :fuel-consumption :coeff)]
+(reg-sub :burner-fuel-consumption-coeff-converted-value
+         :<- [:burner]
+         (fn [burner _]
+           (let [{:keys [unit value]} (-> burner :fuel-consumption :coeff)]
              (cond-> value
                      (= unit "nm³/kW*s") (->> (* 3600) (cl-format nil "~,1f") js/parseFloat)
                      (= unit "nm³/kW*h") (->> (cl-format nil "~,3f") js/parseFloat)))))

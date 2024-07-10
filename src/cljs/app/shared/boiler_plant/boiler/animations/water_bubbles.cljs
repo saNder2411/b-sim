@@ -5,7 +5,7 @@
 
 (defnc animation-water-bubbles []
   (let [sim (use-sub [:sim])
-        burner-status (use-sub [:burner-status])
+        burner-status (use-sub [:kit-data-by-keywords [:burner :status :value]])
         show-animation (and (= sim "run") (= burner-status "on"))
         hide-class (if show-animation "" " hide")]
     ($ "foreignObject" {:x 414.71 :y 332.73 :width 672 :height 165}

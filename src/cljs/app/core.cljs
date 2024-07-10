@@ -10,6 +10,7 @@
             [app.db.burner.subs]
             [app.db.burner.events]
             [app.db.continuous-valve.subs]
+            [app.db.continuous-valve.events]
             [app.db.sludge-valve.subs]
             [app.db.feedwater-valve.subs]
             [app.db.feedwater-pump.subs]
