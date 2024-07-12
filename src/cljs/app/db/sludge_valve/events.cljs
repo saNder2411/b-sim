@@ -28,5 +28,4 @@
               (fn [{:keys [kit] :as db} _]
                 (let [kit-kw (keyword kit)
                       default-values (merge defaults/SLUDGE-VALVE {:settings-view true})]
-
                   (assoc-in db [kit-kw :sludge-valve] default-values))))

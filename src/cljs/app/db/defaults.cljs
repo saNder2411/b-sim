@@ -80,7 +80,8 @@
                                                        :unit  "s"}}
 
                        :potentiometer   {:connection  "connected"
-                                         :damper      {:closed 16
+                                         :damper      {:unit   "byte"
+                                                       :closed 16
                                                        :open   32752}
 
                                          :calibration {:0   16
@@ -127,3 +128,84 @@
                                                  :value 10}}
 
                    :settings-view   false})
+
+(def FEEDWATER-VALVE {:mode            {:view  true
+                                        :value "auto"}
+
+                      :damper          {:view     true
+                                        :unit     "%"
+                                        :value    0
+                                        :amperage 4}
+
+                      :flow-rate       {:view      true
+                                        :unit      "t/h"
+                                        :value     0
+                                        :max-value 70}
+
+                      :transition      {:status      "fixed"
+                                        :travel-time {:value 40
+                                                      :unit  "s"}}
+
+                      :potentiometer   {:connection  "connected"
+                                        :damper      {:unit   "byte"
+                                                      :closed 16
+                                                      :open   32752}
+
+                                        :calibration {:0   16
+                                                      :100 32752}}
+
+                      :init-sim-output {:damper        {:value 0}
+
+                                        :transition    {:travel-time {:value 40}}}
+
+                      :settings-view   false})
+
+(def FEEDWATER-VALVE-PNEUMATIC {:mode            {:view  true
+                                                  :value "auto"}
+
+                                :damper          {:view     true
+                                                  :unit     "%"
+                                                  :value    0
+                                                  :amperage 4}
+
+                                :flow-rate       {:view      true
+                                                  :unit      "t/h"
+                                                  :value     0
+                                                  :max-value 70}
+
+                                :init-sim-output {:damper {:value 0}}
+
+                                :settings-view   false})
+
+(def FEEDWATER-PUMP {:mode            {:view  true
+                                       :value "auto"}
+
+                     :performance     {:view     true
+                                       :unit     "%"
+                                       :value    0
+                                       :amperage 4}
+
+                     :rotation        {:view      true
+                                       :unit      "rpm"
+                                       :value     0
+                                       :max-value 1000}
+
+                     :flow-rate       {:view      true
+                                       :unit      "t/h"
+                                       :value     0
+                                       :max-value 70}
+
+                     :init-sim-output {:performance {:value 0}}
+
+                     :settings-view   false})
+
+(def FEEDWATER {:temperature   {:unit  "°C"
+                                :value 103}
+
+                :conductivity  {:unit  "µS/cm"
+                                :value 500}
+
+                :sludge-ratio  {:unit  "ratio"
+                                :value 0.0003}
+
+                :settings-view false})

@@ -273,16 +273,8 @@ button:focus {
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.5px;
-    margin: 15px 0;
+    margin: 14px 0;
 }
-
-/*.divider::after {*/
-/*    content: '';*/
-/*    display: block;*/
-/*    border-bottom: 1px solid #dbdbdb;*/
-/*    flex: 1;*/
-/*    margin-left: 12px;*/
-/*}*/
 
 .divider-m-15 {
     margin: 15px 0;
@@ -612,14 +604,14 @@ button:not(:disabled):active {
 
 .field.has-addons {
     display: flex;
+    align-items:center;
 }
 
 .field:not(:last-child) {
-    margin-bottom: 0.75rem;
+    margin-bottom: 10px;
 }
 
 h6.dialog-label {
-    margin-top: 1.1rem !important;
     margin-bottom: 0.25rem !important;
     font-family: Arial;
     letter-spacing: 0.1em;

@@ -14,6 +14,7 @@
             [app.db.sludge-valve.subs]
             [app.db.sludge-valve.events]
             [app.db.feedwater-valve.subs]
+            [app.db.feedwater-valve.events]
             [app.db.feedwater-pump.subs]
             [app.db.TRV-5-60.subs]
             [app.db.LRG-16-60.subs]

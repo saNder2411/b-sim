@@ -11,7 +11,8 @@
             [app.shared.boiler-plant.boiler.settings :refer [boiler-settings]]
             [app.shared.boiler-plant.burner.settings :refer [burner-settings]]
             [app.shared.boiler-plant.valves.continuous.settings :refer [continuous-valve-settings]]
-            [app.shared.boiler-plant.valves.sludge.settings :refer [sludge-valve-settings]]))
+            [app.shared.boiler-plant.valves.sludge.settings :refer [sludge-valve-settings]]
+            [app.shared.boiler-plant.valves.feedwater.settings :refer [feedwater-valve-settings]]))
 
 (defnc connect-kit []
   (<>
@@ -26,4 +27,5 @@
     ($ boiler-settings)
     ($ burner-settings)
     ($ continuous-valve-settings)
-    ($ sludge-valve-settings)))
+    ($ sludge-valve-settings)
+    ($ feedwater-valve-settings)))

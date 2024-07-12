@@ -9,7 +9,6 @@
 
 (reg-event-db :change-continuous-valve-flow-rate-max-value
               (fn [{:keys [kit] :as db} [_ value]]
-
                 (let [kit-kw (keyword kit)
                       unit (get-in db [kit-kw :continuous-valve :flow-rate :unit])
                       converted-value (cond-> value
@@ -21,7 +20,6 @@
               (fn [{:keys [kit] :as db} _]
                 (let [kit-kw (keyword kit)
                       {:keys [damper transition]} (get-in db [kit-kw :continuous-valve :init-sim-output])]
-
                   (-> db
                       (update-in [kit-kw :continuous-valve :damper] merge damper)
                       (update-in [kit-kw :continuous-valve :transition] merge transition)
@@ -31,5 +29,4 @@
               (fn [{:keys [kit] :as db} _]
                 (let [kit-kw (keyword kit)
                       default-values (merge defaults/CONTINUOUS-VALVE {:settings-view true})]
-
                   (assoc-in db [kit-kw :continuous-valve] default-values))))

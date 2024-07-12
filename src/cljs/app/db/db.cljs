@@ -34,6 +34,10 @@
                            :burner                defaults/BURNER
                            :continuous-valve      defaults/CONTINUOUS-VALVE
                            :sludge-valve          defaults/SLUDGE-VALVE
+                           :feedwater             defaults/FEEDWATER
+                           :feedwater-valve       defaults/FEEDWATER-VALVE
+                           :feedwater-valve-pn    defaults/FEEDWATER-VALVE-PNEUMATIC
+                           :feedwater-pump        defaults/FEEDWATER-PUMP
 
                            :limiter-low-level     {:controllers {"URS 60" {:full-screen false}}
 

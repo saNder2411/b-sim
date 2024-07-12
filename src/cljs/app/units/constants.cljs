@@ -288,9 +288,9 @@
 
                   :feed-water-elect-valve-travel-time          {"s" {:min 1 :max 600 :step 1}}
 
-                  :feed-water-elect-valve-potentiometer-closed {"--" {:min 16 :max 32752 :step 1}}
+                  :feed-water-elect-valve-potentiometer-closed {"byte" {:min 16 :max 16375 :step 1}}
 
-                  :feed-water-elect-valve-potentiometer-open   {"--" {:min 16 :max 32752 :step 1}}
+                  :feed-water-elect-valve-potentiometer-open   {"byte" {:min 16376 :max 32752 :step 1}}
 
                   :feed-water-pump-performance                 {"%" {:min 0 :max 100 :step 1}}
 
