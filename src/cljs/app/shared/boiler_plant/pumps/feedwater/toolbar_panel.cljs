@@ -19,7 +19,7 @@
          ($ toolbar/btn-wrapper {:x 1064 :y 54}
             ($ toolbar/btn-divider))
 
-         ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click (fn [])}
+         ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click #(dispatch [:change-feedwater-pump [[:settings-view] true]])}
             ($ toolbar/btn-settings))
 
          ($ toolbar/btn-wrapper {:x 1174 :y 54}

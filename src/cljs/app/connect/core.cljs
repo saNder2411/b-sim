@@ -8,11 +8,7 @@
             [app.connect.converter :refer [converter]]
             [app.connect.hot-spots :refer [hot-spots]]
             [app.connect.toolbars :refer [toolbars]]
-            [app.shared.boiler-plant.boiler.settings :refer [boiler-settings]]
-            [app.shared.boiler-plant.burner.settings :refer [burner-settings]]
-            [app.shared.boiler-plant.valves.continuous.settings :refer [continuous-valve-settings]]
-            [app.shared.boiler-plant.valves.sludge.settings :refer [sludge-valve-settings]]
-            [app.shared.boiler-plant.valves.feedwater.settings :refer [feedwater-valve-settings]]))
+            [app.connect.settings :refer [settings]]))
 
 (defnc connect-kit []
   (<>
@@ -24,8 +20,4 @@
     ($ converter)
     ($ hot-spots)
     ($ toolbars)
-    ($ boiler-settings)
-    ($ burner-settings)
-    ($ continuous-valve-settings)
-    ($ sludge-valve-settings)
-    ($ feedwater-valve-settings)))
+    ($ settings)))

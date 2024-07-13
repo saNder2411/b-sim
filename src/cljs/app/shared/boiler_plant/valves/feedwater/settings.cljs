@@ -75,7 +75,6 @@
                     :value     unit
                     :on-change #(dispatch [:change-feedwater-valve [[:flow-rate :unit] %]])}))))
 
-
 (defnc travel-time-init-value []
   (let [value (use-sub [:kit-data-by-keywords [:feedwater-valve :init-sim-output :transition :travel-time :value]])
         unit (use-sub [:kit-data-by-keywords [:feedwater-valve :transition :travel-time :unit]])
@@ -139,9 +138,6 @@
        ($ f/select {:data      [{:value "byte" :label "byte"}]
                     :value     unit
                     :on-change #(dispatch [:change-feedwater-valve [[:potentiometer :damper :unit] %]])}))))
-
-
-
 
 (defnc settings-form []
   (let [show-settings-form-sim-start-values (use-sub [:show-settings-form-sim-start-values])]

@@ -14,17 +14,10 @@
                      (= unit "T/h") (->> (* 0.984) (cl-format nil "~,2f") js/parseFloat)
                      (= unit "t/h") (->> (cl-format nil "~,2f") js/parseFloat)))))
 
-(reg-sub :feedwater-valve-conductivity-converted-value
-         :<- [:feedwater-valve]
-         (fn [feedwater-valve _]
-           (let [{:keys [unit value]} (-> feedwater-valve :feedwater :conductivity)]
-             (cond-> value
-                     (= unit "ppm") (-> (* 0.5) Math/round)
-                     :default Math/round))))
-
 (reg-sub :feedwater-valve-show-toolbar-panel
          :<- [:current-hotspot]
-         (fn [current-hotspot _]
-           (= current-hotspot "feedwater-valve")))
+         :<- [:level-controller-actuator-type]
+         (fn [[current-hotspot  level-controller-actuator-type] _]
+           (and (= current-hotspot "feedwater-valve") (= level-controller-actuator-type "ELECTRIC_VALVE"))))
 
 

@@ -14,14 +14,6 @@
                                               (= unit "T/h") (* 1.016260162601626))]
                   (assoc-in db [kit-kw :feedwater-valve :flow-rate :max-value] converted-value))))
 
-(reg-event-db :change-feedwater-valve-conductivity-value
-              (fn [{:keys [kit] :as db} [_ value]]
-                (let [kit-kw (keyword kit)
-                      unit (get-in db [kit-kw :feedwater-valve :feedwater :conductivity :unit])
-                      converted-value (cond-> value
-                                              (= unit "ppm") (* 2))]
-                  (assoc-in db [kit-kw :feedwater-valve :feedwater :conductivity :value] converted-value))))
-
 (reg-event-db :apply-feedwater-valve-settings
               (fn [{:keys [kit] :as db} _]
                 (let [kit-kw (keyword kit)

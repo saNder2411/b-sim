@@ -14,7 +14,7 @@
                            :ctrl-panel-view       true
                            :settings-modal-view   false
                            :highlight-hotspots    true
-                           :current-hotspot       "none"    ;; "boiler" "burner" "sludge-valve" "continuous-valve" "feedwater-valve" "feedwater-pump" "temperature-probe" "urb" "level-controller" "level-probe" "cond-controller" "cond-probe" "level-high-probe" "limiter-low-level" "limiter-high-level" "level-low-probe-I" "level-low-probe-II" "converter"
+                           :current-hotspot       "none"    ;; "boiler" "burner" "sludge-valve" "continuous-valve" "feedwater-valve" "feedwater-pump" "feedwater" "temperature-probe" "urb" "level-controller" "level-probe" "cond-controller" "cond-probe" "level-high-probe" "limiter-low-level" "limiter-high-level" "level-low-probe-I" "level-low-probe-II" "converter"
                            :limiter-low-level-id  "URS 60"  ;; "none" | "URS 60"
                            :limiter-high-level-id "URS 61"  ;; "none" | "URS 61"
                            :cond-controller-id    "LRR 1-60" ;; "none" | "LRR 1-60"
@@ -135,7 +135,7 @@
                                                                                 :high-level-on-delay-w  0
                                                                                 :low-level-off-delay-w  3
                                                                                 :low-level-on-delay-w   0
-                                                                                :actuator-type          "FREQUENCY_CONTROLLED_PUMPS" ; "FREQUENCY_CONTROLLED_PUMPS" | "ELECTRO_PNEUMATIC_VALVE"
+                                                                                :actuator-type          "FREQUENCY_CONTROLLED_PUMPS" ; "FREQUENCY_CONTROLLED_PUMPS" | "PNEUMATIC_VALVE"
                                                                                 :errors-extra-trigger   []
                                                                                 :pi-controller          {}
                                                                                 :calibration            {:low-point                        25
@@ -167,7 +167,7 @@
                                                                                 :high-level-on-delay-w  0
                                                                                 :low-level-off-delay-w  3
                                                                                 :low-level-on-delay-w   0
-                                                                                :actuator-type          "FREQUENCY_CONTROLLED_PUMPS" ; "FREQUENCY_CONTROLLED_PUMPS" | "ELECTRO_PNEUMATIC_VALVE"
+                                                                                :actuator-type          "FREQUENCY_CONTROLLED_PUMPS" ; "FREQUENCY_CONTROLLED_PUMPS" | "PNEUMATIC_VALVE"
                                                                                 :errors-extra-trigger   []
                                                                                 :pi-controller          {}
                                                                                 :calibration            {:low-point                        25

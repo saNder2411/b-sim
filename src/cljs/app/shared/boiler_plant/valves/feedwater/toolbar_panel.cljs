@@ -9,7 +9,7 @@
   (let [show-toolbar-panel (use-sub [:feedwater-valve-show-toolbar-panel])]
     (when show-toolbar-panel
       (<>
-        ($ toolbar/title {:x 85 :y 95 :fill "#efefef" :title "Feedwater Valve"})
+        ($ toolbar/title {:x 85 :y 95 :fill "#efefef" :title "Feedwater Electric Valve"})
 
 
         ($ slider {:x         719

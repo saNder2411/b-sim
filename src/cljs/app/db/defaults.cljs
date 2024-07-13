@@ -154,9 +154,9 @@
                                         :calibration {:0   16
                                                       :100 32752}}
 
-                      :init-sim-output {:damper        {:value 0}
+                      :init-sim-output {:damper     {:value 0}
 
-                                        :transition    {:travel-time {:value 40}}}
+                                        :transition {:travel-time {:value 40}}}
 
                       :settings-view   false})
 
@@ -194,6 +194,10 @@
                                        :unit      "t/h"
                                        :value     0
                                        :max-value 70}
+
+                     :threshold       {:on                40
+                                       :off               60
+                                       :forced-switchover 20}
 
                      :init-sim-output {:performance {:value 0}}
 

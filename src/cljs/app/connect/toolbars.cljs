@@ -6,7 +6,9 @@
             [app.shared.boiler-plant.valves.continuous.toolbar-panel :refer [valve-continuous-toolbar-panel]]
             [app.shared.boiler-plant.valves.sludge.toolbar-panel :refer [valve-sludge-toolbar-panel]]
             [app.shared.boiler-plant.valves.feedwater.toolbar-panel :refer [valve-feedwater-toolbar-panel]]
+            [app.shared.boiler-plant.valves.feedwater-pn.toolbar-panel :refer [valve-feedwater-pneumatic-toolbar-panel]]
             [app.shared.boiler-plant.pumps.feedwater.toolbar-panel :refer [pump-feedwater-toolbar-panel]]
+            [app.shared.boiler-plant.feedwater.toolbar-panel :refer [feedwater-toolbar-panel]]
             [app.connect.TRV-5-60.toolbar-panel :refer [TRV-5-60-toolbar-panel]]
             [app.connect.LRG-16-60.toolbar-panel :refer [LRG-16-60-toolbar-panel]]
             [app.connect.LRG-16-61.toolbar-panel :refer [LRG-16-61-toolbar-panel]]
@@ -33,7 +35,9 @@
      ($ valve-continuous-toolbar-panel)
      ($ valve-sludge-toolbar-panel)
      ($ valve-feedwater-toolbar-panel)
+     ($ valve-feedwater-pneumatic-toolbar-panel)
      ($ pump-feedwater-toolbar-panel)
+     ($ feedwater-toolbar-panel)
      ($ TRV-5-60-toolbar-panel)
      ($ LRG-16-60-toolbar-panel)
      ($ LRG-16-61-toolbar-panel)

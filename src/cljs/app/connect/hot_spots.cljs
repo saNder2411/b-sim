@@ -41,6 +41,8 @@
       (when show-feedwater-pump-hot-spot
         ($ hot-spot {:x 77.5 :y 74.5 :id "feedwater-pump"}))
 
+      ($ hot-spot {:x 90 :y 61 :id "feedwater"})
+
       ($ hot-spot {:x 76 :y 29.6 :id "level-probe"})
 
       ($ hot-spot {:x 2.2 :y 49 :id "urb"})
