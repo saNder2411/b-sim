@@ -21,7 +21,7 @@
     (d/path {:class class :d led-path})))
 
 (defnc full-screen [{:keys [show on-close children]}]
-  (let [class (if show "full-screen-mask" "hide")
+  (let [class (if show "full-screen-mask" "full-screen-hide")
         on-mask-click (fn [e]
                         (when (= "full-screen-mask" (-> e .-target .-id))
                           (on-close)))]

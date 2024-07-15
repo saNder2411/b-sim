@@ -213,3 +213,47 @@
                                 :value 0.0003}
 
                 :settings-view false})
+
+(def LEVEL-CONTROLLER-CALIBRATION {:points           {:low       25
+                                                      :high      32767
+                                                      :real-high 32767}
+
+                                   :points-by-boiler {:low  78.23376208
+                                                      :high 97.86859}
+
+                                   :probe-points     {:low  25
+                                                      :high 32767}
+
+
+
+                                   :cal-p            {:value        100
+                                                      :next-value   100
+                                                      :probe-value  100
+                                                      :opt-from-sim 25}})
+
+(def LEVEL-CONTROLLER-ALARM-POINTS {:high         {:value 80
+                                                   :delay {:off 3 :on 0}}
+                                    :high-warning {:value 60
+                                                   :delay {:off 3 :on 0}}
+                                    :low-warning  {:value 40
+                                                   :delay {:off 3 :on 0}}
+                                    :low          {:value 20
+                                                   :delay {:off 3 :on 0}}})
+
+(def LEVEL-CONTROLLER {:full-screen          false
+                       :switches             {1 false 2 false 3 false 4 false}
+                       :settings-view        false
+                       :mode                 "fill"
+                       :points               LEVEL-CONTROLLER-ALARM-POINTS
+                       :actuator-type        "ELECTRIC_VALVE" ;"ELECTRIC_VALVE" | "FREQUENCY_CONTROLLED_PUMPS" | "PNEUMATIC_VALVE"
+                       :errors-extra-trigger []
+                       :pi-controller        {}
+                       :calibration          LEVEL-CONTROLLER-CALIBRATION})
+
+(def NRR-2-60 LEVEL-CONTROLLER)
+
+(def NRR-2-60-3C LEVEL-CONTROLLER)
+
+(def NRR-2-61 (merge LEVEL-CONTROLLER {:actuator-type "FREQUENCY_CONTROLLED_PUMPS"}))
+
+(def NRR-2-61-3C (merge LEVEL-CONTROLLER {:actuator-type "FREQUENCY_CONTROLLED_PUMPS"}))

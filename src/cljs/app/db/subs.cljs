@@ -228,4 +228,13 @@
          (fn [current-hotspot _]
            (not= current-hotspot "none")))
 
+(reg-sub :level-probe-calibration-boiler-view-subs
+         :<- [:kit]
+         :<- [:level-controller-id]
+         (fn [[kit level-controller-id] _]
+           (let [controller-id (if (= level-controller-id "none") "NRR 2-60" level-controller-id)]
+             (str kit "-" controller-id "-calibration-boiler-view"))))
+
+
+
 

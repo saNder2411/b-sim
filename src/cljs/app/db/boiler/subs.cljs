@@ -23,7 +23,6 @@
                      (= unit "psi") (-> (* 14.5037738) Math/round)
                      :default (->> (cl-format nil "~,1f") js/parseFloat)))))
 
-
 (reg-sub :boiler-conductivity-converted-value
          :<- [:boiler]
          (fn [boiler _]

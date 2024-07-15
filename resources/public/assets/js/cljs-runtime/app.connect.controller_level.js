@@ -1,92 +1,92 @@
 goog.provide('app.connect.controller_level');
 
-app.connect.controller_level.controller_level = (function (){var G__64538 = (function app$connect$controller_level$controller_level_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__64548 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.connect.controller_level.controller_level = (function (){var G__29917 = (function app$connect$controller_level$controller_level_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__29919 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var level_controller_id = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-controller-id","level-controller-id",-527625219)], null));
 var level_controller_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-controller-full-screen","level-controller-full-screen",143784850)], null));
-var G__64559 = helix.core.Fragment;
-var G__64560 = ({"children": [(function (){var G__64562 = level_controller_id;
-switch (G__64562) {
+var G__29926 = helix.core.Fragment;
+var G__29927 = ({"children": [(function (){var G__29929 = level_controller_id;
+switch (G__29929) {
 case "none":
-var G__64573 = app.shared.components.controller.placeholder;
-var G__64574 = (function (){var obj64578 = ({"x":"72%","y":"1.6%","w":"13.5%","title":"Level"});
-return obj64578;
+var G__29934 = app.shared.components.controller.placeholder;
+var G__29935 = (function (){var obj29941 = ({"x":"72%","y":"1.6%","w":"13.5%","title":"Level"});
+return obj29941;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__64573,G__64574) : helix.core.jsx.call(null,G__64573,G__64574));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29934,G__29935) : helix.core.jsx.call(null,G__29934,G__29935));
 
 break;
 case "NRR 2-60":
-var G__64585 = app.connect.NRR_2_60.NRR_2_60.NRR_2_60;
-var G__64586 = (function (){var obj64594 = ({"x":"72%","y":"1.6%","w":"13.5%"});
-return obj64594;
+var G__29946 = app.connect.NRR_2_60.NRR_2_60.NRR_2_60;
+var G__29947 = (function (){var obj29949 = ({"x":"72%","y":"1.6%","w":"13.5%"});
+return obj29949;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__64585,G__64586) : helix.core.jsx.call(null,G__64585,G__64586));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29946,G__29947) : helix.core.jsx.call(null,G__29946,G__29947));
 
 break;
 case "NRR 2-60 3C":
-var G__64600 = app.connect.NRR_2_60_3C.NRR_2_60_3C.NRR_2_60_3C;
-var G__64601 = (function (){var obj64609 = ({"x":"72%","y":"1.6%","w":"13.5%"});
-return obj64609;
+var G__29958 = app.connect.NRR_2_60_3C.NRR_2_60_3C.NRR_2_60_3C;
+var G__29959 = (function (){var obj29963 = ({"x":"72%","y":"1.6%","w":"13.5%"});
+return obj29963;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__64600,G__64601) : helix.core.jsx.call(null,G__64600,G__64601));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29958,G__29959) : helix.core.jsx.call(null,G__29958,G__29959));
 
 break;
 case "NRR 2-61":
-var G__64614 = app.connect.NRR_2_61.NRR_2_61.NRR_2_61;
-var G__64615 = (function (){var obj64617 = ({"x":"72%","y":"1.6%","w":"13.5%"});
-return obj64617;
+var G__29974 = app.connect.NRR_2_61.NRR_2_61.NRR_2_61;
+var G__29975 = (function (){var obj29979 = ({"x":"72%","y":"1.6%","w":"13.5%"});
+return obj29979;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__64614,G__64615) : helix.core.jsx.call(null,G__64614,G__64615));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29974,G__29975) : helix.core.jsx.call(null,G__29974,G__29975));
 
 break;
 case "NRR 2-61 3C":
-var G__64626 = app.connect.NRR_2_61_3C.NRR_2_61_3C.NRR_2_61_3C;
-var G__64627 = (function (){var obj64630 = ({"x":"72%","y":"1.6%","w":"13.5%"});
-return obj64630;
+var G__29983 = app.connect.NRR_2_61_3C.NRR_2_61_3C.NRR_2_61_3C;
+var G__29984 = (function (){var obj29990 = ({"x":"72%","y":"1.6%","w":"13.5%"});
+return obj29990;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__64626,G__64627) : helix.core.jsx.call(null,G__64626,G__64627));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29983,G__29984) : helix.core.jsx.call(null,G__29983,G__29984));
 
 break;
 default:
 return null;
 
 }
-})(),(function (){var G__64633 = app.shared.components.controller.full_screen;
-var G__64634 = (function (){var obj64636 = ({"show":level_controller_full_screen,"on-close":(function (){
+})(),(function (){var G__29997 = app.shared.components.controller.full_screen;
+var G__29998 = (function (){var obj30004 = ({"show":level_controller_full_screen,"on-close":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-level-controller-full-screen","change-level-controller-full-screen",-1646019656),false], null));
-}),"children":(function (){var G__64637 = level_controller_id;
-switch (G__64637) {
+}),"children":(function (){var G__30011 = level_controller_id;
+switch (G__30011) {
 case "NRR 2-60":
-var G__64638 = app.connect.NRR_2_60.NRR_2_60.NRR_2_60;
-var G__64639 = (function (){var obj64641 = ({"x":"30%","y":"38.85%","w":"40%"});
-return obj64641;
+var G__30017 = app.connect.NRR_2_60.NRR_2_60.NRR_2_60;
+var G__30018 = (function (){var obj30022 = ({"x":"30%","y":"38.85%","w":"40%"});
+return obj30022;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__64638,G__64639) : helix.core.jsx.call(null,G__64638,G__64639));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30017,G__30018) : helix.core.jsx.call(null,G__30017,G__30018));
 
 break;
 case "NRR 2-60 3C":
-var G__64645 = app.connect.NRR_2_60_3C.NRR_2_60_3C.NRR_2_60_3C;
-var G__64646 = (function (){var obj64648 = ({"x":"30%","y":"38.85%","w":"40%"});
-return obj64648;
+var G__30027 = app.connect.NRR_2_60_3C.NRR_2_60_3C.NRR_2_60_3C;
+var G__30029 = (function (){var obj30032 = ({"x":"30%","y":"38.85%","w":"40%"});
+return obj30032;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__64645,G__64646) : helix.core.jsx.call(null,G__64645,G__64646));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30027,G__30029) : helix.core.jsx.call(null,G__30027,G__30029));
 
 break;
 case "NRR 2-61":
-var G__64650 = app.connect.NRR_2_61.NRR_2_61.NRR_2_61;
-var G__64651 = (function (){var obj64653 = ({"x":"30%","y":"38.85%","w":"40%"});
-return obj64653;
+var G__30036 = app.connect.NRR_2_61.NRR_2_61.NRR_2_61;
+var G__30037 = (function (){var obj30041 = ({"x":"30%","y":"38.85%","w":"40%"});
+return obj30041;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__64650,G__64651) : helix.core.jsx.call(null,G__64650,G__64651));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30036,G__30037) : helix.core.jsx.call(null,G__30036,G__30037));
 
 break;
 case "NRR 2-61 3C":
-var G__64656 = app.connect.NRR_2_61_3C.NRR_2_61_3C.NRR_2_61_3C;
-var G__64657 = (function (){var obj64659 = ({"x":"30%","y":"38.85%","w":"40%"});
-return obj64659;
+var G__30046 = app.connect.NRR_2_61_3C.NRR_2_61_3C.NRR_2_61_3C;
+var G__30047 = (function (){var obj30051 = ({"x":"30%","y":"38.85%","w":"40%"});
+return obj30051;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__64656,G__64657) : helix.core.jsx.call(null,G__64656,G__64657));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30046,G__30047) : helix.core.jsx.call(null,G__30046,G__30047));
 
 break;
 default:
@@ -94,19 +94,19 @@ return null;
 
 }
 })()});
-return obj64636;
+return obj30004;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__64633,G__64634) : helix.core.jsx.call(null,G__64633,G__64634));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__29997,G__29998) : helix.core.jsx.call(null,G__29997,G__29998));
 })()]});
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__64559,G__64560) : helix.core.jsxs.call(null,G__64559,G__64560));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__29926,G__29927) : helix.core.jsxs.call(null,G__29926,G__29927));
 });
 if(goog.DEBUG === true){
-var G__64660 = G__64538;
-(G__64660.displayName = "app.connect.controller-level/controller-level");
+var G__30064 = G__29917;
+(G__30064.displayName = "app.connect.controller-level/controller-level");
 
-return G__64660;
+return G__30064;
 } else {
-return G__64538;
+return G__29917;
 }
 })();
 

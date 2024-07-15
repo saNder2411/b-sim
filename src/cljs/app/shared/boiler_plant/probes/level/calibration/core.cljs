@@ -4,24 +4,24 @@
             [app.shared.boiler-plant.probes.level.calibration.indicator :refer [level-cal-indicator]]))
 
 (defnc probe-level-calibration []
-  (let [{:keys [high-point-by-boiler low-point low-point-by-boiler
-                next-high-point-by-boiler next-real-high-point real-high-point]} (use-sub [:NRR-2-60-calibration-level-cal-view])]
+  (let [subs (use-sub [:level-probe-calibration-boiler-view-subs])
+        {:keys [points points-by-boiler]} (use-sub [subs])]
     (<>
-      ($ level-cal-indicator {:point-by-boiler-level next-high-point-by-boiler
-                    :w-level                         100
-                    :digit-level                     next-real-high-point
-                    :point-pos                       "cal.h"
-                    :opacity                         0.5
-                    :fill                            "#c83b44"})
-      ($ level-cal-indicator {:point-by-boiler-level high-point-by-boiler
-                    :w-level                         100
-                    :digit-level                     real-high-point
-                    :point-pos                       "cal.h"
-                    :opacity                         1
-                    :fill                            "#c83b44"})
-      ($ level-cal-indicator {:point-by-boiler-level low-point-by-boiler
-                    :w-level                         0
-                    :digit-level                     low-point
-                    :point-pos                       "cal.l"
-                    :opacity                         1
-                    :fill                            "#286bb7"}))))
+      ($ level-cal-indicator {:point-by-boiler-level (:next-high points-by-boiler)
+                              :water-level           100
+                              :digit-level           (:next-real-high points)
+                              :point-pos             "cal.h"
+                              :opacity               0.5
+                              :fill                  "#c83b44"})
+      ($ level-cal-indicator {:point-by-boiler-level (:high points-by-boiler)
+                              :water-level           100
+                              :digit-level           (:real-high points)
+                              :point-pos             "cal.h"
+                              :opacity               1
+                              :fill                  "#c83b44"})
+      ($ level-cal-indicator {:point-by-boiler-level (:low points-by-boiler)
+                              :water-level           0
+                              :digit-level           (:low points)
+                              :point-pos             "cal.l"
+                              :opacity               1
+                              :fill                  "#286bb7"}))))

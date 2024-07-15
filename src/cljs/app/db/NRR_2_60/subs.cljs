@@ -1,42 +1,26 @@
 (ns app.db.NRR-2-60.subs
-  (:require [refx.alpha :refer [reg-sub]]))
+  (:require [refx.alpha :refer [reg-sub]]
+            [app.db.utils :refer [calc-real-high-point]]
+            [app.db.constants :refer [LEVEL-CALIBRATION]]))
 
 (reg-sub :NRR-2-60
          (fn [db _]
            (get-in db [:connect :level :controllers "NRR 2-60"])))
 
-(def max-high-point-by-cal-p 32767)
-(def min-high-point-by-cal-p 8191.75)
-
-(def min-level-by-boiler 78.21877)                          ;%
-(def max-level-by-boiler 97.86859)
-(def max-range-by-boiler 19.64982)
-(def %-in-digital-unit 0.0005996832179)                     ;; one digital value includes 0.0005996832179 percent; 19.64982 % / 32767 digital units
-
-(defn calc-real-high-point [h-point-by-cal-p cal-p]
-  (let [value (* (/ h-point-by-cal-p cal-p) 100)]
-    (if (> value max-high-point-by-cal-p)
-      max-high-point-by-cal-p
-      value)))
-
 (reg-sub :NRR-2-60-calibration
          :<- [:NRR-2-60]
-         (fn [NRR-2-60 _]
-           (let [{:keys [high-point-by-cal-p next-cal-p] :as calibration} (:calibration NRR-2-60)
-                 next-real-high-point (calc-real-high-point high-point-by-cal-p next-cal-p)
-                 next-high-point-by-boiler (+ min-level-by-boiler (* next-real-high-point %-in-digital-unit))]
-             (assoc calibration :next-real-high-point next-real-high-point
-                                :next-high-point-by-boiler next-high-point-by-boiler))))
+         (fn [{:keys [calibration]} _]
+           (let [{:keys [points cal-p]} calibration
+                 next-real-high (calc-real-high-point (:high points) (:next-value cal-p))
+                 next-high-by-boiler (+ (-> LEVEL-CALIBRATION :points-by-boiler :min) (* next-real-high (-> LEVEL-CALIBRATION :points-by-boiler :%-in-digital-unit)))]
+             (-> calibration
+                 (assoc-in [:points :next-real-high] next-real-high)
+                 (assoc-in [:points-by-boiler :next-high] next-high-by-boiler)))))
 
-(reg-sub :NRR-2-60-calibration-level-cal-view
+(reg-sub "connect-NRR 2-60-calibration-boiler-view"
          :<- [:NRR-2-60-calibration]
-         (fn [cal _]
-           (select-keys cal [:high-point-by-boiler
-                             :low-point
-                             :low-point-by-boiler
-                             :next-high-point-by-boiler
-                             :next-real-high-point
-                             :real-high-point])))
+         (fn [calibration _]
+           (select-keys calibration [:points :points-by-boiler])))
 
 (reg-sub :NRR-2-60-show-toolbar
          :<- [:current-hotspot]

@@ -1,163 +1,164 @@
 goog.provide('app.connect.NRR_2_61.toolbar_panel');
 
-app.connect.NRR_2_61.toolbar_panel.NRR_2_61_toolbar_panel = (function (){var G__66789 = (function app$connect$NRR_2_61$toolbar_panel$NRR_2_61_toolbar_panel_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__66799 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.connect.NRR_2_61.toolbar_panel.NRR_2_61_toolbar_panel = (function (){var G__30670 = (function app$connect$NRR_2_61$toolbar_panel$NRR_2_61_toolbar_panel_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__30671 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var show_toolbar = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"NRR-2-61-show-toolbar","NRR-2-61-show-toolbar",-1427340718)], null));
-var vec__66830 = helix.hooks.use_state(false);
-var val_1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66830,(0),null);
-var set_val_1_BANG_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66830,(1),null);
-var vec__66835 = helix.hooks.use_state(false);
-var val_2 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66835,(0),null);
-var set_val_2_BANG_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66835,(1),null);
-var vec__66838 = helix.hooks.use_state(false);
-var val_3 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66838,(0),null);
-var set_val_3_BANG_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66838,(1),null);
-var vec__66841 = helix.hooks.use_state(false);
-var val_4 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66841,(0),null);
-var set_val_4_BANG_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66841,(1),null);
+var sim = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null));
+var inactive = cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2("stopped",sim);
+var full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level","level",1290497552),new cljs.core.Keyword(null,"controllers","controllers",-1120410624),"NRR 2-61",new cljs.core.Keyword(null,"full-screen","full-screen",-1144598281)], null)], null));
+var switch_1 = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level","level",1290497552),new cljs.core.Keyword(null,"controllers","controllers",-1120410624),"NRR 2-61",new cljs.core.Keyword(null,"switches","switches",2013040888),(1)], null)], null));
+var switch_2 = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level","level",1290497552),new cljs.core.Keyword(null,"controllers","controllers",-1120410624),"NRR 2-61",new cljs.core.Keyword(null,"switches","switches",2013040888),(2)], null)], null));
+var switch_3 = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level","level",1290497552),new cljs.core.Keyword(null,"controllers","controllers",-1120410624),"NRR 2-61",new cljs.core.Keyword(null,"switches","switches",2013040888),(3)], null)], null));
+var switch_4 = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level","level",1290497552),new cljs.core.Keyword(null,"controllers","controllers",-1120410624),"NRR 2-61",new cljs.core.Keyword(null,"switches","switches",2013040888),(4)], null)], null));
 if(cljs.core.truth_(show_toolbar)){
-var G__66924 = helix.core.Fragment;
-var G__66925 = ({"children": [(function (){var G__66946 = app.shared.components.toolbar.title;
-var G__66947 = (function (){var obj66955 = ({"x":(85),"y":(80),"fill":"#efefef","title":"Level Controller"});
-return obj66955;
+var G__30674 = helix.core.Fragment;
+var G__30675 = ({"children": [(function (){var G__30676 = app.shared.components.toolbar.title;
+var G__30677 = (function (){var obj30679 = ({"x":(85),"y":(80),"fill":"#efefef","title":"Level Controller"});
+return obj30679;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__66946,G__66947) : helix.core.jsx.call(null,G__66946,G__66947));
-})(),(function (){var G__66964 = app.shared.components.toolbar.title;
-var G__66965 = (function (){var obj66975 = ({"x":(85),"y":(110),"fill":"#bcbcbc","title":"NRR 2-61"});
-return obj66975;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30676,G__30677) : helix.core.jsx.call(null,G__30676,G__30677));
+})(),(function (){var G__30680 = app.shared.components.toolbar.title;
+var G__30681 = (function (){var obj30683 = ({"x":(85),"y":(110),"fill":"#bcbcbc","title":"NRR 2-61"});
+return obj30683;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__66964,G__66965) : helix.core.jsx.call(null,G__66964,G__66965));
-})(),(function (){var G__67000 = app.shared.components.toolbar.btn_wrapper;
-var G__67001 = (function (){var obj67011 = ({"x":(697),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30680,G__30681) : helix.core.jsx.call(null,G__30680,G__30681));
+})(),(function (){var G__30684 = app.shared.components.toolbar.btn_wrapper;
+var G__30685 = (function (){var obj30687 = ({"x":(588),"y":(54),"on-click":(function (){
 return null;
-}),"children":(function (){var G__67034 = app.shared.components.toolbar.btn_replace;
-var G__67035 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67034,G__67035) : helix.core.jsx.call(null,G__67034,G__67035));
+}),"inactive":inactive,"children":(function (){var G__30688 = app.shared.components.toolbar.btn_replace;
+var G__30689 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30688,G__30689) : helix.core.jsx.call(null,G__30688,G__30689));
 })()});
-return obj67011;
+return obj30687;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67000,G__67001) : helix.core.jsx.call(null,G__67000,G__67001));
-})(),(function (){var G__67062 = app.shared.components.toolbar.btn_wrapper;
-var G__67064 = (function (){var obj67079 = ({"x":(757),"y":(54),"children":(function (){var G__67088 = app.shared.components.toolbar.btn_divider;
-var G__67090 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67088,G__67090) : helix.core.jsx.call(null,G__67088,G__67090));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30684,G__30685) : helix.core.jsx.call(null,G__30684,G__30685));
+})(),(function (){var G__30690 = app.shared.components.toolbar.btn_wrapper;
+var G__30691 = (function (){var obj30693 = ({"x":(648),"y":(54),"children":(function (){var G__30694 = app.shared.components.toolbar.btn_divider;
+var G__30695 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30694,G__30695) : helix.core.jsx.call(null,G__30694,G__30695));
 })()});
-return obj67079;
+return obj30693;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67062,G__67064) : helix.core.jsx.call(null,G__67062,G__67064));
-})(),(function (){var G__67119 = app.shared.components.toolbar.btn_wrapper;
-var G__67120 = (function (){var obj67132 = ({"x":(807),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30690,G__30691) : helix.core.jsx.call(null,G__30690,G__30691));
+})(),(function (){var G__30696 = app.shared.components.toolbar.btn_wrapper;
+var G__30697 = (function (){var obj30699 = ({"x":(698),"y":(54),"on-click":(function (){
 return null;
-}),"children":(function (){var G__67156 = app.shared.components.toolbar.btn_error;
-var G__67157 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67156,G__67157) : helix.core.jsx.call(null,G__67156,G__67157));
+}),"inactive":(!(inactive)),"children":(function (){var G__30700 = app.shared.components.toolbar.btn_error;
+var G__30701 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30700,G__30701) : helix.core.jsx.call(null,G__30700,G__30701));
 })()});
-return obj67132;
+return obj30699;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67119,G__67120) : helix.core.jsx.call(null,G__67119,G__67120));
-})(),(function (){var G__67173 = app.shared.components.toolbar.btn_wrapper;
-var G__67174 = (function (){var obj67182 = ({"x":(867),"y":(54),"children":(function (){var G__67189 = app.shared.components.toolbar.btn_divider;
-var G__67190 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67189,G__67190) : helix.core.jsx.call(null,G__67189,G__67190));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30696,G__30697) : helix.core.jsx.call(null,G__30696,G__30697));
+})(),(function (){var G__30702 = app.shared.components.toolbar.btn_wrapper;
+var G__30703 = (function (){var obj30705 = ({"x":(758),"y":(54),"children":(function (){var G__30706 = app.shared.components.toolbar.btn_divider;
+var G__30707 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30706,G__30707) : helix.core.jsx.call(null,G__30706,G__30707));
 })()});
-return obj67182;
+return obj30705;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67173,G__67174) : helix.core.jsx.call(null,G__67173,G__67174));
-})(),(function (){var G__67237 = app.shared.components.toolbar.switch_panel;
-var G__67238 = (function (){var obj67244 = ({"x":(917),"y":(12),"children":[(function (){var G__67279 = app.shared.components.toolbar.switch$;
-var G__67280 = (function (){var obj67288 = ({"x":(0),"value":val_1,"on-change":(function (){
-var G__67299 = (function (p1__66723_SHARP_){
-return cljs.core.not(p1__66723_SHARP_);
-});
-return (set_val_1_BANG_.cljs$core$IFn$_invoke$arity$1 ? set_val_1_BANG_.cljs$core$IFn$_invoke$arity$1(G__67299) : set_val_1_BANG_.call(null,G__67299));
-}),"legend":(1),"inactive":false});
-return obj67288;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30702,G__30703) : helix.core.jsx.call(null,G__30702,G__30703));
+})(),(function (){var G__30708 = app.shared.components.toolbar.switch_panel;
+var G__30709 = (function (){var obj30711 = ({"x":(808),"y":(12),"children":[(function (){var G__30712 = app.shared.components.toolbar.switch$;
+var G__30713 = (function (){var obj30715 = ({"x":(0),"value":switch_1,"on-change":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-NRR-2-61","change-NRR-2-61",-369021089),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"switches","switches",2013040888),(1)], null),cljs.core.not(switch_1)], null)], null));
+}),"legend":(1),"inactive":inactive});
+return obj30715;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67279,G__67280) : helix.core.jsx.call(null,G__67279,G__67280));
-})(),(function (){var G__67315 = app.shared.components.toolbar.switch$;
-var G__67316 = (function (){var obj67322 = ({"x":(35),"value":val_2,"on-change":(function (){
-var G__67335 = (function (p1__66727_SHARP_){
-return cljs.core.not(p1__66727_SHARP_);
-});
-return (set_val_2_BANG_.cljs$core$IFn$_invoke$arity$1 ? set_val_2_BANG_.cljs$core$IFn$_invoke$arity$1(G__67335) : set_val_2_BANG_.call(null,G__67335));
-}),"legend":(2),"inactive":false});
-return obj67322;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30712,G__30713) : helix.core.jsx.call(null,G__30712,G__30713));
+})(),(function (){var G__30716 = app.shared.components.toolbar.switch$;
+var G__30717 = (function (){var obj30719 = ({"x":(35),"value":switch_2,"on-change":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-NRR-2-61","change-NRR-2-61",-369021089),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"switches","switches",2013040888),(2)], null),cljs.core.not(switch_2)], null)], null));
+}),"legend":(2),"inactive":inactive});
+return obj30719;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67315,G__67316) : helix.core.jsx.call(null,G__67315,G__67316));
-})(),(function (){var G__67350 = app.shared.components.toolbar.switch$;
-var G__67351 = (function (){var obj67354 = ({"x":(70),"value":val_3,"on-change":(function (){
-var G__67365 = (function (p1__66732_SHARP_){
-return cljs.core.not(p1__66732_SHARP_);
-});
-return (set_val_3_BANG_.cljs$core$IFn$_invoke$arity$1 ? set_val_3_BANG_.cljs$core$IFn$_invoke$arity$1(G__67365) : set_val_3_BANG_.call(null,G__67365));
-}),"legend":(3),"inactive":false});
-return obj67354;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30716,G__30717) : helix.core.jsx.call(null,G__30716,G__30717));
+})(),(function (){var G__30720 = app.shared.components.toolbar.switch$;
+var G__30721 = (function (){var obj30723 = ({"x":(70),"value":switch_3,"on-change":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-NRR-2-61","change-NRR-2-61",-369021089),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"switches","switches",2013040888),(3)], null),cljs.core.not(switch_3)], null)], null));
+}),"legend":(3),"inactive":inactive});
+return obj30723;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67350,G__67351) : helix.core.jsx.call(null,G__67350,G__67351));
-})(),(function (){var G__67382 = app.shared.components.toolbar.switch$;
-var G__67383 = (function (){var obj67401 = ({"x":(105),"value":val_4,"on-change":(function (){
-var G__67417 = (function (p1__66735_SHARP_){
-return cljs.core.not(p1__66735_SHARP_);
-});
-return (set_val_4_BANG_.cljs$core$IFn$_invoke$arity$1 ? set_val_4_BANG_.cljs$core$IFn$_invoke$arity$1(G__67417) : set_val_4_BANG_.call(null,G__67417));
-}),"legend":(4),"inactive":false});
-return obj67401;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30720,G__30721) : helix.core.jsx.call(null,G__30720,G__30721));
+})(),(function (){var G__30724 = app.shared.components.toolbar.switch$;
+var G__30725 = (function (){var obj30727 = ({"x":(105),"value":switch_4,"on-change":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-NRR-2-61","change-NRR-2-61",-369021089),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"switches","switches",2013040888),(4)], null),cljs.core.not(switch_4)], null)], null));
+}),"legend":(4),"inactive":inactive});
+return obj30727;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67382,G__67383) : helix.core.jsx.call(null,G__67382,G__67383));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30724,G__30725) : helix.core.jsx.call(null,G__30724,G__30725));
 })()]});
-return obj67244;
+return obj30711;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__67237,G__67238) : helix.core.jsxs.call(null,G__67237,G__67238));
-})(),(function (){var G__67456 = app.shared.components.toolbar.btn_wrapper;
-var G__67457 = (function (){var obj67460 = ({"x":(1064),"y":(54),"children":(function (){var G__67468 = app.shared.components.toolbar.btn_divider;
-var G__67469 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67468,G__67469) : helix.core.jsx.call(null,G__67468,G__67469));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__30708,G__30709) : helix.core.jsxs.call(null,G__30708,G__30709));
+})(),(function (){var G__30728 = app.shared.components.toolbar.btn_wrapper;
+var G__30729 = (function (){var obj30731 = ({"x":(954),"y":(54),"children":(function (){var G__30732 = app.shared.components.toolbar.btn_divider;
+var G__30733 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30732,G__30733) : helix.core.jsx.call(null,G__30732,G__30733));
 })()});
-return obj67460;
+return obj30731;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67456,G__67457) : helix.core.jsx.call(null,G__67456,G__67457));
-})(),(function (){var G__67482 = app.shared.components.toolbar.btn_wrapper;
-var G__67483 = (function (){var obj67493 = ({"x":(1114),"y":(54),"on-click":(function (){
-return null;
-}),"children":(function (){var G__67510 = app.shared.components.toolbar.btn_full_screen;
-var G__67511 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67510,G__67511) : helix.core.jsx.call(null,G__67510,G__67511));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30728,G__30729) : helix.core.jsx.call(null,G__30728,G__30729));
+})(),(function (){var G__30734 = app.shared.components.toolbar.btn_wrapper;
+var G__30735 = (function (){var obj30737 = ({"x":(1004),"y":(54),"on-click":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-NRR-2-61","change-NRR-2-61",-369021089),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"full-screen","full-screen",-1144598281)], null),cljs.core.not(full_screen)], null)], null));
+}),"children":(function (){var G__30738 = app.shared.components.toolbar.btn_full_screen;
+var G__30739 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30738,G__30739) : helix.core.jsx.call(null,G__30738,G__30739));
 })()});
-return obj67493;
+return obj30737;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67482,G__67483) : helix.core.jsx.call(null,G__67482,G__67483));
-})(),(function (){var G__67527 = app.shared.components.toolbar.btn_wrapper;
-var G__67528 = (function (){var obj67541 = ({"x":(1174),"y":(54),"children":(function (){var G__67548 = app.shared.components.toolbar.btn_divider;
-var G__67549 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67548,G__67549) : helix.core.jsx.call(null,G__67548,G__67549));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30734,G__30735) : helix.core.jsx.call(null,G__30734,G__30735));
+})(),(function (){var G__30740 = app.shared.components.toolbar.btn_wrapper;
+var G__30741 = (function (){var obj30743 = ({"x":(1064),"y":(54),"children":(function (){var G__30744 = app.shared.components.toolbar.btn_divider;
+var G__30745 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30744,G__30745) : helix.core.jsx.call(null,G__30744,G__30745));
 })()});
-return obj67541;
+return obj30743;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67527,G__67528) : helix.core.jsx.call(null,G__67527,G__67528));
-})(),(function (){var G__67563 = app.shared.components.toolbar.btn_wrapper;
-var G__67564 = (function (){var obj67576 = ({"x":(1224),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30740,G__30741) : helix.core.jsx.call(null,G__30740,G__30741));
+})(),(function (){var G__30746 = app.shared.components.toolbar.btn_wrapper;
+var G__30747 = (function (){var obj30749 = ({"x":(1114),"y":(54),"inactive":inactive,"on-click":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-NRR-2-61","change-NRR-2-61",-369021089),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"settings-view","settings-view",1595275038)], null),true], null)], null));
+}),"children":(function (){var G__30750 = app.shared.components.toolbar.btn_settings;
+var G__30751 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30750,G__30751) : helix.core.jsx.call(null,G__30750,G__30751));
+})()});
+return obj30749;
+})();
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30746,G__30747) : helix.core.jsx.call(null,G__30746,G__30747));
+})(),(function (){var G__30752 = app.shared.components.toolbar.btn_wrapper;
+var G__30753 = (function (){var obj30755 = ({"x":(1174),"y":(54),"children":(function (){var G__30756 = app.shared.components.toolbar.btn_divider;
+var G__30757 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30756,G__30757) : helix.core.jsx.call(null,G__30756,G__30757));
+})()});
+return obj30755;
+})();
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30752,G__30753) : helix.core.jsx.call(null,G__30752,G__30753));
+})(),(function (){var G__30758 = app.shared.components.toolbar.btn_wrapper;
+var G__30759 = (function (){var obj30761 = ({"x":(1224),"y":(54),"on-click":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-modal-info","change-modal-info",-2050631306),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"title","title",636505583),"Level Controller",new cljs.core.Keyword(null,"text","text",-1790561697),"The level controller can be used in conjunction with NRG 26-60 and NRG 26-61 level electrodes as a water level controller and limit switch in steam and water boilers and in condensate and feedwater tanks."], null)], null));
-}),"children":(function (){var G__67591 = app.shared.components.toolbar.btn_info;
-var G__67592 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67591,G__67592) : helix.core.jsx.call(null,G__67591,G__67592));
+}),"children":(function (){var G__30762 = app.shared.components.toolbar.btn_info;
+var G__30763 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30762,G__30763) : helix.core.jsx.call(null,G__30762,G__30763));
 })()});
-return obj67576;
+return obj30761;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__67563,G__67564) : helix.core.jsx.call(null,G__67563,G__67564));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30758,G__30759) : helix.core.jsx.call(null,G__30758,G__30759));
 })()]});
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__66924,G__66925) : helix.core.jsxs.call(null,G__66924,G__66925));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__30674,G__30675) : helix.core.jsxs.call(null,G__30674,G__30675));
 } else {
 return null;
 }
 });
 if(goog.DEBUG === true){
-var G__67609 = G__66789;
-(G__67609.displayName = "app.connect.NRR-2-61.toolbar-panel/NRR-2-61-toolbar-panel");
+var G__30764 = G__30670;
+(G__30764.displayName = "app.connect.NRR-2-61.toolbar-panel/NRR-2-61-toolbar-panel");
 
-return G__67609;
+return G__30764;
 } else {
-return G__66789;
+return G__30670;
 }
 })();
 
