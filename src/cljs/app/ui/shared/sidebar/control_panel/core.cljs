@@ -9,7 +9,9 @@
 
 (defnc control-panel []
   (let [show (use-sub [:kit-data-by-path [:general-settings :ctrl-panel-view]])
-        y (if show 541 741)]
+        y (if show 541 741)
+        steam-unit (use-sub [:kit-data-by-path [:general-settings :steam :unit]])
+        flow-rate-unit (use-sub [:current-feed-actuator-data-by-path [:flow-rate :unit]])]
     (<>
       (d/g {:style {:transform  (str "translateY(" y "px)")
                     :transition "transform 300ms ease-out"}}
@@ -31,7 +33,7 @@
                       :v-%       50
                       :next-v-%  50
                       :active    true
-                      :value-box {:x 78.7 :y 0 :width 34.14 :fraction 2 :unit "t/h" :fill "#6f7684"}})
+                      :value-box {:x 78.7 :y 0 :width 34.14 :fraction 2 :unit steam-unit :fill "#6f7684"}})
 
            ($ slider {:x         66
                       :y         300
@@ -41,6 +43,6 @@
                       :v-%       0
                       :next-v-%  0
                       :active    false
-                      :value-box {:x 78.7 :y 0 :width 34.14 :fraction 2 :unit "t/h" :fill "#6f7684"}}))
+                      :value-box {:x 78.7 :y 0 :width 34.14 :fraction 2 :unit flow-rate-unit :fill "#6f7684"}}))
 
       ($ buttons-panel))))

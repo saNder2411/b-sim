@@ -13,10 +13,12 @@
             [app.ui.kits.connect.NRR-2-61.settings :refer [NRR-2-61-settings]]
             [app.ui.kits.connect.NRR-2-61-3C.settings :refer [NRR-2-61-3C-settings]]
             [app.ui.kits.connect.LRG-16-60.settings :refer [LRG-16-60-settings]]
-            [app.ui.kits.connect.LRG-16-61.settings :refer [LRG-16-61-settings]]))
+            [app.ui.kits.connect.LRG-16-61.settings :refer [LRG-16-61-settings]]
+            [app.ui.shared.sidebar.control-panel.settings :refer [general-settings]]))
 
 (defnc settings []
   (<>
+    ($ general-settings)
     ($ boiler-settings)
     ($ burner-settings)
     ($ continuous-valve-settings)

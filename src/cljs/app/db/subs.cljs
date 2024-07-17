@@ -1,5 +1,10 @@
 (ns app.db.subs
-  (:require [refx.alpha :refer [reg-sub]]))
+  (:require [refx.alpha :refer [reg-sub]]
+            [cljs.pprint :refer [cl-format]]))
+
+(reg-sub :db
+         (fn [db _]
+           db))
 
 (reg-sub :screen
          (fn [db _]
@@ -57,11 +62,17 @@
 
 (reg-sub :steam-value
          (fn [{:keys [kit] :as db} _]
-           (get-in db [kit :general-settings :steam :value])))
+           (let [{:keys [unit value]} (get-in db [kit :general-settings :steam])]
+             (cond-> value
+                     (= unit "T/h") (->> (* 0.984) (cl-format nil "~,2f") js/parseFloat)
+                     (= unit "t/h") (->> (cl-format nil "~,2f") js/parseFloat)))))
 
 (reg-sub :steam-max-value
          (fn [{:keys [kit] :as db} _]
-           (get-in db [kit :general-settings :steam :max-value])))
+           (let [{:keys [unit max-value]} (get-in db [kit :general-settings :steam])]
+             (cond-> max-value
+                     (= unit "T/h") (->> (* 0.984) (cl-format nil "~,2f") js/parseFloat)
+                     (= unit "t/h") (->> (cl-format nil "~,2f") js/parseFloat)))))
 
 (reg-sub :steam-%
          :<- [:steam-value]
@@ -149,6 +160,13 @@
          (fn [{:keys [kit] :as db} _]
            (let [controller-id (get-in db [kit :system-config :level :controller-id])]
              (get-in db [kit :level :controllers controller-id :actuator-type]))))
+
+(reg-sub :current-feed-actuator-data-by-path
+         :<- [:db]
+         :<- [:kit]
+         :<- [:current-level-controller-actuator-type]
+         (fn [[db kit actuator-type] [_ path]]
+           (get-in db (into [kit :boiler-plant :actuators :feed actuator-type] path))))
 
 (reg-sub :level-probe-id
          (fn [{:keys [kit] :as db} _]

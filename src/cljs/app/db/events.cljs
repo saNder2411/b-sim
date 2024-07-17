@@ -1,7 +1,8 @@
 (ns app.db.events
   (:require [refx.alpha :refer [reg-event-fx reg-event-db]]
             [refx.interceptors :refer [path]]
-            [app.db.db :refer [default-db]]))
+            [app.db.db :refer [default-db]]
+            [app.db.defaults :as defaults]))
 
 (defn update-screen! [width height {:keys [ratio] :as screen}]
   (if (<= (/ width height) ratio)
@@ -41,6 +42,22 @@
                     (assoc-in [kit :general-settings :view] true)
                     (assoc-in [kit :hotspots :highlight] false))))
 
+(reg-event-db :change-steam-value
+              (fn [{:keys [kit] :as db} [_ value]]
+                (let [unit (get-in db [kit :general-settings :steam :unit])
+                      converted-value (cond-> value
+                                              (= unit "T/h") (* 1.016260162601626))]
+                  (assoc-in db [kit :general-settings :steam :value] converted-value))))
+
+(reg-event-db :restore-defaults-general-settings
+              (fn [{:keys [kit] :as db} _]
+                (let [controller-id (get-in db [kit :system-config :level :controller-id])
+                      actuator-type (get-in db [kit :level :controllers controller-id :actuator-type])
+                      default-values (merge defaults/GENERAL-SETTINGS {:view true})]
+                  (-> db
+                      (assoc-in  [kit :boiler-plant :actuators :feed actuator-type :flow-rate :unit] "t/h")
+                      (assoc-in  [kit :general-settings] default-values)))))
+
 (reg-event-db :change-current-hotspot
               (fn [{:keys [kit] :as db} [_ new-value]]
                 (let [kit-kw kit]
@@ -67,6 +84,12 @@
               (fn [{:keys [kit] :as db} [_ [path new-value]]]
                 (let [id (get-in db [kit :system-config :level :controller-id])]
                   (assoc-in db (into [kit :level :controllers id] path) new-value))))
+
+(reg-event-db :change-current-feed-actuator
+              (fn [{:keys [kit] :as db} [_ [path new-value]]]
+                (let [controller-id (get-in db [kit :system-config :level :controller-id])
+                      actuator-type (get-in db [kit :level :controllers controller-id :actuator-type])]
+                  (assoc-in db (into [kit :boiler-plant :actuators :feed actuator-type] path) new-value))))
 
 (reg-event-db :change-current-level-probe
               (fn [{:keys [kit] :as db} [_ [path new-value]]]
