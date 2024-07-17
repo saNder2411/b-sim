@@ -1,21 +1,24 @@
 (ns app.db.subs
   (:require [refx.alpha :refer [reg-sub]]))
 
-(reg-sub :kit
+(reg-sub :screen
          (fn [db _]
-           (:kit db)))
+           (:screen db)))
 
 (reg-sub :screen-w
-         (fn [db _]
-           (-> db :screen :w)))
+         :<- [:screen]
+         (fn [screen _]
+           (:w screen)))
 
 (reg-sub :screen-h
-         (fn [db _]
-           (-> db :screen :h)))
+         :<- [:screen]
+         (fn [screen _]
+           (:h screen)))
 
 (reg-sub :screen-scale-f
-         (fn [db _]
-           (-> db :screen :scale-f)))
+         :<- [:screen]
+         (fn [screen _]
+           (:scale-f screen)))
 
 (reg-sub :user
          (fn [db _]
@@ -26,62 +29,50 @@
          (fn [{:keys [firstname lastname]} _]
            (str firstname " " lastname)))
 
+(reg-sub :kit
+         (fn [db _]
+           (:kit db)))
+
 (reg-sub :sim
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :sim])))
+           (get-in db [kit :sim])))
 
-(reg-sub :kit-data-by-keywords
+(reg-sub :kit-data-by-path
          (fn [{:keys [kit] :as db} [_ path]]
-           (get-in db (into [(keyword kit)] path))))
+           (get-in db (into [kit] path))))
 
 (reg-sub :show-settings-form-sim-start-values
          (fn [{:keys [kit] :as db} _]
-           (let [sim (get-in db [(keyword kit) :sim])
-                 intended-use (get-in db [(keyword kit) :intended-use])]
+           (let [sim (get-in db [kit :sim])
+                 intended-use (get-in db [kit :general-settings :intended-use])]
              (and (= sim "stopped") (not= intended-use "demonstration")))))
-
-(reg-sub :lang
-         (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :lang])))
-
-(reg-sub :operation-mode
-         (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :operation-mode])))
-
-(reg-sub :ctrl-panel-view
-         (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :ctrl-panel-view])))
-
-(reg-sub :settings-modal-view
-         (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :settings-modal-view])))
 
 (reg-sub :highlight-hotspots
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :highlight-hotspots])))
+           (get-in db [kit :hotspots :highlight])))
 
 (reg-sub :current-hotspot
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :current-hotspot])))
+           (get-in db [kit :hotspots :current])))
 
-(reg-sub :steam
+(reg-sub :steam-value
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :steam])))
+           (get-in db [kit :general-settings :steam :value])))
 
-(reg-sub :steam-max
+(reg-sub :steam-max-value
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :steam-max])))
+           (get-in db [kit :general-settings :steam :max-value])))
 
 (reg-sub :steam-%
-         :<- [:steam]
-         :<- [:steam-max]
-         (fn [[steam steam-max] _]
-           (let [value (* 100 (/ steam steam-max))]
+         :<- [:steam-value]
+         :<- [:steam-max-value]
+         (fn [[value max-value] _]
+           (let [value (* 100 (/ value max-value))]
              (if (< value 0) 0 value))))
 
 (reg-sub :modal-info
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :modal-info])))
+           (get-in db [kit :modal-info])))
 
 (reg-sub :modal-info-show
          :<- [:modal-info]
@@ -90,151 +81,146 @@
 
 (reg-sub :notifications
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :notifications])))
+           (get-in db [kit :notifications])))
 
-(reg-sub :limiter-low-level-id
+(reg-sub :low-limiter-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :limiter-low-level-id])))
+           (get-in db [kit :system-config :low-limiter :controller-id])))
 
-(reg-sub :limiter-low-level-full-screen
-         (fn [{:keys [kit] :as db} _]
-           (let [kit-kw (keyword kit)
-                 limiter-low-level-id (get-in db [kit-kw :limiter-low-level-id])]
-             (get-in db [kit-kw :limiter-low-level :controllers limiter-low-level-id :full-screen]))))
+(reg-sub :current-low-limiter-data-by-path
+         (fn [{:keys [kit] :as db} [_ path]]
+           (let [controller-id (get-in db [kit :system-config :low-limiter :controller-id])
+                 controller (get-in db [kit :low-limiter :controllers controller-id])]
+             (get-in controller path))))
 
 (reg-sub :low-level-prop-I-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :low-level-prop-I-id])))
+           (get-in db [kit :system-config :low-limiter :probe-ids 0])))
 
 (reg-sub :low-level-prop-II-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :low-level-prop-II-id])))
+           (get-in db [kit :system-config :low-limiter :probe-ids 1])))
 
-(reg-sub :limiter-high-level-id
+(reg-sub :high-limiter-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :limiter-high-level-id])))
+           (get-in db [kit :system-config :high-limiter :controller-id])))
 
-(reg-sub :limiter-high-level-full-screen
-         (fn [{:keys [kit] :as db} _]
-           (let [kit-kw (keyword kit)
-                 limiter-high-level-id (get-in db [kit-kw :limiter-high-level-id])]
-             (get-in db [kit-kw :limiter-high-level :controllers limiter-high-level-id :full-screen]))))
+(reg-sub :current-high-limiter-data-by-path
+         (fn [{:keys [kit] :as db} [_ path]]
+           (let [controller-id (get-in db [kit :system-config :high-limiter :controller-id])
+                 controller (get-in db [kit :high-limiter :controllers controller-id])]
+             (get-in controller path))))
 
 (reg-sub :high-level-probe-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :high-level-probe-id])))
-
-(reg-sub :temperature-probe-id
-         (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :temperature-probe-id])))
+           (get-in db [kit :system-config :high-limiter :probe-ids 0])))
 
 (reg-sub :cond-controller-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :cond-controller-id])))
+           (get-in db [kit :system-config :cond :controller-id])))
 
-(reg-sub :cond-controller-full-screen
-         (fn [{:keys [kit] :as db} _]
-           (let [kit-kw (keyword kit)
-                 cond-controller-id (get-in db [kit-kw :cond-controller-id])]
-             (get-in db [kit-kw :cond :controllers cond-controller-id :full-screen]))))
+(reg-sub :current-cond-controller-data-by-path
+         (fn [{:keys [kit] :as db} [_ path]]
+           (let [controller-id (get-in db [kit :system-config :cond :controller-id])
+                 controller (get-in db [kit :cond :controllers controller-id])]
+             (get-in controller path))))
 
 (reg-sub :cond-probe-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :cond-probe-id])))
+           (get-in db [kit :system-config :cond :probe-ids 0])))
 
-(reg-sub :cond-probe-full-screen
-         (fn [{:keys [kit] :as db} _]
-           (let [kit-kw (keyword kit)
-                 cond-probe-id (get-in db [kit-kw :cond-probe-id])]
-             (get-in db [kit-kw :cond :probes 0 cond-probe-id :full-screen]))))
+(reg-sub :current-cond-probe-data-by-path
+         (fn [{:keys [kit] :as db} [_ path]]
+           (let [probe-id (get-in db [kit :system-config :cond :probe-ids 0])
+                 probe (get-in db [kit :cond :probes 0 probe-id])]
+             (get-in probe path))))
 
 (reg-sub :level-controller-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :level-controller-id])))
+           (get-in db [kit :system-config :level :controller-id])))
 
-(reg-sub :level-controller-full-screen
-         (fn [{:keys [kit] :as db} _]
-           (let [kit-kw (keyword kit)
-                 level-controller-id (get-in db [kit-kw :level-controller-id])]
-             (get-in db [kit-kw :level :controllers level-controller-id :full-screen]))))
+(reg-sub :current-level-controller-data-by-path
+         (fn [{:keys [kit] :as db} [_ path]]
+           (let [controller-id (get-in db [kit :system-config :level :controller-id])
+                 controller (get-in db [kit :level :controllers controller-id])]
+             (get-in controller path))))
 
-(reg-sub :level-controller-actuator-type
+(reg-sub :current-level-controller-actuator-type
          (fn [{:keys [kit] :as db} _]
-           (let [kit-kw (keyword kit)
-                 level-controller-id (get-in db [kit-kw :level-controller-id])]
-             (get-in db [kit-kw :level :controllers level-controller-id :actuator-type]))))
+           (let [controller-id (get-in db [kit :system-config :level :controller-id])]
+             (get-in db [kit :level :controllers controller-id :actuator-type]))))
 
 (reg-sub :level-probe-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :level-probe-id])))
+           (get-in db [kit :system-config :level :probe-ids 0])))
 
-(reg-sub :level-probe-full-screen
+(reg-sub :current-level-probe-data-by-path
+         (fn [{:keys [kit] :as db} [_ path]]
+           (let [probe-id (get-in db [kit :system-config :level :probe-ids 0])
+                 probe (get-in db [kit :level :probes 0 probe-id])]
+             (get-in probe path))))
+
+(reg-sub :temperature-probe-id
          (fn [{:keys [kit] :as db} _]
-           (let [kit-kw (keyword kit)
-                 level-probe-id (get-in db [kit-kw :level-probe-id])]
-             (get-in db [kit-kw :level :probes 0 level-probe-id :full-screen]))))
+           (get-in db [kit :system-config :temperature :probe-ids 0])))
 
 (reg-sub :converter-id
          (fn [{:keys [kit] :as db} _]
-           (get-in db [(keyword kit) :converter-id])))
+           (get-in db [kit :system-config :converter :controller-id])))
 
-(reg-sub :converter-full-screen
-         (fn [{:keys [kit] :as db} _]
-           (let [kit-kw (keyword kit)
-                 converter-id (get-in db [kit-kw :converter-id])]
-             (get-in db [kit-kw :converter :controllers converter-id :full-screen]))))
+(reg-sub :current-converter-data-by-path
+         (fn [{:keys [kit] :as db} [_ path]]
+           (let [controller-id (get-in db [kit :system-config :converter :controller-id])
+                 controller (get-in db [kit :converter :controllers controller-id])]
+             (get-in controller path))))
 
-(reg-sub :show-limiter-low-level-hot-spot
-         :<- [:limiter-low-level-id]
+(reg-sub :show-low-limiter-hot-spot
+         :<- [:low-limiter-id]
          :<- [:sim]
-         (fn [[limiter-low-level-id sim] _]
-           (or (not= limiter-low-level-id "none") (not= sim "run"))))
+         (fn [[id sim] _]
+           (or (not= id "none") (not= sim "run"))))
 
-(reg-sub :show-limiter-high-level-hot-spot
-         :<- [:limiter-high-level-id]
+(reg-sub :show-high-limiter-hot-spot
+         :<- [:high-limiter-id]
          :<- [:sim]
-         (fn [[limiter-high-level-id sim] _]
-           (or (not= limiter-high-level-id "none") (not= sim "run"))))
+         (fn [[id sim] _]
+           (or (not= id "none") (not= sim "run"))))
 
 (reg-sub :show-cond-controller-hot-spot
          :<- [:cond-controller-id]
          :<- [:sim]
-         (fn [[cond-controller-id sim] _]
-           (or (not= cond-controller-id "none") (not= sim "run"))))
+         (fn [[id sim] _]
+           (or (not= id "none") (not= sim "run"))))
 
 (reg-sub :show-level-controller-hot-spot
          :<- [:level-controller-id]
          :<- [:sim]
-         (fn [[level-controller-id sim] _]
-           (or (not= level-controller-id "none") (not= sim "run"))))
+         (fn [[id sim] _]
+           (or (not= id "none") (not= sim "run"))))
 
 (reg-sub :show-converter-hot-spot
          :<- [:level-probe-id]
-         (fn [level-probe-id _]
-           (= level-probe-id "NRGT 26-2")))
+         (fn [id _]
+           (= id "NRGT 26-2")))
 
-(reg-sub :show-feedwater-valve-hot-spot
-         :<- [:level-controller-actuator-type]
-         (fn [level-controller-actuator-type _]
-           (not= level-controller-actuator-type "FREQUENCY_CONTROLLED_PUMPS")))
+(reg-sub :show-feed-valve-hot-spot
+         :<- [:current-level-controller-actuator-type]
+         (fn [actuator-type _]
+           (not= actuator-type :pump)))
 
-(reg-sub :show-feedwater-pump-hot-spot
-         :<- [:level-controller-actuator-type]
-         (fn [level-controller-actuator-type _]
-           (= level-controller-actuator-type "FREQUENCY_CONTROLLED_PUMPS")))
+(reg-sub :show-feed-pump-hot-spot
+         :<- [:current-level-controller-actuator-type]
+         (fn [actuator-type _]
+           (= actuator-type :pump)))
 
 (reg-sub :show-toolbar
          :<- [:current-hotspot]
          (fn [current-hotspot _]
            (not= current-hotspot "none")))
 
-(reg-sub :level-probe-calibration-boiler-view-subs
+(reg-sub :level-calibration-boiler-view-subs
          :<- [:kit]
          :<- [:level-controller-id]
          (fn [[kit level-controller-id] _]
            (let [controller-id (if (= level-controller-id "none") "NRR 2-60" level-controller-id)]
-             (str kit "-" controller-id "-calibration-boiler-view"))))
-
-
-
-
+             (str kit "/" controller-id "/calibration-boiler-view"))))

@@ -1,379 +1,379 @@
 goog.provide('app.shared.boiler_plant.pumps.feedwater.settings');
 
-app.shared.boiler_plant.pumps.feedwater.settings.mode_hud_settings = (function (){var G__85394 = (function app$shared$boiler_plant$pumps$feedwater$settings$mode_hud_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__85395 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.shared.boiler_plant.pumps.feedwater.settings.mode_hud_settings = (function (){var G__39103 = (function app$shared$boiler_plant$pumps$feedwater$settings$mode_hud_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__39124 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var value = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"value","value",305978217)], null)], null));
 var view = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"view","view",1247994814)], null)], null));
-var G__85398 = app.shared.components.form.field_row;
-var G__85399 = (function (){var obj85401 = ({"label":"CONTROL MODE","children":[(function (){var G__85402 = app.shared.components.form.select;
-var G__85403 = (function (){var obj85405 = ({"data":new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"auto",new cljs.core.Keyword(null,"label","label",1718410804),"Auto"], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"manual",new cljs.core.Keyword(null,"label","label",1718410804),"Manual"], null)], null),"value":value,"on-change":(function (p1__85392_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"value","value",305978217)], null),p1__85392_SHARP_], null)], null));
+var G__39143 = app.shared.components.form.field_row;
+var G__39144 = (function (){var obj39149 = ({"label":"CONTROL MODE","children":[(function (){var G__39160 = app.shared.components.form.select;
+var G__39161 = (function (){var obj39167 = ({"data":new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"auto",new cljs.core.Keyword(null,"label","label",1718410804),"Auto"], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"manual",new cljs.core.Keyword(null,"label","label",1718410804),"Manual"], null)], null),"value":value,"on-change":(function (p1__39069_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"value","value",305978217)], null),p1__39069_SHARP_], null)], null));
 })});
-return obj85405;
+return obj39167;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85402,G__85403) : helix.core.jsx.call(null,G__85402,G__85403));
-})(),(function (){var G__85406 = app.shared.components.form.checkbox;
-var G__85407 = (function (){var obj85409 = ({"value":view,"on-change":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__39160,G__39161) : helix.core.jsx.call(null,G__39160,G__39161));
+})(),(function (){var G__39191 = app.shared.components.form.checkbox;
+var G__39192 = (function (){var obj39197 = ({"value":view,"on-change":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"view","view",1247994814)], null),cljs.core.not(view)], null)], null));
 })});
-return obj85409;
+return obj39197;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85406,G__85407) : helix.core.jsx.call(null,G__85406,G__85407));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__39191,G__39192) : helix.core.jsx.call(null,G__39191,G__39192));
 })()]});
-return obj85401;
+return obj39149;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__85398,G__85399) : helix.core.jsxs.call(null,G__85398,G__85399));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__39143,G__39144) : helix.core.jsxs.call(null,G__39143,G__39144));
 });
 if(goog.DEBUG === true){
-var G__85410 = G__85394;
-(G__85410.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/mode-hud-settings");
+var G__39229 = G__39103;
+(G__39229.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/mode-hud-settings");
 
-return G__85410;
+return G__39229;
 } else {
-return G__85394;
+return G__39103;
 }
 })();
 
 
 
 
-app.shared.boiler_plant.pumps.feedwater.settings.performance_hud_settings = (function (){var G__85413 = (function app$shared$boiler_plant$pumps$feedwater$settings$performance_hud_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__85414 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.shared.boiler_plant.pumps.feedwater.settings.performance_hud_settings = (function (){var G__39286 = (function app$shared$boiler_plant$pumps$feedwater$settings$performance_hud_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__39301 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
 var view = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"view","view",1247994814)], null)], null));
-var G__85417 = app.shared.components.form.field_row;
-var G__85418 = (function (){var obj85420 = ({"label":"PERFORMANCE","children":[(function (){var G__85421 = app.shared.components.form.select;
-var G__85422 = (function (){var obj85424 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"%",new cljs.core.Keyword(null,"label","label",1718410804),"%"], null)], null),"value":unit,"on-change":(function (p1__85411_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__85411_SHARP_], null)], null));
+var G__39320 = app.shared.components.form.field_row;
+var G__39321 = (function (){var obj39329 = ({"label":"PERFORMANCE","children":[(function (){var G__39339 = app.shared.components.form.select;
+var G__39340 = (function (){var obj39347 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"%",new cljs.core.Keyword(null,"label","label",1718410804),"%"], null)], null),"value":unit,"on-change":(function (p1__39254_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__39254_SHARP_], null)], null));
 })});
-return obj85424;
+return obj39347;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85421,G__85422) : helix.core.jsx.call(null,G__85421,G__85422));
-})(),(function (){var G__85425 = app.shared.components.form.checkbox;
-var G__85426 = (function (){var obj85428 = ({"value":view,"on-change":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__39339,G__39340) : helix.core.jsx.call(null,G__39339,G__39340));
+})(),(function (){var G__39365 = app.shared.components.form.checkbox;
+var G__39366 = (function (){var obj39375 = ({"value":view,"on-change":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"view","view",1247994814)], null),cljs.core.not(view)], null)], null));
 })});
-return obj85428;
+return obj39375;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85425,G__85426) : helix.core.jsx.call(null,G__85425,G__85426));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__39365,G__39366) : helix.core.jsx.call(null,G__39365,G__39366));
 })()]});
-return obj85420;
+return obj39329;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__85417,G__85418) : helix.core.jsxs.call(null,G__85417,G__85418));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__39320,G__39321) : helix.core.jsxs.call(null,G__39320,G__39321));
 });
 if(goog.DEBUG === true){
-var G__85429 = G__85413;
-(G__85429.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/performance-hud-settings");
+var G__39395 = G__39286;
+(G__39395.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/performance-hud-settings");
 
-return G__85429;
+return G__39395;
 } else {
-return G__85413;
+return G__39286;
 }
 })();
 
 
 
 
-app.shared.boiler_plant.pumps.feedwater.settings.rotation_hud_settings = (function (){var G__85432 = (function app$shared$boiler_plant$pumps$feedwater$settings$rotation_hud_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__85433 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.shared.boiler_plant.pumps.feedwater.settings.rotation_hud_settings = (function (){var G__39433 = (function app$shared$boiler_plant$pumps$feedwater$settings$rotation_hud_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__39448 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
 var view = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"view","view",1247994814)], null)], null));
-var G__85436 = app.shared.components.form.field_row;
-var G__85437 = (function (){var obj85439 = ({"label":"ROTATIONAL SPEED","children":[(function (){var G__85440 = app.shared.components.form.select;
-var G__85441 = (function (){var obj85443 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"rpm",new cljs.core.Keyword(null,"label","label",1718410804),"rpm"], null)], null),"value":unit,"on-change":(function (p1__85430_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__85430_SHARP_], null)], null));
+var G__39457 = app.shared.components.form.field_row;
+var G__39458 = (function (){var obj39465 = ({"label":"ROTATIONAL SPEED","children":[(function (){var G__39470 = app.shared.components.form.select;
+var G__39471 = (function (){var obj39484 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"rpm",new cljs.core.Keyword(null,"label","label",1718410804),"rpm"], null)], null),"value":unit,"on-change":(function (p1__39412_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__39412_SHARP_], null)], null));
 })});
-return obj85443;
+return obj39484;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85440,G__85441) : helix.core.jsx.call(null,G__85440,G__85441));
-})(),(function (){var G__85444 = app.shared.components.form.checkbox;
-var G__85445 = (function (){var obj85447 = ({"value":view,"on-change":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__39470,G__39471) : helix.core.jsx.call(null,G__39470,G__39471));
+})(),(function (){var G__39509 = app.shared.components.form.checkbox;
+var G__39510 = (function (){var obj39522 = ({"value":view,"on-change":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"view","view",1247994814)], null),cljs.core.not(view)], null)], null));
 })});
-return obj85447;
+return obj39522;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85444,G__85445) : helix.core.jsx.call(null,G__85444,G__85445));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__39509,G__39510) : helix.core.jsx.call(null,G__39509,G__39510));
 })()]});
-return obj85439;
+return obj39465;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__85436,G__85437) : helix.core.jsxs.call(null,G__85436,G__85437));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__39457,G__39458) : helix.core.jsxs.call(null,G__39457,G__39458));
 });
 if(goog.DEBUG === true){
-var G__85448 = G__85432;
-(G__85448.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/rotation-hud-settings");
+var G__39556 = G__39433;
+(G__39556.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/rotation-hud-settings");
 
-return G__85448;
+return G__39556;
 } else {
-return G__85432;
+return G__39433;
 }
 })();
 
 
 
 
-app.shared.boiler_plant.pumps.feedwater.settings.flow_rate_hud_settings = (function (){var G__85451 = (function app$shared$boiler_plant$pumps$feedwater$settings$flow_rate_hud_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__85452 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.shared.boiler_plant.pumps.feedwater.settings.flow_rate_hud_settings = (function (){var G__39606 = (function app$shared$boiler_plant$pumps$feedwater$settings$flow_rate_hud_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__39620 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
 var view = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"view","view",1247994814)], null)], null));
-var G__85455 = app.shared.components.form.field_row;
-var G__85456 = (function (){var obj85458 = ({"label":"FLOW-RATE","children":[(function (){var G__85459 = app.shared.components.form.select;
-var G__85460 = (function (){var obj85462 = ({"data":new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"t/h",new cljs.core.Keyword(null,"label","label",1718410804),"t/h"], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"T/h",new cljs.core.Keyword(null,"label","label",1718410804),"T/h"], null)], null),"value":unit,"on-change":(function (p1__85449_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__85449_SHARP_], null)], null));
+var G__39646 = app.shared.components.form.field_row;
+var G__39648 = (function (){var obj39653 = ({"label":"FLOW-RATE","children":[(function (){var G__39659 = app.shared.components.form.select;
+var G__39660 = (function (){var obj39665 = ({"data":new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"t/h",new cljs.core.Keyword(null,"label","label",1718410804),"t/h"], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"T/h",new cljs.core.Keyword(null,"label","label",1718410804),"T/h"], null)], null),"value":unit,"on-change":(function (p1__39582_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__39582_SHARP_], null)], null));
 })});
-return obj85462;
+return obj39665;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85459,G__85460) : helix.core.jsx.call(null,G__85459,G__85460));
-})(),(function (){var G__85463 = app.shared.components.form.checkbox;
-var G__85464 = (function (){var obj85466 = ({"value":view,"on-change":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__39659,G__39660) : helix.core.jsx.call(null,G__39659,G__39660));
+})(),(function (){var G__39673 = app.shared.components.form.checkbox;
+var G__39674 = (function (){var obj39678 = ({"value":view,"on-change":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"view","view",1247994814)], null),cljs.core.not(view)], null)], null));
 })});
-return obj85466;
+return obj39678;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85463,G__85464) : helix.core.jsx.call(null,G__85463,G__85464));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__39673,G__39674) : helix.core.jsx.call(null,G__39673,G__39674));
 })()]});
-return obj85458;
+return obj39653;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__85455,G__85456) : helix.core.jsxs.call(null,G__85455,G__85456));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__39646,G__39648) : helix.core.jsxs.call(null,G__39646,G__39648));
 });
 if(goog.DEBUG === true){
-var G__85467 = G__85451;
-(G__85467.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/flow-rate-hud-settings");
+var G__39707 = G__39606;
+(G__39707.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/flow-rate-hud-settings");
 
-return G__85467;
+return G__39707;
 } else {
-return G__85451;
+return G__39606;
 }
 })();
 
 
 
 
-app.shared.boiler_plant.pumps.feedwater.settings.performance_init_value = (function (){var G__85472 = (function app$shared$boiler_plant$pumps$feedwater$settings$performance_init_value_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__85473 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.shared.boiler_plant.pumps.feedwater.settings.performance_init_value = (function (){var G__39756 = (function app$shared$boiler_plant$pumps$feedwater$settings$performance_init_value_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__39764 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var value = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"init-sim-output","init-sim-output",1170737841),new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"value","value",305978217)], null)], null));
 var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
 var limits = cljs.core.get.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"feed-water-pump-performance","feed-water-pump-performance",1473062074).cljs$core$IFn$_invoke$arity$1(app.units.constants.UNIT_LIMITS),unit);
 var validate_message = ["Initial pump performance value must be within following range: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits))," - ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits)),"] ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(unit)].join('');
-var G__85476 = app.shared.components.form.field_row;
-var G__85477 = (function (){var obj85479 = ({"label":"PERFORMANCE","children":[(function (){var G__85480 = app.shared.components.form.input_number;
-var G__85481 = helix.impl.props.merge_obj((function (){var obj85483 = ({"value":value,"on-change":(function (p1__85468_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"init-sim-output","init-sim-output",1170737841),new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"value","value",305978217)], null),p1__85468_SHARP_], null)], null));
+var G__39784 = app.shared.components.form.field_row;
+var G__39785 = (function (){var obj39789 = ({"label":"PERFORMANCE","children":[(function (){var G__39794 = app.shared.components.form.input_number;
+var G__39795 = helix.impl.props.merge_obj((function (){var obj39797 = ({"value":value,"on-change":(function (p1__39714_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"init-sim-output","init-sim-output",1170737841),new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"value","value",305978217)], null),p1__39714_SHARP_], null)], null));
 }),"on-blur":(function (){
-return app.shared.components.form.validate_input_number(value,new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits),new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits),validate_message,(function (p1__85469_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"init-sim-output","init-sim-output",1170737841),new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"value","value",305978217)], null),p1__85469_SHARP_], null)], null));
+return app.shared.components.form.validate_input_number(value,new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits),new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits),validate_message,(function (p1__39719_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"init-sim-output","init-sim-output",1170737841),new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"value","value",305978217)], null),p1__39719_SHARP_], null)], null));
 }));
 })});
-return obj85483;
+return obj39797;
 })(),helix.impl.props._props.cljs$core$IFn$_invoke$arity$1(limits));
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85480,G__85481) : helix.core.jsx.call(null,G__85480,G__85481));
-})(),(function (){var G__85484 = app.shared.components.form.select;
-var G__85485 = (function (){var obj85487 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"%",new cljs.core.Keyword(null,"label","label",1718410804),"%"], null)], null),"value":unit,"on-change":(function (p1__85470_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__85470_SHARP_], null)], null));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__39794,G__39795) : helix.core.jsx.call(null,G__39794,G__39795));
+})(),(function (){var G__39826 = app.shared.components.form.select;
+var G__39827 = (function (){var obj39833 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"%",new cljs.core.Keyword(null,"label","label",1718410804),"%"], null)], null),"value":unit,"on-change":(function (p1__39723_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"performance","performance",1987578184),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__39723_SHARP_], null)], null));
 })});
-return obj85487;
+return obj39833;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85484,G__85485) : helix.core.jsx.call(null,G__85484,G__85485));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__39826,G__39827) : helix.core.jsx.call(null,G__39826,G__39827));
 })()]});
-return obj85479;
+return obj39789;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__85476,G__85477) : helix.core.jsxs.call(null,G__85476,G__85477));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__39784,G__39785) : helix.core.jsxs.call(null,G__39784,G__39785));
 });
 if(goog.DEBUG === true){
-var G__85488 = G__85472;
-(G__85488.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/performance-init-value");
+var G__39855 = G__39756;
+(G__39855.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/performance-init-value");
 
-return G__85488;
+return G__39855;
 } else {
-return G__85472;
+return G__39756;
 }
 })();
 
 
 
 
-app.shared.boiler_plant.pumps.feedwater.settings.rotation_init_max_value = (function (){var G__85493 = (function app$shared$boiler_plant$pumps$feedwater$settings$rotation_init_max_value_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__85494 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.shared.boiler_plant.pumps.feedwater.settings.rotation_init_max_value = (function (){var G__39910 = (function app$shared$boiler_plant$pumps$feedwater$settings$rotation_init_max_value_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__39915 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var value = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"max-value","max-value",687805168)], null)], null));
 var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
 var limits = cljs.core.get.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"feed-water-pump-rot-speed","feed-water-pump-rot-speed",631778687).cljs$core$IFn$_invoke$arity$1(app.units.constants.UNIT_LIMITS),unit);
 var validate_message = ["Initial pump maximum rotational speed value must be within following range: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits))," - ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits)),"] ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(unit)].join('');
-var G__85497 = app.shared.components.form.field_row;
-var G__85498 = (function (){var obj85500 = ({"label":"MAXIMUM ROTATIONAL SPEED","children":[(function (){var G__85501 = app.shared.components.form.input_number;
-var G__85502 = helix.impl.props.merge_obj((function (){var obj85504 = ({"value":value,"on-change":(function (p1__85489_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"max-value","max-value",687805168)], null),p1__85489_SHARP_], null)], null));
+var G__39937 = app.shared.components.form.field_row;
+var G__39938 = (function (){var obj39943 = ({"label":"MAXIMUM ROTATIONAL SPEED","children":[(function (){var G__39948 = app.shared.components.form.input_number;
+var G__39949 = helix.impl.props.merge_obj((function (){var obj39953 = ({"value":value,"on-change":(function (p1__39870_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"max-value","max-value",687805168)], null),p1__39870_SHARP_], null)], null));
 }),"on-blur":(function (){
-return app.shared.components.form.validate_input_number(value,new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits),new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits),validate_message,(function (p1__85490_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"max-value","max-value",687805168)], null),p1__85490_SHARP_], null)], null));
+return app.shared.components.form.validate_input_number(value,new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits),new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits),validate_message,(function (p1__39873_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"max-value","max-value",687805168)], null),p1__39873_SHARP_], null)], null));
 }));
 })});
-return obj85504;
+return obj39953;
 })(),helix.impl.props._props.cljs$core$IFn$_invoke$arity$1(limits));
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85501,G__85502) : helix.core.jsx.call(null,G__85501,G__85502));
-})(),(function (){var G__85505 = app.shared.components.form.select;
-var G__85506 = (function (){var obj85508 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"rpm",new cljs.core.Keyword(null,"label","label",1718410804),"rpm"], null)], null),"value":unit,"on-change":(function (p1__85491_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__85491_SHARP_], null)], null));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__39948,G__39949) : helix.core.jsx.call(null,G__39948,G__39949));
+})(),(function (){var G__39978 = app.shared.components.form.select;
+var G__39979 = (function (){var obj39991 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"rpm",new cljs.core.Keyword(null,"label","label",1718410804),"rpm"], null)], null),"value":unit,"on-change":(function (p1__39874_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"rotation","rotation",-1728051644),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__39874_SHARP_], null)], null));
 })});
-return obj85508;
+return obj39991;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85505,G__85506) : helix.core.jsx.call(null,G__85505,G__85506));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__39978,G__39979) : helix.core.jsx.call(null,G__39978,G__39979));
 })()]});
-return obj85500;
+return obj39943;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__85497,G__85498) : helix.core.jsxs.call(null,G__85497,G__85498));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__39937,G__39938) : helix.core.jsxs.call(null,G__39937,G__39938));
 });
 if(goog.DEBUG === true){
-var G__85509 = G__85493;
-(G__85509.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/rotation-init-max-value");
+var G__40018 = G__39910;
+(G__40018.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/rotation-init-max-value");
 
-return G__85509;
+return G__40018;
 } else {
-return G__85493;
+return G__39910;
 }
 })();
 
 
 
 
-app.shared.boiler_plant.pumps.feedwater.settings.flow_rate_init_max_value = (function (){var G__85514 = (function app$shared$boiler_plant$pumps$feedwater$settings$flow_rate_init_max_value_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__85515 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.shared.boiler_plant.pumps.feedwater.settings.flow_rate_init_max_value = (function (){var G__40087 = (function app$shared$boiler_plant$pumps$feedwater$settings$flow_rate_init_max_value_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__40097 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var converted_value = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump-flow-rate-max-converted-value","feedwater-pump-flow-rate-max-converted-value",1308731877)], null));
 var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
 var limits = cljs.core.get.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"feed-water-elect-valve-flow-rate","feed-water-elect-valve-flow-rate",997798988).cljs$core$IFn$_invoke$arity$1(app.units.constants.UNIT_LIMITS),unit);
 var validate_message = ["Initial flow rate maximum value must be within following range: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits))," - ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits)),"] ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(unit)].join('');
-var G__85518 = app.shared.components.form.field_row;
-var G__85519 = (function (){var obj85521 = ({"label":"MAXIMUM FLOW-RATE","children":[(function (){var G__85522 = app.shared.components.form.input_number;
-var G__85523 = helix.impl.props.merge_obj((function (){var obj85525 = ({"value":converted_value,"on-change":(function (p1__85510_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump-flow-rate-max-value","change-feedwater-pump-flow-rate-max-value",-585911599),p1__85510_SHARP_], null));
+var G__40110 = app.shared.components.form.field_row;
+var G__40111 = (function (){var obj40120 = ({"label":"MAXIMUM FLOW-RATE","children":[(function (){var G__40124 = app.shared.components.form.input_number;
+var G__40125 = helix.impl.props.merge_obj((function (){var obj40129 = ({"value":converted_value,"on-change":(function (p1__40041_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump-flow-rate-max-value","change-feedwater-pump-flow-rate-max-value",-585911599),p1__40041_SHARP_], null));
 }),"on-blur":(function (){
-return app.shared.components.form.validate_input_number(converted_value,new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits),new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits),validate_message,(function (p1__85511_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump-flow-rate-max-value","change-feedwater-pump-flow-rate-max-value",-585911599),p1__85511_SHARP_], null));
+return app.shared.components.form.validate_input_number(converted_value,new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits),new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits),validate_message,(function (p1__40042_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump-flow-rate-max-value","change-feedwater-pump-flow-rate-max-value",-585911599),p1__40042_SHARP_], null));
 }));
 })});
-return obj85525;
+return obj40129;
 })(),helix.impl.props._props.cljs$core$IFn$_invoke$arity$1(limits));
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85522,G__85523) : helix.core.jsx.call(null,G__85522,G__85523));
-})(),(function (){var G__85526 = app.shared.components.form.select;
-var G__85527 = (function (){var obj85529 = ({"data":new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"t/h",new cljs.core.Keyword(null,"label","label",1718410804),"t/h"], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"T/h",new cljs.core.Keyword(null,"label","label",1718410804),"T/h"], null)], null),"value":unit,"on-change":(function (p1__85512_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__85512_SHARP_], null)], null));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40124,G__40125) : helix.core.jsx.call(null,G__40124,G__40125));
+})(),(function (){var G__40156 = app.shared.components.form.select;
+var G__40157 = (function (){var obj40165 = ({"data":new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"t/h",new cljs.core.Keyword(null,"label","label",1718410804),"t/h"], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"T/h",new cljs.core.Keyword(null,"label","label",1718410804),"T/h"], null)], null),"value":unit,"on-change":(function (p1__40048_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-feedwater-pump","change-feedwater-pump",-528574414),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__40048_SHARP_], null)], null));
 })});
-return obj85529;
+return obj40165;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85526,G__85527) : helix.core.jsx.call(null,G__85526,G__85527));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40156,G__40157) : helix.core.jsx.call(null,G__40156,G__40157));
 })()]});
-return obj85521;
+return obj40120;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__85518,G__85519) : helix.core.jsxs.call(null,G__85518,G__85519));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__40110,G__40111) : helix.core.jsxs.call(null,G__40110,G__40111));
 });
 if(goog.DEBUG === true){
-var G__85530 = G__85514;
-(G__85530.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/flow-rate-init-max-value");
+var G__40174 = G__40087;
+(G__40174.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/flow-rate-init-max-value");
 
-return G__85530;
+return G__40174;
 } else {
-return G__85514;
+return G__40087;
 }
 })();
 
 
 
 
-app.shared.boiler_plant.pumps.feedwater.settings.settings_form = (function (){var G__85532 = (function app$shared$boiler_plant$pumps$feedwater$settings$settings_form_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__85533 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.shared.boiler_plant.pumps.feedwater.settings.settings_form = (function (){var G__40194 = (function app$shared$boiler_plant$pumps$feedwater$settings$settings_form_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__40207 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var show_settings_form_sim_start_values = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"show-settings-form-sim-start-values","show-settings-form-sim-start-values",-1672088929)], null));
-var G__85536 = helix.core.Fragment;
-var G__85537 = ({"children": [(function (){var G__85538 = "div";
-var G__85539 = (function (){var obj85541 = ({"className":"divider","style":(function (){var obj85543 = ({"marginTop":helix.impl.props.__GT_js((0))});
-return obj85543;
+var G__40218 = helix.core.Fragment;
+var G__40219 = ({"children": [(function (){var G__40222 = "div";
+var G__40223 = (function (){var obj40226 = ({"className":"divider","style":(function (){var obj40228 = ({"marginTop":helix.impl.props.__GT_js((0))});
+return obj40228;
 })(),"children":"head-up-display"});
-return obj85541;
+return obj40226;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85538,G__85539) : helix.core.jsx.call(null,G__85538,G__85539));
-})(),(function (){var G__85544 = app.shared.boiler_plant.pumps.feedwater.settings.mode_hud_settings;
-var G__85545 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85544,G__85545) : helix.core.jsx.call(null,G__85544,G__85545));
-})(),(function (){var G__85546 = app.shared.boiler_plant.pumps.feedwater.settings.performance_hud_settings;
-var G__85547 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85546,G__85547) : helix.core.jsx.call(null,G__85546,G__85547));
-})(),(function (){var G__85548 = app.shared.boiler_plant.pumps.feedwater.settings.rotation_hud_settings;
-var G__85549 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85548,G__85549) : helix.core.jsx.call(null,G__85548,G__85549));
-})(),(function (){var G__85550 = app.shared.boiler_plant.pumps.feedwater.settings.flow_rate_hud_settings;
-var G__85551 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85550,G__85551) : helix.core.jsx.call(null,G__85550,G__85551));
-})(),(cljs.core.truth_(show_settings_form_sim_start_values)?(function (){var G__85552 = helix.core.Fragment;
-var G__85553 = ({"children": [(function (){var G__85554 = "div";
-var G__85555 = (function (){var obj85557 = ({"className":"divider","children":"simulation start values"});
-return obj85557;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40222,G__40223) : helix.core.jsx.call(null,G__40222,G__40223));
+})(),(function (){var G__40242 = app.shared.boiler_plant.pumps.feedwater.settings.mode_hud_settings;
+var G__40243 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40242,G__40243) : helix.core.jsx.call(null,G__40242,G__40243));
+})(),(function (){var G__40244 = app.shared.boiler_plant.pumps.feedwater.settings.performance_hud_settings;
+var G__40245 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40244,G__40245) : helix.core.jsx.call(null,G__40244,G__40245));
+})(),(function (){var G__40247 = app.shared.boiler_plant.pumps.feedwater.settings.rotation_hud_settings;
+var G__40248 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40247,G__40248) : helix.core.jsx.call(null,G__40247,G__40248));
+})(),(function (){var G__40255 = app.shared.boiler_plant.pumps.feedwater.settings.flow_rate_hud_settings;
+var G__40256 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40255,G__40256) : helix.core.jsx.call(null,G__40255,G__40256));
+})(),(cljs.core.truth_(show_settings_form_sim_start_values)?(function (){var G__40267 = helix.core.Fragment;
+var G__40268 = ({"children": [(function (){var G__40269 = "div";
+var G__40270 = (function (){var obj40272 = ({"className":"divider","children":"simulation start values"});
+return obj40272;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85554,G__85555) : helix.core.jsx.call(null,G__85554,G__85555));
-})(),(function (){var G__85558 = app.shared.boiler_plant.pumps.feedwater.settings.performance_init_value;
-var G__85559 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85558,G__85559) : helix.core.jsx.call(null,G__85558,G__85559));
-})(),(function (){var G__85560 = "div";
-var G__85561 = (function (){var obj85563 = ({"className":"divider","children":"specifications"});
-return obj85563;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40269,G__40270) : helix.core.jsx.call(null,G__40269,G__40270));
+})(),(function (){var G__40278 = app.shared.boiler_plant.pumps.feedwater.settings.performance_init_value;
+var G__40279 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40278,G__40279) : helix.core.jsx.call(null,G__40278,G__40279));
+})(),(function (){var G__40289 = "div";
+var G__40290 = (function (){var obj40294 = ({"className":"divider","children":"specifications"});
+return obj40294;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85560,G__85561) : helix.core.jsx.call(null,G__85560,G__85561));
-})(),(function (){var G__85564 = app.shared.boiler_plant.pumps.feedwater.settings.rotation_init_max_value;
-var G__85565 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85564,G__85565) : helix.core.jsx.call(null,G__85564,G__85565));
-})(),(function (){var G__85566 = app.shared.boiler_plant.pumps.feedwater.settings.flow_rate_init_max_value;
-var G__85567 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85566,G__85567) : helix.core.jsx.call(null,G__85566,G__85567));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40289,G__40290) : helix.core.jsx.call(null,G__40289,G__40290));
+})(),(function (){var G__40296 = app.shared.boiler_plant.pumps.feedwater.settings.rotation_init_max_value;
+var G__40297 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40296,G__40297) : helix.core.jsx.call(null,G__40296,G__40297));
+})(),(function (){var G__40302 = app.shared.boiler_plant.pumps.feedwater.settings.flow_rate_init_max_value;
+var G__40303 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40302,G__40303) : helix.core.jsx.call(null,G__40302,G__40303));
 })()]});
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__85552,G__85553) : helix.core.jsxs.call(null,G__85552,G__85553));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__40267,G__40268) : helix.core.jsxs.call(null,G__40267,G__40268));
 })():null)]});
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__85536,G__85537) : helix.core.jsxs.call(null,G__85536,G__85537));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__40218,G__40219) : helix.core.jsxs.call(null,G__40218,G__40219));
 });
 if(goog.DEBUG === true){
-var G__85568 = G__85532;
-(G__85568.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/settings-form");
+var G__40313 = G__40194;
+(G__40313.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/settings-form");
 
-return G__85568;
+return G__40313;
 } else {
-return G__85532;
+return G__40194;
 }
 })();
 
 
 
 
-app.shared.boiler_plant.pumps.feedwater.settings.feedwater_pump_settings = (function (){var G__85570 = (function app$shared$boiler_plant$pumps$feedwater$settings$feedwater_pump_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__85571 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.shared.boiler_plant.pumps.feedwater.settings.feedwater_pump_settings = (function (){var G__40332 = (function app$shared$boiler_plant$pumps$feedwater$settings$feedwater_pump_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__40340 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var show_settings = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-keywords","kit-data-by-keywords",1397702346),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"feedwater-pump","feedwater-pump",-1102490078),new cljs.core.Keyword(null,"settings-view","settings-view",1595275038)], null)], null));
 if(cljs.core.truth_(show_settings)){
-var G__85574 = app.shared.components.modal.settings;
-var G__85575 = (function (){var obj85577 = ({"title":"Feedwater Pump Settings","on-default":(function (){
+var G__40346 = app.shared.components.modal.settings;
+var G__40347 = (function (){var obj40351 = ({"title":"Feedwater Pump Settings","on-default":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"restore-defaults-feedwater-pump-settings","restore-defaults-feedwater-pump-settings",-1194333909)], null));
 }),"on-done":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"apply-feedwater-pump-settings","apply-feedwater-pump-settings",-1556512642)], null));
-}),"children":(function (){var G__85578 = app.shared.boiler_plant.pumps.feedwater.settings.settings_form;
-var G__85579 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85578,G__85579) : helix.core.jsx.call(null,G__85578,G__85579));
+}),"children":(function (){var G__40361 = app.shared.boiler_plant.pumps.feedwater.settings.settings_form;
+var G__40362 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40361,G__40362) : helix.core.jsx.call(null,G__40361,G__40362));
 })()});
-return obj85577;
+return obj40351;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__85574,G__85575) : helix.core.jsx.call(null,G__85574,G__85575));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40346,G__40347) : helix.core.jsx.call(null,G__40346,G__40347));
 } else {
 return null;
 }
 });
 if(goog.DEBUG === true){
-var G__85580 = G__85570;
-(G__85580.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/feedwater-pump-settings");
+var G__40376 = G__40332;
+(G__40376.displayName = "app.shared.boiler-plant.pumps.feedwater.settings/feedwater-pump-settings");
 
-return G__85580;
+return G__40376;
 } else {
-return G__85570;
+return G__40332;
 }
 })();
 

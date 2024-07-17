@@ -1,5 +1,14 @@
 (ns app.db.defaults)
 
+(def GENERAL-SETTINGS {:lang            "en"                ;; "en" "de"
+                       :intended-use    "training"          ;; "training" | "demonstration"
+                       :operation-mode  "normal"            ;; "normal" "standby"
+                       :steam           {:unit      "t/h"
+                                         :value     17.5
+                                         :max-value 35}
+                       :view            false
+                       :ctrl-panel-view true})
+
 (def BOILER {:water-level     {:view  true
                                :unit  "%"
                                :value 84}
@@ -129,36 +138,36 @@
 
                    :settings-view   false})
 
-(def FEEDWATER-VALVE {:mode            {:view  true
-                                        :value "auto"}
+(def FEEDWATER-VALVE-ELECTRIC {:mode            {:view  true
+                                                 :value "auto"}
 
-                      :damper          {:view     true
-                                        :unit     "%"
-                                        :value    0
-                                        :amperage 4}
+                               :damper          {:view     true
+                                                 :unit     "%"
+                                                 :value    0
+                                                 :amperage 4}
 
-                      :flow-rate       {:view      true
-                                        :unit      "t/h"
-                                        :value     0
-                                        :max-value 70}
+                               :flow-rate       {:view      true
+                                                 :unit      "t/h"
+                                                 :value     0
+                                                 :max-value 70}
 
-                      :transition      {:status      "fixed"
-                                        :travel-time {:value 40
-                                                      :unit  "s"}}
+                               :transition      {:status      "fixed"
+                                                 :travel-time {:value 40
+                                                               :unit  "s"}}
 
-                      :potentiometer   {:connection  "connected"
-                                        :damper      {:unit   "byte"
-                                                      :closed 16
-                                                      :open   32752}
+                               :potentiometer   {:connection  "connected"
+                                                 :damper      {:unit   "byte"
+                                                               :closed 16
+                                                               :open   32752}
 
-                                        :calibration {:0   16
-                                                      :100 32752}}
+                                                 :calibration {:0   16
+                                                               :100 32752}}
 
-                      :init-sim-output {:damper     {:value 0}
+                               :init-sim-output {:damper     {:value 0}
 
-                                        :transition {:travel-time {:value 40}}}
+                                                 :transition {:travel-time {:value 40}}}
 
-                      :settings-view   false})
+                               :settings-view   false})
 
 (def FEEDWATER-VALVE-PNEUMATIC {:mode            {:view  true
                                                   :value "auto"}
@@ -245,7 +254,7 @@
                        :settings-view        false
                        :mode                 "fill"
                        :points               LEVEL-CONTROLLER-ALARM-POINTS
-                       :actuator-type        "ELECTRIC_VALVE" ;"ELECTRIC_VALVE" | "FREQUENCY_CONTROLLED_PUMPS" | "PNEUMATIC_VALVE"
+                       :actuator-type        :electric-valve ; :electric-valve | :pump | :pneumatic-valve
                        :errors-extra-trigger []
                        :pi-controller        {}
                        :calibration          LEVEL-CONTROLLER-CALIBRATION})
@@ -254,6 +263,47 @@
 
 (def NRR-2-60-3C LEVEL-CONTROLLER)
 
-(def NRR-2-61 (merge LEVEL-CONTROLLER {:actuator-type "FREQUENCY_CONTROLLED_PUMPS"}))
+(def NRR-2-61 (merge LEVEL-CONTROLLER {:actuator-type :pump}))
 
-(def NRR-2-61-3C (merge LEVEL-CONTROLLER {:actuator-type "FREQUENCY_CONTROLLED_PUMPS"}))
+(def NRR-2-61-3C (merge LEVEL-CONTROLLER {:actuator-type :pump}))
+
+(def LRG-16-60 {:full-screen      false
+                :settings-view    false
+
+                :correction       {:factor                 1
+                                   :temperature-coeff      2.1
+                                   :thermometer-connection "connected"}
+
+                :correction-dirty {:factor            1
+                                   :temperature-coeff 2.1}
+
+                :output           {:unit  "µS/cm"
+                                   :value 0}
+
+                :controller       {:id        3
+                                   :group-id  1
+                                   :baud-rate 50
+                                   :op-time   {:value "17 d"
+                                               :def   "8 d"}
+                                   :temp-amb  {:value 30
+                                               :max   70}
+                                   :errors    {:reading false
+                                               :count   {:error 0
+                                                         :alarm 0}}}
+
+                :k-factor         3
+
+                :limit-fn         {:value 5000
+                                   :alarm "none"}           ;"none" | "warning" | "alarm"
+
+                :s-out            {:value 6000
+                                   :min   0.5}
+
+                :filter           {:damping 1
+                                   :on      true}
+
+                :triggered-error  "none"
+                :error-code       0})
+
+(def LRG-16-61 (merge LRG-16-60 {:s-out {:value 7000
+                                         :min   50}}))

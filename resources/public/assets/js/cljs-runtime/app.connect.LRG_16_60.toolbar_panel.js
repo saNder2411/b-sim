@@ -1,98 +1,100 @@
 goog.provide('app.connect.LRG_16_60.toolbar_panel');
 
-app.connect.LRG_16_60.toolbar_panel.LRG_16_60_toolbar_panel = (function (){var G__65730 = (function app$connect$LRG_16_60$toolbar_panel$LRG_16_60_toolbar_panel_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__65731 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.connect.LRG_16_60.toolbar_panel.LRG_16_60_toolbar_panel = (function (){var G__41704 = (function app$connect$LRG_16_60$toolbar_panel$LRG_16_60_toolbar_panel_render(props__27584__auto__,maybe_ref__27585__auto__){
+var vec__41714 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var show_toolbar = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"LRG-16-60-show-toolbar","LRG-16-60-show-toolbar",385215925)], null));
+var sim = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null));
+var inactive = cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2("stopped",sim);
 if(cljs.core.truth_(show_toolbar)){
-var G__65739 = helix.core.Fragment;
-var G__65740 = ({"children": [(function (){var G__65748 = app.shared.components.toolbar.title;
-var G__65749 = (function (){var obj65755 = ({"x":(85),"y":(80),"fill":"#efefef","title":"Conductivity Electrode"});
-return obj65755;
+var G__41729 = helix.core.Fragment;
+var G__41730 = ({"children": [(function (){var G__41737 = app.shared.components.toolbar.title;
+var G__41738 = (function (){var obj41742 = ({"x":(85),"y":(80),"fill":"#efefef","title":"Conductivity Electrode"});
+return obj41742;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65748,G__65749) : helix.core.jsx.call(null,G__65748,G__65749));
-})(),(function (){var G__65765 = app.shared.components.toolbar.title;
-var G__65766 = (function (){var obj65770 = ({"x":(85),"y":(110),"fill":"#bcbcbc","title":"LRG 16-60"});
-return obj65770;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41737,G__41738) : helix.core.jsx.call(null,G__41737,G__41738));
+})(),(function (){var G__41751 = app.shared.components.toolbar.title;
+var G__41752 = (function (){var obj41758 = ({"x":(85),"y":(110),"fill":"#bcbcbc","title":"LRG 16-60"});
+return obj41758;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65765,G__65766) : helix.core.jsx.call(null,G__65765,G__65766));
-})(),(function (){var G__65781 = app.shared.components.toolbar.btn_wrapper;
-var G__65782 = (function (){var obj65788 = ({"x":(894),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41751,G__41752) : helix.core.jsx.call(null,G__41751,G__41752));
+})(),(function (){var G__41767 = app.shared.components.toolbar.btn_wrapper;
+var G__41768 = (function (){var obj41770 = ({"x":(894),"y":(54),"on-click":(function (){
 return null;
-}),"children":(function (){var G__65793 = app.shared.components.toolbar.btn_replace;
-var G__65794 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65793,G__65794) : helix.core.jsx.call(null,G__65793,G__65794));
+}),"inactive":inactive,"children":(function (){var G__41779 = app.shared.components.toolbar.btn_replace;
+var G__41780 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41779,G__41780) : helix.core.jsx.call(null,G__41779,G__41780));
 })()});
-return obj65788;
+return obj41770;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65781,G__65782) : helix.core.jsx.call(null,G__65781,G__65782));
-})(),(function (){var G__65803 = app.shared.components.toolbar.btn_wrapper;
-var G__65804 = (function (){var obj65812 = ({"x":(954),"y":(54),"children":(function (){var G__65817 = app.shared.components.toolbar.btn_divider;
-var G__65818 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65817,G__65818) : helix.core.jsx.call(null,G__65817,G__65818));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41767,G__41768) : helix.core.jsx.call(null,G__41767,G__41768));
+})(),(function (){var G__41791 = app.shared.components.toolbar.btn_wrapper;
+var G__41792 = (function (){var obj41795 = ({"x":(954),"y":(54),"children":(function (){var G__41799 = app.shared.components.toolbar.btn_divider;
+var G__41800 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41799,G__41800) : helix.core.jsx.call(null,G__41799,G__41800));
 })()});
-return obj65812;
+return obj41795;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65803,G__65804) : helix.core.jsx.call(null,G__65803,G__65804));
-})(),(function (){var G__65825 = app.shared.components.toolbar.btn_wrapper;
-var G__65826 = (function (){var obj65834 = ({"x":(1004),"y":(54),"on-click":(function (){
-return null;
-}),"children":(function (){var G__65843 = app.shared.components.toolbar.btn_full_screen;
-var G__65844 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65843,G__65844) : helix.core.jsx.call(null,G__65843,G__65844));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41791,G__41792) : helix.core.jsx.call(null,G__41791,G__41792));
+})(),(function (){var G__41808 = app.shared.components.toolbar.btn_wrapper;
+var G__41809 = (function (){var obj41813 = ({"x":(1004),"y":(54),"on-click":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-LRG-16-60","change-LRG-16-60",186435781),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"full-screen","full-screen",-1144598281)], null),true], null)], null));
+}),"children":(function (){var G__41818 = app.shared.components.toolbar.btn_full_screen;
+var G__41819 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41818,G__41819) : helix.core.jsx.call(null,G__41818,G__41819));
 })()});
-return obj65834;
+return obj41813;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65825,G__65826) : helix.core.jsx.call(null,G__65825,G__65826));
-})(),(function (){var G__65851 = app.shared.components.toolbar.btn_wrapper;
-var G__65852 = (function (){var obj65858 = ({"x":(1064),"y":(54),"children":(function (){var G__65862 = app.shared.components.toolbar.btn_divider;
-var G__65863 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65862,G__65863) : helix.core.jsx.call(null,G__65862,G__65863));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41808,G__41809) : helix.core.jsx.call(null,G__41808,G__41809));
+})(),(function (){var G__41828 = app.shared.components.toolbar.btn_wrapper;
+var G__41829 = (function (){var obj41833 = ({"x":(1064),"y":(54),"children":(function (){var G__41838 = app.shared.components.toolbar.btn_divider;
+var G__41839 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41838,G__41839) : helix.core.jsx.call(null,G__41838,G__41839));
 })()});
-return obj65858;
+return obj41833;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65851,G__65852) : helix.core.jsx.call(null,G__65851,G__65852));
-})(),(function (){var G__65868 = app.shared.components.toolbar.btn_wrapper;
-var G__65869 = (function (){var obj65875 = ({"x":(1114),"y":(54),"on-click":(function (){
-return null;
-}),"children":(function (){var G__65882 = app.shared.components.toolbar.btn_settings;
-var G__65883 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65882,G__65883) : helix.core.jsx.call(null,G__65882,G__65883));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41828,G__41829) : helix.core.jsx.call(null,G__41828,G__41829));
+})(),(function (){var G__41848 = app.shared.components.toolbar.btn_wrapper;
+var G__41849 = (function (){var obj41857 = ({"x":(1114),"y":(54),"on-click":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-LRG-16-60","change-LRG-16-60",186435781),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"settings-view","settings-view",1595275038)], null),true], null)], null));
+}),"children":(function (){var G__41862 = app.shared.components.toolbar.btn_settings;
+var G__41863 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41862,G__41863) : helix.core.jsx.call(null,G__41862,G__41863));
 })()});
-return obj65875;
+return obj41857;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65868,G__65869) : helix.core.jsx.call(null,G__65868,G__65869));
-})(),(function (){var G__65888 = app.shared.components.toolbar.btn_wrapper;
-var G__65889 = (function (){var obj65895 = ({"x":(1174),"y":(54),"children":(function (){var G__65898 = app.shared.components.toolbar.btn_divider;
-var G__65899 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65898,G__65899) : helix.core.jsx.call(null,G__65898,G__65899));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41848,G__41849) : helix.core.jsx.call(null,G__41848,G__41849));
+})(),(function (){var G__41872 = app.shared.components.toolbar.btn_wrapper;
+var G__41873 = (function (){var obj41877 = ({"x":(1174),"y":(54),"children":(function (){var G__41880 = app.shared.components.toolbar.btn_divider;
+var G__41881 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41880,G__41881) : helix.core.jsx.call(null,G__41880,G__41881));
 })()});
-return obj65895;
+return obj41877;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65888,G__65889) : helix.core.jsx.call(null,G__65888,G__65889));
-})(),(function (){var G__65904 = app.shared.components.toolbar.btn_wrapper;
-var G__65905 = (function (){var obj65909 = ({"x":(1224),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41872,G__41873) : helix.core.jsx.call(null,G__41872,G__41873));
+})(),(function (){var G__41895 = app.shared.components.toolbar.btn_wrapper;
+var G__41896 = (function (){var obj41900 = ({"x":(1224),"y":(54),"on-click":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-modal-info","change-modal-info",-2050631306),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"title","title",636505583),"Conductivity Electrode",new cljs.core.Keyword(null,"text","text",-1790561697),"LRG 1x-6x conductivity electrodes are used in combination with the URS 60/URS 61 safety control unit as a conductivity limiter and in combination with an LRR 1-60 control unit as a continuous blowdown regulator in steam boiler systems and hot-water plants."], null)], null));
-}),"children":(function (){var G__65913 = app.shared.components.toolbar.btn_info;
-var G__65914 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65913,G__65914) : helix.core.jsx.call(null,G__65913,G__65914));
+}),"children":(function (){var G__41926 = app.shared.components.toolbar.btn_info;
+var G__41927 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41926,G__41927) : helix.core.jsx.call(null,G__41926,G__41927));
 })()});
-return obj65909;
+return obj41900;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__65904,G__65905) : helix.core.jsx.call(null,G__65904,G__65905));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41895,G__41896) : helix.core.jsx.call(null,G__41895,G__41896));
 })()]});
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__65739,G__65740) : helix.core.jsxs.call(null,G__65739,G__65740));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__41729,G__41730) : helix.core.jsxs.call(null,G__41729,G__41730));
 } else {
 return null;
 }
 });
 if(goog.DEBUG === true){
-var G__65916 = G__65730;
-(G__65916.displayName = "app.connect.LRG-16-60.toolbar-panel/LRG-16-60-toolbar-panel");
+var G__41932 = G__41704;
+(G__41932.displayName = "app.connect.LRG-16-60.toolbar-panel/LRG-16-60-toolbar-panel");
 
-return G__65916;
+return G__41932;
 } else {
-return G__65730;
+return G__41704;
 }
 })();
 

@@ -296,9 +296,9 @@
 
                   :feed-water-pump-rot-speed                   {"rpm" {:min 120 :max 1200 :step 1}}
 
-                  :conductivity-probe-correct-f                {"factor" {:min 0.05 :max 5 :step 0.001}}
+                  :cond-probe-correction-f             {"factor" {:min 0.05 :max 5 :step 0.001}}
 
-                  :conductivity-probe-temperature-coeff        {"%/°C" {:min 0 :max 3 :step 0.1}}
+                  :cond-probe-temperature-coeff        {"%/°C" {:min 0 :max 3 :step 0.1}}
 
                   :blowdown-countdown-init-value               {"s" {:min 60 :max 86400 :step 1}
                                                                 "m" {:min 1 :max 1440 :step 1}}

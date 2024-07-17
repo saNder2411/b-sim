@@ -3,12 +3,12 @@
             [helix.hooks :refer [use-effect]]
             [helix.dom :as d]
             [refx.alpha :refer [use-sub dispatch]]
-            [app.shared.components.modal :as modal]
-            [app.shared.components.notifications :refer [notifications]]
-            [app.shared.sidebar.core :refer [sidebar]]
-            [app.connect.cables :refer [cables]]
-            [app.connect.core :refer [connect-kit]]
-            [app.shared.boiler-plant.core :refer [boiler-plant]]))
+            [app.ui.shared.components.modal :as modal]
+            [app.ui.shared.components.notifications :refer [notifications]]
+            [app.ui.shared.sidebar.core :refer [sidebar]]
+            [app.ui.kits.connect.cables :refer [cables]]
+            [app.ui.kits.connect.core :refer [connect-kit]]
+            [app.ui.shared.boiler-plant.core :refer [boiler-plant]]))
 
 (defn window-resizing-handler [w]
   (dispatch [:window-resize (.-innerWidth (.-target w)) (.-innerHeight (.-target w))]))
@@ -31,10 +31,10 @@
            ($ notifications)
            ($ modal/info)
 
-           (when (= kit "connect")
+           (when (= kit :connect)
              ($ cables))
            ($ boiler-plant)
            ($ sidebar)
            (case kit
-             "connect" ($ connect-kit)
+             :connect ($ connect-kit)
              nil))))
