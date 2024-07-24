@@ -5,12 +5,12 @@
                  :user    {:firstname "User" :lastname "Admin"}
                  :kit     :connect                          ;; :connect | :module
                  :connect {:sim              "stopped"      ;; "stopped" "starting" "run" "pause" "stopping"
-                           :general-settings defaults/GENERAL-SETTINGS
                            :modal-info       {:title "" :text ""}
                            :notifications    {}
-
                            :hotspots         {:highlight true
                                               :current   "none"} ;; "boiler" "burner" "sludge-valve" "continuous-valve" "feed-valve" "feed-pump" "feedwater" "temperature-probe" "urb" "level-controller" "level-probe" "cond-controller" "cond-probe" "high-limiter" "high-level-probe" "low-limiter" "low-level-probe-I" "low-level-probe-II" "converter"
+
+                           :general-settings defaults/GENERAL-SETTINGS
 
                            :system-config    {:low-limiter  {:controller-id "URS 60" ;; "none" | "URS 60"
                                                              :probe-ids     ["NRG 16-60" "NRG 16-60"]}
@@ -64,7 +64,7 @@
                                                              "NRGT 26-2" {:full-screen false}}]}
 
                            :temperature      {:probes [{"TRV 5-60" {}}]}
-                           :converter        {:controllers {"URW 60" {:full-screen false}}}}
+                           :converter        {:controllers {"URW 60" defaults/URW-60}}}
 
                  :module  {:sim                 "stopped"   ;; "stopped" "starting" "run" "pause" "stopping"
                            :lang                "en"        ;; "en" "de"

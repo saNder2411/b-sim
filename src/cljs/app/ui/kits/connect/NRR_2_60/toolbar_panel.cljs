@@ -18,13 +18,13 @@
         ($ toolbar/title {:x 85 :y 80 :fill "#efefef" :title "Level Controller"})
         ($ toolbar/title {:x 85 :y 110 :fill "#bcbcbc" :title "NRR 2-60"})
 
-        ($ toolbar/btn-wrapper {:x 588 :y 54 :on-click (fn []) :inactive inactive}
+        ($ toolbar/btn-wrapper {:x 588 :y 54 :inactive inactive :on-click (fn [])}
            ($ toolbar/btn-replace))
 
         ($ toolbar/btn-wrapper {:x 648 :y 54}
            ($ toolbar/btn-divider))
 
-        ($ toolbar/btn-wrapper {:x 698 :y 54 :on-click (fn []) :inactive (not inactive)}
+        ($ toolbar/btn-wrapper {:x 698 :y 54 :inactive (not inactive) :on-click (fn [])}
            ($ toolbar/btn-error))
 
         ($ toolbar/btn-wrapper {:x 758 :y 54}

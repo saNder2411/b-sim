@@ -6,7 +6,7 @@
 
 (defnc converter []
   (let [level-probe-id (use-sub [:level-probe-id])
-        converter-id (use-sub [:converter-id])
+        converter-id (use-sub [:converter-controller-id])
         converter-full-screen (use-sub [:current-converter-data-by-path [:full-screen]])]
     (if (= level-probe-id "NRGT 26-2")
       (<>

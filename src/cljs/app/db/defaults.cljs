@@ -280,7 +280,7 @@
                 :output           {:unit  "µS/cm"
                                    :value 0}
 
-                :controller       {:id        3
+                :urb              {:id        3
                                    :group-id  1
                                    :baud-rate 50
                                    :op-time   {:value "17 d"
@@ -307,3 +307,9 @@
 
 (def LRG-16-61 (merge LRG-16-60 {:s-out {:value 7000
                                          :min   50}}))
+
+(def URW-60 {:full-screen false
+             :switches    {1 false 2 false 3 false 4 false}
+             :urb         {:op-time {:value "19 d"
+                                     :def   "10 d"}
+                           :errors  {:reading false}}})

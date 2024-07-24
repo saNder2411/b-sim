@@ -21,4 +21,5 @@
             [app.db.kits.connect.URS-60.subs]
             [app.db.kits.connect.URS-61.subs]
             [app.db.kits.connect.URB-60.subs]
-            [app.db.kits.connect.URW-60.subs]))
+            [app.db.kits.connect.URW-60.subs]
+            [app.db.kits.connect.URW-60.events]))
