@@ -41,16 +41,16 @@
 
                                               :feedwater defaults/FEEDWATER}
 
-                           :low-limiter      {:controllers {"URS 60" {:full-screen false}}
+                           :low-limiter      {:controllers {"URS 60" defaults/URS-60}
 
-                                              :probes      [{"NRG 16-60" {:full-screen false}}
-                                                            {"NRG 16-60" {:full-screen false}}]}
+                                              :probes      [{"NRG 16-60" {:full-screen? false}}
+                                                            {"NRG 16-60" {:full-screen? false}}]}
 
-                           :high-limiter     {:controllers {"URS 61" {:full-screen false}}
+                           :high-limiter     {:controllers {"URS 61" defaults/URS-61}
 
-                                              :probes      [{"NRG 16-61" {:full-screen false}}]}
+                                              :probes      [{"NRG 16-61" {:full-screen? false}}]}
 
-                           :cond             {:controllers {"LRR 1-60" {:full-screen false}}
+                           :cond             {:controllers {"LRR 1-60" defaults/LRR-1-60}
 
                                               :probes      [{"LRG 16-60" defaults/LRG-16-60
                                                              "LRG 16-61" defaults/LRG-16-61}]}
@@ -60,8 +60,8 @@
                                                             "NRR 2-61"    defaults/NRR-2-61
                                                             "NRR 2-61 3C" defaults/NRR-2-61-3C}
 
-                                              :probes      [{"NRG 26-60" {:full-screen false}
-                                                             "NRGT 26-2" {:full-screen false}}]}
+                                              :probes      [{"NRG 26-60" {:full-screen? false}
+                                                             "NRGT 26-2" {:full-screen? false}}]}
 
                            :temperature      {:probes [{"TRV 5-60" {}}]}
                            :converter        {:controllers {"URW 60" defaults/URW-60}}}

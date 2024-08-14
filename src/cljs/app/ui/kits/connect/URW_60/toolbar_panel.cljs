@@ -8,7 +8,7 @@
   (let [show-toolbar (use-sub [:URW-60-show-toolbar])
         sim (use-sub [:sim])
         inactive (not= "stopped" sim)
-        full-screen (use-sub [:kit-data-by-path [:converter :controllers "URW 60" :full-screen]])
+        full-screen (use-sub [:kit-data-by-path [:converter :controllers "URW 60" :full-screen?]])
         switch-1 (use-sub [:kit-data-by-path [:converter :controllers "URW 60" :switches 1]])
         switch-2 (use-sub [:kit-data-by-path [:converter :controllers "URW 60" :switches 2]])
         switch-3 (use-sub [:kit-data-by-path [:converter :controllers "URW 60" :switches 3]])
@@ -33,7 +33,7 @@
         ($ toolbar/btn-wrapper {:x 1064 :y 54}
            ($ toolbar/btn-divider))
 
-        ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click #(dispatch [:change-URW-60 [[:full-screen] (not full-screen)]])}
+        ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click #(dispatch [:change-URW-60 [[:full-screen?] (not full-screen)]])}
            ($ toolbar/btn-full-screen))
 
         ($ toolbar/btn-wrapper {:x 1174 :y 54}

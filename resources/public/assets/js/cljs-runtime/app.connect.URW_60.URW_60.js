@@ -22,7 +22,7 @@ var G__41618 = "svg";
 var G__41619 = (function (){var obj41621 = ({"style":(function (){var obj41623 = ({"left":helix.impl.props.__GT_js(x),"top":helix.impl.props.__GT_js(y),"width":helix.impl.props.__GT_js(w)});
 return obj41623;
 })(),"viewBox":"0 0 111 106","onClick":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-converter-full-screen","change-converter-full-screen",1805687195),true], null));
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-converter-:full-screen?","change-converter-:full-screen?",1805687195),true], null));
 }),"children":[(function (){var G__41625 = "rect";
 var G__41626 = (function (){var obj41628 = ({"width":(111),"height":(106),"rx":(5),"fill":"#ececec"});
 return obj41628;

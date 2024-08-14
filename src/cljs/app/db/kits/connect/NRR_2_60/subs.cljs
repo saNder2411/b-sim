@@ -4,8 +4,9 @@
             [app.db.constants :refer [LEVEL-CALIBRATION]]))
 
 (reg-sub :NRR-2-60
-         (fn [db _]
-           (get-in db [:connect :level :controllers "NRR 2-60"])))
+         :<- [:kit-data]
+         (fn [{:keys [level]} _]
+           (get-in level [:controllers "NRR 2-60"])))
 
 (reg-sub :NRR-2-60-calibration
          :<- [:NRR-2-60]
@@ -27,4 +28,28 @@
          :<- [:level-controller-id]
          (fn [[current-hotspot id] _]
            (and (= current-hotspot "level-controller") (= id "NRR 2-60"))))
+
+(reg-sub :NRR-2-60-node-id
+         :<- [:NRR-2-60]
+         (fn [{:keys [switches]} _]
+           (let [switch-1 (get switches 1)
+                 switch-2 (get switches 2)]
+             (cond
+               (and (not switch-1) (not switch-2)) 40
+               (and (not switch-1) switch-2) 45
+               (and switch-1 (not switch-2)) 60
+               (and switch-1 switch-2) 65
+               :default 40))))
+
+(reg-sub :NRR-2-60-group
+         :<- [:NRR-2-60-node-id]
+         (fn [node-id _]
+           (let [groups-bi-node-id {40 1 45 2 60 3 65 4}]
+             (get groups-bi-node-id node-id))))
+
+(reg-sub :NRR-2-60-baud-rate
+         :<- [:NRR-2-60]
+         (fn [{:keys [switches]} _]
+           (let [switch-3 (get switches 3)]
+             (if switch-3 250 50))))
 

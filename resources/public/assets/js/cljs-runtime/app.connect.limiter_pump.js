@@ -4,7 +4,7 @@ app.connect.limiter_pump.pump_limiter = (function (){var G__41856 = (function ap
 var vec__41857 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var limiter_high_level_id = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"limiter-high-level-id","limiter-high-level-id",-232796350)], null));
-var limiter_high_level_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"limiter-high-level-full-screen","limiter-high-level-full-screen",-1616504973)], null));
+var limiter_high_level_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"limiter-high-level-:full-screen?","limiter-high-level-:full-screen?",-1616504973)], null));
 var G__41860 = helix.core.Fragment;
 var G__41861 = ({"children": [(function (){var G__41862 = limiter_high_level_id;
 switch (G__41862) {
@@ -30,7 +30,7 @@ return null;
 }
 })(),(function (){var G__41871 = app.shared.components.equipment_full_screen.equipment_full_screen;
 var G__41872 = (function (){var obj41874 = ({"show":limiter_high_level_full_screen,"on-close":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-limiter-high-level-full-screen","change-limiter-high-level-full-screen",372169192),false], null));
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-limiter-high-level-:full-screen?","change-limiter-high-level-:full-screen?",372169192),false], null));
 }),"children":(function (){var G__41875 = limiter_high_level_id;
 switch (G__41875) {
 case "URS 61":

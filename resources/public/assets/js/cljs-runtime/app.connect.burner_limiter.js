@@ -4,7 +4,7 @@ app.connect.burner_limiter.burner_limiter = (function (){var G__28442 = (functio
 var vec__28443 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var burner_limiter_id = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"burner-limiter-id","burner-limiter-id",-1127840956)], null));
-var burner_limiter_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"burner-limiter-full-screen","burner-limiter-full-screen",-868941454)], null));
+var burner_limiter_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"burner-limiter-:full-screen?","burner-limiter-:full-screen?",-868941454)], null));
 var G__28449 = helix.core.Fragment;
 var G__28451 = ({"children": [(function (){var G__28453 = burner_limiter_id;
 switch (G__28453) {
@@ -30,7 +30,7 @@ return null;
 }
 })(),(function (){var G__28472 = app.shared.components.equipment_full_screen.equipment_full_screen;
 var G__28473 = (function (){var obj28476 = ({"show":burner_limiter_full_screen,"on-close":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-burner-limiter-full-screen","change-burner-limiter-full-screen",2051559587),false], null));
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-burner-limiter-:full-screen?","change-burner-limiter-:full-screen?",2051559587),false], null));
 }),"children":(function (){var G__28479 = burner_limiter_id;
 switch (G__28479) {
 case "URS 60":

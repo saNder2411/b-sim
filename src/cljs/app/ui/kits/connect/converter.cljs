@@ -7,15 +7,15 @@
 (defnc converter []
   (let [level-probe-id (use-sub [:level-probe-id])
         converter-id (use-sub [:converter-controller-id])
-        converter-full-screen (use-sub [:current-converter-data-by-path [:full-screen]])]
+        full-screen? (use-sub [:current-converter-data-by-path [:full-screen?]])]
     (if (= level-probe-id "NRGT 26-2")
       (<>
         (case converter-id
           "URW 60" ($ URW-60 {:x "86%" :y "1.6%" :w "5.77%"})
           nil)
         ($ controller/full-screen
-           {:show     converter-full-screen
-            :on-close #(dispatch [:change-current-converter [[:full-screen] false]])}
+           {:show     full-screen?
+            :on-close #(dispatch [:change-current-converter [[:full-screen?] false]])}
            (case converter-id
              "URW 60" ($ URW-60 {:x "52%" :y "28%" :w "20%"})
              nil)))

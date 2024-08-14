@@ -7,16 +7,19 @@
 
 (defnc URS-61-toolbar-panel []
   (let [show-toolbar (use-sub [:URS-61-show-toolbar])
-        [val-1 set-val-1!] (use-state true)
-        [val-2 set-val-2!] (use-state true)
-        [val-3 set-val-3!] (use-state false)
-        [val-4 set-val-4!] (use-state false)
-        [val-5 set-val-5!] (use-state false)
-        [val-6 set-val-6!] (use-state false)
-        [val-7 set-val-7!] (use-state false)
-        [val-8 set-val-8!] (use-state false)
-        [val-9 set-val-9!] (use-state false)
-        [val-10 set-val-10!] (use-state false)]
+        sim (use-sub [:sim])
+        inactive (not= "stopped" sim)
+        full-screen? (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :full-screen?]])
+        switch-1 (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :switches 1]])
+        switch-2 (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :switches 2]])
+        switch-3 (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :switches 3]])
+        switch-4 (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :switches 4]])
+        switch-5 (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :switches 5]])
+        switch-6 (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :switches 6]])
+        switch-7 (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :switches 7]])
+        switch-8 (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :switches 8]])
+        switch-9 (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :switches 9]])
+        switch-10 (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :switches 10]])]
     (when show-toolbar
       (<>
         ($ toolbar/title {:x 85 :y 80 :fill "#efefef" :title "Limiter"})
@@ -29,21 +32,21 @@
            ($ toolbar/btn-divider))
 
         ($ toolbar/switch-panel {:x 707 :y 12}
-           ($ toolbar/switch {:x 0 :value val-1 :on-change (fn [] (set-val-1! #(not %))) :legend 1 :inactive false})
-           ($ toolbar/switch {:x 35 :value val-2 :on-change (fn [] (set-val-2! #(not %))) :legend 2 :inactive false})
-           ($ toolbar/switch {:x 70 :value val-3 :on-change (fn [] (set-val-3! #(not %))) :legend 3 :inactive false})
-           ($ toolbar/switch {:x 105 :value val-4 :on-change (fn [] (set-val-4! #(not %))) :legend 4 :inactive false})
-           ($ toolbar/switch {:x 140 :value val-5 :on-change (fn [] (set-val-5! #(not %))) :legend 5 :inactive false})
-           ($ toolbar/switch {:x 175 :value val-6 :on-change (fn [] (set-val-6! #(not %))) :legend 6 :inactive false})
-           ($ toolbar/switch {:x 210 :value val-7 :on-change (fn [] (set-val-7! #(not %))) :legend 7 :inactive false})
-           ($ toolbar/switch {:x 245 :value val-8 :on-change (fn [] (set-val-8! #(not %))) :legend 8 :inactive false})
-           ($ toolbar/switch {:x 280 :value val-9 :on-change (fn [] (set-val-9! #(not %))) :legend 9 :inactive false})
-           ($ toolbar/switch {:x 315 :value val-10 :on-change (fn [] (set-val-10! #(not %))) :legend 10 :inactive false}))
+           ($ toolbar/switch {:x 0 :value switch-1 :on-change #(dispatch [:change-URS-61 [[:switches 1] (not switch-1)]]) :legend 1 :inactive inactive})
+           ($ toolbar/switch {:x 35 :value switch-2 :on-change #(dispatch [:change-URS-61 [[:switches 2] (not switch-2)]]) :legend 2 :inactive inactive})
+           ($ toolbar/switch {:x 70 :value switch-3 :on-change #(dispatch [:change-URS-61 [[:switches 3] (not switch-3)]]) :legend 3 :inactive inactive})
+           ($ toolbar/switch {:x 105 :value switch-4 :on-change #(dispatch [:change-URS-61 [[:switches 4] (not switch-4)]]) :legend 4 :inactive inactive})
+           ($ toolbar/switch {:x 140 :value switch-5 :on-change #(dispatch [:change-URS-61 [[:switches 5] (not switch-5)]]) :legend 5 :inactive inactive})
+           ($ toolbar/switch {:x 175 :value switch-6 :on-change #(dispatch [:change-URS-61 [[:switches 6] (not switch-6)]]) :legend 6 :inactive inactive})
+           ($ toolbar/switch {:x 210 :value switch-7 :on-change #(dispatch [:change-URS-61 [[:switches 7] (not switch-7)]]) :legend 7 :inactive inactive})
+           ($ toolbar/switch {:x 245 :value switch-8 :on-change #(dispatch [:change-URS-61 [[:switches 8] (not switch-8)]]) :legend 8 :inactive inactive})
+           ($ toolbar/switch {:x 280 :value switch-9 :on-change #(dispatch [:change-URS-61 [[:switches 9] (not switch-9)]]) :legend 9 :inactive inactive})
+           ($ toolbar/switch {:x 315 :value switch-10 :on-change #(dispatch [:change-URS-61 [[:switches 10] (not switch-10)]]) :legend 10 :inactive inactive}))
 
         ($ toolbar/btn-wrapper {:x 1064 :y 54}
            ($ toolbar/btn-divider))
 
-        ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click (fn [])}
+        ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click #(dispatch [:change-URS-61 [[:full-screen?] (not full-screen?)]])}
            ($ toolbar/btn-full-screen))
 
         ($ toolbar/btn-wrapper {:x 1174 :y 54}

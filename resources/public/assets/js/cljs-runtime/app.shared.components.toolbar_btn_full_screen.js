@@ -56,7 +56,7 @@ return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$cor
 });
 if(goog.DEBUG === true){
 var G__28652 = G__28608;
-(G__28652.displayName = "app.shared.components.toolbar-btn-full-screen/toolbar-btn-full-screen");
+(G__28652.displayName = "app.shared.components.toolbar-btn-:full-screen?/toolbar-btn-:full-screen?");
 
 return G__28652;
 } else {

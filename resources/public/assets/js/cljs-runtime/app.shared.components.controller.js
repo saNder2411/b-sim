@@ -105,16 +105,16 @@ var show = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__29731__$1,new cljs.c
 var on_close = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__29731__$1,new cljs.core.Keyword(null,"on-close","on-close",-761178394));
 var children = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__29731__$1,new cljs.core.Keyword(null,"children","children",-940561982));
 
-var class$ = (cljs.core.truth_(show)?"full-screen-mask":"full-screen-hide");
+var class$ = (cljs.core.truth_(show)?":full-screen?-mask":":full-screen?-hide");
 var on_mask_click = (function (e){
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2("full-screen-mask",e.target.id)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(":full-screen?-mask",e.target.id)){
 return (on_close.cljs$core$IFn$_invoke$arity$0 ? on_close.cljs$core$IFn$_invoke$arity$0() : on_close.call(null));
 } else {
 return null;
 }
 });
 var G__29732 = "div";
-var G__29733 = (function (){var obj29735 = ({"className":helix.impl.props.normalize_class(class$),"id":"full-screen-mask","onClick":on_mask_click,"children":(function (){var G__29736 = "div";
+var G__29733 = (function (){var obj29735 = ({"className":helix.impl.props.normalize_class(class$),"id":":full-screen?-mask","onClick":on_mask_click,"children":(function (){var G__29736 = "div";
 var G__29737 = (function (){var obj29739 = ({"style":(function (){var obj29741 = ({"margin":helix.impl.props.__GT_js("auto")});
 return obj29741;
 })(),"children":children});
@@ -128,7 +128,7 @@ return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$
 });
 if(goog.DEBUG === true){
 var G__29742 = G__29727;
-(G__29742.displayName = "app.shared.components.controller/full-screen");
+(G__29742.displayName = "app.shared.components.controller/:full-screen?");
 
 return G__29742;
 } else {

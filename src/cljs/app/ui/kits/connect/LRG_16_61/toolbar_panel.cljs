@@ -19,7 +19,7 @@
         ($ toolbar/btn-wrapper {:x 954 :y 54}
            ($ toolbar/btn-divider))
 
-        ($ toolbar/btn-wrapper {:x 1004 :y 54 :on-click #(dispatch [:change-LRG-16-61 [[:full-screen] true]])}
+        ($ toolbar/btn-wrapper {:x 1004 :y 54 :on-click #(dispatch [:change-LRG-16-61 [[:full-screen?] true]])}
            ($ toolbar/btn-full-screen))
 
         ($ toolbar/btn-wrapper {:x 1064 :y 54}

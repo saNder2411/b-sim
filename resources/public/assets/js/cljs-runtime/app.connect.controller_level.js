@@ -4,7 +4,7 @@ app.connect.controller_level.controller_level = (function (){var G__41421 = (fun
 var vec__41426 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var level_controller_id = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-controller-id","level-controller-id",-527625219)], null));
-var level_controller_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-controller-full-screen","level-controller-full-screen",143784850)], null));
+var level_controller_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-controller-:full-screen?","level-controller-:full-screen?",143784850)], null));
 var G__41431 = helix.core.Fragment;
 var G__41432 = ({"children": [(function (){var G__41433 = level_controller_id;
 switch (G__41433) {
@@ -54,7 +54,7 @@ return null;
 }
 })(),(function (){var G__41482 = app.shared.components.controller.full_screen;
 var G__41483 = (function (){var obj41485 = ({"show":level_controller_full_screen,"on-close":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-level-controller-full-screen","change-level-controller-full-screen",-1646019656),false], null));
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-level-controller-:full-screen?","change-level-controller-:full-screen?",-1646019656),false], null));
 }),"children":(function (){var G__41486 = level_controller_id;
 switch (G__41486) {
 case "NRR 2-60":

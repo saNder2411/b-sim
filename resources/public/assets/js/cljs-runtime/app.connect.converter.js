@@ -5,7 +5,7 @@ var vec__41892 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.Persistent
 
 var level_probe_id = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-probe-id","level-probe-id",1166407835)], null));
 var converter_id = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"converter-id","converter-id",1254191491)], null));
-var converter_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"converter-full-screen","converter-full-screen",-1003770390)], null));
+var converter_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"converter-:full-screen?","converter-:full-screen?",-1003770390)], null));
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(level_probe_id,"NRGT 26-2")){
 var G__41897 = helix.core.Fragment;
 var G__41898 = ({"children": [(function (){var G__41903 = converter_id;
@@ -24,7 +24,7 @@ return null;
 }
 })(),(function (){var G__41912 = app.shared.components.controller.full_screen;
 var G__41913 = (function (){var obj41916 = ({"show":converter_full_screen,"on-close":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-converter-full-screen","change-converter-full-screen",1805687195),false], null));
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-converter-:full-screen?","change-converter-:full-screen?",1805687195),false], null));
 }),"children":(function (){var G__41917 = converter_id;
 switch (G__41917) {
 case "URW 60":

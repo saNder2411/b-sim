@@ -8,7 +8,7 @@
   (let [show-toolbar (use-sub [:NRR-2-60-3C-show-toolbar])
         sim (use-sub [:sim])
         inactive (not= "stopped" sim)
-        full-screen (use-sub [:kit-data-by-path [:level :controllers "NRR 2-60 3C" :full-screen]])
+        full-screen (use-sub [:kit-data-by-path [:level :controllers "NRR 2-60 3C" :full-screen?]])
         switch-1 (use-sub [:kit-data-by-path [:level :controllers "NRR 2-60 3C" :switches 1]])
         switch-2 (use-sub [:kit-data-by-path [:level :controllers "NRR 2-60 3C" :switches 2]])
         switch-3 (use-sub [:kit-data-by-path [:level :controllers "NRR 2-60 3C" :switches 3]])
@@ -39,7 +39,7 @@
         ($ toolbar/btn-wrapper {:x 954 :y 54}
            ($ toolbar/btn-divider))
 
-        ($ toolbar/btn-wrapper {:x 1004 :y 54 :on-click #(dispatch [:change-NRR-2-60-3C [[:full-screen] (not full-screen)]])}
+        ($ toolbar/btn-wrapper {:x 1004 :y 54 :on-click #(dispatch [:change-NRR-2-60-3C [[:full-screen?] (not full-screen)]])}
            ($ toolbar/btn-full-screen))
 
         ($ toolbar/btn-wrapper {:x 1064 :y 54}

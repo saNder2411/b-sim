@@ -4,7 +4,7 @@ app.connect.cond_controller.cond_controller = (function (){var G__30533 = (funct
 var vec__30534 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var cond_controller_id = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond-controller-id","cond-controller-id",1569041778)], null));
-var cond_controller_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond-controller-full-screen","cond-controller-full-screen",298646087)], null));
+var cond_controller_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond-controller-:full-screen?","cond-controller-:full-screen?",298646087)], null));
 var G__30537 = helix.core.Fragment;
 var G__30538 = ({"children": [(function (){var G__30539 = cond_controller_id;
 switch (G__30539) {
@@ -30,7 +30,7 @@ return null;
 }
 })(),(function (){var G__30548 = app.shared.components.equipment_full_screen.equipment_full_screen;
 var G__30549 = (function (){var obj30551 = ({"show":cond_controller_full_screen,"on-close":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-cond-controller-full-screen","change-cond-controller-full-screen",-1594372267),false], null));
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-cond-controller-:full-screen?","change-cond-controller-:full-screen?",-1594372267),false], null));
 }),"children":(function (){var G__30552 = cond_controller_id;
 switch (G__30552) {
 case "LRR 1-60":

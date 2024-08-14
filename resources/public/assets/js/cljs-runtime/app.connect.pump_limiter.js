@@ -4,7 +4,7 @@ app.connect.pump_limiter.pump_limiter = (function (){var G__28441 = (function ap
 var vec__28444 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var pump_limiter_id = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"pump-limiter-id","pump-limiter-id",-72454910)], null));
-var pump_limiter_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"pump-limiter-full-screen","pump-limiter-full-screen",1764116550)], null));
+var pump_limiter_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"pump-limiter-:full-screen?","pump-limiter-:full-screen?",1764116550)], null));
 var G__28450 = helix.core.Fragment;
 var G__28452 = ({"children": [(function (){var G__28454 = pump_limiter_id;
 switch (G__28454) {
@@ -30,7 +30,7 @@ return null;
 }
 })(),(function (){var G__28471 = app.shared.components.equipment_full_screen.equipment_full_screen;
 var G__28474 = (function (){var obj28478 = ({"show":pump_limiter_full_screen,"on-close":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-pump-limiter-full-screen","change-pump-limiter-full-screen",2015787077),false], null));
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-pump-limiter-:full-screen?","change-pump-limiter-:full-screen?",2015787077),false], null));
 }),"children":(function (){var G__28480 = pump_limiter_id;
 switch (G__28480) {
 case "URS 61":

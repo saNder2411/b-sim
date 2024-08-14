@@ -249,7 +249,7 @@
                                     :low          {:value 20
                                                    :delay {:off 3 :on 0}}})
 
-(def LEVEL-CONTROLLER {:full-screen          false
+(def LEVEL-CONTROLLER {:full-screen?         false
                        :switches             {1 false 2 false 3 false 4 false}
                        :settings-view        false
                        :mode                 "fill"
@@ -257,7 +257,27 @@
                        :actuator-type        :electric-valve ; :electric-valve | :pump | :pneumatic-valve
                        :errors-extra-trigger []
                        :pi-controller        {}
-                       :calibration          LEVEL-CONTROLLER-CALIBRATION})
+                       :calibration          LEVEL-CONTROLLER-CALIBRATION
+                       :urb                  {:op-time          {:value "17 d"
+                                                                 :def   "10 d"}
+                                              :errors           {:reading false
+                                                                 :count   {:error 0
+                                                                           :alarm 0}}
+                                              :switching-cycles [233, 91, 334, 226]}})
+
+(def COND-CONTROLLER {:full-screen?         false
+                      :switches             {1 false 2 false 3 false 4 false}
+                      :points               {:max 6000 :min 500}
+                      :min-relay-fn         "blowdown"
+                      :errors-extra-trigger []
+                      :pi-controller        {}
+                      :measuring-range      {:lower 0.5 :upper 6000 :s-out 6000}
+                      :urb                  {:op-time          {:value "23 d"
+                                                                :def   "8 d"}
+                                             :errors           {:reading false
+                                                                :count   {:error 0
+                                                                          :alarm 0}}
+                                             :switching-cycles [428, 388, 256, 275]}})
 
 (def NRR-2-60 LEVEL-CONTROLLER)
 
@@ -267,7 +287,9 @@
 
 (def NRR-2-61-3C (merge LEVEL-CONTROLLER {:actuator-type :pump}))
 
-(def LRG-16-60 {:full-screen      false
+(def LRR-1-60 COND-CONTROLLER)
+
+(def LRG-16-60 {:full-screen?     false
                 :settings-view    false
 
                 :correction       {:factor                 1
@@ -280,7 +302,8 @@
                 :output           {:unit  "µS/cm"
                                    :value 0}
 
-                :urb              {:id        3
+                :urb              {:node-id   4
+                                   :id        3
                                    :group-id  1
                                    :baud-rate 50
                                    :op-time   {:value "17 d"
@@ -308,8 +331,60 @@
 (def LRG-16-61 (merge LRG-16-60 {:s-out {:value 7000
                                          :min   50}}))
 
-(def URW-60 {:full-screen false
-             :switches    {1 false 2 false 3 false 4 false}
-             :urb         {:op-time {:value "19 d"
-                                     :def   "10 d"}
-                           :errors  {:reading false}}})
+(def URW-60 {:full-screen? false
+             :switches     {1 false 2 false 3 false 4 false}
+             :urb          {:op-time {:value "19 d"
+                                      :def   "10 d"}
+                            :errors  {:reading false}}})
+
+(def URS-60 {:full-screen?                  false
+             :switches                      {1 true 2 true 3 true 4 true 5 true 6 true 7 true 8 true 9 false 10 false}
+             :channels                      {1 {:alarm    "none"
+                                                :error    "none"
+                                                :empty?   false
+                                                :crowded? false}
+                                             2 {:alarm    "none"
+                                                :error    "none"
+                                                :empty?   false
+                                                :crowded? false}
+                                             3 {:alarm    "none"
+                                                :error    "none"
+                                                :empty?   false
+                                                :crowded? false}
+                                             4 {:alarm    "none"
+                                                :error    "none"
+                                                :empty?   false
+                                                :crowded? false}}
+             :no-active-channel-connection? false
+             :error-logs                    []
+             :urb                           {:op-time {:value "17 d"
+                                                       :def   "8 d"}
+                                             :errors  {:reading false
+                                                       :count   {:error 0
+                                                                 :alarm 0}}}})
+
+(def URS-61 {:full-screen?                  false
+             :switches                      {1 true 2 true 3 false 4 false 5 false 6 false 7 false 8 false 9 false 10 false}
+             :channels                      {5 {:alarm    "none"
+                                                :error    "none"
+                                                :empty?   false
+                                                :crowded? false}
+                                             6 {:alarm    "none"
+                                                :error    "none"
+                                                :empty?   false
+                                                :crowded? false}
+                                             7 {:alarm    "none"
+                                                :error    "none"
+                                                :empty?   false
+                                                :crowded? false}
+                                             8 {:alarm    "none"
+                                                :error    "none"
+                                                :empty?   false
+                                                :crowded? false}}
+             :no-active-channel-connection? false
+             :error-logs                    []
+             :urb                           {:op-time {:value "17 d"
+                                                       :def   "8 d"}
+                                             :errors  {:reading false
+                                                       :count   {:error 0
+                                                                 :alarm 0}}}})

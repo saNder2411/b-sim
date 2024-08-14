@@ -4,7 +4,7 @@ app.connect.limiter_low_level.limiter_low_level = (function (){var G__41465 = (f
 var vec__41474 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
 
 var limiter_low_level_id = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"limiter-low-level-id","limiter-low-level-id",-1897584090)], null));
-var limiter_low_level_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"limiter-low-level-full-screen","limiter-low-level-full-screen",-1274562341)], null));
+var limiter_low_level_full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"limiter-low-level-:full-screen?","limiter-low-level-:full-screen?",-1274562341)], null));
 var G__41489 = helix.core.Fragment;
 var G__41490 = ({"children": [(function (){var G__41492 = limiter_low_level_id;
 switch (G__41492) {
@@ -30,7 +30,7 @@ return null;
 }
 })(),(function (){var G__41523 = app.shared.components.controller.full_screen;
 var G__41524 = (function (){var obj41528 = ({"show":limiter_low_level_full_screen,"on-close":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-limiter-low-level-full-screen","change-limiter-low-level-full-screen",-806067137),false], null));
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-limiter-low-level-:full-screen?","change-limiter-low-level-:full-screen?",-806067137),false], null));
 }),"children":(function (){var G__41535 = limiter_low_level_id;
 switch (G__41535) {
 case "URS 60":

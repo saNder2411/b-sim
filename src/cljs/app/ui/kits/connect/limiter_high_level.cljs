@@ -6,7 +6,7 @@
 
 (defnc limiter-high-level []
   (let [high-limiter-id (use-sub [:high-limiter-id])
-        show-full-screen (use-sub [:current-high-limiter-data-by-path [:full-screen]])]
+        show-full-screen (use-sub [:current-high-limiter-data-by-path [:full-screen?]])]
     (<>
       (case high-limiter-id
         "none" ($ controller/placeholder {:x "44%" :y "1.6%" :w "13.5%" :title "Limiter"})
@@ -14,7 +14,7 @@
         nil)
       ($ controller/full-screen
          {:show     show-full-screen
-          :on-close #(dispatch [:change-current-high-limiter [[:full-screen] false]])}
+          :on-close #(dispatch [:change-current-high-limiter [[:full-screen?] false]])}
          (case high-limiter-id
            "URS 61" ($ URS-61 {:x "30%" :y "38.85%" :w "40%"})
            nil)))))

@@ -18,8 +18,11 @@
             [app.db.kits.connect.NRR-2-61-3C.subs]
             [app.db.kits.connect.NRR-2-61-3C.events]
             [app.db.kits.connect.LRR-1-60.subs]
+            [app.db.kits.connect.LRR-1-60.events]
             [app.db.kits.connect.URS-60.subs]
+            [app.db.kits.connect.URS-60.events]
             [app.db.kits.connect.URS-61.subs]
+            [app.db.kits.connect.URS-61.events]
             [app.db.kits.connect.URB-60.subs]
             [app.db.kits.connect.URW-60.subs]
             [app.db.kits.connect.URW-60.events]))
