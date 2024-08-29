@@ -12,26 +12,31 @@
                  (dispatch [:change-sim "starting"])
                  (dispatch [:change-current-hotspot "none"])
                  (<! (timeout 6000))
+                 (dispatch [:ws/send! [:sim/run]])
                  (dispatch [:change-sim "run"]))
-        play #(dispatch [:change-sim "run"])
-        pause #(dispatch [:change-sim "pause"])
+        play #(do
+                (dispatch [:ws/send! [:sim/run]])
+                (dispatch [:change-sim "run"]))
+        pause #(do
+                 (dispatch [:ws/send! [:sim/pause]])
+                 (dispatch [:change-sim "pause"]))
         start-stop-handler (case sim
-                             "stopped" start
+                             "stop" start
                              "pause" play
                              "run" pause
                              pause)]
     (d/g
-      ($ btn-layer {:dl          "M468.234,188.637H467a50.309,50.309,0,0,1-50.31-50.31V78.861H518.544v59.467A50.31,50.31,0,0,1,468.234,188.637Z"
-                       :dm       "M467,187.291a49.868,49.868,0,0,1-49.811-49.81V78.515H518.044v58.966a49.867,49.867,0,0,1-49.811,49.81Z"
-                       :dt       "M518.044,78.515v58.966a49.867,49.867,0,0,1-49.811,49.81H467a49.868,49.868,0,0,1-49.811-49.81V78.515"
-                       :mask-url "url(#btn-pnl-mask-3)"})
+      ($ btn-layer {:dl       "M468.234,188.637H467a50.309,50.309,0,0,1-50.31-50.31V78.861H518.544v59.467A50.31,50.31,0,0,1,468.234,188.637Z"
+                    :dm       "M467,187.291a49.868,49.868,0,0,1-49.811-49.81V78.515H518.044v58.966a49.867,49.867,0,0,1-49.811,49.81Z"
+                    :dt       "M518.044,78.515v58.966a49.867,49.867,0,0,1-49.811,49.81H467a49.868,49.868,0,0,1-49.811-49.81V78.515"
+                    :mask-url "url(#btn-pnl-mask-3)"})
 
       (d/g {:opacity (if disable 0.25 1)}
            (d/circle {:class  "btn-pnl-stroke"
                       :stroke "#0f40ea"
                       :cx     467.615 :cy 136.862 :r 37.804})
 
-           (if (or (= sim "stopped") (= sim "pause") (= sim "stopping"))
+           (if (or (= sim "stop") (= sim "pause") (= sim "stopping"))
              (d/path {:class  "btn-pnl-stroke"
                       :stroke "#0f40ea"
                       :d      "M487.487,134.394,458.053,117.4a2.979,2.979,0,0,0-4.469,2.58v33.988a2.98,2.98,0,0,0,4.469,2.58l29.434-16.994a2.979,2.979,0,0,0,0-5.16L458.053,117.4a2.979,2.979,0,0,0-4.469,2.58v33.988a2.98,2.98,0,0,0,4.469,2.58l29.434-16.994a3.117,3.117,0,0,0,.67-4.273C487.952,134.984,487.7,134.727,487.487,134.394Z"})

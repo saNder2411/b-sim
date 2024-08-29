@@ -7,7 +7,7 @@
 (defnc URW-60-toolbar-panel []
   (let [show-toolbar (use-sub [:URW-60-show-toolbar])
         sim (use-sub [:sim])
-        inactive (not= "stopped" sim)
+        inactive (not= "stop" sim)
         full-screen (use-sub [:kit-data-by-path [:converter :controllers "URW 60" :full-screen?]])
         switch-1 (use-sub [:kit-data-by-path [:converter :controllers "URW 60" :switches 1]])
         switch-2 (use-sub [:kit-data-by-path [:converter :controllers "URW 60" :switches 2]])

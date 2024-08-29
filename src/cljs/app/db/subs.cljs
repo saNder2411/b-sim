@@ -30,6 +30,10 @@
          (fn [{:keys [firstname lastname]} _]
            (str firstname " " lastname)))
 
+(reg-sub :ws/connected
+         (fn [db _]
+           (true? (get-in db [:ws :connected]))))
+
 (reg-sub :kit
          (fn [db _]
            (:kit db)))
@@ -87,7 +91,7 @@
          :<- [:sim]
          :<- [:general-settings]
          (fn [[sim general-settings] _]
-           (and (= sim "stopped") (not= (:intended-use general-settings) "demonstration"))))
+           (and (= sim "stop") (not= (:intended-use general-settings) "demonstration"))))
 
 (reg-sub :steam-value
          :<- [:general-settings]

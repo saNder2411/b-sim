@@ -7,7 +7,7 @@
 (defnc NRR-2-61-toolbar-panel []
   (let [show-toolbar (use-sub [:NRR-2-61-show-toolbar])
         sim (use-sub [:sim])
-        inactive (not= "stopped" sim)
+        inactive (not= "stop" sim)
         full-screen (use-sub [:kit-data-by-path [:level :controllers "NRR 2-61" :full-screen?]])
         switch-1 (use-sub [:kit-data-by-path [:level :controllers "NRR 2-61" :switches 1]])
         switch-2 (use-sub [:kit-data-by-path [:level :controllers "NRR 2-61" :switches 2]])

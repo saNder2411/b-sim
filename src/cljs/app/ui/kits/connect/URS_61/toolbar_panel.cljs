@@ -8,7 +8,7 @@
 (defnc URS-61-toolbar-panel []
   (let [show-toolbar (use-sub [:URS-61-show-toolbar])
         sim (use-sub [:sim])
-        inactive (not= "stopped" sim)
+        inactive (not= "stop" sim)
         full-screen? (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :full-screen?]])
         switch-1 (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :switches 1]])
         switch-2 (use-sub [:kit-data-by-path [:high-limiter :controllers "URS 61" :switches 2]])

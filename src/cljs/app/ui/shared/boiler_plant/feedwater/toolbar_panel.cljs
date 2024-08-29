@@ -11,7 +11,7 @@
       (<>
         ($ toolbar/title {:x 85 :y 95 :fill "#efefef" :title "Feedwater"})
 
-        ($ toolbar/btn-wrapper {:x 1114 :y 54 :inactive (not= "stopped" sim) :on-click #(dispatch [:change-feedwater [[:settings-view] true]])}
+        ($ toolbar/btn-wrapper {:x 1114 :y 54 :inactive (not= "stop" sim) :on-click #(dispatch [:change-feedwater [[:settings-view] true]])}
            ($ toolbar/btn-settings))
 
         ($ toolbar/btn-wrapper {:x 1174 :y 54}

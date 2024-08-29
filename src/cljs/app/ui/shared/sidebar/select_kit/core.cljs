@@ -13,7 +13,7 @@
                             :label     "SPECTOR"
                             :sub-label "module"
                             :active    (= kit :module)
-                            :disable   (not= sim "stopped")
+                            :disable   (not= sim "stop")
                             :on-click  #(dispatch [:change-kit :module])})
 
          (d/path {:fill "#aaa" :d "M224.3,27.711l5.329-19.008h1.805l-5.316,19.008Z"})
@@ -23,5 +23,5 @@
                             :label     "SPECTOR"
                             :sub-label "connect"
                             :active    (= kit :connect)
-                            :disable   (not= sim "stopped")
+                            :disable   (not= sim "stop")
                             :on-click  #(dispatch [:change-kit :connect])}))))

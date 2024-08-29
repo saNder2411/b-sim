@@ -1,146 +1,146 @@
 goog.provide('app.ui.kits.connect.LRR_1_60.toolbar_panel');
 
-app.ui.kits.connect.LRR_1_60.toolbar_panel.LRR_1_60_toolbar_panel = (function (){var G__34670 = (function app$ui$kits$connect$LRR_1_60$toolbar_panel$LRR_1_60_toolbar_panel_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__34679 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.ui.kits.connect.LRR_1_60.toolbar_panel.LRR_1_60_toolbar_panel = (function (){var G__40496 = (function app$ui$kits$connect$LRR_1_60$toolbar_panel$LRR_1_60_toolbar_panel_render(props__27613__auto__,maybe_ref__27614__auto__){
+var vec__40498 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27613__auto__),maybe_ref__27614__auto__], null);
 
 var show_toolbar = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"LRR-1-60-show-toolbar","LRR-1-60-show-toolbar",897532328)], null));
 var sim = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null));
-var inactive = cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2("stopped",sim);
+var inactive = cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2("stop",sim);
 var full_screen = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond","cond",-33823472),new cljs.core.Keyword(null,"controllers","controllers",-1120410624),"LRR 1-60",new cljs.core.Keyword(null,"full-screen?","full-screen?",-1681227426)], null)], null));
 var switch_1 = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond","cond",-33823472),new cljs.core.Keyword(null,"controllers","controllers",-1120410624),"LRR 1-60",new cljs.core.Keyword(null,"switches","switches",2013040888),(1)], null)], null));
 var switch_2 = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond","cond",-33823472),new cljs.core.Keyword(null,"controllers","controllers",-1120410624),"LRR 1-60",new cljs.core.Keyword(null,"switches","switches",2013040888),(2)], null)], null));
 var switch_3 = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond","cond",-33823472),new cljs.core.Keyword(null,"controllers","controllers",-1120410624),"LRR 1-60",new cljs.core.Keyword(null,"switches","switches",2013040888),(3)], null)], null));
 var switch_4 = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond","cond",-33823472),new cljs.core.Keyword(null,"controllers","controllers",-1120410624),"LRR 1-60",new cljs.core.Keyword(null,"switches","switches",2013040888),(4)], null)], null));
 if(cljs.core.truth_(show_toolbar)){
-var G__34704 = helix.core.Fragment;
-var G__34705 = ({"children": [(function (){var G__34710 = app.ui.shared.components.toolbar.title;
-var G__34711 = (function (){var obj34785 = ({"x":(85),"y":(80),"fill":"#efefef","title":"Conductivity Controller"});
-return obj34785;
+var G__40505 = helix.core.Fragment;
+var G__40506 = ({"children": [(function (){var G__40507 = app.ui.shared.components.toolbar.title;
+var G__40508 = (function (){var obj40510 = ({"x":(85),"y":(80),"fill":"#efefef","title":"Conductivity Controller"});
+return obj40510;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34710,G__34711) : helix.core.jsx.call(null,G__34710,G__34711));
-})(),(function (){var G__34794 = app.ui.shared.components.toolbar.title;
-var G__34795 = (function (){var obj34799 = ({"x":(85),"y":(110),"fill":"#bcbcbc","title":"LRR 1-60"});
-return obj34799;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40507,G__40508) : helix.core.jsx.call(null,G__40507,G__40508));
+})(),(function (){var G__40511 = app.ui.shared.components.toolbar.title;
+var G__40512 = (function (){var obj40514 = ({"x":(85),"y":(110),"fill":"#bcbcbc","title":"LRR 1-60"});
+return obj40514;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34794,G__34795) : helix.core.jsx.call(null,G__34794,G__34795));
-})(),(function (){var G__34822 = app.ui.shared.components.toolbar.btn_wrapper;
-var G__34823 = (function (){var obj34827 = ({"x":(697),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40511,G__40512) : helix.core.jsx.call(null,G__40511,G__40512));
+})(),(function (){var G__40516 = app.ui.shared.components.toolbar.btn_wrapper;
+var G__40517 = (function (){var obj40520 = ({"x":(697),"y":(54),"on-click":(function (){
 return null;
-}),"children":(function (){var G__34842 = app.ui.shared.components.toolbar.btn_replace;
-var G__34843 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34842,G__34843) : helix.core.jsx.call(null,G__34842,G__34843));
+}),"children":(function (){var G__40521 = app.ui.shared.components.toolbar.btn_replace;
+var G__40522 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40521,G__40522) : helix.core.jsx.call(null,G__40521,G__40522));
 })()});
-return obj34827;
+return obj40520;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34822,G__34823) : helix.core.jsx.call(null,G__34822,G__34823));
-})(),(function (){var G__34852 = app.ui.shared.components.toolbar.btn_wrapper;
-var G__34853 = (function (){var obj34859 = ({"x":(757),"y":(54),"children":(function (){var G__34866 = app.ui.shared.components.toolbar.btn_divider;
-var G__34867 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34866,G__34867) : helix.core.jsx.call(null,G__34866,G__34867));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40516,G__40517) : helix.core.jsx.call(null,G__40516,G__40517));
+})(),(function (){var G__40523 = app.ui.shared.components.toolbar.btn_wrapper;
+var G__40524 = (function (){var obj40527 = ({"x":(757),"y":(54),"children":(function (){var G__40529 = app.ui.shared.components.toolbar.btn_divider;
+var G__40530 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40529,G__40530) : helix.core.jsx.call(null,G__40529,G__40530));
 })()});
-return obj34859;
+return obj40527;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34852,G__34853) : helix.core.jsx.call(null,G__34852,G__34853));
-})(),(function (){var G__34878 = app.ui.shared.components.toolbar.btn_wrapper;
-var G__34879 = (function (){var obj34883 = ({"x":(807),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40523,G__40524) : helix.core.jsx.call(null,G__40523,G__40524));
+})(),(function (){var G__40532 = app.ui.shared.components.toolbar.btn_wrapper;
+var G__40533 = (function (){var obj40536 = ({"x":(807),"y":(54),"on-click":(function (){
 return null;
-}),"children":(function (){var G__34896 = app.ui.shared.components.toolbar.btn_error;
-var G__34897 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34896,G__34897) : helix.core.jsx.call(null,G__34896,G__34897));
+}),"children":(function (){var G__40538 = app.ui.shared.components.toolbar.btn_error;
+var G__40539 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40538,G__40539) : helix.core.jsx.call(null,G__40538,G__40539));
 })()});
-return obj34883;
+return obj40536;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34878,G__34879) : helix.core.jsx.call(null,G__34878,G__34879));
-})(),(function (){var G__34903 = app.ui.shared.components.toolbar.btn_wrapper;
-var G__34904 = (function (){var obj34910 = ({"x":(867),"y":(54),"children":(function (){var G__34917 = app.ui.shared.components.toolbar.btn_divider;
-var G__34918 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34917,G__34918) : helix.core.jsx.call(null,G__34917,G__34918));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40532,G__40533) : helix.core.jsx.call(null,G__40532,G__40533));
+})(),(function (){var G__40542 = app.ui.shared.components.toolbar.btn_wrapper;
+var G__40543 = (function (){var obj40545 = ({"x":(867),"y":(54),"children":(function (){var G__40547 = app.ui.shared.components.toolbar.btn_divider;
+var G__40548 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40547,G__40548) : helix.core.jsx.call(null,G__40547,G__40548));
 })()});
-return obj34910;
+return obj40545;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34903,G__34904) : helix.core.jsx.call(null,G__34903,G__34904));
-})(),(function (){var G__34925 = app.ui.shared.components.toolbar.switch_panel;
-var G__34926 = (function (){var obj34930 = ({"x":(917),"y":(12),"children":[(function (){var G__34937 = app.ui.shared.components.toolbar.switch$;
-var G__34938 = (function (){var obj34944 = ({"x":(0),"value":switch_1,"on-change":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40542,G__40543) : helix.core.jsx.call(null,G__40542,G__40543));
+})(),(function (){var G__40549 = app.ui.shared.components.toolbar.switch_panel;
+var G__40550 = (function (){var obj40572 = ({"x":(917),"y":(12),"children":[(function (){var G__40573 = app.ui.shared.components.toolbar.switch$;
+var G__40574 = (function (){var obj40576 = ({"x":(0),"value":switch_1,"on-change":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-LRR-1-60","change-LRR-1-60",-841957839),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"switches","switches",2013040888),(1)], null),cljs.core.not(switch_1)], null)], null));
 }),"legend":(1),"inactive":inactive});
-return obj34944;
+return obj40576;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34937,G__34938) : helix.core.jsx.call(null,G__34937,G__34938));
-})(),(function (){var G__34955 = app.ui.shared.components.toolbar.switch$;
-var G__34956 = (function (){var obj34964 = ({"x":(35),"value":switch_2,"on-change":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40573,G__40574) : helix.core.jsx.call(null,G__40573,G__40574));
+})(),(function (){var G__40577 = app.ui.shared.components.toolbar.switch$;
+var G__40578 = (function (){var obj40580 = ({"x":(35),"value":switch_2,"on-change":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-LRR-1-60","change-LRR-1-60",-841957839),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"switches","switches",2013040888),(2)], null),cljs.core.not(switch_2)], null)], null));
 }),"legend":(2),"inactive":inactive});
-return obj34964;
+return obj40580;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34955,G__34956) : helix.core.jsx.call(null,G__34955,G__34956));
-})(),(function (){var G__34973 = app.ui.shared.components.toolbar.switch$;
-var G__34974 = (function (){var obj34980 = ({"x":(70),"value":switch_3,"on-change":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40577,G__40578) : helix.core.jsx.call(null,G__40577,G__40578));
+})(),(function (){var G__40582 = app.ui.shared.components.toolbar.switch$;
+var G__40583 = (function (){var obj40586 = ({"x":(70),"value":switch_3,"on-change":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-LRR-1-60","change-LRR-1-60",-841957839),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"switches","switches",2013040888),(3)], null),cljs.core.not(switch_3)], null)], null));
 }),"legend":(3),"inactive":inactive});
-return obj34980;
+return obj40586;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34973,G__34974) : helix.core.jsx.call(null,G__34973,G__34974));
-})(),(function (){var G__34992 = app.ui.shared.components.toolbar.switch$;
-var G__34993 = (function (){var obj34998 = ({"x":(105),"value":switch_4,"on-change":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40582,G__40583) : helix.core.jsx.call(null,G__40582,G__40583));
+})(),(function (){var G__40589 = app.ui.shared.components.toolbar.switch$;
+var G__40590 = (function (){var obj40593 = ({"x":(105),"value":switch_4,"on-change":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-LRR-1-60","change-LRR-1-60",-841957839),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"switches","switches",2013040888),(4)], null),cljs.core.not(switch_4)], null)], null));
 }),"legend":(4),"inactive":inactive});
-return obj34998;
+return obj40593;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__34992,G__34993) : helix.core.jsx.call(null,G__34992,G__34993));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40589,G__40590) : helix.core.jsx.call(null,G__40589,G__40590));
 })()]});
-return obj34930;
+return obj40572;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__34925,G__34926) : helix.core.jsxs.call(null,G__34925,G__34926));
-})(),(function (){var G__35003 = app.ui.shared.components.toolbar.btn_wrapper;
-var G__35004 = (function (){var obj35008 = ({"x":(1064),"y":(54),"children":(function (){var G__35009 = app.ui.shared.components.toolbar.btn_divider;
-var G__35010 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35009,G__35010) : helix.core.jsx.call(null,G__35009,G__35010));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__40549,G__40550) : helix.core.jsxs.call(null,G__40549,G__40550));
+})(),(function (){var G__40595 = app.ui.shared.components.toolbar.btn_wrapper;
+var G__40596 = (function (){var obj40599 = ({"x":(1064),"y":(54),"children":(function (){var G__40600 = app.ui.shared.components.toolbar.btn_divider;
+var G__40601 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40600,G__40601) : helix.core.jsx.call(null,G__40600,G__40601));
 })()});
-return obj35008;
+return obj40599;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35003,G__35004) : helix.core.jsx.call(null,G__35003,G__35004));
-})(),(function (){var G__35015 = app.ui.shared.components.toolbar.btn_wrapper;
-var G__35016 = (function (){var obj35020 = ({"x":(1114),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40595,G__40596) : helix.core.jsx.call(null,G__40595,G__40596));
+})(),(function (){var G__40604 = app.ui.shared.components.toolbar.btn_wrapper;
+var G__40605 = (function (){var obj40607 = ({"x":(1114),"y":(54),"on-click":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-LRR-1-60","change-LRR-1-60",-841957839),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"full-screen?","full-screen?",-1681227426)], null),cljs.core.not(full_screen)], null)], null));
-}),"children":(function (){var G__35023 = app.ui.shared.components.toolbar.btn_full_screen;
-var G__35024 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35023,G__35024) : helix.core.jsx.call(null,G__35023,G__35024));
+}),"children":(function (){var G__40609 = app.ui.shared.components.toolbar.btn_full_screen;
+var G__40610 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40609,G__40610) : helix.core.jsx.call(null,G__40609,G__40610));
 })()});
-return obj35020;
+return obj40607;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35015,G__35016) : helix.core.jsx.call(null,G__35015,G__35016));
-})(),(function (){var G__35027 = app.ui.shared.components.toolbar.btn_wrapper;
-var G__35028 = (function (){var obj35032 = ({"x":(1174),"y":(54),"children":(function (){var G__35033 = app.ui.shared.components.toolbar.btn_divider;
-var G__35034 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35033,G__35034) : helix.core.jsx.call(null,G__35033,G__35034));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40604,G__40605) : helix.core.jsx.call(null,G__40604,G__40605));
+})(),(function (){var G__40613 = app.ui.shared.components.toolbar.btn_wrapper;
+var G__40614 = (function (){var obj40617 = ({"x":(1174),"y":(54),"children":(function (){var G__40618 = app.ui.shared.components.toolbar.btn_divider;
+var G__40619 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40618,G__40619) : helix.core.jsx.call(null,G__40618,G__40619));
 })()});
-return obj35032;
+return obj40617;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35027,G__35028) : helix.core.jsx.call(null,G__35027,G__35028));
-})(),(function (){var G__35036 = app.ui.shared.components.toolbar.btn_wrapper;
-var G__35037 = (function (){var obj35039 = ({"x":(1224),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40613,G__40614) : helix.core.jsx.call(null,G__40613,G__40614));
+})(),(function (){var G__40627 = app.ui.shared.components.toolbar.btn_wrapper;
+var G__40628 = (function (){var obj40630 = ({"x":(1224),"y":(54),"on-click":(function (){
 return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-modal-info","change-modal-info",-2050631306),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"title","title",636505583),"Conductivity Controller",new cljs.core.Keyword(null,"text","text",-1790561697),"The conductivity controller can be used in conjunction with LRG 16-60, LRG 16-61 and LRG 17- 60 conductivity electrodes as a conductivity controller in pressurised steam and hot-water plants and in condensate and feedwater tanks. The conductivity controller indicates when MAX or MIN conductivity has been reached, opens or closes a continuous blowdown valve and can actuate an intermittent blowdown valve."], null)], null));
-}),"children":(function (){var G__35040 = app.ui.shared.components.toolbar.btn_info;
-var G__35041 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35040,G__35041) : helix.core.jsx.call(null,G__35040,G__35041));
+}),"children":(function (){var G__40631 = app.ui.shared.components.toolbar.btn_info;
+var G__40632 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40631,G__40632) : helix.core.jsx.call(null,G__40631,G__40632));
 })()});
-return obj35039;
+return obj40630;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35036,G__35037) : helix.core.jsx.call(null,G__35036,G__35037));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__40627,G__40628) : helix.core.jsx.call(null,G__40627,G__40628));
 })()]});
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__34704,G__34705) : helix.core.jsxs.call(null,G__34704,G__34705));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__40505,G__40506) : helix.core.jsxs.call(null,G__40505,G__40506));
 } else {
 return null;
 }
 });
 if(goog.DEBUG === true){
-var G__35042 = G__34670;
-(G__35042.displayName = "app.ui.kits.connect.LRR-1-60.toolbar-panel/LRR-1-60-toolbar-panel");
+var G__40634 = G__40496;
+(G__40634.displayName = "app.ui.kits.connect.LRR-1-60.toolbar-panel/LRR-1-60-toolbar-panel");
 
-return G__35042;
+return G__40634;
 } else {
-return G__34670;
+return G__40496;
 }
 })();
 

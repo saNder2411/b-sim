@@ -7,7 +7,7 @@
 (defnc LRG-16-61-toolbar-panel []
   (let [show-toolbar (use-sub [:LRG-16-61-show-toolbar])
         sim (use-sub [:sim])
-        inactive (not= "stopped" sim)]
+        inactive (not= "stop" sim)]
     (when show-toolbar
       (<>
         ($ toolbar/title {:x 85 :y 80 :fill "#efefef" :title "Conductivity Electrode"})

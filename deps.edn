@@ -1,5 +1,12 @@
 {:paths ["resources" "src" "src/clj" "src/cljs"]
  :deps  {org.clojure/clojure       {:mvn/version "1.11.1"}
+         org.clojure/core.async    {:mvn/version "1.6.681"}
+         http-kit/http-kit         {:mvn/version "2.8.0"}
+         ring/ring-core            {:mvn/version "1.12.2"}
+         com.taoensso/sente        {:mvn/version "1.19.2"}
+         metosin/reitit            {:mvn/version "0.7.1"}
+         metosin/muuntaja          {:mvn/version "0.6.10"}
+         ;; client
          org.clojure/clojurescript {:mvn/version "1.11.60"}
          thheller/shadow-cljs      {:mvn/version "2.19.9"}
          lilactown/helix           {:mvn/version "0.2.0"}

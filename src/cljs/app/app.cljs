@@ -16,6 +16,7 @@
 (defnc app []
   (use-effect :once
               (.addEventListener js/window "resize" window-resizing-handler)
+              (dispatch [:ws/connect])
               (fn []
                 (.removeEventListener js/window "resize" window-resizing-handler)))
 
@@ -26,7 +27,7 @@
 
     (d/div {:class "kit-wrapper" :style {:width (str w "px") :height (str h "px")}}
            (d/p {:class "version-tag"}
-                (d/span {:style {:font-size (str (* 14 scale-f) "px")}} "Version: 1.0"))
+                (d/span {:style    {:font-size (str (* 14 scale-f) "px")}} "Version: 1.0"))
 
            ($ notifications)
            ($ modal/info)

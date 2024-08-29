@@ -1,8 +1,9 @@
 (ns app.db.events
-  (:require [refx.alpha :refer [reg-event-fx reg-event-db]]
+  (:require [refx.alpha :refer [reg-event-fx reg-event-db dispatch]]
             [refx.interceptors :refer [path]]
             [app.db.db :refer [default-db]]
-            [app.db.defaults :as defaults]))
+            [app.db.defaults :as defaults]
+            [app.ws.socket :as socket]))
 
 (defn update-screen! [width height {:keys [ratio] :as screen}]
   (if (<= (/ width height) ratio)
@@ -18,6 +19,20 @@
               (fn [screen [_ width height]]
                 (update-screen! width height screen)))
 
+(reg-event-db :ws/connected
+              (fn [db [_ value]]
+                (assoc-in db [:ws :connected] value)))
+
+(reg-event-db :ws/connect
+              (fn [_ _]
+                (socket/start!)
+                (dispatch [:ws/connected true])))
+
+(reg-event-db :ws/send!
+              (fn [db [_ event]]
+                (socket/send! event)
+                db))
+
 (reg-event-db :change-kit
               (fn [db [_ new-kit]]
                 (assoc db :kit new-kit)))
@@ -29,8 +44,8 @@
 
 (reg-event-db :reset-sim
               (fn [{:keys [kit] :as db} _]
-                (js/console.log "reset sim - stop sim and prevent to default all sim modules" "stopped")
-                (assoc-in db [kit :sim] "stopped")))
+                (js/console.log "reset sim - stop sim and prevent to default all sim modules" "stop")
+                (assoc-in db [kit :sim] "stop")))
 
 (reg-event-db :change-kit-data-by-path
               (fn [{:keys [kit] :as db} [_ [path new-value]]]
@@ -55,8 +70,8 @@
                       actuator-type (get-in db [kit :level :controllers controller-id :actuator-type])
                       default-values (merge defaults/GENERAL-SETTINGS {:view true})]
                   (-> db
-                      (assoc-in  [kit :boiler-plant :actuators :feed actuator-type :flow-rate :unit] "t/h")
-                      (assoc-in  [kit :general-settings] default-values)))))
+                      (assoc-in [kit :boiler-plant :actuators :feed actuator-type :flow-rate :unit] "t/h")
+                      (assoc-in [kit :general-settings] default-values)))))
 
 (reg-event-db :change-current-hotspot
               (fn [{:keys [kit] :as db} [_ new-value]]

@@ -8,20 +8,22 @@
 (defnc btn-reset []
   (let [sim (use-sub [:sim])
         disable (or (= sim "starting") (= sim "stopping"))
+        reset-sim #(do
+                     (dispatch [:ws/send! [:sim/stop]])
+                     (dispatch [:reset-sim]))
         stop-and-reset #(go
                           (dispatch [:change-sim "stopping"])
                           (<! (timeout 2000))
-                          (dispatch [:reset-sim]))
-        reset #(dispatch [:reset-sim])
+                          (reset-sim))
         reset-handler (case sim
                         "run" stop-and-reset
                         "pause" stop-and-reset
-                        reset)]
+                        reset-sim)]
     (d/g
-      ($ btn-layer {:dl          "M317.26,188.637h-1.237a50.31,50.31,0,0,1-50.31-50.31V78.861H367.57v59.467A50.31,50.31,0,0,1,317.26,188.637Z"
-                       :dm       "M316.024,187.291a49.867,49.867,0,0,1-49.811-49.81V78.515H367.071v58.966a49.868,49.868,0,0,1-49.811,49.81Z"
-                       :dt       "M367.071,78.515v58.966a49.868,49.868,0,0,1-49.811,49.81h-1.236a49.867,49.867,0,0,1-49.811-49.81V78.515"
-                       :mask-url "url(#btn-pnl-mask-2)"})
+      ($ btn-layer {:dl       "M317.26,188.637h-1.237a50.31,50.31,0,0,1-50.31-50.31V78.861H367.57v59.467A50.31,50.31,0,0,1,317.26,188.637Z"
+                    :dm       "M316.024,187.291a49.867,49.867,0,0,1-49.811-49.81V78.515H367.071v58.966a49.868,49.868,0,0,1-49.811,49.81Z"
+                    :dt       "M367.071,78.515v58.966a49.868,49.868,0,0,1-49.811,49.81h-1.236a49.867,49.867,0,0,1-49.811-49.81V78.515"
+                    :mask-url "url(#btn-pnl-mask-2)"})
 
       (d/g {:opacity (if disable 0.25 1)}
            (d/circle {:class  "btn-pnl-stroke"
