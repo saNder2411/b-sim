@@ -4,9 +4,9 @@
             [refx.alpha :refer [use-sub dispatch]]))
 
 (defnc info []
-  (let [show (use-sub [:modal-info-show])
+  (let [show (use-sub [:modal-info/show])
         {:keys [title text]} (use-sub [:modal-info])
-        on-close #(dispatch [:change-modal-info {:title "" :text ""}])]
+        on-close #(dispatch [:modal-info/change {:title "" :text ""}])]
     (when show
       (d/div {:class "modal-overlay" :on-click on-close}
              (d/div {:class "modal-card" :style {:width "44%"}}

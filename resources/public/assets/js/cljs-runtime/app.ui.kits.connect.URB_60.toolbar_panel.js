@@ -1,62 +1,62 @@
 goog.provide('app.ui.kits.connect.URB_60.toolbar_panel');
 
-app.ui.kits.connect.URB_60.toolbar_panel.URB_60_toolbar_panel = (function (){var G__32237 = (function app$ui$kits$connect$URB_60$toolbar_panel$URB_60_toolbar_panel_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__32245 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.ui.kits.connect.URB_60.toolbar_panel.URB_60_toolbar_panel = (function (){var G__38692 = (function app$ui$kits$connect$URB_60$toolbar_panel$URB_60_toolbar_panel_render(props__27592__auto__,maybe_ref__27593__auto__){
+var vec__38746 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27592__auto__),maybe_ref__27593__auto__], null);
 
-var show_toolbar = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"URB-60-show-toolbar","URB-60-show-toolbar",-1443227626)], null));
+var show_toolbar = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("URB-60","show-toolbar","URB-60/show-toolbar",-294833851)], null));
 if(cljs.core.truth_(show_toolbar)){
-var G__32260 = helix.core.Fragment;
-var G__32261 = ({"children": [(function (){var G__32269 = app.ui.shared.components.toolbar.title;
-var G__32270 = (function (){var obj32277 = ({"x":(85),"y":(80),"fill":"#efefef","title":"Visual Display and Operating Unit"});
-return obj32277;
+var G__38782 = helix.core.Fragment;
+var G__38784 = ({"children": [(function (){var G__38791 = app.ui.shared.components.toolbar.title;
+var G__38792 = (function (){var obj38803 = ({"x":(85),"y":(80),"fill":"#efefef","title":"Visual Display and Operating Unit"});
+return obj38803;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__32269,G__32270) : helix.core.jsx.call(null,G__32269,G__32270));
-})(),(function (){var G__32290 = app.ui.shared.components.toolbar.title;
-var G__32291 = (function (){var obj32303 = ({"x":(85),"y":(110),"fill":"#bcbcbc","title":"URB 60"});
-return obj32303;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38791,G__38792) : helix.core.jsx.call(null,G__38791,G__38792));
+})(),(function (){var G__38816 = app.ui.shared.components.toolbar.title;
+var G__38817 = (function (){var obj38823 = ({"x":(85),"y":(110),"fill":"#bcbcbc","title":"URB 60"});
+return obj38823;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__32290,G__32291) : helix.core.jsx.call(null,G__32290,G__32291));
-})(),(function (){var G__32347 = app.ui.shared.components.toolbar.btn_wrapper;
-var G__32349 = (function (){var obj32354 = ({"x":(1114),"y":(54),"on-click":(function (){
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38816,G__38817) : helix.core.jsx.call(null,G__38816,G__38817));
+})(),(function (){var G__38838 = app.ui.shared.components.toolbar.btn_wrapper;
+var G__38839 = (function (){var obj38849 = ({"x":(1114),"y":(54),"on-click":(function (){
 return null;
-}),"children":(function (){var G__32369 = app.ui.shared.components.toolbar.btn_full_screen;
-var G__32370 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__32369,G__32370) : helix.core.jsx.call(null,G__32369,G__32370));
+}),"children":(function (){var G__38864 = app.ui.shared.components.toolbar.btn_full_screen;
+var G__38865 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38864,G__38865) : helix.core.jsx.call(null,G__38864,G__38865));
 })()});
-return obj32354;
+return obj38849;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__32347,G__32349) : helix.core.jsx.call(null,G__32347,G__32349));
-})(),(function (){var G__32497 = app.ui.shared.components.toolbar.btn_wrapper;
-var G__32498 = (function (){var obj32506 = ({"x":(1174),"y":(54),"children":(function (){var G__32512 = app.ui.shared.components.toolbar.btn_divider;
-var G__32513 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__32512,G__32513) : helix.core.jsx.call(null,G__32512,G__32513));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38838,G__38839) : helix.core.jsx.call(null,G__38838,G__38839));
+})(),(function (){var G__38894 = app.ui.shared.components.toolbar.btn_wrapper;
+var G__38895 = (function (){var obj38899 = ({"x":(1174),"y":(54),"children":(function (){var G__38900 = app.ui.shared.components.toolbar.btn_divider;
+var G__38901 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38900,G__38901) : helix.core.jsx.call(null,G__38900,G__38901));
 })()});
-return obj32506;
+return obj38899;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__32497,G__32498) : helix.core.jsx.call(null,G__32497,G__32498));
-})(),(function (){var G__32530 = app.ui.shared.components.toolbar.btn_wrapper;
-var G__32532 = (function (){var obj32546 = ({"x":(1224),"y":(54),"on-click":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-modal-info","change-modal-info",-2050631306),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"title","title",636505583),"Visual Display and Operating Unit",new cljs.core.Keyword(null,"text","text",-1790561697),"The URB 60 visual display and operating unit can be used in conjunction with various GESTRA CAN bus units from the SPECTORconnect series. The URB 60 is designed for installation in a control cabinet door or switch panel. It may only be used when correctly installed."], null)], null));
-}),"children":(function (){var G__32575 = app.ui.shared.components.toolbar.btn_info;
-var G__32576 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__32575,G__32576) : helix.core.jsx.call(null,G__32575,G__32576));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38894,G__38895) : helix.core.jsx.call(null,G__38894,G__38895));
+})(),(function (){var G__38934 = app.ui.shared.components.toolbar.btn_wrapper;
+var G__38935 = (function (){var obj38943 = ({"x":(1224),"y":(54),"on-click":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("modal-info","change","modal-info/change",1700200432),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"title","title",636505583),"Visual Display and Operating Unit",new cljs.core.Keyword(null,"text","text",-1790561697),"The URB 60 visual display and operating unit can be used in conjunction with various GESTRA CAN bus units from the SPECTORconnect series. The URB 60 is designed for installation in a control cabinet door or switch panel. It may only be used when correctly installed."], null)], null));
+}),"children":(function (){var G__38956 = app.ui.shared.components.toolbar.btn_info;
+var G__38957 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38956,G__38957) : helix.core.jsx.call(null,G__38956,G__38957));
 })()});
-return obj32546;
+return obj38943;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__32530,G__32532) : helix.core.jsx.call(null,G__32530,G__32532));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38934,G__38935) : helix.core.jsx.call(null,G__38934,G__38935));
 })()]});
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__32260,G__32261) : helix.core.jsxs.call(null,G__32260,G__32261));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__38782,G__38784) : helix.core.jsxs.call(null,G__38782,G__38784));
 } else {
 return null;
 }
 });
 if(goog.DEBUG === true){
-var G__32599 = G__32237;
-(G__32599.displayName = "app.ui.kits.connect.URB-60.toolbar-panel/URB-60-toolbar-panel");
+var G__38988 = G__38692;
+(G__38988.displayName = "app.ui.kits.connect.URB-60.toolbar-panel/URB-60-toolbar-panel");
 
-return G__32599;
+return G__38988;
 } else {
-return G__32237;
+return G__38692;
 }
 })();
 

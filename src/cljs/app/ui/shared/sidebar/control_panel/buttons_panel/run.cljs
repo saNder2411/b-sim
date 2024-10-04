@@ -9,17 +9,17 @@
   (let [sim (use-sub [:sim])
         disable (or (= sim "starting") (= sim "stopping"))
         start #(go
-                 (dispatch [:change-sim "starting"])
-                 (dispatch [:change-current-hotspot "none"])
+                 (dispatch [:sim/change "starting"])
+                 (dispatch [:current-hotspot/change "none"])
                  (<! (timeout 6000))
                  (dispatch [:ws/send! [:sim/run]])
-                 (dispatch [:change-sim "run"]))
+                 (dispatch [:sim/change "run"]))
         play #(do
                 (dispatch [:ws/send! [:sim/run]])
-                (dispatch [:change-sim "run"]))
+                (dispatch [:sim/change "run"]))
         pause #(do
                  (dispatch [:ws/send! [:sim/pause]])
-                 (dispatch [:change-sim "pause"]))
+                 (dispatch [:sim/change "pause"]))
         start-stop-handler (case sim
                              "stop" start
                              "pause" play

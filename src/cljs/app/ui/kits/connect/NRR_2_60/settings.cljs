@@ -6,11 +6,11 @@
             [app.ui.shared.components.form :as f]))
 
 (defnc actuator-type-init-value []
-  (let [actuator-type (use-sub [:kit-data-by-path [:level :controllers "NRR 2-60" :actuator-type]])]
+  (let [actuator-type (use-sub [:kit/data-by-path [:level :controllers "NRR 2-60" :actuator-type]])]
     ($ f/field-row {:label "FEEDWATER ACTUATOR"}
        ($ f/select {:data      [{:value "electric-valve" :label "Electric Valve"}]
                     :value     (name actuator-type)
-                    :on-change #(dispatch [:change-NRR-2-60 [[:actuator-type] (keyword %)]])}))))
+                    :on-change #(dispatch [:NRR-2-60/change [[:actuator-type] (keyword %)]])}))))
 
 (defnc settings-form []
   (<>
@@ -18,11 +18,11 @@
     ($ actuator-type-init-value)))
 
 (defnc NRR-2-60-settings []
-  (let [show-settings (use-sub [:kit-data-by-path [:level :controllers "NRR 2-60" :settings-view]])
+  (let [show-settings (use-sub [:kit/data-by-path [:level :controllers "NRR 2-60" :settings-view]])
         show-settings-form-sim-start-values (use-sub [:show-settings-form-sim-start-values])]
     (when (and show-settings show-settings-form-sim-start-values)
       ($ modal/settings {:title      "NRR 2-60 Settings"
-                         :on-default #(dispatch [:restore-defaults-NRR-2-60-settings])
-                         :on-done    #(dispatch [:apply-NRR-2-60-settings])}
+                         :on-default #(dispatch [:NRR-2-60/restore-defaults-settings])
+                         :on-done    #(dispatch [:NRR-2-60/apply-settings])}
 
          ($ settings-form)))))

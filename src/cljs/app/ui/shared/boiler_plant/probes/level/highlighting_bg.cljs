@@ -4,7 +4,7 @@
             [refx.alpha :refer [use-sub]]))
 
 (defnc probe-level-highlighting [{:keys [hotspot-id]}]
-  (let [current-hotspot (use-sub [:current-hotspot])
+  (let [current-hotspot (use-sub [:hotspots/current])
         left-orientation (or (= hotspot-id "low-level-probe-I") (= hotspot-id "low-level-probe-II"))]
     (when (= current-hotspot hotspot-id)
       (if left-orientation

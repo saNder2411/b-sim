@@ -11,7 +11,7 @@
                   (<! (timeout (if duration (+ duration 500) 3500)))
                   (set-hide-class! " hide")
                   (<! (timeout 1000))
-                  (dispatch [:delete-notification id]))]
+                  (dispatch [:notifications/delete id]))]
     (use-effect :once
                 (delete))
     (d/div {:class (str "notification" hide-class)}

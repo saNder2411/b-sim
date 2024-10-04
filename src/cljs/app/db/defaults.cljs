@@ -3,9 +3,9 @@
 (def GENERAL-SETTINGS {:lang            "en"                ;; "en" "de"
                        :intended-use    "training"          ;; "training" | "demonstration"
                        :operation-mode  "normal"            ;; "normal" "standby"
-                       :steam           {:unit      "t/h"
-                                         :value     17.5
-                                         :max-value 35}
+                       :steam           {:unit  "t/h"
+                                         :value 17.5
+                                         :max   35}
                        :view            false
                        :ctrl-panel-view true})
 
@@ -26,11 +26,11 @@
                                :unit  "°C"
                                :value 100.5}
 
-             :sludge-mass     {:unit      "kg"
-                               :value     39.2
-                               :max-value 80}
+             :sludge          {:unit  "kg"
+                               :value 39.2
+                               :max   80}
 
-             :volume          {:value 55
+             :max-volume      {:value 55
                                :unit  "m³"}
 
              :init-sim-output {:water-level  {:value 84}
@@ -39,36 +39,36 @@
 
                                :conductivity {:value 3000}
 
-                               :sludge-mass  {:value 39.2}}
+                               :sludge       {:value 39.2}}
              :settings-view   false})
 
-(def BURNER {:mode             {:view  true
-                                :value "auto"}
+(def BURNER {:mode                {:view  true
+                                   :value "auto"}
 
-             :status           {:view  true
-                                :unit  "on/off"
-                                :value "on"}
+             :state               {:view  true
+                                   :unit  "on/off"
+                                   :value "on"}
 
-             :power            {:view      true
-                                :unit      "kW"
-                                :value     0
-                                :max-value 25000}
+             :power               {:view  true
+                                   :unit  "kW"
+                                   :value 0
+                                   :max   25000}
 
-             :fuel-consumption {:view  true
-                                :unit  "nm³/s"
-                                :value 0
-                                :coeff {:value 0.083
-                                        :unit  "nm³/kW*h"}}
+             :fuel-consumption    {:view  true
+                                   :unit  "nm³/s"
+                                   :value 0
+                                   :coeff {:value 0.083
+                                           :unit  "nm³/kW*h"}}
 
-             :pressure         {:unit  "bar"
-                                :value {:on 11.5 :off 12.5}}
+             :pressure            {:unit  "bar"
+                                   :value {:on 11.5 :off 12.5}}
 
-             :heat-transfer    {:value 0.9
-                                :unit  "kJ/kW*s"}
+             :heat-transfer-coeff {:value 0.9
+                                   :unit  "kJ/kW*s"}
 
-             :init-sim-output  {:status {:value "on"}}
+             :init-sim-output     {:state {:value "on"}}
 
-             :settings-view    false})
+             :settings-view       false})
 
 (def CONTINUOUS-VALVE {:mode            {:view  true
                                          :value "auto"}
@@ -79,10 +79,10 @@
                                          :amperage    4
                                          :op-position 5}
 
-                       :flow-rate       {:view      true
-                                         :unit      "t/h"
-                                         :value     0
-                                         :max-value 35}
+                       :flow-rate       {:view  true
+                                         :unit  "t/h"
+                                         :value 0
+                                         :max   35}
 
                        :transition      {:status      "fixed"
                                          :travel-time {:value 40
@@ -113,10 +113,10 @@
                                      :unit  "open/close"
                                      :value 0}
 
-                   :flow-rate       {:view      true
-                                     :unit      "kg/s"
-                                     :value     0
-                                     :max-value 8}
+                   :flow-rate       {:view  true
+                                     :unit  "kg/s"
+                                     :value 0
+                                     :max   8}
 
                    :status          "standby"               ;; "pulse" | "pause" | "standby"
 
@@ -146,10 +146,10 @@
                                                  :value    0
                                                  :amperage 4}
 
-                               :flow-rate       {:view      true
-                                                 :unit      "t/h"
-                                                 :value     0
-                                                 :max-value 70}
+                               :flow-rate       {:view  true
+                                                 :unit  "t/h"
+                                                 :value 0
+                                                 :max   70}
 
                                :transition      {:status      "fixed"
                                                  :travel-time {:value 40
@@ -177,10 +177,10 @@
                                                   :value    0
                                                   :amperage 4}
 
-                                :flow-rate       {:view      true
-                                                  :unit      "t/h"
-                                                  :value     0
-                                                  :max-value 70}
+                                :flow-rate       {:view  true
+                                                  :unit  "t/h"
+                                                  :value 0
+                                                  :max   70}
 
                                 :init-sim-output {:damper {:value 0}}
 
@@ -194,15 +194,15 @@
                                        :value    0
                                        :amperage 4}
 
-                     :rotation        {:view      true
-                                       :unit      "rpm"
-                                       :value     0
-                                       :max-value 1000}
+                     :rotation        {:view  true
+                                       :unit  "rpm"
+                                       :value 0
+                                       :max   1000}
 
-                     :flow-rate       {:view      true
-                                       :unit      "t/h"
-                                       :value     0
-                                       :max-value 70}
+                     :flow-rate       {:view  true
+                                       :unit  "t/h"
+                                       :value 0
+                                       :max   70}
 
                      :threshold       {:on                40
                                        :off               60

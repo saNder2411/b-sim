@@ -4,7 +4,7 @@
             [refx.alpha :refer [use-sub dispatch]]))
 
 (defnc shadow []
-  (let [highlight-hotspots (use-sub [:highlight-hotspots])]
+  (let [highlight-hotspots (use-sub [:hotspots/highlight])]
     ($ "image" {:class  (if highlight-hotspots "hot-spot-shadow" "hide")
                 :href   "assets/img/hot-spot-shadow.png"
                 :width  60
@@ -13,14 +13,14 @@
                 :y      17})))
 
 (defnc shadow-big []
-  (let [highlight-hotspots (use-sub [:highlight-hotspots])]
+  (let [highlight-hotspots (use-sub [:hotspots/highlight])]
     ($ "image" {:class  (if highlight-hotspots "hot-spot-shadow" "hide")
                 :href   "assets/img/hot-spot-big-shadow.png"
                 :width  121
                 :height 121})))
 
 (defnc hot-spot [{:keys [x y id]}]
-  (let [current-hotspot (use-sub [:current-hotspot])
+  (let [current-hotspot (use-sub [:hotspots/current])
         active (= current-hotspot id)]
     (d/svg {:style {:width "2.348%" :left (str x "%") :top (str y "%") :border-radius "50%"} :viewBox "25 25 45 45"}
            ($ shadow)
@@ -55,10 +55,10 @@
                       :cx       47
                       :cy       47
                       :r        21.6
-                      :on-click #(dispatch [:change-current-hotspot (if active "none" id)])}))))
+                      :on-click #(dispatch [:current-hotspot/change (if active "none" id)])}))))
 
 (defnc hot-spot-big [{:keys [x y id]}]
-  (let [current-hotspot (use-sub [:current-hotspot])
+  (let [current-hotspot (use-sub [:hotspots/current])
         active (= current-hotspot id)]
     (d/svg {:style {:width "6.3%" :left (str x "%") :top (str y "%") :border-radius "50%"} :viewBox "0 0 121 121"}
            ($ shadow-big)
@@ -93,4 +93,4 @@
                       :cx       60.7
                       :cy       60.3
                       :r        35
-                      :on-click #(dispatch [:change-current-hotspot (if active "none" id)])}))))
+                      :on-click #(dispatch [:current-hotspot/change (if active "none" id)])}))))

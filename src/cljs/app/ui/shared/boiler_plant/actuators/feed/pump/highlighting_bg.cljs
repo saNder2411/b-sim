@@ -4,7 +4,7 @@
             [refx.alpha :refer [use-sub]]))
 
 (defnc feed-pump-highlighting-bg []
-  (let [current-hotspot (use-sub [:current-hotspot])]
+  (let [current-hotspot (use-sub [:hotspots/current])]
     (when (= current-hotspot "feed-pump")
       (<>
         ($ "image" {:style  {:isolation "isolate" :opacity 0.8}

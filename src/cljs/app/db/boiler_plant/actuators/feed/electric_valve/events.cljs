@@ -2,18 +2,18 @@
   (:require [refx.alpha :refer [reg-event-fx reg-event-db]]
             [app.db.defaults :as defaults]))
 
-(reg-event-db :change-feed-electric-valve
+(reg-event-db :feed-electric-valve/change
               (fn [{:keys [kit] :as db} [_ [path value]]]
                 (assoc-in db (into [kit :boiler-plant :actuators :feed :electric-valve] path) value)))
 
-(reg-event-db :change-feed-electric-valve-flow-rate-max-value
+(reg-event-db :feed-electric-valve/change-flow-rate-max-value
               (fn [{:keys [kit] :as db} [_ value]]
                 (let [unit (get-in db [kit :boiler-plant :actuators :feed :electric-valve :flow-rate :unit])
                       converted-value (cond-> value
                                               (= unit "T/h") (* 1.016260162601626))]
-                  (assoc-in db [kit :boiler-plant :actuators :feed :electric-valve :flow-rate :max-value] converted-value))))
+                  (assoc-in db [kit :boiler-plant :actuators :feed :electric-valve :flow-rate :max] converted-value))))
 
-(reg-event-db :apply-feed-electric-valve-settings
+(reg-event-db :feed-electric-valve/apply-settings
               (fn [{:keys [kit] :as db} _]
                 (let [{:keys [damper transition potentiometer]} (get-in db [kit :boiler-plant :actuators :feed :electric-valve :init-sim-output])]
                   (-> db
@@ -22,7 +22,7 @@
                       (update-in [kit :boiler-plant :actuators :feed :electric-valve :potentiometer] merge potentiometer)
                       (assoc-in [kit :boiler-plant :actuators :feed :electric-valve :settings-view] false)))))
 
-(reg-event-db :restore-defaults-feed-electric-valve-settings
+(reg-event-db :feed-electric-valve/restore-defaults-settings
               (fn [{:keys [kit] :as db} _]
                 (let [default-values (merge defaults/FEEDWATER-VALVE-ELECTRIC {:settings-view true})]
                   (assoc-in db [kit :boiler-plant :actuators :feed :electric-valve] default-values))))

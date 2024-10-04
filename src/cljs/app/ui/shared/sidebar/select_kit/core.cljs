@@ -14,7 +14,7 @@
                             :sub-label "module"
                             :active    (= kit :module)
                             :disable   (not= sim "stop")
-                            :on-click  #(dispatch [:change-kit :module])})
+                            :on-click  #(dispatch [:kit/change :module])})
 
          (d/path {:fill "#aaa" :d "M224.3,27.711l5.329-19.008h1.805l-5.316,19.008Z"})
 
@@ -24,4 +24,4 @@
                             :sub-label "connect"
                             :active    (= kit :connect)
                             :disable   (not= sim "stop")
-                            :on-click  #(dispatch [:change-kit :connect])}))))
+                            :on-click  #(dispatch [:kit/change :connect])}))))

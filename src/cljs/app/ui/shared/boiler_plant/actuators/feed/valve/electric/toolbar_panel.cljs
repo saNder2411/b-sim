@@ -6,7 +6,7 @@
 
 
 (defnc feed-electric-valve-toolbar-panel []
-  (let [show-toolbar-panel (use-sub [:feed-electric-valve-show-toolbar-panel])]
+  (let [show-toolbar-panel (use-sub [:feed-electric-valve/show-toolbar-panel])]
     (when show-toolbar-panel
       (<>
         ($ toolbar/title {:x 85 :y 95 :fill "#efefef" :title "Feedwater Electric Valve"})
@@ -24,11 +24,11 @@
         ($ toolbar/btn-wrapper {:x 1064 :y 54}
            ($ toolbar/btn-divider))
 
-        ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click #(dispatch [:change-feed-electric-valve [[:settings-view] true]])}
+        ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click #(dispatch [:feed-electric-valve/change [[:settings-view] true]])}
            ($ toolbar/btn-settings))
 
         ($ toolbar/btn-wrapper {:x 1174 :y 54}
            ($ toolbar/btn-divider))
 
-        ($ toolbar/btn-wrapper {:x 1224 :y 54 :on-click #(dispatch [:change-modal-info {:title "Feedwater Valve" :text "The feedwater valve is an actuator that feeds water into the boiler to keep the water level at the desired value. continuous blowdown valve is an actuator that blows water out of the boiler to decrease the salt content / conductivity of the boiler water."}])}
+        ($ toolbar/btn-wrapper {:x 1224 :y 54 :on-click #(dispatch [:modal-info/change {:title "Feedwater Valve" :text "The feedwater valve is an actuator that feeds water into the boiler to keep the water level at the desired value. continuous blowdown valve is an actuator that blows water out of the boiler to decrease the salt content / conductivity of the boiler water."}])}
            ($ toolbar/btn-info))))))

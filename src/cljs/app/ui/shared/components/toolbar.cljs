@@ -4,7 +4,7 @@
             [refx.alpha :refer [use-sub]]))
 
 (defnc toolbar [{:keys [children]}]
-  (let [show-toolbar (use-sub [:show-toolbar])]
+  (let [show-toolbar (use-sub [:toolbar/show])]
     (d/svg {:width   "70.7%"
             :viewBox "0 0 1347.7 172.76"
             :style   {:left "29.7%" :top "83.8%"}

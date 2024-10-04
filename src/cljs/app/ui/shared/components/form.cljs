@@ -55,10 +55,10 @@
   (cond
     (or (not (number? v)) (< v 0)) (dispatch-action min)
     (< v min) (do
-                (dispatch [:push-notification {:id (str (random-uuid)) :message message :duration 5000}])
+                (dispatch [:notifications/push {:id (str (random-uuid)) :message message :duration 5000}])
                 (dispatch-action min))
     (> v max) (do
-                (dispatch [:push-notification {:id (str (random-uuid)) :message message :duration 5000}])
+                (dispatch [:notifications/push {:id (str (random-uuid)) :message message :duration 5000}])
                 (dispatch-action max))
     :default v)
   )

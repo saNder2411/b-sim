@@ -4,11 +4,11 @@
             [refx.alpha :refer [use-sub]]))
 
 (defnc cables-controller []
-  (let [level-probe-id (use-sub [:level-probe-id])
-        level-controller-id (use-sub [:level-controller-id])
-        cond-controller-id (use-sub [:cond-controller-id])
-        high-limiter-id (use-sub [:high-limiter-id])
-        low-limiter-id (use-sub [:low-limiter-id])
+  (let [level-probe-id (use-sub [:level/probe-id])
+        level-controller-id (use-sub [:level/controller-id])
+        cond-controller-id (use-sub [:cond/controller-id])
+        high-limiter-id (use-sub [:high-limiter/id])
+        low-limiter-id (use-sub [:low-limiter/id])
         has-URW-60 (= level-probe-id "NRGT 26-2")]
     (d/g {:data-desc "CablesController"}
          (d/g {:data-desc "URW-60"}

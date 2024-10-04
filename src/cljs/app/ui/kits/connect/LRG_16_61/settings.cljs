@@ -7,17 +7,17 @@
             [app.units.constants :refer [UNIT-LIMITS]]))
 
 (defnc correction-dirty-factor []
-  (let [value (use-sub [:kit-data-by-path [:cond :probes 0 "LRG 16-61" :correction-dirty :factor]])
+  (let [value (use-sub [:kit/data-by-path [:cond :probes 0 "LRG 16-61" :correction-dirty :factor]])
         limits (-> UNIT-LIMITS :cond-probe-correction-f (get "factor"))
         validate-message (str "Initial cell constant value must be within following range: [" (:min limits) " - " (:max limits) "] " "factor")]
     ($ f/field-row {:label "CELL CONSTANT"}
        ($ f/input-number {:value     value
-                          :on-change #(dispatch [:change-LRG-16-61 [[:correction-dirty :factor] %]])
+                          :on-change #(dispatch [:LRG-16-61/change [[:correction-dirty :factor] %]])
                           :on-blur   (fn [] (f/validate-input-number value
                                                                      (:min limits)
                                                                      (:max limits)
                                                                      validate-message
-                                                                     #(dispatch [:change-LRG-16-61 [[:correction-dirty :factor] %]])))
+                                                                     #(dispatch [:LRG-16-61/change [[:correction-dirty :factor] %]])))
                           :&         limits})
 
        ($ f/select {:data      [{:value "factor" :label "factor"}]
@@ -25,17 +25,17 @@
                     :on-change #(identity %)}))))
 
 (defnc correction-dirty-temp-coeff []
-  (let [value (use-sub [:kit-data-by-path [:cond :probes 0 "LRG 16-61" :correction-dirty :temperature-coeff]])
+  (let [value (use-sub [:kit/data-by-path [:cond :probes 0 "LRG 16-61" :correction-dirty :temperature-coeff]])
         limits (-> UNIT-LIMITS :cond-probe-temperature-coeff (get "%/°C"))
         validate-message (str "Initial temperature coefficient value must be within following range: [" (:min limits) " - " (:max limits) "] " "%/°C")]
     ($ f/field-row {:label "TEMPERATURE COEFFICIENT"}
        ($ f/input-number {:value     value
-                          :on-change #(dispatch [:change-LRG-16-61 [[:correction-dirty :temperature-coeff] %]])
+                          :on-change #(dispatch [:LRG-16-61/change [[:correction-dirty :temperature-coeff] %]])
                           :on-blur   (fn [] (f/validate-input-number value
                                                                      (:min limits)
                                                                      (:max limits)
                                                                      validate-message
-                                                                     #(dispatch [:change-LRG-16-61 [[:correction-dirty :temperature-coeff] %]])))
+                                                                     #(dispatch [:LRG-16-61/change [[:correction-dirty :temperature-coeff] %]])))
                           :&         limits})
 
        ($ f/select {:data      [{:value "%/°C" :label "%/°C"}]
@@ -51,10 +51,10 @@
     ($ correction-dirty-temp-coeff)))
 
 (defnc LRG-16-61-settings []
-  (let [show-settings (use-sub [:kit-data-by-path [:cond :probes 0 "LRG 16-61" :settings-view]])]
+  (let [show-settings (use-sub [:kit/data-by-path [:cond :probes 0 "LRG 16-61" :settings-view]])]
     (when show-settings
       ($ modal/settings {:title      "Dirty Data Settings"
-                         :on-default #(dispatch [:restore-defaults-LRG-16-61-settings])
-                         :on-done    #(dispatch [:apply-LRG-16-61-settings])}
+                         :on-default #(dispatch [:LRG-16-61/restore-defaults-settings])
+                         :on-done    #(dispatch [:LRG-16-61/apply-settings])}
 
          ($ settings-form)))))

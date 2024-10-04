@@ -5,8 +5,8 @@
 
 (defnc animation-heat-stream []
   (let [sim (use-sub [:sim])
-        burner-status (use-sub [:kit-data-by-path [:boiler-plant :burner :status :value]])
-        show-animation (and (= sim "run") (= burner-status "on"))
+        burner-state (use-sub [:kit/data-by-path [:boiler-plant :burner :state :value]])
+        show-animation (and (= sim "run") (= burner-state "on"))
         hide-class (if show-animation "" " hide")]
     (<>
       ($ "foreignObject" {:x 394 :y 452.4 :width 610 :height 19}

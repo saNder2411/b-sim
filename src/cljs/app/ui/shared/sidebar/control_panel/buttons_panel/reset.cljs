@@ -10,9 +10,9 @@
         disable (or (= sim "starting") (= sim "stopping"))
         reset-sim #(do
                      (dispatch [:ws/send! [:sim/stop]])
-                     (dispatch [:reset-sim]))
+                     (dispatch [:sim/reset]))
         stop-and-reset #(go
-                          (dispatch [:change-sim "stopping"])
+                          (dispatch [:sim/change "stopping"])
                           (<! (timeout 2000))
                           (reset-sim))
         reset-handler (case sim

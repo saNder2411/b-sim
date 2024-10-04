@@ -4,7 +4,7 @@
             [refx.alpha :refer [use-sub]]))
 
 (defnc burner-highlighting-bg []
-  (let [current-hotspot (use-sub [:current-hotspot])]
+  (let [current-hotspot (use-sub [:hotspots/current])]
     (when (= current-hotspot "burner")
       (<>
         ($ "image" {:style  {:isolation "isolate" :opacity 0.8}

@@ -6,16 +6,16 @@
          (fn [{:keys [kit] :as db} _]
            (get-in db [kit :boiler-plant :actuators :feed :pump])))
 
-(reg-sub :feed-pump-flow-rate-max-converted-value
+(reg-sub :feed-pump/flow-rate-converted-max-value
          :<- [:feed-pump]
          (fn [{:keys [flow-rate]} _]
-           (let [{:keys [unit max-value]} flow-rate]
-             (cond-> max-value
+           (let [{:keys [unit max]} flow-rate]
+             (cond-> max
                      (= unit "T/h") (->> (* 0.984) (cl-format nil "~,2f") js/parseFloat)
                      (= unit "t/h") (->> (cl-format nil "~,2f") js/parseFloat)))))
 
-(reg-sub :feed-pump-show-toolbar-panel
-         :<- [:current-hotspot]
+(reg-sub :feed-pump/show-toolbar-panel
+         :<- [:hotspots/current]
          (fn [current-hotspot _]
            (= current-hotspot "feed-pump")))
 

@@ -1,11 +1,11 @@
 (ns app.db.db
   (:require [app.db.defaults :as defaults]))
 
-(def default-db {:screen     {:w 1920 :h 1080 :scale-f 1 :ratio (/ 16 9)}
+(def default-db {:screen     {:w 1920 :h 1080 :zoom 1 :ratio (/ 16 9)}
                  :user       {:firstname "User" :lastname "Admin"}
                  :ws         {:connected false}
                  :kit        :connect                       ;; :connect | :module
-                 :connect    {:sim              "stop"   ;; "stop" "starting" "run" "pause" "stopping"
+                 :connect    {:sim              "stop"      ;; "stop" "starting" "run" "pause" "stopping"
                               :modal-info       {:title "" :text ""}
                               :notifications    {}
                               :hotspots         {:highlight true
@@ -67,7 +67,7 @@
                               :temperature      {:probes [{"TRV 5-60" {}}]}
                               :converter        {:controllers {"URW 60" defaults/URW-60}}}
 
-                 :module     {:sim                 "stop" ;; "stop" "starting" "run" "pause" "stopping"
+                 :module     {:sim                 "stop"   ;; "stop" "starting" "run" "pause" "stopping"
                               :lang                "en"     ;; "en" "de"
                               :intended-use        "training" ;; "training" | "demonstration"
                               :operation-mode      "normal" ;; "normal" "standby"
@@ -76,8 +76,8 @@
                               :steam-max           35
                               :ctrl-panel-view     true
                               :settings-modal-view false
-                              :highlight-hotspots  true
-                              :current-hotspot     "none"
+                              :hotspots            {:highlight true
+                                                    :current   "none"}
 
                               :boiler              defaults/BOILER
                               :burner              defaults/BURNER

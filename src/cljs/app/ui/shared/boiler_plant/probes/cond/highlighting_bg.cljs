@@ -4,7 +4,7 @@
             [refx.alpha :refer [use-sub]]))
 
 (defnc cond-probe-highlighting-bg []
-  (let [current-hotspot (use-sub [:current-hotspot])]
+  (let [current-hotspot (use-sub [:hotspots/current])]
     (when (= current-hotspot "cond-probe")
       (<>
         ($ "image" {:style  {:isolation "isolate" :opacity 0.8}

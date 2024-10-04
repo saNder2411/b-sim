@@ -2,23 +2,23 @@ goog.provide('app.db.subs');
 refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"screen","screen",1990059748),(function (db,_){
 return new cljs.core.Keyword(null,"screen","screen",1990059748).cljs$core$IFn$_invoke$arity$1(db);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"screen-w","screen-w",462794367),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"screen","screen",1990059748)], null),(function (screen,_){
+refx.alpha.reg_sub(new cljs.core.Keyword("screen","w","screen/w",1057353813),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"screen","screen",1990059748)], null),(function (screen,_){
 return new cljs.core.Keyword(null,"w","w",354169001).cljs$core$IFn$_invoke$arity$1(screen);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"screen-h","screen-h",624845276),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"screen","screen",1990059748)], null),(function (screen,_){
+refx.alpha.reg_sub(new cljs.core.Keyword("screen","h","screen/h",-138883872),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"screen","screen",1990059748)], null),(function (screen,_){
 return new cljs.core.Keyword(null,"h","h",1109658740).cljs$core$IFn$_invoke$arity$1(screen);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"screen-scale-f","screen-scale-f",-1876855878),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"screen","screen",1990059748)], null),(function (screen,_){
-return new cljs.core.Keyword(null,"scale-f","scale-f",-1563945029).cljs$core$IFn$_invoke$arity$1(screen);
+refx.alpha.reg_sub(new cljs.core.Keyword("screen","zoom","screen/zoom",1289259126),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"screen","screen",1990059748)], null),(function (screen,_){
+return new cljs.core.Keyword(null,"zoom","zoom",-1827487038).cljs$core$IFn$_invoke$arity$1(screen);
 }));
 refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"user","user",1532431356),(function (db,_){
 return new cljs.core.Keyword(null,"user","user",1532431356).cljs$core$IFn$_invoke$arity$1(db);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"user-full-name","user-full-name",-2030076885),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"user","user",1532431356)], null),(function (p__27734,_){
-var map__27735 = p__27734;
-var map__27735__$1 = cljs.core.__destructure_map(map__27735);
-var firstname = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27735__$1,new cljs.core.Keyword(null,"firstname","firstname",1659984849));
-var lastname = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27735__$1,new cljs.core.Keyword(null,"lastname","lastname",-265181465));
+refx.alpha.reg_sub(new cljs.core.Keyword("user","full-name","user/full-name",420262817),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"user","user",1532431356)], null),(function (p__40768,_){
+var map__40770 = p__40768;
+var map__40770__$1 = cljs.core.__destructure_map(map__40770);
+var firstname = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40770__$1,new cljs.core.Keyword(null,"firstname","firstname",1659984849));
+var lastname = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40770__$1,new cljs.core.Keyword(null,"lastname","lastname",-265181465));
 return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(firstname)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(lastname)].join('');
 }));
 refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("ws","connected","ws/connected",-169836913),(function (db,_){
@@ -27,363 +27,363 @@ return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(db,new cljs.core.Persisten
 refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"kit","kit",-1785767367),(function (db,_){
 return new cljs.core.Keyword(null,"kit","kit",-1785767367).cljs$core$IFn$_invoke$arity$1(db);
 }));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"kit-data","kit-data",210358620),(function (p__27736,_){
-var map__27737 = p__27736;
-var map__27737__$1 = cljs.core.__destructure_map(map__27737);
-var db = map__27737__$1;
-var kit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27737__$1,new cljs.core.Keyword(null,"kit","kit",-1785767367));
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("kit","data","kit/data",-232776087),(function (p__40780,_){
+var map__40782 = p__40780;
+var map__40782__$1 = cljs.core.__destructure_map(map__40782);
+var db = map__40782__$1;
+var kit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40782__$1,new cljs.core.Keyword(null,"kit","kit",-1785767367));
 return cljs.core.get.cljs$core$IFn$_invoke$arity$2(db,kit);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (kit_data,p__27738){
-var vec__27739 = p__27738;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27739,(0),null);
-var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27739,(1),null);
+refx.alpha.reg_sub(new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (kit_data,p__40789){
+var vec__40790 = p__40789;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40790,(0),null);
+var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40790,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(kit_data,path);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"sim","sim",-1444922721),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27742,_){
-var map__27743 = p__27742;
-var map__27743__$1 = cljs.core.__destructure_map(map__27743);
-var sim = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27743__$1,new cljs.core.Keyword(null,"sim","sim",-1444922721));
+refx.alpha.reg_sub(new cljs.core.Keyword(null,"sim","sim",-1444922721),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40795,_){
+var map__40796 = p__40795;
+var map__40796__$1 = cljs.core.__destructure_map(map__40796);
+var sim = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40796__$1,new cljs.core.Keyword(null,"sim","sim",-1444922721));
 return sim;
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"modal-info","modal-info",1282904358),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27744,_){
-var map__27745 = p__27744;
-var map__27745__$1 = cljs.core.__destructure_map(map__27745);
-var modal_info = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27745__$1,new cljs.core.Keyword(null,"modal-info","modal-info",1282904358));
+refx.alpha.reg_sub(new cljs.core.Keyword(null,"modal-info","modal-info",1282904358),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40798,_){
+var map__40799 = p__40798;
+var map__40799__$1 = cljs.core.__destructure_map(map__40799);
+var modal_info = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40799__$1,new cljs.core.Keyword(null,"modal-info","modal-info",1282904358));
 return modal_info;
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"modal-info-show","modal-info-show",-922250939),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"modal-info","modal-info",1282904358)], null),(function (p__27746,_){
-var map__27747 = p__27746;
-var map__27747__$1 = cljs.core.__destructure_map(map__27747);
-var title = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27747__$1,new cljs.core.Keyword(null,"title","title",636505583));
-var text = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27747__$1,new cljs.core.Keyword(null,"text","text",-1790561697));
+refx.alpha.reg_sub(new cljs.core.Keyword("modal-info","show","modal-info/show",-230278515),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"modal-info","modal-info",1282904358)], null),(function (p__40803,_){
+var map__40804 = p__40803;
+var map__40804__$1 = cljs.core.__destructure_map(map__40804);
+var title = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40804__$1,new cljs.core.Keyword(null,"title","title",636505583));
+var text = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40804__$1,new cljs.core.Keyword(null,"text","text",-1790561697));
 return (((!(cljs.core.empty_QMARK_(title)))) || ((!(cljs.core.empty_QMARK_(text)))));
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"notifications","notifications",1685638001),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27749,_){
-var map__27751 = p__27749;
-var map__27751__$1 = cljs.core.__destructure_map(map__27751);
-var notifications = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27751__$1,new cljs.core.Keyword(null,"notifications","notifications",1685638001));
+refx.alpha.reg_sub(new cljs.core.Keyword(null,"notifications","notifications",1685638001),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40808,_){
+var map__40809 = p__40808;
+var map__40809__$1 = cljs.core.__destructure_map(map__40809);
+var notifications = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40809__$1,new cljs.core.Keyword(null,"notifications","notifications",1685638001));
 return notifications;
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"hotspots","hotspots",2078718410),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27752,_){
-var map__27753 = p__27752;
-var map__27753__$1 = cljs.core.__destructure_map(map__27753);
-var hotspots = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27753__$1,new cljs.core.Keyword(null,"hotspots","hotspots",2078718410));
+refx.alpha.reg_sub(new cljs.core.Keyword(null,"hotspots","hotspots",2078718410),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40810,_){
+var map__40811 = p__40810;
+var map__40811__$1 = cljs.core.__destructure_map(map__40811);
+var hotspots = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40811__$1,new cljs.core.Keyword(null,"hotspots","hotspots",2078718410));
 return hotspots;
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"highlight-hotspots","highlight-hotspots",1123635494),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"hotspots","hotspots",2078718410)], null),(function (p__27754,_){
-var map__27756 = p__27754;
-var map__27756__$1 = cljs.core.__destructure_map(map__27756);
-var highlight = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27756__$1,new cljs.core.Keyword(null,"highlight","highlight",-800930873));
+refx.alpha.reg_sub(new cljs.core.Keyword("hotspots","highlight","hotspots/highlight",-1064861589),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"hotspots","hotspots",2078718410)], null),(function (p__40814,_){
+var map__40815 = p__40814;
+var map__40815__$1 = cljs.core.__destructure_map(map__40815);
+var highlight = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40815__$1,new cljs.core.Keyword(null,"highlight","highlight",-800930873));
 return highlight;
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"current-hotspot","current-hotspot",965996237),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"hotspots","hotspots",2078718410)], null),(function (p__27758,_){
-var map__27760 = p__27758;
-var map__27760__$1 = cljs.core.__destructure_map(map__27760);
-var current = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27760__$1,new cljs.core.Keyword(null,"current","current",-1088038603));
+refx.alpha.reg_sub(new cljs.core.Keyword("hotspots","current","hotspots/current",-823207247),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"hotspots","hotspots",2078718410)], null),(function (p__40816,_){
+var map__40817 = p__40816;
+var map__40817__$1 = cljs.core.__destructure_map(map__40817);
+var current = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40817__$1,new cljs.core.Keyword(null,"current","current",-1088038603));
 return current;
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"general-settings","general-settings",-861361710),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27762,_){
-var map__27763 = p__27762;
-var map__27763__$1 = cljs.core.__destructure_map(map__27763);
-var general_settings = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27763__$1,new cljs.core.Keyword(null,"general-settings","general-settings",-861361710));
+refx.alpha.reg_sub(new cljs.core.Keyword(null,"general-settings","general-settings",-861361710),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40818,_){
+var map__40819 = p__40818;
+var map__40819__$1 = cljs.core.__destructure_map(map__40819);
+var general_settings = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40819__$1,new cljs.core.Keyword(null,"general-settings","general-settings",-861361710));
 return general_settings;
 }));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"show-settings-form-sim-start-values","show-settings-form-sim-start-values",-1672088929),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"general-settings","general-settings",-861361710)], null),(function (p__27772,_){
-var vec__27774 = p__27772;
-var sim = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27774,(0),null);
-var general_settings = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27774,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"show-settings-form-sim-start-values","show-settings-form-sim-start-values",-1672088929),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"general-settings","general-settings",-861361710)], null),(function (p__40820,_){
+var vec__40821 = p__40820;
+var sim = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40821,(0),null);
+var general_settings = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40821,(1),null);
 return ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(sim,"stop")) && (cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"intended-use","intended-use",2081554370).cljs$core$IFn$_invoke$arity$1(general_settings),"demonstration")));
 })], 0));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"steam-value","steam-value",685706720),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"general-settings","general-settings",-861361710)], null),(function (p__27786,_){
-var map__27790 = p__27786;
-var map__27790__$1 = cljs.core.__destructure_map(map__27790);
-var steam = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27790__$1,new cljs.core.Keyword(null,"steam","steam",2010684664));
-var map__27795 = steam;
-var map__27795__$1 = cljs.core.__destructure_map(map__27795);
-var unit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27795__$1,new cljs.core.Keyword(null,"unit","unit",375175175));
-var value = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27795__$1,new cljs.core.Keyword(null,"value","value",305978217));
-var G__27797 = value;
-var G__27797__$1 = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(unit,"T/h"))?parseFloat(cljs.pprint.cl_format.cljs$core$IFn$_invoke$arity$variadic(null,"~,2f",cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(0.984 * G__27797)], 0))):G__27797);
+refx.alpha.reg_sub(new cljs.core.Keyword("steam","value","steam/value",466209977),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"general-settings","general-settings",-861361710)], null),(function (p__40824,_){
+var map__40825 = p__40824;
+var map__40825__$1 = cljs.core.__destructure_map(map__40825);
+var steam = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40825__$1,new cljs.core.Keyword(null,"steam","steam",2010684664));
+var map__40826 = steam;
+var map__40826__$1 = cljs.core.__destructure_map(map__40826);
+var unit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40826__$1,new cljs.core.Keyword(null,"unit","unit",375175175));
+var value = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40826__$1,new cljs.core.Keyword(null,"value","value",305978217));
+var G__40827 = value;
+var G__40827__$1 = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(unit,"T/h"))?parseFloat(cljs.pprint.cl_format.cljs$core$IFn$_invoke$arity$variadic(null,"~,2f",cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(0.984 * G__40827)], 0))):G__40827);
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(unit,"t/h")){
-return parseFloat(cljs.pprint.cl_format.cljs$core$IFn$_invoke$arity$variadic(null,"~,2f",cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([G__27797__$1], 0)));
+return parseFloat(cljs.pprint.cl_format.cljs$core$IFn$_invoke$arity$variadic(null,"~,2f",cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([G__40827__$1], 0)));
 } else {
-return G__27797__$1;
+return G__40827__$1;
 }
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"steam-max-value","steam-max-value",-386447548),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"general-settings","general-settings",-861361710)], null),(function (p__27807,_){
-var map__27808 = p__27807;
-var map__27808__$1 = cljs.core.__destructure_map(map__27808);
-var steam = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27808__$1,new cljs.core.Keyword(null,"steam","steam",2010684664));
-var map__27809 = steam;
-var map__27809__$1 = cljs.core.__destructure_map(map__27809);
-var unit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27809__$1,new cljs.core.Keyword(null,"unit","unit",375175175));
-var max_value = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27809__$1,new cljs.core.Keyword(null,"max-value","max-value",687805168));
-var G__27810 = max_value;
-var G__27810__$1 = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(unit,"T/h"))?parseFloat(cljs.pprint.cl_format.cljs$core$IFn$_invoke$arity$variadic(null,"~,2f",cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(0.984 * G__27810)], 0))):G__27810);
+refx.alpha.reg_sub(new cljs.core.Keyword("steam","max","steam/max",958238564),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"general-settings","general-settings",-861361710)], null),(function (p__40828,_){
+var map__40829 = p__40828;
+var map__40829__$1 = cljs.core.__destructure_map(map__40829);
+var steam = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40829__$1,new cljs.core.Keyword(null,"steam","steam",2010684664));
+var map__40830 = steam;
+var map__40830__$1 = cljs.core.__destructure_map(map__40830);
+var unit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40830__$1,new cljs.core.Keyword(null,"unit","unit",375175175));
+var max = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40830__$1,new cljs.core.Keyword(null,"max","max",61366548));
+var G__40831 = max;
+var G__40831__$1 = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(unit,"T/h"))?parseFloat(cljs.pprint.cl_format.cljs$core$IFn$_invoke$arity$variadic(null,"~,2f",cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(0.984 * G__40831)], 0))):G__40831);
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(unit,"t/h")){
-return parseFloat(cljs.pprint.cl_format.cljs$core$IFn$_invoke$arity$variadic(null,"~,2f",cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([G__27810__$1], 0)));
+return parseFloat(cljs.pprint.cl_format.cljs$core$IFn$_invoke$arity$variadic(null,"~,2f",cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([G__40831__$1], 0)));
 } else {
-return G__27810__$1;
+return G__40831__$1;
 }
 }));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"steam-%","steam-%",259510548),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"steam-value","steam-value",685706720)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"steam-max-value","steam-max-value",-386447548)], null),(function (p__27816,_){
-var vec__27817 = p__27816;
-var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27817,(0),null);
-var max_value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27817,(1),null);
-var value__$1 = ((100) * (value / max_value));
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"steam-%","steam-%",259510548),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("steam","value","steam/value",466209977)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("steam","max","steam/max",958238564)], null),(function (p__40832,_){
+var vec__40833 = p__40832;
+var value = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40833,(0),null);
+var max = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40833,(1),null);
+var value__$1 = ((100) * (value / max));
 if((value__$1 < (0))){
 return (0);
 } else {
 return value__$1;
 }
 })], 0));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"system-config","system-config",814819577),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27820,_){
-var map__27821 = p__27820;
-var map__27821__$1 = cljs.core.__destructure_map(map__27821);
-var system_config = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27821__$1,new cljs.core.Keyword(null,"system-config","system-config",814819577));
+refx.alpha.reg_sub(new cljs.core.Keyword(null,"system-config","system-config",814819577),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40836,_){
+var map__40837 = p__40836;
+var map__40837__$1 = cljs.core.__destructure_map(map__40837);
+var system_config = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40837__$1,new cljs.core.Keyword(null,"system-config","system-config",814819577));
 return system_config;
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"low-limiter-id","low-limiter-id",-437682853),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__27823,_){
-var map__27824 = p__27823;
-var map__27824__$1 = cljs.core.__destructure_map(map__27824);
-var low_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27824__$1,new cljs.core.Keyword(null,"low-limiter","low-limiter",219318558));
+refx.alpha.reg_sub(new cljs.core.Keyword("low-limiter","id","low-limiter/id",-654315003),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__40838,_){
+var map__40839 = p__40838;
+var map__40839__$1 = cljs.core.__destructure_map(map__40839);
+var low_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40839__$1,new cljs.core.Keyword(null,"low-limiter","low-limiter",219318558));
 return new cljs.core.Keyword(null,"controller-id","controller-id",-1034203751).cljs$core$IFn$_invoke$arity$1(low_limiter);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"low-level-prop-I-id","low-level-prop-I-id",753898157),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__27827,_){
-var map__27830 = p__27827;
-var map__27830__$1 = cljs.core.__destructure_map(map__27830);
-var low_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27830__$1,new cljs.core.Keyword(null,"low-limiter","low-limiter",219318558));
+refx.alpha.reg_sub(new cljs.core.Keyword("low-level-prop-I","id","low-level-prop-I/id",-1280101965),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__40840,_){
+var map__40841 = p__40840;
+var map__40841__$1 = cljs.core.__destructure_map(map__40841);
+var low_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40841__$1,new cljs.core.Keyword(null,"low-limiter","low-limiter",219318558));
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(low_limiter,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"probe-ids","probe-ids",464573372),(0)], null));
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"low-level-prop-II-id","low-level-prop-II-id",-1333563925),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__27833,_){
-var map__27835 = p__27833;
-var map__27835__$1 = cljs.core.__destructure_map(map__27835);
-var low_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27835__$1,new cljs.core.Keyword(null,"low-limiter","low-limiter",219318558));
+refx.alpha.reg_sub(new cljs.core.Keyword("low-level-prop-II","id","low-level-prop-II/id",-470462836),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__40842,_){
+var map__40843 = p__40842;
+var map__40843__$1 = cljs.core.__destructure_map(map__40843);
+var low_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40843__$1,new cljs.core.Keyword(null,"low-limiter","low-limiter",219318558));
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(low_limiter,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"probe-ids","probe-ids",464573372),(1)], null));
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"high-limiter-id","high-limiter-id",1297275918),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__27840,_){
-var map__27841 = p__27840;
-var map__27841__$1 = cljs.core.__destructure_map(map__27841);
-var high_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27841__$1,new cljs.core.Keyword(null,"high-limiter","high-limiter",-1548641404));
+refx.alpha.reg_sub(new cljs.core.Keyword("high-limiter","id","high-limiter/id",-1439627817),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__40844,_){
+var map__40845 = p__40844;
+var map__40845__$1 = cljs.core.__destructure_map(map__40845);
+var high_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40845__$1,new cljs.core.Keyword(null,"high-limiter","high-limiter",-1548641404));
 return new cljs.core.Keyword(null,"controller-id","controller-id",-1034203751).cljs$core$IFn$_invoke$arity$1(high_limiter);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"high-level-probe-id","high-level-probe-id",1801472763),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__27845,_){
-var map__27846 = p__27845;
-var map__27846__$1 = cljs.core.__destructure_map(map__27846);
-var high_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27846__$1,new cljs.core.Keyword(null,"high-limiter","high-limiter",-1548641404));
+refx.alpha.reg_sub(new cljs.core.Keyword("high-level-probe","id","high-level-probe/id",-229901864),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__40846,_){
+var map__40847 = p__40846;
+var map__40847__$1 = cljs.core.__destructure_map(map__40847);
+var high_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40847__$1,new cljs.core.Keyword(null,"high-limiter","high-limiter",-1548641404));
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(high_limiter,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"probe-ids","probe-ids",464573372),(0)], null));
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"cond-controller-id","cond-controller-id",1569041778),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__27849,_){
-var map__27850 = p__27849;
-var map__27850__$1 = cljs.core.__destructure_map(map__27850);
-var cond = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27850__$1,new cljs.core.Keyword(null,"cond","cond",-33823472));
+refx.alpha.reg_sub(new cljs.core.Keyword("cond","controller-id","cond/controller-id",-1029121401),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__40848,_){
+var map__40849 = p__40848;
+var map__40849__$1 = cljs.core.__destructure_map(map__40849);
+var cond = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40849__$1,new cljs.core.Keyword(null,"cond","cond",-33823472));
 return new cljs.core.Keyword(null,"controller-id","controller-id",-1034203751).cljs$core$IFn$_invoke$arity$1(cond);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"cond-probe-id","cond-probe-id",2056183324),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__27853,_){
-var map__27855 = p__27853;
-var map__27855__$1 = cljs.core.__destructure_map(map__27855);
-var cond = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27855__$1,new cljs.core.Keyword(null,"cond","cond",-33823472));
+refx.alpha.reg_sub(new cljs.core.Keyword("cond","probe-id","cond/probe-id",828223705),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__40850,_){
+var map__40851 = p__40850;
+var map__40851__$1 = cljs.core.__destructure_map(map__40851);
+var cond = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40851__$1,new cljs.core.Keyword(null,"cond","cond",-33823472));
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cond,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"probe-ids","probe-ids",464573372),(0)], null));
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"level-controller-id","level-controller-id",-527625219),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__27861,_){
-var map__27864 = p__27861;
-var map__27864__$1 = cljs.core.__destructure_map(map__27864);
-var level = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27864__$1,new cljs.core.Keyword(null,"level","level",1290497552));
+refx.alpha.reg_sub(new cljs.core.Keyword("level","controller-id","level/controller-id",-864292571),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__40852,_){
+var map__40853 = p__40852;
+var map__40853__$1 = cljs.core.__destructure_map(map__40853);
+var level = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40853__$1,new cljs.core.Keyword(null,"level","level",1290497552));
 return new cljs.core.Keyword(null,"controller-id","controller-id",-1034203751).cljs$core$IFn$_invoke$arity$1(level);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"level-probe-id","level-probe-id",1166407835),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__27870,_){
-var map__27871 = p__27870;
-var map__27871__$1 = cljs.core.__destructure_map(map__27871);
-var level = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27871__$1,new cljs.core.Keyword(null,"level","level",1290497552));
+refx.alpha.reg_sub(new cljs.core.Keyword("level","probe-id","level/probe-id",-1957935785),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__40854,_){
+var map__40855 = p__40854;
+var map__40855__$1 = cljs.core.__destructure_map(map__40855);
+var level = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40855__$1,new cljs.core.Keyword(null,"level","level",1290497552));
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(level,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"probe-ids","probe-ids",464573372),(0)], null));
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"temperature-probe-id","temperature-probe-id",2062266207),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__27875,_){
-var map__27876 = p__27875;
-var map__27876__$1 = cljs.core.__destructure_map(map__27876);
-var temperature = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27876__$1,new cljs.core.Keyword(null,"temperature","temperature",899018429));
+refx.alpha.reg_sub(new cljs.core.Keyword("temperature","probe-id","temperature/probe-id",-1671456953),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__40856,_){
+var map__40857 = p__40856;
+var map__40857__$1 = cljs.core.__destructure_map(map__40857);
+var temperature = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40857__$1,new cljs.core.Keyword(null,"temperature","temperature",899018429));
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(temperature,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"probe-ids","probe-ids",464573372),(0)], null));
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"converter-controller-id","converter-controller-id",247256759),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__27883,_){
-var map__27884 = p__27883;
-var map__27884__$1 = cljs.core.__destructure_map(map__27884);
-var converter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27884__$1,new cljs.core.Keyword(null,"converter","converter",-34185411));
+refx.alpha.reg_sub(new cljs.core.Keyword("converter","controller-id","converter/controller-id",-813580551),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"system-config","system-config",814819577)], null),(function (p__40858,_){
+var map__40859 = p__40858;
+var map__40859__$1 = cljs.core.__destructure_map(map__40859);
+var converter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40859__$1,new cljs.core.Keyword(null,"converter","converter",-34185411));
 return new cljs.core.Keyword(null,"controller-id","controller-id",-1034203751).cljs$core$IFn$_invoke$arity$1(converter);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"low-limiter-controllers","low-limiter-controllers",705214366),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27885,_){
-var map__27886 = p__27885;
-var map__27886__$1 = cljs.core.__destructure_map(map__27886);
-var low_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27886__$1,new cljs.core.Keyword(null,"low-limiter","low-limiter",219318558));
+refx.alpha.reg_sub(new cljs.core.Keyword("low-limiter","controllers","low-limiter/controllers",-1022972977),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40860,_){
+var map__40861 = p__40860;
+var map__40861__$1 = cljs.core.__destructure_map(map__40861);
+var low_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40861__$1,new cljs.core.Keyword(null,"low-limiter","low-limiter",219318558));
 return new cljs.core.Keyword(null,"controllers","controllers",-1120410624).cljs$core$IFn$_invoke$arity$1(low_limiter);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"low-limiter-probes","low-limiter-probes",-911505493),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27889,_){
-var map__27891 = p__27889;
-var map__27891__$1 = cljs.core.__destructure_map(map__27891);
-var low_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27891__$1,new cljs.core.Keyword(null,"low-limiter","low-limiter",219318558));
+refx.alpha.reg_sub(new cljs.core.Keyword("low-limiter","probes","low-limiter/probes",-185714530),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40862,_){
+var map__40863 = p__40862;
+var map__40863__$1 = cljs.core.__destructure_map(map__40863);
+var low_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40863__$1,new cljs.core.Keyword(null,"low-limiter","low-limiter",219318558));
 return new cljs.core.Keyword(null,"probes","probes",-541753203).cljs$core$IFn$_invoke$arity$1(low_limiter);
 }));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"current-low-limiter-data-by-path","current-low-limiter-data-by-path",-410595920),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"low-limiter-id","low-limiter-id",-437682853)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"low-limiter-controllers","low-limiter-controllers",705214366)], null),(function (p__27893,p__27894){
-var vec__27900 = p__27893;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27900,(0),null);
-var controllers = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27900,(1),null);
-var vec__27903 = p__27894;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27903,(0),null);
-var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27903,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("current-low-limiter","data-by-path","current-low-limiter/data-by-path",633729601),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("low-limiter","id","low-limiter/id",-654315003)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("low-limiter","controllers","low-limiter/controllers",-1022972977)], null),(function (p__40864,p__40865){
+var vec__40866 = p__40864;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40866,(0),null);
+var controllers = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40866,(1),null);
+var vec__40869 = p__40865;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40869,(0),null);
+var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40869,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(controllers,cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [id], null),path));
 })], 0));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"high-limiter-controllers","high-limiter-controllers",-2080559399),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27906,_){
-var map__27907 = p__27906;
-var map__27907__$1 = cljs.core.__destructure_map(map__27907);
-var high_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27907__$1,new cljs.core.Keyword(null,"high-limiter","high-limiter",-1548641404));
+refx.alpha.reg_sub(new cljs.core.Keyword("high-limiter","controllers","high-limiter/controllers",-1309312135),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40872,_){
+var map__40873 = p__40872;
+var map__40873__$1 = cljs.core.__destructure_map(map__40873);
+var high_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40873__$1,new cljs.core.Keyword(null,"high-limiter","high-limiter",-1548641404));
 return new cljs.core.Keyword(null,"controllers","controllers",-1120410624).cljs$core$IFn$_invoke$arity$1(high_limiter);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"high-limiter-probes","high-limiter-probes",-980585397),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27908,_){
-var map__27912 = p__27908;
-var map__27912__$1 = cljs.core.__destructure_map(map__27912);
-var high_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27912__$1,new cljs.core.Keyword(null,"high-limiter","high-limiter",-1548641404));
+refx.alpha.reg_sub(new cljs.core.Keyword("high-limiter","probes","high-limiter/probes",-469949168),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40874,_){
+var map__40875 = p__40874;
+var map__40875__$1 = cljs.core.__destructure_map(map__40875);
+var high_limiter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40875__$1,new cljs.core.Keyword(null,"high-limiter","high-limiter",-1548641404));
 return new cljs.core.Keyword(null,"probes","probes",-541753203).cljs$core$IFn$_invoke$arity$1(high_limiter);
 }));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"current-high-limiter-data-by-path","current-high-limiter-data-by-path",-1991404189),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"high-limiter-id","high-limiter-id",1297275918)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"high-limiter-controllers","high-limiter-controllers",-2080559399)], null),(function (p__27914,p__27915){
-var vec__27916 = p__27914;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27916,(0),null);
-var controllers = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27916,(1),null);
-var vec__27919 = p__27915;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27919,(0),null);
-var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27919,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("current-high-limiter","data-by-path","current-high-limiter/data-by-path",-809667541),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("high-limiter","id","high-limiter/id",-1439627817)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("high-limiter","controllers","high-limiter/controllers",-1309312135)], null),(function (p__40876,p__40877){
+var vec__40878 = p__40876;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40878,(0),null);
+var controllers = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40878,(1),null);
+var vec__40881 = p__40877;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40881,(0),null);
+var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40881,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(controllers,cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [id], null),path));
 })], 0));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"cond-controllers","cond-controllers",-1897268180),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27936,_){
-var map__27937 = p__27936;
-var map__27937__$1 = cljs.core.__destructure_map(map__27937);
-var cond = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27937__$1,new cljs.core.Keyword(null,"cond","cond",-33823472));
+refx.alpha.reg_sub(new cljs.core.Keyword("cond","controllers","cond/controllers",-1104259874),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40884,_){
+var map__40885 = p__40884;
+var map__40885__$1 = cljs.core.__destructure_map(map__40885);
+var cond = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40885__$1,new cljs.core.Keyword(null,"cond","cond",-33823472));
 return new cljs.core.Keyword(null,"controllers","controllers",-1120410624).cljs$core$IFn$_invoke$arity$1(cond);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"cond-probes","cond-probes",-2066276965),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27939,_){
-var map__27940 = p__27939;
-var map__27940__$1 = cljs.core.__destructure_map(map__27940);
-var cond = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27940__$1,new cljs.core.Keyword(null,"cond","cond",-33823472));
+refx.alpha.reg_sub(new cljs.core.Keyword("cond","probes","cond/probes",-540717149),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40886,_){
+var map__40887 = p__40886;
+var map__40887__$1 = cljs.core.__destructure_map(map__40887);
+var cond = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40887__$1,new cljs.core.Keyword(null,"cond","cond",-33823472));
 return new cljs.core.Keyword(null,"probes","probes",-541753203).cljs$core$IFn$_invoke$arity$1(cond);
 }));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"current-cond-controller-data-by-path","current-cond-controller-data-by-path",2025109911),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond-controller-id","cond-controller-id",1569041778)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond-controllers","cond-controllers",-1897268180)], null),(function (p__27945,p__27946){
-var vec__27947 = p__27945;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27947,(0),null);
-var controllers = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27947,(1),null);
-var vec__27950 = p__27946;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27950,(0),null);
-var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27950,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("current-cond-controller","data-by-path","current-cond-controller/data-by-path",-2770519),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("cond","controller-id","cond/controller-id",-1029121401)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("cond","controllers","cond/controllers",-1104259874)], null),(function (p__40888,p__40889){
+var vec__40890 = p__40888;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40890,(0),null);
+var controllers = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40890,(1),null);
+var vec__40893 = p__40889;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40893,(0),null);
+var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40893,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(controllers,cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [id], null),path));
 })], 0));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"current-cond-probe-data-by-path","current-cond-probe-data-by-path",565225146),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond-probe-id","cond-probe-id",2056183324)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond-probes","cond-probes",-2066276965)], null),(function (p__27953,p__27954){
-var vec__27955 = p__27953;
-var probe_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27955,(0),null);
-var vec__27958 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27955,(1),null);
-var probe = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27958,(0),null);
-var vec__27961 = p__27954;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27961,(0),null);
-var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27961,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("current-cond-probe","data-by-path","current-cond-probe/data-by-path",-1073104381),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("cond","probe-id","cond/probe-id",828223705)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("cond","probes","cond/probes",-540717149)], null),(function (p__40896,p__40897){
+var vec__40898 = p__40896;
+var probe_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40898,(0),null);
+var vec__40901 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40898,(1),null);
+var probe = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40901,(0),null);
+var vec__40904 = p__40897;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40904,(0),null);
+var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40904,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(probe,cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [probe_id], null),path));
 })], 0));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"level-controllers","level-controllers",-641639630),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27968,_){
-var map__27971 = p__27968;
-var map__27971__$1 = cljs.core.__destructure_map(map__27971);
-var level = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27971__$1,new cljs.core.Keyword(null,"level","level",1290497552));
+refx.alpha.reg_sub(new cljs.core.Keyword("level","controllers","level/controllers",-1273411452),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40907,_){
+var map__40908 = p__40907;
+var map__40908__$1 = cljs.core.__destructure_map(map__40908);
+var level = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40908__$1,new cljs.core.Keyword(null,"level","level",1290497552));
 return new cljs.core.Keyword(null,"controllers","controllers",-1120410624).cljs$core$IFn$_invoke$arity$1(level);
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"level-probes","level-probes",-1123520662),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__27973,_){
-var map__27974 = p__27973;
-var map__27974__$1 = cljs.core.__destructure_map(map__27974);
-var level = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__27974__$1,new cljs.core.Keyword(null,"level","level",1290497552));
+refx.alpha.reg_sub(new cljs.core.Keyword("level","probes","level/probes",-439329791),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40909,_){
+var map__40910 = p__40909;
+var map__40910__$1 = cljs.core.__destructure_map(map__40910);
+var level = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40910__$1,new cljs.core.Keyword(null,"level","level",1290497552));
 return new cljs.core.Keyword(null,"probes","probes",-541753203).cljs$core$IFn$_invoke$arity$1(level);
 }));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"current-level-controller-data-by-path","current-level-controller-data-by-path",1144191062),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-controller-id","level-controller-id",-527625219)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-controllers","level-controllers",-641639630)], null),(function (p__27977,p__27978){
-var vec__27980 = p__27977;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27980,(0),null);
-var controllers = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27980,(1),null);
-var vec__27983 = p__27978;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27983,(0),null);
-var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27983,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("current-level-controller","data-by-path","current-level-controller/data-by-path",151959747),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("level","controller-id","level/controller-id",-864292571)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("level","controllers","level/controllers",-1273411452)], null),(function (p__40911,p__40912){
+var vec__40913 = p__40911;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40913,(0),null);
+var controllers = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40913,(1),null);
+var vec__40916 = p__40912;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40916,(0),null);
+var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40916,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(controllers,cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [id], null),path));
 })], 0));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"current-level-controller-actuator-type","current-level-controller-actuator-type",-27918015),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-controller-id","level-controller-id",-527625219)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-controllers","level-controllers",-641639630)], null),(function (p__27989,_){
-var vec__27990 = p__27989;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27990,(0),null);
-var controllers = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27990,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("current-level-controller","actuator-type","current-level-controller/actuator-type",-1259504431),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("level","controller-id","level/controller-id",-864292571)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("level","controllers","level/controllers",-1273411452)], null),(function (p__40919,_){
+var vec__40920 = p__40919;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40920,(0),null);
+var controllers = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40920,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(controllers,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [id,new cljs.core.Keyword(null,"actuator-type","actuator-type",1305418364)], null));
 })], 0));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"current-feed-actuator-data-by-path","current-feed-actuator-data-by-path",-2035634407),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"current-level-controller-actuator-type","current-level-controller-actuator-type",-27918015)], null),(function (p__28003,p__28004){
-var vec__28005 = p__28003;
-var kit_data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28005,(0),null);
-var actuator_type = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28005,(1),null);
-var vec__28008 = p__28004;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28008,(0),null);
-var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28008,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("current-feed-actuator","data-by-path","current-feed-actuator/data-by-path",-748274584),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("current-level-controller","actuator-type","current-level-controller/actuator-type",-1259504431)], null),(function (p__40923,p__40924){
+var vec__40925 = p__40923;
+var kit_data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40925,(0),null);
+var actuator_type = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40925,(1),null);
+var vec__40928 = p__40924;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40928,(0),null);
+var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40928,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(kit_data,cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"feed","feed",-1566486205),actuator_type], null),path));
 })], 0));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"current-level-probe-data-by-path","current-level-probe-data-by-path",-800493810),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-probe-id","level-probe-id",1166407835)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-probes","level-probes",-1123520662)], null),(function (p__28017,p__28018){
-var vec__28019 = p__28017;
-var probe_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28019,(0),null);
-var vec__28022 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28019,(1),null);
-var probe = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28022,(0),null);
-var vec__28025 = p__28018;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28025,(0),null);
-var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28025,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("current-level-probe","data-by-path","current-level-probe/data-by-path",2045605545),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("level","probe-id","level/probe-id",-1957935785)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("level","probes","level/probes",-439329791)], null),(function (p__40931,p__40932){
+var vec__40933 = p__40931;
+var probe_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40933,(0),null);
+var vec__40936 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40933,(1),null);
+var probe = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40936,(0),null);
+var vec__40939 = p__40932;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40939,(0),null);
+var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40939,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(probe,cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [probe_id], null),path));
 })], 0));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"converter-controllers","converter-controllers",1982354192),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data","kit-data",210358620)], null),(function (p__28029,_){
-var map__28030 = p__28029;
-var map__28030__$1 = cljs.core.__destructure_map(map__28030);
-var converter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28030__$1,new cljs.core.Keyword(null,"converter","converter",-34185411));
+refx.alpha.reg_sub(new cljs.core.Keyword("converter","controllers","converter/controllers",-919112096),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data","kit/data",-232776087)], null),(function (p__40942,_){
+var map__40943 = p__40942;
+var map__40943__$1 = cljs.core.__destructure_map(map__40943);
+var converter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40943__$1,new cljs.core.Keyword(null,"converter","converter",-34185411));
 return new cljs.core.Keyword(null,"controllers","controllers",-1120410624).cljs$core$IFn$_invoke$arity$1(converter);
 }));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"current-converter-data-by-path","current-converter-data-by-path",-227281443),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"converter-controller-id","converter-controller-id",247256759)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"converter-controllers","converter-controllers",1982354192)], null),(function (p__28031,p__28032){
-var vec__28033 = p__28031;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28033,(0),null);
-var controllers = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28033,(1),null);
-var vec__28036 = p__28032;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28036,(0),null);
-var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28036,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("current-converter","data-by-path","current-converter/data-by-path",515028528),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("converter","controller-id","converter/controller-id",-813580551)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("converter","controllers","converter/controllers",-919112096)], null),(function (p__40944,p__40945){
+var vec__40946 = p__40944;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40946,(0),null);
+var controllers = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40946,(1),null);
+var vec__40949 = p__40945;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40949,(0),null);
+var path = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40949,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(controllers,cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [id], null),path));
 })], 0));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"show-low-limiter-hot-spot","show-low-limiter-hot-spot",-909061148),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"low-limiter-id","low-limiter-id",-437682853)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null),(function (p__28047,_){
-var vec__28048 = p__28047;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28048,(0),null);
-var sim = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28048,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("low-limiter","show-hot-spot","low-limiter/show-hot-spot",-1386256895),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("low-limiter","id","low-limiter/id",-654315003)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null),(function (p__40952,_){
+var vec__40953 = p__40952;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40953,(0),null);
+var sim = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40953,(1),null);
 return ((cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(id,"none")) || (cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(sim,"run")));
 })], 0));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"show-high-limiter-hot-spot","show-high-limiter-hot-spot",361134266),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"high-limiter-id","high-limiter-id",1297275918)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null),(function (p__28054,_){
-var vec__28057 = p__28054;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28057,(0),null);
-var sim = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28057,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("high-limiter","show-hot-spot","high-limiter/show-hot-spot",-1104250545),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("high-limiter","id","high-limiter/id",-1439627817)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null),(function (p__40956,_){
+var vec__40957 = p__40956;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40957,(0),null);
+var sim = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40957,(1),null);
 return ((cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(id,"none")) || (cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(sim,"run")));
 })], 0));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"show-cond-controller-hot-spot","show-cond-controller-hot-spot",1097464332),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"cond-controller-id","cond-controller-id",1569041778)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null),(function (p__28070,_){
-var vec__28071 = p__28070;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28071,(0),null);
-var sim = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28071,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("cond-controller","show-hot-spot","cond-controller/show-hot-spot",867079929),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("cond","controller-id","cond/controller-id",-1029121401)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null),(function (p__40960,_){
+var vec__40961 = p__40960;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40961,(0),null);
+var sim = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40961,(1),null);
 return ((cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(id,"none")) || (cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(sim,"run")));
 })], 0));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"show-level-controller-hot-spot","show-level-controller-hot-spot",82610673),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-controller-id","level-controller-id",-527625219)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null),(function (p__28078,_){
-var vec__28079 = p__28078;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28079,(0),null);
-var sim = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28079,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("level-controller","show-hot-spot","level-controller/show-hot-spot",1550955607),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("level","controller-id","level/controller-id",-864292571)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sim","sim",-1444922721)], null),(function (p__40964,_){
+var vec__40965 = p__40964;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40965,(0),null);
+var sim = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40965,(1),null);
 return ((cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(id,"none")) || (cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(sim,"run")));
 })], 0));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"show-converter-hot-spot","show-converter-hot-spot",1180150542),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-probe-id","level-probe-id",1166407835)], null),(function (id,_){
+refx.alpha.reg_sub(new cljs.core.Keyword("converter","show-hot-spot","converter/show-hot-spot",-680614798),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("level","probe-id","level/probe-id",-1957935785)], null),(function (id,_){
 return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(id,"NRGT 26-2");
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"show-feed-valve-hot-spot","show-feed-valve-hot-spot",-1314233468),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"current-level-controller-actuator-type","current-level-controller-actuator-type",-27918015)], null),(function (actuator_type,_){
+refx.alpha.reg_sub(new cljs.core.Keyword("feed-valve","show-hot-spot","feed-valve/show-hot-spot",-1020837517),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("current-level-controller","actuator-type","current-level-controller/actuator-type",-1259504431)], null),(function (actuator_type,_){
 return cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(actuator_type,new cljs.core.Keyword(null,"pump","pump",-453885150));
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"show-feed-pump-hot-spot","show-feed-pump-hot-spot",-734197639),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"current-level-controller-actuator-type","current-level-controller-actuator-type",-27918015)], null),(function (actuator_type,_){
+refx.alpha.reg_sub(new cljs.core.Keyword("feed-pump","show-hot-spot","feed-pump/show-hot-spot",122347785),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("current-level-controller","actuator-type","current-level-controller/actuator-type",-1259504431)], null),(function (actuator_type,_){
 return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(actuator_type,new cljs.core.Keyword(null,"pump","pump",-453885150));
 }));
-refx.alpha.reg_sub(new cljs.core.Keyword(null,"show-toolbar","show-toolbar",-2078087801),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"current-hotspot","current-hotspot",965996237)], null),(function (current_hotspot,_){
+refx.alpha.reg_sub(new cljs.core.Keyword("toolbar","show","toolbar/show",431398428),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("hotspots","current","hotspots/current",-823207247)], null),(function (current_hotspot,_){
 return cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(current_hotspot,"none");
 }));
-refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"level-calibration-boiler-view-subs","level-calibration-boiler-view-subs",-1283277188),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit","kit",-1785767367)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"level-controller-id","level-controller-id",-527625219)], null),(function (p__28098,_){
-var vec__28099 = p__28098;
-var kit = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28099,(0),null);
-var level_controller_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28099,(1),null);
+refx.alpha.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("boiler","level-calibration-subs","boiler/level-calibration-subs",-2123117149),new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit","kit",-1785767367)], null),new cljs.core.Keyword(null,"<-","<-",760412998),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("level","controller-id","level/controller-id",-864292571)], null),(function (p__40968,_){
+var vec__40969 = p__40968;
+var kit = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40969,(0),null);
+var level_controller_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40969,(1),null);
 var controller_id = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(level_controller_id,"none"))?"NRR 2-60":level_controller_id);
 return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(kit),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(controller_id),"/calibration-boiler-view"].join('');
 })], 0));

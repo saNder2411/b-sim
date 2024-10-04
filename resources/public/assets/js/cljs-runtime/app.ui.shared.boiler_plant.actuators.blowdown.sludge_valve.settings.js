@@ -1,332 +1,332 @@
 goog.provide('app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings');
 
-app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.mode_hud_settings = (function (){var G__30701 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$mode_hud_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__30703 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.mode_hud_settings = (function (){var G__37976 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$mode_hud_settings_render(props__27592__auto__,maybe_ref__27593__auto__){
+var vec__37980 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27592__auto__),maybe_ref__27593__auto__], null);
 
-var value = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"value","value",305978217)], null)], null));
-var view = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"view","view",1247994814)], null)], null));
-var G__30792 = app.ui.shared.components.form.field_row;
-var G__30793 = (function (){var obj30805 = ({"label":"CONTROL MODE","children":[(function (){var G__30810 = app.ui.shared.components.form.select;
-var G__30811 = (function (){var obj30819 = ({"data":new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"auto",new cljs.core.Keyword(null,"label","label",1718410804),"Auto"], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"manual",new cljs.core.Keyword(null,"label","label",1718410804),"Manual"], null)], null),"value":value,"on-change":(function (p1__30623_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve","change-sludge-valve",-664241740),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"value","value",305978217)], null),p1__30623_SHARP_], null)], null));
+var value = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"value","value",305978217)], null)], null));
+var view = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"view","view",1247994814)], null)], null));
+var G__37985 = app.ui.shared.components.form.field_row;
+var G__37986 = (function (){var obj37989 = ({"label":"CONTROL MODE","children":[(function (){var G__37992 = app.ui.shared.components.form.select;
+var G__37993 = (function (){var obj37995 = ({"data":new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"auto",new cljs.core.Keyword(null,"label","label",1718410804),"Auto"], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"manual",new cljs.core.Keyword(null,"label","label",1718410804),"Manual"], null)], null),"value":value,"on-change":(function (p1__37969_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change","sludge-valve/change",-902580431),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"value","value",305978217)], null),p1__37969_SHARP_], null)], null));
 })});
-return obj30819;
+return obj37995;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30810,G__30811) : helix.core.jsx.call(null,G__30810,G__30811));
-})(),(function (){var G__30848 = app.ui.shared.components.form.checkbox;
-var G__30849 = (function (){var obj30855 = ({"value":view,"on-change":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve","change-sludge-valve",-664241740),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"view","view",1247994814)], null),cljs.core.not(view)], null)], null));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__37992,G__37993) : helix.core.jsx.call(null,G__37992,G__37993));
+})(),(function (){var G__38011 = app.ui.shared.components.form.checkbox;
+var G__38012 = (function (){var obj38016 = ({"value":view,"on-change":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change","sludge-valve/change",-902580431),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"mode","mode",654403691),new cljs.core.Keyword(null,"view","view",1247994814)], null),cljs.core.not(view)], null)], null));
 })});
-return obj30855;
+return obj38016;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30848,G__30849) : helix.core.jsx.call(null,G__30848,G__30849));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38011,G__38012) : helix.core.jsx.call(null,G__38011,G__38012));
 })()]});
-return obj30805;
+return obj37989;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__30792,G__30793) : helix.core.jsxs.call(null,G__30792,G__30793));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__37985,G__37986) : helix.core.jsxs.call(null,G__37985,G__37986));
 });
 if(goog.DEBUG === true){
-var G__30873 = G__30701;
-(G__30873.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/mode-hud-settings");
+var G__38021 = G__37976;
+(G__38021.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/mode-hud-settings");
 
-return G__30873;
+return G__38021;
 } else {
-return G__30701;
+return G__37976;
 }
 })();
 
 
 
 
-app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.damper_hud_settings = (function (){var G__30938 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$damper_hud_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__30942 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.damper_hud_settings = (function (){var G__38035 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$damper_hud_settings_render(props__27592__auto__,maybe_ref__27593__auto__){
+var vec__38039 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27592__auto__),maybe_ref__27593__auto__], null);
 
-var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"damper","damper",870664161),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
-var view = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"damper","damper",870664161),new cljs.core.Keyword(null,"view","view",1247994814)], null)], null));
-var G__30968 = app.ui.shared.components.form.field_row;
-var G__30969 = (function (){var obj30979 = ({"label":"VALVE STATE","children":[(function (){var G__30986 = app.ui.shared.components.form.select;
-var G__30987 = (function (){var obj31013 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"open/close",new cljs.core.Keyword(null,"label","label",1718410804),"open/close"], null)], null),"value":unit,"on-change":(function (p1__30903_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve","change-sludge-valve",-664241740),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"damper","damper",870664161),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__30903_SHARP_], null)], null));
+var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"damper","damper",870664161),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
+var view = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"damper","damper",870664161),new cljs.core.Keyword(null,"view","view",1247994814)], null)], null));
+var G__38051 = app.ui.shared.components.form.field_row;
+var G__38052 = (function (){var obj38055 = ({"label":"VALVE STATE","children":[(function (){var G__38056 = app.ui.shared.components.form.select;
+var G__38057 = (function (){var obj38074 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"open/close",new cljs.core.Keyword(null,"label","label",1718410804),"open/close"], null)], null),"value":unit,"on-change":(function (p1__38032_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change","sludge-valve/change",-902580431),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"damper","damper",870664161),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__38032_SHARP_], null)], null));
 })});
-return obj31013;
+return obj38074;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__30986,G__30987) : helix.core.jsx.call(null,G__30986,G__30987));
-})(),(function (){var G__31032 = app.ui.shared.components.form.checkbox;
-var G__31033 = (function (){var obj31039 = ({"value":view,"on-change":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve","change-sludge-valve",-664241740),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"damper","damper",870664161),new cljs.core.Keyword(null,"view","view",1247994814)], null),cljs.core.not(view)], null)], null));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38056,G__38057) : helix.core.jsx.call(null,G__38056,G__38057));
+})(),(function (){var G__38076 = app.ui.shared.components.form.checkbox;
+var G__38077 = (function (){var obj38082 = ({"value":view,"on-change":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change","sludge-valve/change",-902580431),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"damper","damper",870664161),new cljs.core.Keyword(null,"view","view",1247994814)], null),cljs.core.not(view)], null)], null));
 })});
-return obj31039;
+return obj38082;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31032,G__31033) : helix.core.jsx.call(null,G__31032,G__31033));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38076,G__38077) : helix.core.jsx.call(null,G__38076,G__38077));
 })()]});
-return obj30979;
+return obj38055;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__30968,G__30969) : helix.core.jsxs.call(null,G__30968,G__30969));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__38051,G__38052) : helix.core.jsxs.call(null,G__38051,G__38052));
 });
 if(goog.DEBUG === true){
-var G__31059 = G__30938;
-(G__31059.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/damper-hud-settings");
+var G__38097 = G__38035;
+(G__38097.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/damper-hud-settings");
 
-return G__31059;
+return G__38097;
 } else {
-return G__30938;
+return G__38035;
 }
 })();
 
 
 
 
-app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.flow_rate_hud_settings = (function (){var G__31115 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$flow_rate_hud_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__31127 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.flow_rate_hud_settings = (function (){var G__38105 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$flow_rate_hud_settings_render(props__27592__auto__,maybe_ref__27593__auto__){
+var vec__38106 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27592__auto__),maybe_ref__27593__auto__], null);
 
-var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
-var view = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"view","view",1247994814)], null)], null));
-var G__31145 = app.ui.shared.components.form.field_row;
-var G__31146 = (function (){var obj31156 = ({"label":"FLOW-RATE","children":[(function (){var G__31171 = app.ui.shared.components.form.select;
-var G__31172 = (function (){var obj31180 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"kg/s",new cljs.core.Keyword(null,"label","label",1718410804),"kg/s"], null)], null),"value":unit,"on-change":(function (p1__31073_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve","change-sludge-valve",-664241740),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__31073_SHARP_], null)], null));
+var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
+var view = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"view","view",1247994814)], null)], null));
+var G__38111 = app.ui.shared.components.form.field_row;
+var G__38112 = (function (){var obj38114 = ({"label":"FLOW-RATE","children":[(function (){var G__38115 = app.ui.shared.components.form.select;
+var G__38116 = (function (){var obj38120 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"kg/s",new cljs.core.Keyword(null,"label","label",1718410804),"kg/s"], null)], null),"value":unit,"on-change":(function (p1__38102_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change","sludge-valve/change",-902580431),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__38102_SHARP_], null)], null));
 })});
-return obj31180;
+return obj38120;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31171,G__31172) : helix.core.jsx.call(null,G__31171,G__31172));
-})(),(function (){var G__31213 = app.ui.shared.components.form.checkbox;
-var G__31214 = (function (){var obj31216 = ({"value":view,"on-change":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve","change-sludge-valve",-664241740),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"view","view",1247994814)], null),cljs.core.not(view)], null)], null));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38115,G__38116) : helix.core.jsx.call(null,G__38115,G__38116));
+})(),(function (){var G__38127 = app.ui.shared.components.form.checkbox;
+var G__38128 = (function (){var obj38130 = ({"value":view,"on-change":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change","sludge-valve/change",-902580431),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"view","view",1247994814)], null),cljs.core.not(view)], null)], null));
 })});
-return obj31216;
+return obj38130;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31213,G__31214) : helix.core.jsx.call(null,G__31213,G__31214));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38127,G__38128) : helix.core.jsx.call(null,G__38127,G__38128));
 })()]});
-return obj31156;
+return obj38114;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__31145,G__31146) : helix.core.jsxs.call(null,G__31145,G__31146));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__38111,G__38112) : helix.core.jsxs.call(null,G__38111,G__38112));
 });
 if(goog.DEBUG === true){
-var G__31225 = G__31115;
-(G__31225.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/flow-rate-hud-settings");
+var G__38143 = G__38105;
+(G__38143.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/flow-rate-hud-settings");
 
-return G__31225;
+return G__38143;
 } else {
-return G__31115;
+return G__38105;
 }
 })();
 
 
 
 
-app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.countdown_hud_settings = (function (){var G__31272 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$countdown_hud_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__31276 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.countdown_hud_settings = (function (){var G__38157 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$countdown_hud_settings_render(props__27592__auto__,maybe_ref__27593__auto__){
+var vec__38160 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27592__auto__),maybe_ref__27593__auto__], null);
 
-var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"countdown","countdown",-1468813996),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
-var view = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"countdown","countdown",-1468813996),new cljs.core.Keyword(null,"view","view",1247994814)], null)], null));
-var G__31286 = app.ui.shared.components.form.field_row;
-var G__31289 = (function (){var obj31306 = ({"label":"REMAINING RUNTIME","children":[(function (){var G__31343 = app.ui.shared.components.form.select;
-var G__31344 = (function (){var obj31349 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"s",new cljs.core.Keyword(null,"label","label",1718410804),"HH:MM:SS"], null)], null),"value":unit,"on-change":(function (p1__31246_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve","change-sludge-valve",-664241740),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"countdown","countdown",-1468813996),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__31246_SHARP_], null)], null));
+var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"countdown","countdown",-1468813996),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
+var view = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"countdown","countdown",-1468813996),new cljs.core.Keyword(null,"view","view",1247994814)], null)], null));
+var G__38164 = app.ui.shared.components.form.field_row;
+var G__38165 = (function (){var obj38167 = ({"label":"REMAINING RUNTIME","children":[(function (){var G__38169 = app.ui.shared.components.form.select;
+var G__38170 = (function (){var obj38173 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"s",new cljs.core.Keyword(null,"label","label",1718410804),"HH:MM:SS"], null)], null),"value":unit,"on-change":(function (p1__38153_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change","sludge-valve/change",-902580431),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"countdown","countdown",-1468813996),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__38153_SHARP_], null)], null));
 })});
-return obj31349;
+return obj38173;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31343,G__31344) : helix.core.jsx.call(null,G__31343,G__31344));
-})(),(function (){var G__31353 = app.ui.shared.components.form.checkbox;
-var G__31354 = (function (){var obj31357 = ({"value":view,"on-change":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve","change-sludge-valve",-664241740),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"countdown","countdown",-1468813996),new cljs.core.Keyword(null,"view","view",1247994814)], null),cljs.core.not(view)], null)], null));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38169,G__38170) : helix.core.jsx.call(null,G__38169,G__38170));
+})(),(function (){var G__38181 = app.ui.shared.components.form.checkbox;
+var G__38182 = (function (){var obj38184 = ({"value":view,"on-change":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change","sludge-valve/change",-902580431),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"countdown","countdown",-1468813996),new cljs.core.Keyword(null,"view","view",1247994814)], null),cljs.core.not(view)], null)], null));
 })});
-return obj31357;
+return obj38184;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31353,G__31354) : helix.core.jsx.call(null,G__31353,G__31354));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38181,G__38182) : helix.core.jsx.call(null,G__38181,G__38182));
 })()]});
-return obj31306;
+return obj38167;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__31286,G__31289) : helix.core.jsxs.call(null,G__31286,G__31289));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__38164,G__38165) : helix.core.jsxs.call(null,G__38164,G__38165));
 });
 if(goog.DEBUG === true){
-var G__31373 = G__31272;
-(G__31373.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/countdown-hud-settings");
+var G__38203 = G__38157;
+(G__38203.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/countdown-hud-settings");
 
-return G__31373;
+return G__38203;
 } else {
-return G__31272;
+return G__38157;
 }
 })();
 
 
 
 
-app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.countdown_init_value = (function (){var G__31452 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$countdown_init_value_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__31454 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.countdown_init_value = (function (){var G__38233 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$countdown_init_value_render(props__27592__auto__,maybe_ref__27593__auto__){
+var vec__38241 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27592__auto__),maybe_ref__27593__auto__], null);
 
-var converted_value = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"sludge-valve-init-countdown-converted-value","sludge-valve-init-countdown-converted-value",429137117)], null));
-var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"init-sim-output","init-sim-output",1170737841),new cljs.core.Keyword(null,"countdown","countdown",-1468813996),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
+var converted_value = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","init-countdown-converted-value","sludge-valve/init-countdown-converted-value",-411089552)], null));
+var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"init-sim-output","init-sim-output",1170737841),new cljs.core.Keyword(null,"countdown","countdown",-1468813996),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
 var limits = cljs.core.get.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"blowdown-countdown-init-value","blowdown-countdown-init-value",-743678411).cljs$core$IFn$_invoke$arity$1(app.units.constants.UNIT_LIMITS),unit);
 var validate_message = ["Initial remaining runtime value must be within following range: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits))," - ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits)),"] ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(unit)].join('');
-var G__31478 = app.ui.shared.components.form.field_row;
-var G__31479 = (function (){var obj31483 = ({"label":"REMAINING RUNTIME","children":[(function (){var G__31486 = app.ui.shared.components.form.input_number;
-var G__31487 = helix.impl.props.merge_obj((function (){var obj31491 = ({"value":converted_value,"on-change":(function (p1__31404_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve-init-countdown-value","change-sludge-valve-init-countdown-value",652007406),p1__31404_SHARP_], null));
+var G__38265 = app.ui.shared.components.form.field_row;
+var G__38266 = (function (){var obj38270 = ({"label":"REMAINING RUNTIME","children":[(function (){var G__38273 = app.ui.shared.components.form.input_number;
+var G__38274 = helix.impl.props.merge_obj((function (){var obj38278 = ({"value":converted_value,"on-change":(function (p1__38211_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change-init-countdown-value","sludge-valve/change-init-countdown-value",754770684),p1__38211_SHARP_], null));
 }),"on-blur":(function (){
-return app.ui.shared.components.form.validate_input_number(converted_value,new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits),new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits),validate_message,(function (p1__31409_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve-init-countdown-value","change-sludge-valve-init-countdown-value",652007406),p1__31409_SHARP_], null));
+return app.ui.shared.components.form.validate_input_number(converted_value,new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits),new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits),validate_message,(function (p1__38217_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change-init-countdown-value","sludge-valve/change-init-countdown-value",754770684),p1__38217_SHARP_], null));
 }));
 })});
-return obj31491;
+return obj38278;
 })(),helix.impl.props._props.cljs$core$IFn$_invoke$arity$1(limits));
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31486,G__31487) : helix.core.jsx.call(null,G__31486,G__31487));
-})(),(function (){var G__31508 = app.ui.shared.components.form.select;
-var G__31509 = (function (){var obj31515 = ({"data":new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"s",new cljs.core.Keyword(null,"label","label",1718410804),"s"], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"m",new cljs.core.Keyword(null,"label","label",1718410804),"m"], null)], null),"value":unit,"on-change":(function (p1__31415_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve","change-sludge-valve",-664241740),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"init-sim-output","init-sim-output",1170737841),new cljs.core.Keyword(null,"countdown","countdown",-1468813996),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__31415_SHARP_], null)], null));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38273,G__38274) : helix.core.jsx.call(null,G__38273,G__38274));
+})(),(function (){var G__38292 = app.ui.shared.components.form.select;
+var G__38293 = (function (){var obj38295 = ({"data":new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"s",new cljs.core.Keyword(null,"label","label",1718410804),"s"], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"m",new cljs.core.Keyword(null,"label","label",1718410804),"m"], null)], null),"value":unit,"on-change":(function (p1__38219_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change","sludge-valve/change",-902580431),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"init-sim-output","init-sim-output",1170737841),new cljs.core.Keyword(null,"countdown","countdown",-1468813996),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__38219_SHARP_], null)], null));
 })});
-return obj31515;
+return obj38295;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31508,G__31509) : helix.core.jsx.call(null,G__31508,G__31509));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38292,G__38293) : helix.core.jsx.call(null,G__38292,G__38293));
 })()]});
-return obj31483;
+return obj38270;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__31478,G__31479) : helix.core.jsxs.call(null,G__31478,G__31479));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__38265,G__38266) : helix.core.jsxs.call(null,G__38265,G__38266));
 });
 if(goog.DEBUG === true){
-var G__31534 = G__31452;
-(G__31534.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/countdown-init-value");
+var G__38326 = G__38233;
+(G__38326.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/countdown-init-value");
 
-return G__31534;
+return G__38326;
 } else {
-return G__31452;
+return G__38233;
 }
 })();
 
 
 
 
-app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.flow_rate_init_max_value = (function (){var G__31592 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$flow_rate_init_max_value_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__31602 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.flow_rate_init_max_value = (function (){var G__38347 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$flow_rate_init_max_value_render(props__27592__auto__,maybe_ref__27593__auto__){
+var vec__38348 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27592__auto__),maybe_ref__27593__auto__], null);
 
-var value = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"max-value","max-value",687805168)], null)], null));
-var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
+var value = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"max","max",61366548)], null)], null));
+var unit = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null)], null));
 var limits = cljs.core.get.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"flow-rate-kg-s","flow-rate-kg-s",1902668845).cljs$core$IFn$_invoke$arity$1(app.units.constants.UNIT_LIMITS),unit);
 var validate_message = ["Initial flow rate maximum value must be within following range: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits))," - ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits)),"] ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(unit)].join('');
-var G__31627 = app.ui.shared.components.form.field_row;
-var G__31628 = (function (){var obj31634 = ({"label":"MAXIMUM FLOW-RATE","children":[(function (){var G__31636 = app.ui.shared.components.form.input_number;
-var G__31637 = helix.impl.props.merge_obj((function (){var obj31641 = ({"value":value,"on-change":(function (p1__31553_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve","change-sludge-valve",-664241740),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"max-value","max-value",687805168)], null),p1__31553_SHARP_], null)], null));
+var G__38382 = app.ui.shared.components.form.field_row;
+var G__38383 = (function (){var obj38385 = ({"label":"MAXIMUM FLOW-RATE","children":[(function (){var G__38386 = app.ui.shared.components.form.input_number;
+var G__38387 = helix.impl.props.merge_obj((function (){var obj38389 = ({"value":value,"on-change":(function (p1__38334_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change","sludge-valve/change",-902580431),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"max","max",61366548)], null),p1__38334_SHARP_], null)], null));
 }),"on-blur":(function (){
-return app.ui.shared.components.form.validate_input_number(value,new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits),new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits),validate_message,(function (p1__31554_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve","change-sludge-valve",-664241740),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"max-value","max-value",687805168)], null),p1__31554_SHARP_], null)], null));
+return app.ui.shared.components.form.validate_input_number(value,new cljs.core.Keyword(null,"min","min",444991522).cljs$core$IFn$_invoke$arity$1(limits),new cljs.core.Keyword(null,"max","max",61366548).cljs$core$IFn$_invoke$arity$1(limits),validate_message,(function (p1__38335_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change","sludge-valve/change",-902580431),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"max","max",61366548)], null),p1__38335_SHARP_], null)], null));
 }));
 })});
-return obj31641;
+return obj38389;
 })(),helix.impl.props._props.cljs$core$IFn$_invoke$arity$1(limits));
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31636,G__31637) : helix.core.jsx.call(null,G__31636,G__31637));
-})(),(function (){var G__31657 = app.ui.shared.components.form.select;
-var G__31658 = (function (){var obj31664 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"kg/s",new cljs.core.Keyword(null,"label","label",1718410804),"kg/s"], null)], null),"value":unit,"on-change":(function (p1__31559_SHARP_){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"change-sludge-valve","change-sludge-valve",-664241740),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__31559_SHARP_], null)], null));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38386,G__38387) : helix.core.jsx.call(null,G__38386,G__38387));
+})(),(function (){var G__38410 = app.ui.shared.components.form.select;
+var G__38411 = (function (){var obj38413 = ({"data":new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),"kg/s",new cljs.core.Keyword(null,"label","label",1718410804),"kg/s"], null)], null),"value":unit,"on-change":(function (p1__38336_SHARP_){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","change","sludge-valve/change",-902580431),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"flow-rate","flow-rate",2143955309),new cljs.core.Keyword(null,"unit","unit",375175175)], null),p1__38336_SHARP_], null)], null));
 })});
-return obj31664;
+return obj38413;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31657,G__31658) : helix.core.jsx.call(null,G__31657,G__31658));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38410,G__38411) : helix.core.jsx.call(null,G__38410,G__38411));
 })()]});
-return obj31634;
+return obj38385;
 })();
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__31627,G__31628) : helix.core.jsxs.call(null,G__31627,G__31628));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__38382,G__38383) : helix.core.jsxs.call(null,G__38382,G__38383));
 });
 if(goog.DEBUG === true){
-var G__31679 = G__31592;
-(G__31679.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/flow-rate-init-max-value");
+var G__38418 = G__38347;
+(G__38418.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/flow-rate-init-max-value");
 
-return G__31679;
+return G__38418;
 } else {
-return G__31592;
+return G__38347;
 }
 })();
 
 
 
 
-app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.settings_form = (function (){var G__31718 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$settings_form_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__31721 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.settings_form = (function (){var G__38430 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$settings_form_render(props__27592__auto__,maybe_ref__27593__auto__){
+var vec__38437 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27592__auto__),maybe_ref__27593__auto__], null);
 
 var show_settings_form_sim_start_values = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"show-settings-form-sim-start-values","show-settings-form-sim-start-values",-1672088929)], null));
-var G__31733 = helix.core.Fragment;
-var G__31734 = ({"children": [(function (){var G__31737 = "div";
-var G__31738 = (function (){var obj31744 = ({"className":"divider","style":(function (){var obj31750 = ({"marginTop":helix.impl.props.__GT_js((0))});
-return obj31750;
+var G__38448 = helix.core.Fragment;
+var G__38449 = ({"children": [(function (){var G__38452 = "div";
+var G__38453 = (function (){var obj38455 = ({"className":"divider","style":(function (){var obj38457 = ({"marginTop":helix.impl.props.__GT_js((0))});
+return obj38457;
 })(),"children":"head-up-display"});
-return obj31744;
+return obj38455;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31737,G__31738) : helix.core.jsx.call(null,G__31737,G__31738));
-})(),(function (){var G__31760 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.mode_hud_settings;
-var G__31761 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31760,G__31761) : helix.core.jsx.call(null,G__31760,G__31761));
-})(),(function (){var G__31770 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.damper_hud_settings;
-var G__31771 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31770,G__31771) : helix.core.jsx.call(null,G__31770,G__31771));
-})(),(function (){var G__31778 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.flow_rate_hud_settings;
-var G__31779 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31778,G__31779) : helix.core.jsx.call(null,G__31778,G__31779));
-})(),(function (){var G__31789 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.countdown_hud_settings;
-var G__31790 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31789,G__31790) : helix.core.jsx.call(null,G__31789,G__31790));
-})(),(cljs.core.truth_(show_settings_form_sim_start_values)?(function (){var G__31809 = helix.core.Fragment;
-var G__31810 = ({"children": [(function (){var G__31815 = "div";
-var G__31816 = (function (){var obj31822 = ({"className":"divider","children":"simulation start values"});
-return obj31822;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38452,G__38453) : helix.core.jsx.call(null,G__38452,G__38453));
+})(),(function (){var G__38458 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.mode_hud_settings;
+var G__38459 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38458,G__38459) : helix.core.jsx.call(null,G__38458,G__38459));
+})(),(function (){var G__38460 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.damper_hud_settings;
+var G__38461 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38460,G__38461) : helix.core.jsx.call(null,G__38460,G__38461));
+})(),(function (){var G__38463 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.flow_rate_hud_settings;
+var G__38464 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38463,G__38464) : helix.core.jsx.call(null,G__38463,G__38464));
+})(),(function (){var G__38469 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.countdown_hud_settings;
+var G__38470 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38469,G__38470) : helix.core.jsx.call(null,G__38469,G__38470));
+})(),(cljs.core.truth_(show_settings_form_sim_start_values)?(function (){var G__38471 = helix.core.Fragment;
+var G__38472 = ({"children": [(function (){var G__38475 = "div";
+var G__38476 = (function (){var obj38479 = ({"className":"divider","children":"simulation start values"});
+return obj38479;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31815,G__31816) : helix.core.jsx.call(null,G__31815,G__31816));
-})(),(function (){var G__31828 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.countdown_init_value;
-var G__31829 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31828,G__31829) : helix.core.jsx.call(null,G__31828,G__31829));
-})(),(function (){var G__31833 = "div";
-var G__31834 = (function (){var obj31842 = ({"className":"divider","children":"specifications"});
-return obj31842;
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38475,G__38476) : helix.core.jsx.call(null,G__38475,G__38476));
+})(),(function (){var G__38482 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.countdown_init_value;
+var G__38483 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38482,G__38483) : helix.core.jsx.call(null,G__38482,G__38483));
+})(),(function (){var G__38485 = "div";
+var G__38486 = (function (){var obj38489 = ({"className":"divider","children":"specifications"});
+return obj38489;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31833,G__31834) : helix.core.jsx.call(null,G__31833,G__31834));
-})(),(function (){var G__31850 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.flow_rate_init_max_value;
-var G__31851 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31850,G__31851) : helix.core.jsx.call(null,G__31850,G__31851));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38485,G__38486) : helix.core.jsx.call(null,G__38485,G__38486));
+})(),(function (){var G__38493 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.flow_rate_init_max_value;
+var G__38494 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38493,G__38494) : helix.core.jsx.call(null,G__38493,G__38494));
 })()]});
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__31809,G__31810) : helix.core.jsxs.call(null,G__31809,G__31810));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__38471,G__38472) : helix.core.jsxs.call(null,G__38471,G__38472));
 })():null)]});
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__31733,G__31734) : helix.core.jsxs.call(null,G__31733,G__31734));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__38448,G__38449) : helix.core.jsxs.call(null,G__38448,G__38449));
 });
 if(goog.DEBUG === true){
-var G__31864 = G__31718;
-(G__31864.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/settings-form");
+var G__38503 = G__38430;
+(G__38503.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/settings-form");
 
-return G__31864;
+return G__38503;
 } else {
-return G__31718;
+return G__38430;
 }
 })();
 
 
 
 
-app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.sludge_valve_settings = (function (){var G__31903 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$sludge_valve_settings_render(props__27584__auto__,maybe_ref__27585__auto__){
-var vec__31938 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27584__auto__),maybe_ref__27585__auto__], null);
+app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.sludge_valve_settings = (function (){var G__38519 = (function app$ui$shared$boiler_plant$actuators$blowdown$sludge_valve$settings$sludge_valve_settings_render(props__27592__auto__,maybe_ref__27593__auto__){
+var vec__38524 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27592__auto__),maybe_ref__27593__auto__], null);
 
-var show_settings = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kit-data-by-path","kit-data-by-path",-2104357103),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"settings-view","settings-view",1595275038)], null)], null));
+var show_settings = refx.alpha.use_sub(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("kit","data-by-path","kit/data-by-path",-1003782842),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boiler-plant","boiler-plant",-2141778734),new cljs.core.Keyword(null,"actuators","actuators",-1940435442),new cljs.core.Keyword(null,"blowdown","blowdown",-2109178671),new cljs.core.Keyword(null,"sludge-valve","sludge-valve",-1035698924),new cljs.core.Keyword(null,"settings-view","settings-view",1595275038)], null)], null));
 if(cljs.core.truth_(show_settings)){
-var G__31953 = app.ui.shared.components.modal.settings;
-var G__31954 = (function (){var obj31958 = ({"title":"Bottom Blowdown Valve Settings","on-default":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"restore-defaults-sludge-valve-settings","restore-defaults-sludge-valve-settings",-406134008)], null));
+var G__38537 = app.ui.shared.components.modal.settings;
+var G__38538 = (function (){var obj38546 = ({"title":"Bottom Blowdown Valve Settings","on-default":(function (){
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","restore-defaults-settings","sludge-valve/restore-defaults-settings",-489337210)], null));
 }),"on-done":(function (){
-return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"apply-sludge-valve-settings","apply-sludge-valve-settings",1278915756)], null));
-}),"children":(function (){var G__31971 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.settings_form;
-var G__31972 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31971,G__31972) : helix.core.jsx.call(null,G__31971,G__31972));
+return refx.alpha.dispatch(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sludge-valve","apply-settings","sludge-valve/apply-settings",-697771861)], null));
+}),"children":(function (){var G__38549 = app.ui.shared.boiler_plant.actuators.blowdown.sludge_valve.settings.settings_form;
+var G__38550 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38549,G__38550) : helix.core.jsx.call(null,G__38549,G__38550));
 })()});
-return obj31958;
+return obj38546;
 })();
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__31953,G__31954) : helix.core.jsx.call(null,G__31953,G__31954));
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__38537,G__38538) : helix.core.jsx.call(null,G__38537,G__38538));
 } else {
 return null;
 }
 });
 if(goog.DEBUG === true){
-var G__31995 = G__31903;
-(G__31995.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/sludge-valve-settings");
+var G__38552 = G__38519;
+(G__38552.displayName = "app.ui.shared.boiler-plant.actuators.blowdown.sludge-valve.settings/sludge-valve-settings");
 
-return G__31995;
+return G__38552;
 } else {
-return G__31903;
+return G__38519;
 }
 })();
 

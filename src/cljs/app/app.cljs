@@ -11,7 +11,7 @@
             [app.ui.shared.boiler-plant.core :refer [boiler-plant]]))
 
 (defn window-resizing-handler [w]
-  (dispatch [:window-resize (.-innerWidth (.-target w)) (.-innerHeight (.-target w))]))
+  (dispatch [:screen/resize (.-innerWidth (.-target w)) (.-innerHeight (.-target w))]))
 
 (defnc app []
   (use-effect :once
@@ -21,13 +21,13 @@
                 (.removeEventListener js/window "resize" window-resizing-handler)))
 
   (let [kit (use-sub [:kit])
-        w (use-sub [:screen-w])
-        h (use-sub [:screen-h])
-        scale-f (use-sub [:screen-scale-f])]
+        w (use-sub [:screen/w])
+        h (use-sub [:screen/h])
+        zoom (use-sub [:screen/zoom])]
 
     (d/div {:class "kit-wrapper" :style {:width (str w "px") :height (str h "px")}}
            (d/p {:class "version-tag"}
-                (d/span {:style    {:font-size (str (* 14 scale-f) "px")}} "Version: 1.0"))
+                (d/span {:style    {:font-size (str (* 14 zoom) "px")}} "Version: 1.0"))
 
            ($ notifications)
            ($ modal/info)

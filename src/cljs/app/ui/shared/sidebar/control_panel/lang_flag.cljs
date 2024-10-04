@@ -4,7 +4,7 @@
             [refx.alpha :refer [use-sub dispatch]]))
 
 (defnc lang-flag []
-  (let [lang (use-sub [:kit-data-by-path [:general-settings :lang]])
+  (let [lang (use-sub [:kit/data-by-path [:general-settings :lang]])
         next-lang (if (= lang "en") "de" "en")]
     (<>
       (d/defs
@@ -26,4 +26,4 @@
 
            (d/circle {:cx       50 :cy 50 :r 49.2
                       :class    "touch-area"
-                      :on-click #(dispatch [:change-kit-data-by-path [[:general-settings :lang] next-lang]])})))))
+                      :on-click #(dispatch [:kit-data-by-path/change [[:general-settings :lang] next-lang]])})))))

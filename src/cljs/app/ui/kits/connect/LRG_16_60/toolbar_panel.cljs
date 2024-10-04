@@ -5,7 +5,7 @@
 
 
 (defnc LRG-16-60-toolbar-panel []
-  (let [show-toolbar (use-sub [:LRG-16-60-show-toolbar])
+  (let [show-toolbar (use-sub [:LRG-16-60/show-toolbar])
         sim (use-sub [:sim])
         inactive (not= "stop" sim)]
     (when show-toolbar
@@ -19,17 +19,17 @@
         ($ toolbar/btn-wrapper {:x 954 :y 54}
            ($ toolbar/btn-divider))
 
-        ($ toolbar/btn-wrapper {:x 1004 :y 54 :on-click #(dispatch [:change-LRG-16-60 [[:full-screen?] true]])}
+        ($ toolbar/btn-wrapper {:x 1004 :y 54 :on-click #(dispatch [:LRG-16-60/change [[:full-screen?] true]])}
            ($ toolbar/btn-full-screen))
 
         ($ toolbar/btn-wrapper {:x 1064 :y 54}
            ($ toolbar/btn-divider))
 
-        ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click #(dispatch [:change-LRG-16-60 [[:settings-view] true]])}
+        ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click #(dispatch [:LRG-16-60/change [[:settings-view] true]])}
            ($ toolbar/btn-settings))
 
         ($ toolbar/btn-wrapper {:x 1174 :y 54}
            ($ toolbar/btn-divider))
 
-        ($ toolbar/btn-wrapper {:x 1224 :y 54 :on-click #(dispatch [:change-modal-info {:title "Conductivity Electrode" :text "LRG 1x-6x conductivity electrodes are used in combination with the URS 60/URS 61 safety control unit as a conductivity limiter and in combination with an LRR 1-60 control unit as a continuous blowdown regulator in steam boiler systems and hot-water plants."}])}
+        ($ toolbar/btn-wrapper {:x 1224 :y 54 :on-click #(dispatch [:modal-info/change {:title "Conductivity Electrode" :text "LRG 1x-6x conductivity electrodes are used in combination with the URS 60/URS 61 safety control unit as a conductivity limiter and in combination with an LRR 1-60 control unit as a continuous blowdown regulator in steam boiler systems and hot-water plants."}])}
            ($ toolbar/btn-info))))))

@@ -4,7 +4,7 @@
             [app.ui.shared.boiler-plant.probes.level.calibration.indicator :refer [level-cal-indicator]]))
 
 (defnc level-calibration []
-  (let [subs (use-sub [:level-calibration-boiler-view-subs])
+  (let [subs (use-sub [:boiler/level-calibration-subs])
         {:keys [points points-by-boiler]} (use-sub [subs])]
     (<>
       ($ level-cal-indicator {:point-by-boiler-level (:next-high points-by-boiler)

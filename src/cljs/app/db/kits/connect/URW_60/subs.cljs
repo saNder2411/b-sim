@@ -2,17 +2,17 @@
   (:require [refx.alpha :refer [reg-sub]]))
 
 (reg-sub :URW-60
-         :<- [:kit-data]
+         :<- [:kit/data]
          (fn [{:keys [converter]} _]
            (get-in converter [:controllers "URW 60"])))
 
-(reg-sub :URW-60-show-toolbar
-         :<- [:current-hotspot]
-         :<- [:converter-controller-id]
+(reg-sub :URW-60/show-toolbar
+         :<- [:hotspots/current]
+         :<- [:converter/controller-id]
          (fn [[current-hotspot converter-id] _]
            (and (= current-hotspot "converter") (= converter-id "URW 60"))))
 
-(reg-sub :URW-60-node-id
+(reg-sub :URW-60/node-id
          :<- [:URW-60]
          (fn [{:keys [switches]} _]
            (let [switch-1 (get switches 1)
@@ -24,13 +24,13 @@
                (and switch-1 switch-2) 66
                :default 41))))
 
-(reg-sub :URW-60-group
-         :<- [:URW-60-node-id]
+(reg-sub :URW-60/group
+         :<- [:URW-60/node-id]
          (fn [node-id _]
            (let [groups-bi-node-id {41 1 46 2 61 3 66 4}]
              (get groups-bi-node-id node-id))))
 
-(reg-sub :URW-60-baud-rate
+(reg-sub :URW-60/baud-rate
          :<- [:URW-60]
          (fn [{:keys [switches]} _]
            (let [switch-3 (get switches 3)]

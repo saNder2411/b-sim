@@ -6,7 +6,7 @@
          (fn [{:keys [kit] :as db} _]
            (get-in db [kit :boiler-plant :burner])))
 
-(reg-sub :burner-pressure-converted-value-on
+(reg-sub :burner/pressure-converted-value-on
          :<- [:burner]
          (fn [burner _]
            (let [{:keys [unit value]} (:pressure burner)]
@@ -14,7 +14,7 @@
                      (= unit "psi") (-> (* 14.5037738) Math/round)
                      :default (->> (cl-format nil "~,1f") js/parseFloat)))))
 
-(reg-sub :burner-pressure-converted-value-off
+(reg-sub :burner/pressure-converted-value-off
          :<- [:burner]
          (fn [burner _]
            (let [{:keys [unit value]} (:pressure burner)]
@@ -22,21 +22,21 @@
                      (= unit "psi") (-> (* 14.5037738) Math/round)
                      :default (->> (cl-format nil "~,1f") js/parseFloat)))))
 
-(reg-sub :burner-power-max-converted-value
+(reg-sub :burner/power-max-converted-value
          :<- [:burner]
          (fn [burner _]
-           (let [{:keys [unit max-value]} (:power burner)]
-             (cond-> max-value
+           (let [{:keys [unit max]} (:power burner)]
+             (cond-> max
                      (= unit "MW") (* 0.001)))))
 
-(reg-sub :burner-power-converted-value
+(reg-sub :burner/power-converted-value
          :<- [:burner]
          (fn [burner _]
            (let [{:keys [unit value]} (:power burner)]
              (cond-> value
                      (= unit "MW") (* 0.001)))))
 
-(reg-sub :burner-fuel-consumption-coeff-converted-value
+(reg-sub :burner/fuel-consumption-coeff-converted-value
          :<- [:burner]
          (fn [burner _]
            (let [{:keys [unit value]} (-> burner :fuel-consumption :coeff)]
@@ -44,8 +44,8 @@
                      (= unit "nm³/kW*s") (->> (* 3600) (cl-format nil "~,1f") js/parseFloat)
                      (= unit "nm³/kW*h") (->> (cl-format nil "~,3f") js/parseFloat)))))
 
-(reg-sub :burner-show-toolbar-panel
-         :<- [:current-hotspot]
+(reg-sub :burner/show-toolbar-panel
+         :<- [:hotspots/current]
          (fn [current-hotspot _]
            (= current-hotspot "burner")))
 

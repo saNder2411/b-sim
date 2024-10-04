@@ -5,7 +5,7 @@
 
 
 (defnc URB-60-toolbar-panel []
-  (let [show-toolbar (use-sub [:URB-60-show-toolbar])]
+  (let [show-toolbar (use-sub [:URB-60/show-toolbar])]
     (when show-toolbar
       (<>
          ($ toolbar/title {:x 85 :y 80 :fill "#efefef" :title "Visual Display and Operating Unit"})
@@ -18,5 +18,5 @@
          ($ toolbar/btn-wrapper {:x 1174 :y 54}
             ($ toolbar/btn-divider))
 
-         ($ toolbar/btn-wrapper {:x 1224 :y 54 :on-click #(dispatch [:change-modal-info {:title "Visual Display and Operating Unit" :text "The URB 60 visual display and operating unit can be used in conjunction with various GESTRA CAN bus units from the SPECTORconnect series. The URB 60 is designed for installation in a control cabinet door or switch panel. It may only be used when correctly installed."}])}
+         ($ toolbar/btn-wrapper {:x 1224 :y 54 :on-click #(dispatch [:modal-info/change {:title "Visual Display and Operating Unit" :text "The URB 60 visual display and operating unit can be used in conjunction with various GESTRA CAN bus units from the SPECTORconnect series. The URB 60 is designed for installation in a control cabinet door or switch panel. It may only be used when correctly installed."}])}
             ($ toolbar/btn-info))))))

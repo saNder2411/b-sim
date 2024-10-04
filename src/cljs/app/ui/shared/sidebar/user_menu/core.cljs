@@ -5,7 +5,7 @@
             [app.ui.shared.components.touch-area :refer [touch-area]]))
 
 (defnc user-menu [{:keys [x y]}]
-  (let [user-name (use-sub [:user-full-name])]
+  (let [user-name (use-sub [:user/full-name])]
     (d/g {:transform (str "translate(" x ", " y ")")}
          (d/g {:transform "translate(1, 3) scale(0.83)" :fill "#0d55a3"}
               (d/path {:style {:pointer-events "none"}

@@ -8,10 +8,10 @@
             [app.ui.shared.sidebar.control-panel.buttons-panel.core :refer [buttons-panel]]))
 
 (defnc control-panel []
-  (let [show (use-sub [:kit-data-by-path [:general-settings :ctrl-panel-view]])
+  (let [show (use-sub [:kit/data-by-path [:general-settings :ctrl-panel-view]])
         y (if show 541 741)
-        steam-unit (use-sub [:kit-data-by-path [:general-settings :steam :unit]])
-        flow-rate-unit (use-sub [:current-feed-actuator-data-by-path [:flow-rate :unit]])]
+        steam-unit (use-sub [:kit/data-by-path [:general-settings :steam :unit]])
+        flow-rate-unit (use-sub [:current-feed-actuator/data-by-path [:flow-rate :unit]])]
     (<>
       (d/g {:style {:transform  (str "translateY(" y "px)")
                     :transition "transform 300ms ease-out"}}

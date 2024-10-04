@@ -6,7 +6,7 @@
 
 
 (defnc continuous-valve-toolbar-panel []
-  (let [show-toolbar-panel (use-sub [:continuous-valve-show-toolbar-panel])]
+  (let [show-toolbar-panel (use-sub [:continuous-valve/show-toolbar-panel])]
     (when show-toolbar-panel
       (<>
         ($ toolbar/title {:x 85 :y 95 :fill "#efefef" :title "Continuous Blowdown Valve"})
@@ -23,11 +23,11 @@
         ($ toolbar/btn-wrapper {:x 1064 :y 54}
            ($ toolbar/btn-divider))
 
-        ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click #(dispatch [:change-continuous-valve [[:settings-view] true]])}
+        ($ toolbar/btn-wrapper {:x 1114 :y 54 :on-click #(dispatch [:continuous-valve/change [[:settings-view] true]])}
            ($ toolbar/btn-settings))
 
         ($ toolbar/btn-wrapper {:x 1174 :y 54}
            ($ toolbar/btn-divider))
 
-        ($ toolbar/btn-wrapper {:x 1224 :y 54 :on-click #(dispatch [:change-modal-info {:title "Continuous Blowdown Valve" :text "The continuous blowdown valve is an actuator that blows water out of the boiler to decrease the salt content / conductivity of the boiler water."}])}
+        ($ toolbar/btn-wrapper {:x 1224 :y 54 :on-click #(dispatch [:modal-info/change {:title "Continuous Blowdown Valve" :text "The continuous blowdown valve is an actuator that blows water out of the boiler to decrease the salt content / conductivity of the boiler water."}])}
            ($ toolbar/btn-info))))))

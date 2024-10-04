@@ -4,7 +4,7 @@
             [refx.alpha :refer [use-sub]]))
 
 (defnc probe-highlighting-bg []
-  (let [current-hotspot (use-sub [:current-hotspot])]
+  (let [current-hotspot (use-sub [:hotspots/current])]
     (when (= current-hotspot "temperature-probe")
       (d/polygon {:class  "active-el"
                   :fill   "#061838"

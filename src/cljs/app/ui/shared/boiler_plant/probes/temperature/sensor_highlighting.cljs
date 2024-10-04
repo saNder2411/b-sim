@@ -4,7 +4,7 @@
             [refx.alpha :refer [use-sub]]))
 
 (defnc temperature-sensor-highlighting-bg []
-  (let [current-hotspot (use-sub [:current-hotspot])]
+  (let [current-hotspot (use-sub [:hotspots/current])]
     (when (= current-hotspot "temperature-probe")
       (<>
         ($ "image" {:style  {:isolation "isolate" :opacity 0.8}

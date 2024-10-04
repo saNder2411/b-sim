@@ -9,7 +9,7 @@
             [app.db.kits.connect.core]
             [app.app :refer [app]]))
 
-(refx/dispatch-sync [:initialize-db (.-innerWidth js/window) (.-innerHeight js/window)])
+(refx/dispatch-sync [:db/initialize (.-innerWidth js/window) (.-innerHeight js/window)])
 
 (defonce root (react-dom/createRoot (g-dom/getElement "app")))
 

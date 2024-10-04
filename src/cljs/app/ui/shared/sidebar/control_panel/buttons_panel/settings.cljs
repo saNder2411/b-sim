@@ -22,7 +22,7 @@
                  :cx     193.602 :cy 136.883 :r 37.804 :transform "translate(-12.546 19.743) rotate(-5.655)"}))
 
     (d/circle {:class    "touch-area" :cx 193.602 :cy 137 :r 40
-               :on-click #(dispatch [:open-general-settings])})
+               :on-click #(dispatch [:general-settings/open])})
 
     (d/text {:class "btn-pnl-label" :x 193.5 :y 217}
             "Settings")))

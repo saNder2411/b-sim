@@ -4,13 +4,13 @@
             [app.ui.shared.components.hot-spot :refer [hot-spot hot-spot-big]]))
 
 (defnc hot-spots []
-  (let [show-low-limiter-hot-spot (use-sub [:show-low-limiter-hot-spot])
-        show-high-limiter-hot-spot (use-sub [:show-high-limiter-hot-spot])
-        show-cond-controller-hot-spot (use-sub [:show-cond-controller-hot-spot])
-        show-level-controller-hot-spot (use-sub [:show-level-controller-hot-spot])
-        show-converter-hot-spot (use-sub [:show-converter-hot-spot])
-        show-feed-valve-hot-spot (use-sub [:show-feed-valve-hot-spot])
-        show-feed-pump-hot-spot (use-sub [:show-feed-pump-hot-spot])]
+  (let [show-low-limiter-hot-spot (use-sub [:low-limiter/show-hot-spot])
+        show-high-limiter-hot-spot (use-sub [:high-limiter/show-hot-spot])
+        show-cond-controller-hot-spot (use-sub [:cond-controller/show-hot-spot])
+        show-level-controller-hot-spot (use-sub [:level-controller/show-hot-spot])
+        show-converter-hot-spot (use-sub [:converter/show-hot-spot])
+        show-feed-valve-hot-spot (use-sub [:feed-valve/show-hot-spot])
+        show-feed-pump-hot-spot (use-sub [:feed-pump/show-hot-spot])]
     (<>
       (when show-low-limiter-hot-spot
         ($ hot-spot {:x 35.6 :y 9.44 :id "low-limiter"}))

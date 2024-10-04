@@ -6,7 +6,7 @@
 (defnc animation-steam-water-drops []
   (let [sim (use-sub [:sim])
         steam-% (use-sub [:steam-%])
-        water-level (use-sub [:kit-data-by-path [:boiler-plant :boiler :water-level :value]])
+        water-level (use-sub [:kit/data-by-path [:boiler-plant :boiler :water-level :value]])
         show-animation (and (= sim "run") (> water-level 90))
         hide-class (if show-animation "" " hide")]
     ($ "foreignObject" {:x 287 :y 189.73 :width 69 :height 61 :opacity (/ steam-% 100)}

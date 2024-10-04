@@ -4,6 +4,6 @@
             [refx.alpha :refer [use-sub]]))
 
 (defnc boiler-sludge []
-  (let [sludge-svg-height (use-sub [:sludge-svg-height])]
+  (let [sludge-svg-height (use-sub [:boiler/sludge-svg-height])]
     (d/rect {:fill "#8c492f" :style {:transform-origin "center" :transform "rotate(180deg)"}
              :x    229.12 :y 186.82 :width 667.75 :height sludge-svg-height})))

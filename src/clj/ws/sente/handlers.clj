@@ -1,6 +1,5 @@
 (ns ws.sente.handlers
-  (:require [ws.sente.socket :refer [send-to-all!]]
-            [simulation.core :as s]))
+  (:require [simulation.core :as s]))
 
 (def messages (atom []))
 
