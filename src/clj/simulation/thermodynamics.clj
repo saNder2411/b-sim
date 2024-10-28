@@ -158,15 +158,3 @@
         temperature (+ (* c-poly-51 (+ pressure shift-pressure))
                        c-poly-52)]
     [shift-vol shift-pressure temperature]))
-
-(comment
-  (-> (* (-' 2) 1)
-      (+ (* 2 1))
-      (- (* 2 1))
-      (+ 2))
-
-  (-> (* (-' 2) 1)
-      (+ (* 2 1))
-      (+ (* (-' 2) 1))
-      (+ 2))
-  )

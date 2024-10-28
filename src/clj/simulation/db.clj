@@ -1,75 +1,118 @@
 (ns simulation.db
   (:require [simulation.thermodynamics-fn :as t]))
 
-(def db (atom {:boiler    {:steam        {:t/h  17.5
-                                          :kg/h 17500
-                                          :kg/s 4.861111111}
-                           :pressure     11                 ;"bar"
-                           :temperature  (t/liquid-temperature 11) ;"°C"
-                           :volume       {:value   48       ;"m³"
-                                          :value-% (t/liquid-level-% 48 55) ;"%"
-                                          :max     55}
-                           :sludge       {:value 39.2       ;"kg"
-                                          :max   80}
-                           :conductivity 3000}              ; µS/cm
+(def db (atom {:thermodynamics {:saturation-temp-coeff {:c-poly-51 0
+                                                        :c-poly-52 0
+                                                        :cf-1      0
+                                                        :cf-2      0
+                                                        :cf-3      0
+                                                        :cf-4      0
+                                                        :cf-5      0
+                                                        :cf-6      0
+                                                        :cf-7      0
+                                                        :cf-8      0
+                                                        :cf-9      0}
+                                :denominator           {:ck-1 0
+                                                        :ck-2 0
+                                                        :ck-3 0
+                                                        :ck-4 0
+                                                        :ck-5 0
+                                                        :ck-6 0}
+                                :numerator-d-vw-dt     {:ck-7   0
+                                                        :ck-7b  0
+                                                        :ck-8   0
+                                                        :ck-8b  0
+                                                        :ck-9   0
+                                                        :ck-9b  0
+                                                        :ck-10  0
+                                                        :ck-10b 0
+                                                        :ck-20b 0
+                                                        :ck-21b 0}
+                                :numerator-dp-dt       {:ck-11  0
+                                                        :ck-11b 0
+                                                        :ck-12  0
+                                                        :ck-12b 0
+                                                        :ck-13  0
+                                                        :ck-13b 0
+                                                        :ck-22b 0
+                                                        :ck-23b 0}
+                                :volume-shift          0
+                                :pressure-shift        0
+                                :temperature           0}
+               :boiler         {:steam        {:t-h  17.5
+                                               :kg-h 17500
+                                               :kg-s 4.861111111
+                                               :max  35}
+                                :volume       {:value   48  ;"m³"
+                                               :value-% (t/liquid-level-% 48 55) ;"%"
+                                               :max     55}
+                                :pressure     11            ;"bar"
+                                :temperature  (t/liquid-temperature 11) ;"°C"
+                                :sludge       {:value 39.2  ;"kg"
+                                               :max   80}
+                                :conductivity 3000}         ; µS/cm
 
-               :feedwater {:conductivity 500                ; µS/cm
-                           :temperature  103                ; °C
-                           :enthalpy     (t/liquid-enthalpy-by-t 103) ;kJ/kg saturated liquid enthalpy within T = [90 - 110] °C in kJ/kg
-                           :sludge-ratio 0.0003}
+               :feedwater      {:conductivity 500           ; µS/cm
+                                :temperature  103           ; °C
+                                :enthalpy     (t/liquid-enthalpy-by-t 103) ;kJ/kg saturated liquid enthalpy within T = [90 - 110] °C in kJ/kg
+                                :sludge-ratio 0.0003}
 
-               :burner    {:state            "off"
-                           :mode             "auto"
-                           :operation        "normal"
-                           :switch-points    {:off 12.5
-                                              :on  11.5}
-                           :power            {:value 0
-                                              :max   25000}
-                           :fuel-consumption {:value 0
-                                              :coeff 0.083}
-                           :heat-transfer    {:value 0
-                                              :coeff 0.9}}}))
+               :burner         {:state            "off"
+                                :mode             "auto"
+                                :operation        "normal"
+                                :switch-points    {:off 12.5 ;;"bar"
+                                                   :on  11.5}
+                                :power            {:value 0 ;;"kW"
+                                                   :max   25000}
+                                :fuel-consumption {:value 0 ;;"nm³/s"
+                                                   :coeff 0.083}
+                                :heat-transfer    {:value 0 ;;"kJ/kW*s"
+                                                   :coeff 0.9}}
+               :actuators      {:feed  {:flow-rate     {:t-h  0
+                                                        :kg-h 0
+                                                        :kg-s 0
+                                                        :max  70}
+                                        :amperage      {:min   4
+                                                        :max   20
+                                                        :value 4}
+                                        :pi-controller {:mode                 "auto" ;; "auto" | "manual"
+                                                        :direction            "fill" ;; "fill" | "discharge"
+                                                        :target-point         50
+                                                        :c-elements           1
+                                                        :k-factor             0.5
+                                                        :proportional-band    20
+                                                        :integral-action-time {:value 0
+                                                                               :tact  0}
+                                                        :n-zone               {:value   5
+                                                                               :active? true}
+                                                        :control-area         {:value          10
+                                                                               :upper-boundary 60
+                                                                               :lower-boundary 40}
+                                                        :x                    {:adjusted    0
+                                                                               :next        0
+                                                                               :force-off?  false
+                                                                               :force-keep? false}}
+                                        :valve         {:type          :electric-valve
+                                                        :transition    {:state       "fixed"
+                                                                        :travel-time 40}
+                                                        :potentiometer {:open      32752
+                                                                        :close     16
+                                                                        :mixed-up? false}
+                                                        :damper        {:value       0
+                                                                        :pi-c-output 0
+                                                                        :digital     16
+                                                                        :delta       (/ 100 40)
+                                                                        :step-delay  2}}}
+                                :drain {:flow-rate {:t-h  0
+                                                    :kg-h 0
+                                                    :kg-s 0
+                                                    :max  35}}
 
-(defn has-changed? [old new path]
-  (not= (get-in old path) (get-in new path)))
+                                :blow  {:flow-rate {:t-h  0
+                                                    :kg-h 0
+                                                    :kg-s 0
+                                                    :max  28.8}}}}))
 
-(defn steam-watcher [_key db-atom old {{:keys [steam]} :boiler :as new}]
-  (when (has-changed? old new [:boiler :steam :t/h])
-    (let [kg-h (* (:t/h steam) 1000)
-          steam! (assoc steam :kg/h kg-h :kg/s (/ kg-h 3600))]
-      (swap! db-atom assoc-in [:boiler :steam] steam!))))
-
-(defn pressure-watcher [_key db-atom old {{:keys [pressure]} :boiler :as new}]
-  (when (has-changed? old new [:boiler :pressure])
-    (swap! db-atom assoc-in [:boiler :temperature] (t/liquid-temperature pressure))))
-
-(defn volume-watcher [_key db-atom old {{:keys [volume]} :boiler :as new}]
-  (when (has-changed? old new [:boiler :volume :value])
-    (swap! db-atom assoc-in [:boiler :volume :value-%] (t/liquid-level-% (:value volume) (:max volume)))))
-
-(defn burner-state-watcher [_key db-atom old {{:keys [state power fuel-consumption heat-transfer]} :burner :as new}]
-  (when (has-changed? old new [:burner :state])
-    (let [[p f h] (cond
-                    (= state "on") [(:max power)
-                                    (* (:max power) (:coeff fuel-consumption))
-                                    (* (:max power) (:coeff heat-transfer))]
-                    :else [0 0 0])]
-      (swap! db-atom #(-> %
-                          (assoc-in [:burner :power :value] p)
-                          (assoc-in [:burner :fuel-consumption :value] f)
-                          (assoc-in [:burner :heat-transfer :value] h))))))
-
-
-(add-watch db :steam-watcher steam-watcher)
-(add-watch db :pressure-watcher pressure-watcher)
-(add-watch db :volume-watcher volume-watcher)
-(add-watch db :burner-state-watcher burner-state-watcher)
-
-(comment
-  (swap! db assoc-in [:burner :state] "on")
-
-  (deref db)
-  )
 
 
 

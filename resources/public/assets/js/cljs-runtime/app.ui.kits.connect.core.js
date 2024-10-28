@@ -1,46 +1,46 @@
 goog.provide('app.ui.kits.connect.core');
 
-app.ui.kits.connect.core.connect_kit = (function (){var G__41521 = (function app$ui$kits$connect$core$connect_kit_render(props__27592__auto__,maybe_ref__27593__auto__){
-var vec__41522 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27592__auto__),maybe_ref__27593__auto__], null);
+app.ui.kits.connect.core.connect_kit = (function (){var G__35438 = (function app$ui$kits$connect$core$connect_kit_render(props__27592__auto__,maybe_ref__27593__auto__){
+var vec__35440 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__27592__auto__),maybe_ref__27593__auto__], null);
 
-var G__41525 = helix.core.Fragment;
-var G__41526 = ({"children": [(function (){var G__41527 = app.ui.kits.connect.URB_60.core.URB_60;
-var G__41528 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41527,G__41528) : helix.core.jsx.call(null,G__41527,G__41528));
-})(),(function (){var G__41529 = app.ui.kits.connect.limiter_low_level.limiter_low_level;
-var G__41530 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41529,G__41530) : helix.core.jsx.call(null,G__41529,G__41530));
-})(),(function (){var G__41531 = app.ui.kits.connect.limiter_high_level.limiter_high_level;
-var G__41532 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41531,G__41532) : helix.core.jsx.call(null,G__41531,G__41532));
-})(),(function (){var G__41533 = app.ui.kits.connect.controller_cond.controller_cond;
-var G__41534 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41533,G__41534) : helix.core.jsx.call(null,G__41533,G__41534));
-})(),(function (){var G__41535 = app.ui.kits.connect.controller_level.controller_level;
-var G__41536 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41535,G__41536) : helix.core.jsx.call(null,G__41535,G__41536));
-})(),(function (){var G__41537 = app.ui.kits.connect.converter.converter;
-var G__41538 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41537,G__41538) : helix.core.jsx.call(null,G__41537,G__41538));
-})(),(function (){var G__41539 = app.ui.kits.connect.hot_spots.hot_spots;
-var G__41540 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41539,G__41540) : helix.core.jsx.call(null,G__41539,G__41540));
-})(),(function (){var G__41541 = app.ui.kits.connect.toolbars.toolbars;
-var G__41542 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41541,G__41542) : helix.core.jsx.call(null,G__41541,G__41542));
-})(),(function (){var G__41543 = app.ui.kits.connect.settings.settings;
-var G__41544 = ({});
-return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__41543,G__41544) : helix.core.jsx.call(null,G__41543,G__41544));
+var G__35447 = helix.core.Fragment;
+var G__35448 = ({"children": [(function (){var G__35451 = app.ui.kits.connect.URB_60.core.URB_60;
+var G__35452 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35451,G__35452) : helix.core.jsx.call(null,G__35451,G__35452));
+})(),(function (){var G__35455 = app.ui.kits.connect.limiter_low_level.limiter_low_level;
+var G__35456 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35455,G__35456) : helix.core.jsx.call(null,G__35455,G__35456));
+})(),(function (){var G__35457 = app.ui.kits.connect.limiter_high_level.limiter_high_level;
+var G__35458 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35457,G__35458) : helix.core.jsx.call(null,G__35457,G__35458));
+})(),(function (){var G__35459 = app.ui.kits.connect.controller_cond.controller_cond;
+var G__35460 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35459,G__35460) : helix.core.jsx.call(null,G__35459,G__35460));
+})(),(function (){var G__35463 = app.ui.kits.connect.controller_level.controller_level;
+var G__35464 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35463,G__35464) : helix.core.jsx.call(null,G__35463,G__35464));
+})(),(function (){var G__35465 = app.ui.kits.connect.converter.converter;
+var G__35466 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35465,G__35466) : helix.core.jsx.call(null,G__35465,G__35466));
+})(),(function (){var G__35469 = app.ui.kits.connect.hot_spots.hot_spots;
+var G__35470 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35469,G__35470) : helix.core.jsx.call(null,G__35469,G__35470));
+})(),(function (){var G__35471 = app.ui.kits.connect.toolbars.toolbars;
+var G__35473 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35471,G__35473) : helix.core.jsx.call(null,G__35471,G__35473));
+})(),(function (){var G__35475 = app.ui.kits.connect.settings.settings;
+var G__35476 = ({});
+return (helix.core.jsx.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsx.cljs$core$IFn$_invoke$arity$2(G__35475,G__35476) : helix.core.jsx.call(null,G__35475,G__35476));
 })()]});
-return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__41525,G__41526) : helix.core.jsxs.call(null,G__41525,G__41526));
+return (helix.core.jsxs.cljs$core$IFn$_invoke$arity$2 ? helix.core.jsxs.cljs$core$IFn$_invoke$arity$2(G__35447,G__35448) : helix.core.jsxs.call(null,G__35447,G__35448));
 });
 if(goog.DEBUG === true){
-var G__41545 = G__41521;
-(G__41545.displayName = "app.ui.kits.connect.core/connect-kit");
+var G__35491 = G__35438;
+(G__35491.displayName = "app.ui.kits.connect.core/connect-kit");
 
-return G__41545;
+return G__35491;
 } else {
-return G__41521;
+return G__35438;
 }
 })();
 

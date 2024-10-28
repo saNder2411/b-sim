@@ -1,4 +1,5 @@
-(ns simulation.thermodynamics-fn)
+(ns simulation.thermodynamics-fn
+  (:require [simulation.helpers :as h]))
 
 ; lookup table "enthalpy" within pAbs = [5 - 19] bar, in kJ/kg
 (def steam-enthalpy-table {5  2748.10761465797
@@ -80,15 +81,9 @@
                          9  0.8054
                          10 1})
 
-(defn check-val-by-range [min max val]
-  (cond
-    (< val min) min
-    (> val max) max
-    :else val))
+(def check-pressure (partial h/check-val-by-range 5 19))
 
-(def check-pressure (partial check-val-by-range 5 19))
-
-(def check-level-raw-% (partial check-val-by-range 0 10))
+(def check-level-raw-% (partial h/check-val-by-range 0 10))
 
 (defn liquid-enthalpy-by-t [temperature]
   (- (* 4.219 temperature) 2.83))
