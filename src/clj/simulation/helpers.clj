@@ -12,6 +12,12 @@
       (* v-in-%)
       (+ min)))
 
+(defn calc-%-by-v
+  ([min max v]
+   (* (/ v (- max min)) 100))
+  ([max v]
+   (* (/ v (- max 0)) 100)))
+
 (defn safe-division [dividend divisor]
   (cond
     (and (= dividend 0) (= divisor 0)) 1

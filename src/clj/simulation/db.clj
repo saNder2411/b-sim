@@ -43,8 +43,9 @@
                                                :kg-h 17500
                                                :kg-s 4.861111111
                                                :max  35}
-                                :volume       {:value   48  ;"m³"
-                                               :value-% (t/liquid-level-% 48 55) ;"%"
+                                :volume       {:value   45.1  ;"m³"
+                                               :value-% (* (/ 45.1 55) 100)
+                                               :probe-level-% (t/liquid-level-% 45.1 55) ;"%"
                                                :max     55}
                                 :pressure     11            ;"bar"
                                 :temperature  (t/liquid-temperature 11) ;"°C"
@@ -57,17 +58,17 @@
                                 :enthalpy     (t/liquid-enthalpy-by-t 103) ;kJ/kg saturated liquid enthalpy within T = [90 - 110] °C in kJ/kg
                                 :sludge-ratio 0.0003}
 
-               :burner         {:state            "off"
-                                :mode             "auto"
-                                :operation        "normal"
+               :burner         {:state            "off"     ;; "on" | "off"
+                                :mode             "auto"    ;; "auto" | "manual"
+                                :operation        "normal"  ;; "normal" | "standby"
                                 :switch-points    {:off 12.5 ;;"bar"
                                                    :on  11.5}
                                 :power            {:value 0 ;;"kW"
                                                    :max   25000}
                                 :fuel-consumption {:value 0 ;;"nm³/s"
                                                    :coeff 0.083}
-                                :heat-transfer    {:value 0 ;;"kJ/kW*s"
-                                                   :coeff 0.9}}
+                                :heat-transfer    {:value 0 ;;"kW"
+                                                   :coeff 0.9}} ;;"kJ/kW*s"
                :actuators      {:feed  {:flow-rate     {:t-h  0
                                                         :kg-h 0
                                                         :kg-s 0
@@ -93,13 +94,13 @@
                                                                                :force-off?  false
                                                                                :force-keep? false}}
                                         :valve         {:type          :electric-valve
-                                                        :transition    {:state       "fixed"
-                                                                        :travel-time 40}
+                                                        :transition    {:state       "fixed" ;; "fixed" | "opening" | "closing"
+                                                                        :travel-time 40} ;; sec
                                                         :potentiometer {:open      32752
                                                                         :close     16
                                                                         :mixed-up? false}
-                                                        :damper        {:value       0
-                                                                        :pi-c-output 0
+                                                        :damper        {:value       0 ;; 0%-100%
+                                                                        :pi-c-output 0 ;; pi-c x next value
                                                                         :digital     16
                                                                         :delta       (/ 100 40)
                                                                         :step-delay  2}}}
@@ -112,9 +113,3 @@
                                                     :kg-h 0
                                                     :kg-s 0
                                                     :max  28.8}}}}))
-
-
-
-
-
-
