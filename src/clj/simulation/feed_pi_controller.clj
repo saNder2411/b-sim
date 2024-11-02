@@ -62,8 +62,9 @@
       3 (get-adjusted-x-by-3-el db probe-level-%)
       probe-level-%)))
 
-(defn- update-x-adjusted [db probe-level-%]
-  (let [{:keys [upper-boundary lower-boundary]} (get-in db [:actuators :feed :pi-controller :control-area])
+(defn- update-x-adjusted [db]
+  (let [probe-level-% (get-in db [:level :probe :level :value-%])
+        {:keys [upper-boundary lower-boundary]} (get-in db [:actuators :feed :pi-controller :control-area])
         raw-x (get-adjusted-x db probe-level-%)
         adjusted-x (h/check-val-by-range lower-boundary upper-boundary raw-x)]
     (assoc-in db [:actuators :feed :pi-controller :x :adjusted] adjusted-x)))
@@ -110,8 +111,22 @@
     (change-x-next db)
     db))
 
-(defn sim-step! [db-atom probe-level-%]
+(defn init! [db-atom {:keys [mode direction target-point c-elements k-factor proportional-band integral-action-time n-zone x-next]}]
   (swap! db-atom #(-> %
-                      (update-x-adjusted probe-level-%)
+                      (assoc-in [:actuators :feed :pi-controller :mode] mode)
+                      (assoc-in [:actuators :feed :pi-controller :direction] direction)
+                      (assoc-in [:actuators :feed :pi-controller :proportional-band] proportional-band)
+                      (assoc-in [:actuators :feed :pi-controller :target-point] target-point)
+                      (update-control-area target-point proportional-band)
+                      (assoc-in [:actuators :feed :pi-controller :c-elements] c-elements)
+                      (assoc-in [:actuators :feed :pi-controller :k-factor] k-factor)
+                      (assoc-in [:actuators :feed :pi-controller :integral-action-time :value] integral-action-time)
+                      (assoc-in [:actuators :feed :pi-controller :integral-action-time :tact] (if (> integral-action-time 0) (/ 1 integral-action-time) 0))
+                      (assoc-in [:actuators :feed :pi-controller :n-zone :value] n-zone)
+                      (assoc-in [:actuators :feed :pi-controller :x :next] x-next))))
+
+(defn sim-step! [db-atom]
+  (swap! db-atom #(-> %
+                      update-x-adjusted
                       update-n-zone-active?
                       update-x-next)))

@@ -23,6 +23,15 @@
       (<= p (:on switch-points)) "on"
       :else state)))
 
+(defn init! [db-atom {:keys [state mode operation switch-points max-power fuel-coeff heat-coeff]}]
+  (swap! db-atom #(-> %
+                      (assoc-in [:burner :mode] mode)
+                      (assoc-in [:burner :operation] operation)
+                      (assoc-in [:burner :switch-points] switch-points)
+                      (assoc-in [:burner :power :max] max-power)
+                      (assoc-in [:burner :fuel-consumption :coeff] fuel-coeff)
+                      (assoc-in [:burner :heat-transfer :coeff] heat-coeff)))
+  (state! db-atom state))
 
 (defn sim-step! [db-atom limit-alarm?]
   (if (= (-> @db-atom :burner :mode) "auto")

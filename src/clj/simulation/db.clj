@@ -1,5 +1,4 @@
-(ns simulation.db
-  (:require [simulation.thermodynamics-fn :as t]))
+(ns simulation.db)
 
 (def db (atom {:thermodynamics {:saturation-temp-coeff {:c-poly-51 0
                                                         :c-poly-52 0
@@ -39,23 +38,24 @@
                                 :volume-shift          0
                                 :pressure-shift        0
                                 :temperature           0}
+
                :boiler         {:steam        {:t-h  17.5
                                                :kg-h 17500
                                                :kg-s 4.861111111
                                                :max  35}
-                                :volume       {:value   45.1  ;"m³"
-                                               :value-% (* (/ 45.1 55) 100)
-                                               :probe-level-% (t/liquid-level-% 45.1 55) ;"%"
-                                               :max     55}
+                                :volume       {:value         53.30702602097426 ;"m³"
+                                               :value-%      83.99999999999997 ;"%" by lookup table
+                                               :raw-value-% 96.92186549268048 ;"%" raw relation
+                                               :max           55}
                                 :pressure     11            ;"bar"
-                                :temperature  (t/liquid-temperature 11) ;"°C"
+                                :temperature  184 ;"°C"
                                 :sludge       {:value 39.2  ;"kg"
                                                :max   80}
                                 :conductivity 3000}         ; µS/cm
 
                :feedwater      {:conductivity 500           ; µS/cm
                                 :temperature  103           ; °C
-                                :enthalpy     (t/liquid-enthalpy-by-t 103) ;kJ/kg saturated liquid enthalpy within T = [90 - 110] °C in kJ/kg
+                                :enthalpy     0 ;kJ/kg saturated liquid enthalpy within T = [90 - 110] °C in kJ/kg
                                 :sludge-ratio 0.0003}
 
                :burner         {:state            "off"     ;; "on" | "off"
@@ -69,6 +69,24 @@
                                                    :coeff 0.083}
                                 :heat-transfer    {:value 0 ;;"kW"
                                                    :coeff 0.9}} ;;"kJ/kW*s"
+
+               :level          {:probe      {:error-code  0
+                                             :calibration {:high-point-by-cal-p 8191.75
+                                                           :cal-p               25
+                                                           :real-high-point     32767
+                                                           :low-point           25}
+                                             :digit       {:value 0
+                                                           :min   0
+                                                           :max   32767}
+                                             :amperage    {:value 4
+                                                           :min   4
+                                                           :max   20}
+                                             :level        {:value-%              0
+                                                           :low-point-by-boiler  0
+                                                           :high-point-by-boiler 0
+                                                           :range                19.63482792}}
+                                :controller {}}
+
                :actuators      {:feed  {:flow-rate     {:t-h  0
                                                         :kg-h 0
                                                         :kg-s 0

@@ -24,8 +24,8 @@
                         (h/check-val-by-range 0 max))]
     (-> db
         (assoc-in [:boiler :volume :value] next-value)
-        (assoc-in [:boiler :volume :value-%] (h/calc-%-by-v max next-value))
-        (assoc-in [:boiler :volume :probe-level-%] (t/liquid-level-% next-value max)))))
+        (assoc-in [:boiler :volume :value-%] (t/liquid-level-% next-value max))
+        (assoc-in [:boiler :volume :raw-value-%] (h/calc-%-by-v max next-value)))))
 
 (defn- update-sludge [db]
   (let [feed-kg-s (-> db :actuators :feed :flow-rate :kg-s)
@@ -53,6 +53,17 @@
                              (- (+ water-mass feed-kg-s) stem-kg-s))]
     (assoc-in db [:boiler :conductivity] next-conductivity)))
 
+(defn init! [db-atom {:keys [steam-th pressure volume sludge conductivity]}]
+  (steam-th! db-atom steam-th)
+  (swap! db-atom #(-> %
+                      (assoc-in [:boiler :pressure] pressure)
+                      (assoc-in [:boiler :temperature] (t/liquid-temperature pressure))
+                      (assoc-in [:boiler :volume :value] (:value volume))
+                      (assoc-in [:boiler :volume :value-%] (t/liquid-level-% (:value volume) (:max volume)))
+                      (assoc-in [:boiler :volume :raw-value-%] (h/calc-%-by-v (:max volume) (:value volume)))
+                      (assoc-in [:boiler :sludge :value] (:value sludge))
+                      (assoc-in [:boiler :sludge :max] (:max sludge))
+                      (assoc-in [:boiler :conductivity] conductivity))))
 
 (defn sim-step! [db-atom]
   (swap! db-atom #(-> %
@@ -60,4 +71,3 @@
                       update-volume
                       update-sludge
                       update-conductivity)))
-

@@ -83,6 +83,19 @@
         (assoc-in [:actuators :feed :valve :damper :digital] digital-v)
         (update-flow-rate-th th-v))))
 
+(defn init! [db-atom {:keys [max-flow-rate type damper travel-time potentiometer]}]
+  (swap! db-atom #(-> %
+                      (assoc-in [:actuators :feed :flow-rate :max] max-flow-rate)
+                      (assoc-in [:actuators :feed :valve :type] type)
+                      (assoc-in [:actuators :feed :valve :transition :travel-time] travel-time)
+                      (assoc-in [:actuators :feed :valve :damper :delta] (/ 100 travel-time))
+                      (assoc-in [:actuators :feed :valve :damper :value] damper)
+                      (assoc-in [:actuators :feed :valve :damper :pi-c-output] damper)
+                      (assoc-in [:actuators :feed :valve :potentiometer :close] (:close potentiometer))
+                      (assoc-in [:actuators :feed :valve :potentiometer :open] (:open potentiometer))
+                      (assoc-in [:actuators :feed :valve :potentiometer :mixed-up?] (< (:open potentiometer) (:close potentiometer)))
+                      update-damper-pi-c-output
+                      update-damper-value)))
 
 (defn sim-step! [db-atom]
   (swap! db-atom #(-> %
